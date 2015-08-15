@@ -14,7 +14,7 @@ struct cellSize {
 }
 
 struct cellMargin {
-    static let vertical:CGFloat = 2.0
+    static let vertical:CGFloat = 0.0
     static let horizontal:CGFloat = 20.0
 }
 
@@ -23,8 +23,8 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let edgeInsetBottom:CGFloat = 5
-        let edgeInsetTop:CGFloat = 5
+        let edgeInsetBottom:CGFloat = 0
+        let edgeInsetTop:CGFloat = 0
         
         cellSize.width = view.bounds.width / 2
         cellSize.height = view.bounds.width / 2
@@ -52,6 +52,6 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 0, bottom: 5, right: 0)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }

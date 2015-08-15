@@ -24,6 +24,8 @@
 		9AE22D9A1B7EFA610024E221 /* PageMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D991B7EFA610024E221 /* PageMenuViewController.swift */; };
 		9AE22D9D1B7EFB070024E221 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D9C1B7EFB070024E221 /* Color.swift */; };
 		9AE22D9F1B7EFB7D0024E221 /* TopCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D9E1B7EFB7D0024E221 /* TopCollectionViewController.xib */; };
+		9AE22DA31B7F01690024E221 /* WebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22DA21B7F01690024E221 /* WebImage.framework */; };
+		9AE22DA61B7F04180024E221 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DA51B7F04180024E221 /* Media.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		9AE22D991B7EFA610024E221 /* PageMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuViewController.swift; sourceTree = "<group>"; };
 		9AE22D9C1B7EFB070024E221 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9AE22D9E1B7EFB7D0024E221 /* TopCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopCollectionViewController.xib; sourceTree = "<group>"; };
+		9AE22DA21B7F01690024E221 /* WebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebImage.framework; path = Carthage/Build/iOS/WebImage.framework; sourceTree = "<group>"; };
+		9AE22DA51B7F04180024E221 /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			files = (
 				9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */,
 				9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */,
+				9AE22DA31B7F01690024E221 /* WebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 		9AE22D4B1B7ED1420024E221 = {
 			isa = PBXGroup;
 			children = (
+				9AE22DA21B7F01690024E221 /* WebImage.framework */,
 				9AE22D561B7ED1430024E221 /* Nekobu */,
 				9AE22D6C1B7ED1430024E221 /* NekobuTests */,
 				9AE22D551B7ED1430024E221 /* Products */,
@@ -104,6 +110,7 @@
 				9AE22DA01B7F00E50024E221 /* AppDelegate */,
 				9AE22D8E1B7EE7450024E221 /* UI */,
 				9AE22D7F1B7ED7670024E221 /* Config */,
+				9AE22DA41B7F01D30024E221 /* Model */,
 				9AE22D891B7EE6A20024E221 /* View */,
 				9AE22D861B7EE6800024E221 /* Controllers */,
 				9AE22DA11B7F01010024E221 /* Storyboard */,
@@ -243,6 +250,14 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
+		9AE22DA41B7F01D30024E221 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22DA51B7F04180024E221 /* Media.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +365,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
 			);
 			outputPaths = (
 			);
@@ -368,6 +384,7 @@
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
 				9AE22D9D1B7EFB070024E221 /* Color.swift in Sources */,
 				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
+				9AE22DA61B7F04180024E221 /* Media.swift in Sources */,
 				9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */,
 				9AE22D931B7EE8620024E221 /* BaseCollectionViewController.swift in Sources */,
 				9AE22D811B7ED77A0024E221 /* Config.swift in Sources */,

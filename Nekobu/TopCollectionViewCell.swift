@@ -9,10 +9,9 @@
 import UIKit
 
 class TopCollectionViewCell: UICollectionViewCell {
+    @IBOutlet var thumbNailImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
 }

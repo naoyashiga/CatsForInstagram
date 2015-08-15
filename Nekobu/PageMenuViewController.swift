@@ -19,17 +19,10 @@ class PageMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        navigationItem.title = "ねこ部"
-//        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-//        navigationController?.navigationBar.barTintColor = UIColor.navigationBarTintColor()
-        
         let topVC = TopCollectionViewController(nibName: NibNameSet.topVC, bundle: nil)
         
-        topVC.title = "ピックアップ"
+        topVC.title = "cat"
         
-        controllerArray.append(topVC)
-        controllerArray.append(topVC)
-        controllerArray.append(topVC)
         controllerArray.append(topVC)
         
         let parameters: [CAPSPageMenuOption] = [

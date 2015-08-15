@@ -11,9 +11,23 @@
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wo3-xc-DCE" userLabel="thumbNailImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    </imageView>
+                </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.89595562849999999" green="0.32168762620000002" blue="0.44314015670000001" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wo3-xc-DCE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="evz-FW-QuD"/>
+                <constraint firstAttribute="trailing" secondItem="wo3-xc-DCE" secondAttribute="trailing" id="hky-Hp-JxC"/>
+                <constraint firstItem="wo3-xc-DCE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mln-P8-y8N"/>
+                <constraint firstAttribute="bottom" secondItem="wo3-xc-DCE" secondAttribute="bottom" id="tCc-6S-H4u"/>
+            </constraints>
+            <connections>
+                <outlet property="thumbNailImageView" destination="wo3-xc-DCE" id="leQ-8G-E1g"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>
