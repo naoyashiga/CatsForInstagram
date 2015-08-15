@@ -16,7 +16,6 @@
 		9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */; };
 		9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */; };
 		9AE22D811B7ED77A0024E221 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D801B7ED77A0024E221 /* Config.swift */; };
-		9AE22D851B7EE6210024E221 /* Persei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22D841B7EE6210024E221 /* Persei.framework */; };
 		9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D871B7EE69A0024E221 /* TopCollectionViewController.swift */; };
 		9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D8A1B7EE6BF0024E221 /* TopCollectionViewCell.swift */; };
 		9AE22D8D1B7EE6BF0024E221 /* TopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D8B1B7EE6BF0024E221 /* TopCollectionViewCell.xib */; };
@@ -48,7 +47,6 @@
 		9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		9AE22D801B7ED77A0024E221 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		9AE22D841B7EE6210024E221 /* Persei.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Persei.framework; path = ../Carthage/Build/iOS/Persei.framework; sourceTree = "<group>"; };
 		9AE22D871B7EE69A0024E221 /* TopCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCollectionViewController.swift; sourceTree = "<group>"; };
 		9AE22D8A1B7EE6BF0024E221 /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AE22D8B1B7EE6BF0024E221 /* TopCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			files = (
 				9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */,
 				9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */,
-				9AE22D851B7EE6210024E221 /* Persei.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +138,6 @@
 		9AE22D7E1B7ED6C10024E221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9AE22D841B7EE6210024E221 /* Persei.framework */,
 				9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */,
 				9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */,
 			);
@@ -312,7 +308,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Persei.framework",
 			);
 			outputPaths = (
 			);
