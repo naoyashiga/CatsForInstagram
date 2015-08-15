@@ -28,6 +28,8 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor.viewBackgroundColor()
+        
         collectionView?.applyCellNib(cellNibName: topReuseId.cell)
 
         Alamofire.request(.GET, Config.TAG).responseSwiftyJSON({ (_, _, json, error) in

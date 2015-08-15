@@ -12,11 +12,11 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
     var sourceVC = UIViewController()
     var destinationVC = UIViewController()
     
-    let kForwardAnimationDuration: NSTimeInterval = 0.3
-    let kForwardCompleteAnimationDuration: NSTimeInterval = 0.3
+    let kForwardAnimationDuration: NSTimeInterval = 0.4
+    let kForwardCompleteAnimationDuration: NSTimeInterval = 0.4
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-        return 0.3
+        return kForwardAnimationDuration
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -48,39 +48,21 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
             destinationImageViewFrame = destinationViewController.transitionDestinationImageViewFrame()
         }
         
-        UIView.animateWithDuration(kForwardAnimationDuration, delay: 0, options: .CurveEaseOut, animations: {
-            sourceImageView.frame = destinationImageViewFrame
-            
-            }, completion: {(finished: Bool) in
+        UIView.animateWithDuration(
+            kForwardCompleteAnimationDuration,
+            delay: 0,
+            usingSpringWithDamping: 3.4,
+            initialSpringVelocity: 0,
+            options: .CurveEaseOut,
+            animations: {
+                sourceImageView.frame = destinationImageViewFrame
+                
+            }, completion: { finished in
                 if finished {
                     destinationImageView.hidden = false
                     sourceImageView.removeFromSuperview()
                 }
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         })
-        
-//        let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
-//        let containerView = transitionContext.containerView()
-//        
-//        let animationDuration = transitionDuration(transitionContext)
-//        
-//        toViewController.view.transform = CGAffineTransformMakeScale(0.1, 0.1)
-//        toViewController.view.layer.shadowColor = UIColor.blackColor().CGColor
-//        toViewController.view.layer.shadowOffset = CGSizeMake(0.0, 2.0)
-//        toViewController.view.layer.shadowOpacity = 0.3
-//        toViewController.view.layer.cornerRadius = 4.0
-//        toViewController.view.clipsToBounds = true
-//        
-//        containerView.addSubview(toViewController.view)
-//        
-//        UIView.animateWithDuration(
-//            animationDuration,
-//            animations: {
-//                
-//            toViewController.view.transform = CGAffineTransformIdentity
-//                
-//            }, completion: { finished in
-//                transitionContext.completeTransition(finished)
-//        })
     }
 }

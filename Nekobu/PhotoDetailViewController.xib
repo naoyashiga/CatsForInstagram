@@ -24,7 +24,9 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69i-t6-mx2">
                     <rect key="frame" x="101" y="430" width="56" height="30"/>
+                    <color key="backgroundColor" red="0.89595562849999999" green="0.32168762620000002" blue="0.44314015670000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Favorite">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -33,7 +35,9 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-ud-MCD">
                     <rect key="frame" x="176" y="538" width="52" height="30"/>
+                    <color key="backgroundColor" red="0.89595562849999999" green="0.32168762620000002" blue="0.44314015670000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="dismiss">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -42,7 +46,9 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DC7-az-ISp">
                     <rect key="frame" x="255" y="430" width="38" height="30"/>
+                    <color key="backgroundColor" red="0.89595562849999999" green="0.32168762620000002" blue="0.44314015670000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="share">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -50,7 +56,6 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="gT3-gg-0Xl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HYP-3y-wfS"/>
                 <constraint firstAttribute="bottom" secondItem="4gP-ud-MCD" secondAttribute="bottom" constant="32" id="I4h-WP-Ynu"/>

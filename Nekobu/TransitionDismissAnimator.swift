@@ -13,11 +13,11 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
     var sourceVC = UIViewController()
     var destinationVC = UIViewController()
     
-    let kBackwardAnimationDuration: NSTimeInterval = 0.3
-    let kBackwardCompleteAnimationDuration: NSTimeInterval = 0.3
+    let kBackwardAnimationDuration: NSTimeInterval = 0.4
+    let kBackwardCompleteAnimationDuration: NSTimeInterval = 0.4
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
-        return 0.3
+        return kBackwardAnimationDuration
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
@@ -25,7 +25,7 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
         let containerView = transitionContext.containerView()
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
         
-        var sourceImageView = UIImageView()
+        let sourceImageView = UIImageView()
         var destinationImageView = UIImageView()
         var destinationImageViewFrame = CGRect()
         
@@ -44,17 +44,23 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
             destinationImageViewFrame = destinationViewController.transitionDestinationImageViewFrame()
         }
         
-        UIView.animateWithDuration(kBackwardAnimationDuration, delay: 0, options: .CurveEaseOut, animations: {
-            sourceImageView.frame = destinationImageViewFrame
+        UIView.animateWithDuration(
+            kBackwardCompleteAnimationDuration,
+            delay: 0,
+            usingSpringWithDamping: 3.4,
+            initialSpringVelocity: 0,
+            options: .CurveEaseOut,
+            animations: {
+                sourceImageView.frame = destinationImageViewFrame
+                
+                fromVC.view.alpha = 0.0
             
-            fromVC.view.alpha = 0.0
-            
-            }, completion: {(finished: Bool) in
+            }, completion: {finished in
                 if finished {
                     destinationImageView.removeFromSuperview()
-                    
                     sourceImageView.removeFromSuperview()
                 }
+                
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         })
     }
