@@ -23,9 +23,26 @@ class PhotoDetailViewController: UIViewController {
     }
 
     @IBAction func favoriteButtonTapped(sender: UIButton) {
+        
     }
+    
     @IBAction func shareButtonTapped(sender: UIButton) {
+        
     }
+    
     @IBAction func dismissButtonTapped(sender: UIButton) {
+        presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+//    func transitionSourceImageView() -> UIImageView {
+//        return detailImageView
+//    }
+//    
+//    func transitionSourceBackgroundColor() -> UIColor {
+//        return view.backgroundColor!
+//    }
+//    
+//    func transitionDestinationImageViewFrame() -> CGRect {
+//        return detailImageView.frame
+//    }
 }

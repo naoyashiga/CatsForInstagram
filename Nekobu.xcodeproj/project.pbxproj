@@ -33,6 +33,12 @@
 		9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DB31B7F167D0024E221 /* BlurredBackgroundPresentationController.swift */; };
 		9AE22DB71B7F22530024E221 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DB51B7F22530024E221 /* PhotoDetailViewController.swift */; };
 		9AE22DB81B7F22530024E221 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22DB61B7F22530024E221 /* PhotoDetailViewController.xib */; };
+		9AE22DBD1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DBC1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift */; };
+		9AE22DBF1B7F32CF0024E221 /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DBE1B7F32CF0024E221 /* PresentationManager.swift */; };
+		9AE22DC11B7F32FA0024E221 /* TransitionPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DC01B7F32FA0024E221 /* TransitionPresentationAnimator.swift */; };
+		9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DC21B7F33170024E221 /* TransitionDismissAnimator.swift */; };
+		9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DC51B7F36050024E221 /* ImageView+SDWebImage.swift */; };
+		9AE22DCA1B7F37CA0024E221 /* SwiftyJSON+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DC91B7F37CA0024E221 /* SwiftyJSON+Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +82,12 @@
 		9AE22DB31B7F167D0024E221 /* BlurredBackgroundPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredBackgroundPresentationController.swift; sourceTree = "<group>"; };
 		9AE22DB51B7F22530024E221 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		9AE22DB61B7F22530024E221 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
+		9AE22DBC1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPZoomTransitionAnimator.swift; sourceTree = "<group>"; };
+		9AE22DBE1B7F32CF0024E221 /* PresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationManager.swift; sourceTree = "<group>"; };
+		9AE22DC01B7F32FA0024E221 /* TransitionPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentationAnimator.swift; sourceTree = "<group>"; };
+		9AE22DC21B7F33170024E221 /* TransitionDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDismissAnimator.swift; sourceTree = "<group>"; };
+		9AE22DC51B7F36050024E221 /* ImageView+SDWebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageView+SDWebImage.swift"; sourceTree = "<group>"; };
+		9AE22DC91B7F37CA0024E221 /* SwiftyJSON+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Request.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE22DA01B7F00E50024E221 /* AppDelegate */,
-				9AE22D8E1B7EE7450024E221 /* UI */,
+				9AE22DC71B7F379E0024E221 /* Common */,
 				9AE22D7F1B7ED7670024E221 /* Config */,
 				9AE22DA41B7F01D30024E221 /* Model */,
 				9AE22D891B7EE6A20024E221 /* View */,
@@ -203,6 +215,8 @@
 		9AE22D8E1B7EE7450024E221 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9AE22DC41B7F35EA0024E221 /* ImageView */,
+				9AE22DB91B7F30350024E221 /* Animation */,
 				9AE22D9B1B7EFAEA0024E221 /* Color */,
 				9AE22D8F1B7EE74D0024E221 /* CollectionView */,
 			);
@@ -309,6 +323,42 @@
 				9AE22DB61B7F22530024E221 /* PhotoDetailViewController.xib */,
 			);
 			name = Detail;
+			sourceTree = "<group>";
+		};
+		9AE22DB91B7F30350024E221 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22DBC1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift */,
+				9AE22DBE1B7F32CF0024E221 /* PresentationManager.swift */,
+				9AE22DC01B7F32FA0024E221 /* TransitionPresentationAnimator.swift */,
+				9AE22DC21B7F33170024E221 /* TransitionDismissAnimator.swift */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		9AE22DC41B7F35EA0024E221 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22DC51B7F36050024E221 /* ImageView+SDWebImage.swift */,
+			);
+			name = ImageView;
+			sourceTree = "<group>";
+		};
+		9AE22DC71B7F379E0024E221 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22DC81B7F37AB0024E221 /* NetWorking */,
+				9AE22D8E1B7EE7450024E221 /* UI */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		9AE22DC81B7F37AB0024E221 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22DC91B7F37CA0024E221 /* SwiftyJSON+Request.swift */,
+			);
+			name = NetWorking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE22DBD1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift in Sources */,
 				9AE22D9A1B7EFA610024E221 /* PageMenuViewController.swift in Sources */,
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
 				9AE22DAA1B7F0ABA0024E221 /* FavoriteCollectionViewController.swift in Sources */,
@@ -443,13 +494,18 @@
 				9AE22DB01B7F0B270024E221 /* FavoriteCollectionViewCell.swift in Sources */,
 				9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */,
 				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
+				9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */,
 				9AE22DA61B7F04180024E221 /* Media.swift in Sources */,
 				9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */,
+				9AE22DC11B7F32FA0024E221 /* TransitionPresentationAnimator.swift in Sources */,
 				9AE22D931B7EE8620024E221 /* BaseCollectionViewController.swift in Sources */,
+				9AE22DBF1B7F32CF0024E221 /* PresentationManager.swift in Sources */,
 				9AE22DB71B7F22530024E221 /* PhotoDetailViewController.swift in Sources */,
 				9AE22D811B7ED77A0024E221 /* Config.swift in Sources */,
 				9AE22D971B7EFA360024E221 /* CAPSPageMenu.swift in Sources */,
+				9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */,
 				9AE22D911B7EE7660024E221 /* UICollectionView+NibSetting.swift in Sources */,
+				9AE22DCA1B7F37CA0024E221 /* SwiftyJSON+Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
