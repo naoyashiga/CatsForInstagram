@@ -7,7 +7,8 @@
         <!--Navigation Controller-->
         <scene sceneID="bCM-q0-i41">
             <objects>
-                <navigationController id="itW-46-HcM" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="itW-46-HcM" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b5a-R6-HqU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -34,6 +35,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="z3s-ZW-lVv"/>
+                    <nil key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ad9-Dg-Hfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

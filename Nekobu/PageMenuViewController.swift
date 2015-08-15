@@ -19,9 +19,9 @@ class PageMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.title = "ねこ部"
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        navigationController?.navigationBar.barTintColor = UIColor.navigationBarTintColor()
+//        navigationItem.title = "ねこ部"
+//        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+//        navigationController?.navigationBar.barTintColor = UIColor.navigationBarTintColor()
         
         let topVC = TopCollectionViewController(nibName: NibNameSet.topVC, bundle: nil)
         
@@ -50,7 +50,7 @@ class PageMenuViewController: UIViewController {
             //            "scrollAnimationDurationOnMenuItemTap": 300,
             .CenterMenuItems(true)]
         
-        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 64.0, view.frame.width, view.frame.height), pageMenuOptions: parameters)
+        pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRectMake(0.0, 0.0, view.frame.width, view.frame.height), pageMenuOptions: parameters)
         
         if let pageMenu = pageMenu {
             view.addSubview(pageMenu.view)
@@ -61,7 +61,8 @@ class PageMenuViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-//    override func viewWillAppear(animated: Bool) {
-//        navigationController?.setNavigationBarHidden(true, animated: true)
-//    }
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
 }

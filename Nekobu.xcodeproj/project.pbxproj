@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D591B7ED1430024E221 /* AppDelegate.swift */; };
-		9AE22D5C1B7ED1430024E221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D5B1B7ED1430024E221 /* ViewController.swift */; };
 		9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D5D1B7ED1430024E221 /* Main.storyboard */; };
 		9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D601B7ED1430024E221 /* Images.xcassets */; };
 		9AE22D641B7ED1430024E221 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D621B7ED1430024E221 /* LaunchScreen.xib */; };
@@ -41,7 +40,6 @@
 		9AE22D541B7ED1430024E221 /* Nekobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nekobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE22D581B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE22D591B7ED1430024E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AE22D5B1B7ED1430024E221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AE22D5E1B7ED1430024E221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AE22D601B7ED1430024E221 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9AE22D631B7ED1430024E221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -103,13 +101,12 @@
 		9AE22D561B7ED1430024E221 /* Nekobu */ = {
 			isa = PBXGroup;
 			children = (
+				9AE22DA01B7F00E50024E221 /* AppDelegate */,
 				9AE22D8E1B7EE7450024E221 /* UI */,
 				9AE22D7F1B7ED7670024E221 /* Config */,
-				9AE22D591B7ED1430024E221 /* AppDelegate.swift */,
-				9AE22D5B1B7ED1430024E221 /* ViewController.swift */,
 				9AE22D891B7EE6A20024E221 /* View */,
 				9AE22D861B7EE6800024E221 /* Controllers */,
-				9AE22D5D1B7ED1430024E221 /* Main.storyboard */,
+				9AE22DA11B7F01010024E221 /* Storyboard */,
 				9AE22D601B7ED1430024E221 /* Images.xcassets */,
 				9AE22D621B7ED1430024E221 /* LaunchScreen.xib */,
 				9AE22D7E1B7ED6C10024E221 /* Frameworks */,
@@ -228,6 +225,22 @@
 				9AE22D9C1B7EFB070024E221 /* Color.swift */,
 			);
 			name = Color;
+			sourceTree = "<group>";
+		};
+		9AE22DA01B7F00E50024E221 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D591B7ED1430024E221 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9AE22DA11B7F01010024E221 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D5D1B7ED1430024E221 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,7 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE22D5C1B7ED1430024E221 /* ViewController.swift in Sources */,
 				9AE22D9A1B7EFA610024E221 /* PageMenuViewController.swift in Sources */,
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
 				9AE22D9D1B7EFB070024E221 /* Color.swift in Sources */,
