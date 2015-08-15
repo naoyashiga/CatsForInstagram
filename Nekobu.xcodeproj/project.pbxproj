@@ -13,6 +13,8 @@
 		9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D601B7ED1430024E221 /* Images.xcassets */; };
 		9AE22D641B7ED1430024E221 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D621B7ED1430024E221 /* LaunchScreen.xib */; };
 		9AE22D701B7ED1430024E221 /* NekobuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D6F1B7ED1430024E221 /* NekobuTests.swift */; };
+		9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */; };
+		9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		9AE22D691B7ED1430024E221 /* NekobuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NekobuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE22D6E1B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE22D6F1B7ED1430024E221 /* NekobuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NekobuTests.swift; sourceTree = "<group>"; };
+		9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */,
+				9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +65,8 @@
 		9AE22D4B1B7ED1420024E221 = {
 			isa = PBXGroup;
 			children = (
+				9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */,
+				9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */,
 				9AE22D561B7ED1430024E221 /* Nekobu */,
 				9AE22D6C1B7ED1430024E221 /* NekobuTests */,
 				9AE22D551B7ED1430024E221 /* Products */,
@@ -122,6 +130,7 @@
 				9AE22D501B7ED1420024E221 /* Sources */,
 				9AE22D511B7ED1420024E221 /* Frameworks */,
 				9AE22D521B7ED1420024E221 /* Resources */,
+				9AE22D7D1B7ED44C0024E221 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -206,6 +215,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AE22D7D1B7ED44C0024E221 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9AE22D501B7ED1420024E221 /* Sources */ = {
@@ -340,6 +367,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Nekobu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +381,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Nekobu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
