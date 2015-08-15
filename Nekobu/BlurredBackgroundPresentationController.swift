@@ -18,9 +18,11 @@ class BlurredBackgroundPresentationController: UIPresentationController {
     
     func setupDimmingView() {
         dimmingView = UIView()
-        var visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light)) as UIVisualEffectView
+        
+        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light)) as UIVisualEffectView
         visualEffectView.frame = dimmingView.bounds
         visualEffectView.autoresizingMask = .FlexibleHeight | .FlexibleWidth
+        
         dimmingView.addSubview(visualEffectView)
         
         let tapRecognizer = UITapGestureRecognizer(target: self, action: "dimmingViewTapped:")
@@ -31,30 +33,33 @@ class BlurredBackgroundPresentationController: UIPresentationController {
         presentingViewController.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
     override func containerViewWillLayoutSubviews() {
         dimmingView.frame = containerView.bounds
+        
         presentedView().frame = frameOfPresentedViewInContainerView()
         presentedView().layer.borderWidth = 0.0
     }
     
-    override func frameOfPresentedViewInContainerView() -> CGRect {//
-        var containerBounds:CGRect = self.containerView.bounds
+    override func frameOfPresentedViewInContainerView() -> CGRect {
         var presentedViewFrame = CGRectZero
-        var width:CGFloat = containerBounds.size.width * 0.75
-        var height:CGFloat = containerBounds.size.height  * 0.25 // TODO: hard coded
+        
+        var width:CGFloat = containerView.bounds.size.width * 0.85
+        var height:CGFloat = containerView.bounds.size.height  * 0.75
+        
         presentedViewFrame.size = CGSizeMake(width,height)
-        presentedViewFrame.origin = CGPointMake(containerBounds.size.width / 2.0, containerBounds.size.height / 2.0)
+        presentedViewFrame.origin = CGPointMake(containerView.bounds.size.width / 2.0, containerView.bounds.size.height / 2.0)
+        
         presentedViewFrame.origin.x -= presentedViewFrame.size.width / 2.0;
         presentedViewFrame.origin.y -= presentedViewFrame.size.height / 2.0;
+        
         return presentedViewFrame
     }
     
     override func presentationTransitionWillBegin() {
-        self.dimmingView.alpha = 0.0
-        let containerView = self.containerView
+        dimmingView.alpha = 0.0
         dimmingView.frame = containerView.bounds
         dimmingView.alpha = 0.0
+        
         containerView.insertSubview(dimmingView, atIndex: 0)
         
         presentedViewController.transitionCoordinator()?.animateAlongsideTransition({ (context) -> Void in
@@ -66,5 +71,11 @@ class BlurredBackgroundPresentationController: UIPresentationController {
         presentedViewController.transitionCoordinator()?.animateAlongsideTransition({ (context) -> Void in
             self.dimmingView.alpha = 0.0
             }, completion: nil)
+    }
+    
+    override func dismissalTransitionDidEnd(completed: Bool) {
+        if completed {
+            dimmingView.removeFromSuperview()
+        }
     }
 }
