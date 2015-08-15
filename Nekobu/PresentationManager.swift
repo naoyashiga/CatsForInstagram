@@ -8,6 +8,12 @@
 
 import UIKit
 
+@objc public protocol RPZoomTransitionAnimating {
+    func transitionSourceImageView() -> UIImageView
+    func transitionSourceBackgroundColor() -> UIColor
+    func transitionDestinationImageViewFrame() -> CGRect
+}
+
 class PresentationManager: NSObject, UIViewControllerTransitioningDelegate {
     
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
@@ -15,6 +21,11 @@ class PresentationManager: NSObject, UIViewControllerTransitioningDelegate {
     }
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        let animator = TransitionPresentationAnimator()
+        animator.sourceVC = source
+        animator.destinationVC = presented
+        
         return TransitionPresentationAnimator()
     }
     

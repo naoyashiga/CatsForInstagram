@@ -16,7 +16,7 @@ struct topReuseId {
 //    static let headerView = "HomeHeaderView"
 }
 
-class TopCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate {
+class TopCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating {
     var mediaList = [Media]() {
         didSet {
             collectionView?.reloadData()
@@ -94,10 +94,47 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
     }
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return TransitionPresentationAnimator()
+        
+        let animator = TransitionPresentationAnimator()
+        animator.sourceVC = source
+        animator.destinationVC = presented
+        
+        return animator
     }
     
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return TransitionDismissAnimator()
+        
+        let animator = TransitionDismissAnimator()
+        animator.sourceVC = dismissed
+        animator.destinationVC = self
+        
+        return animator
+    }
+    
+    //MARK: NSZoomTransitionAnimating
+    func transitionSourceImageView() -> UIImageView {
+        if let selectedIndexPath = collectionView?.indexPathsForSelectedItems().first as? NSIndexPath {
+            self.selectedIndexPath = selectedIndexPath
+        }
+        
+        let cell = collectionView?.cellForItemAtIndexPath(self.selectedIndexPath) as! TopCollectionViewCell
+        let imageView = UIImageView(image: cell.thumbNailImageView.image)
+        
+        imageView.contentMode = cell.thumbNailImageView.contentMode
+        imageView.clipsToBounds = true
+        imageView.userInteractionEnabled = false
+        imageView.frame = cell.thumbNailImageView.convertRect(cell.thumbNailImageView.frame, toView: collectionView?.superview)
+        return imageView
+    }
+    
+    func transitionSourceBackgroundColor() -> UIColor {
+        return UIColor.blackColor()
+    }
+    
+    func transitionDestinationImageViewFrame() -> CGRect {
+        let cell = collectionView?.cellForItemAtIndexPath(selectedIndexPath) as! TopCollectionViewCell
+        let cellFrameInSuperview = cell.thumbNailImageView.convertRect(cell.thumbNailImageView.frame, toView: collectionView?.superview)
+        
+        return cellFrameInSuperview
     }
 }

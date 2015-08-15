@@ -33,7 +33,6 @@
 		9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DB31B7F167D0024E221 /* BlurredBackgroundPresentationController.swift */; };
 		9AE22DB71B7F22530024E221 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DB51B7F22530024E221 /* PhotoDetailViewController.swift */; };
 		9AE22DB81B7F22530024E221 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22DB61B7F22530024E221 /* PhotoDetailViewController.xib */; };
-		9AE22DBD1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DBC1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift */; };
 		9AE22DBF1B7F32CF0024E221 /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DBE1B7F32CF0024E221 /* PresentationManager.swift */; };
 		9AE22DC11B7F32FA0024E221 /* TransitionPresentationAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DC01B7F32FA0024E221 /* TransitionPresentationAnimator.swift */; };
 		9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DC21B7F33170024E221 /* TransitionDismissAnimator.swift */; };
@@ -82,7 +81,6 @@
 		9AE22DB31B7F167D0024E221 /* BlurredBackgroundPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredBackgroundPresentationController.swift; sourceTree = "<group>"; };
 		9AE22DB51B7F22530024E221 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		9AE22DB61B7F22530024E221 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
-		9AE22DBC1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPZoomTransitionAnimator.swift; sourceTree = "<group>"; };
 		9AE22DBE1B7F32CF0024E221 /* PresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationManager.swift; sourceTree = "<group>"; };
 		9AE22DC01B7F32FA0024E221 /* TransitionPresentationAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionPresentationAnimator.swift; sourceTree = "<group>"; };
 		9AE22DC21B7F33170024E221 /* TransitionDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDismissAnimator.swift; sourceTree = "<group>"; };
@@ -328,7 +326,6 @@
 		9AE22DB91B7F30350024E221 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				9AE22DBC1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift */,
 				9AE22DBE1B7F32CF0024E221 /* PresentationManager.swift */,
 				9AE22DC01B7F32FA0024E221 /* TransitionPresentationAnimator.swift */,
 				9AE22DC21B7F33170024E221 /* TransitionDismissAnimator.swift */,
@@ -486,7 +483,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AE22DBD1B7F30BA0024E221 /* RPZoomTransitionAnimator.swift in Sources */,
 				9AE22D9A1B7EFA610024E221 /* PageMenuViewController.swift in Sources */,
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
 				9AE22DAA1B7F0ABA0024E221 /* FavoriteCollectionViewController.swift in Sources */,
