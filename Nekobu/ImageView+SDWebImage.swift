@@ -13,7 +13,8 @@ extension UIImageView {
     func loadingImageBySDWebImage(media: Media) {
         
         sd_setImageWithURL(
-            media.thumbNailURL,
+            media.lowResolutionImageURL,
+//            media.standardImageURL,
             completed: { image, error, type, URL in
                 
                 self.alpha = 0

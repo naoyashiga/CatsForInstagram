@@ -13,15 +13,16 @@ import WebImage
 
 struct topReuseId {
     static let cell = "TopCollectionViewCell"
-//    static let headerView = "HomeHeaderView"
 }
 
 class TopCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating {
     var mediaList = [Media]() {
         didSet {
-            collectionView?.reloadData()
+//            collectionView?.reloadData()
         }
     }
+    
+    var pagenation = Pagenation(nextURLString: "")
     
     var selectedIndexPath = NSIndexPath()
     
@@ -32,29 +33,43 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         
         collectionView?.applyCellNib(cellNibName: topReuseId.cell)
 
-        Alamofire.request(.GET, Config.TAG).responseSwiftyJSON({ (_, _, json, error) in
-            if (error != nil) {
-                println("Error with registration: \(error?.localizedDescription)")
-            } else {
-                if let array = json["data"].array {
-                    
-                    for d in array {
-                        var media = Media(
-                            thumbNailURL: d["images"]["thumbnail"]["url"].URL,
-                            standardImageURL: d["images"]["standard_resolution"]["url"].URL
-                        )
-                        
-                        self.mediaList.append(media)
-                    }
-                }
-            }
-        })
         
+        loadPhoto(requestURL: Config.TAG)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loadPhoto(#requestURL: String) {
+        Alamofire.request(.GET, requestURL).responseSwiftyJSON({ (_, _, json, error) in
+            if (error != nil) {
+                println("Error with registration: \(error?.localizedDescription)")
+            } else {
+//                println(json)
+                if let array = json["data"].array {
+                    
+                    for d in array {
+                        var media = Media(
+                            lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
+                            standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL
+                        )
+                        
+                        self.mediaList.append(media)
+                    }
+                }
+                
+                
+                if let nextURLString = json["pagination"]["next_url"].string {
+                    self.pagenation = Pagenation(nextURLString: nextURLString)
+                }
+                
+                println("reload")
+                self.collectionView?.reloadData()
+            }
+        })
+        
     }
 
     // MARK: UICollectionViewDataSource
@@ -73,6 +88,11 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
     
         let media = mediaList[indexPath.row]
         cell.thumbNailImageView.loadingImageBySDWebImage(media)
+        
+        if indexPath.row == mediaList.count - 1 {
+            println("end contents")
+            loadPhoto(requestURL: pagenation.nextURLString)
+        }
     
         return cell
     }
@@ -85,7 +105,7 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         photoDetailVC.modalPresentationStyle = .Custom
         photoDetailVC.transitioningDelegate = self
         
-        photoDetailVC.detailImageURL = media.standardImageURL
+        photoDetailVC.detailImageURL = media.standardResolutionImageURL
         
         presentViewController(photoDetailVC, animated: true, completion: nil)
     }

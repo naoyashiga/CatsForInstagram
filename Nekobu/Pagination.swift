@@ -1,5 +1,5 @@
 //
-//  Media.swift
+//  Pagination.swift
 //  Nekobu
 //
 //  Created by naoyashiga on 2015/08/15.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-struct Media {
-    var lowResolutionImageURL: NSURL?
-    var standardResolutionImageURL: NSURL?
+struct Pagenation {
+    var nextURLString = ""
 }
