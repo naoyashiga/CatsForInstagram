@@ -14,16 +14,20 @@ class PageMenuViewController: UIViewController {
     
     private struct NibNameSet {
         static let topVC = "TopCollectionViewController"
+        static let favVC = "FavoriteCollectionViewController"
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let topVC = TopCollectionViewController(nibName: NibNameSet.topVC, bundle: nil)
+        let favVC = FavoriteCollectionViewController(nibName: NibNameSet.favVC, bundle: nil)
         
-        topVC.title = "cat"
+        topVC.title = "tag"
+        favVC.title = "fav"
         
         controllerArray.append(topVC)
+        controllerArray.append(favVC)
         
         let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.scrollMenuBackgroundColor()),
@@ -57,5 +61,4 @@ class PageMenuViewController: UIViewController {
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
-    
 }

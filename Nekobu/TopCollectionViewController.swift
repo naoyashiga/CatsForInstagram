@@ -11,18 +11,22 @@ import Alamofire
 import SwiftyJSON
 import WebImage
 
+protocol TopCollectionViewControllerDelegate {
+    func showDetailViewController()
+}
+
 struct topReuseId {
     static let cell = "TopCollectionViewCell"
 //    static let headerView = "HomeHeaderView"
 }
 
-class TopCollectionViewController: BaseCollectionViewController {
+class TopCollectionViewController: BaseCollectionViewController, TopCollectionViewControllerDelegate, UIViewControllerTransitioningDelegate {
     var mediaList = [Media]() {
         didSet {
             collectionView?.reloadData()
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,9 +76,27 @@ class TopCollectionViewController: BaseCollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(topReuseId.cell, forIndexPath: indexPath) as! TopCollectionViewCell
+        
+        showDetailViewController()
     }
 
     // MARK: UICollectionViewDelegate
+    func showDetailViewController() {
+        
+        let photoDetailVC = PhotoDetailViewController(nibName: "PhotoDetailViewController", bundle: nil)
+        photoDetailVC.modalPresentationStyle = .Custom
+        photoDetailVC.transitioningDelegate = self
+        
+        presentViewController(photoDetailVC, animated: true, completion: {
+            
+        })
+    }
+    
+    // MARK: UIViewControllerTransitioningDelegate
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
+        return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: presenting)
+    }
+    
 
 }
 
