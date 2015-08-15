@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D591B7ED1430024E221 /* AppDelegate.swift */; };
+		9AE22D5C1B7ED1430024E221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D5B1B7ED1430024E221 /* ViewController.swift */; };
+		9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D5D1B7ED1430024E221 /* Main.storyboard */; };
+		9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D601B7ED1430024E221 /* Images.xcassets */; };
+		9AE22D641B7ED1430024E221 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D621B7ED1430024E221 /* LaunchScreen.xib */; };
+		9AE22D701B7ED1430024E221 /* NekobuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D6F1B7ED1430024E221 /* NekobuTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AE22D6A1B7ED1430024E221 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE22D4C1B7ED1420024E221 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE22D531B7ED1420024E221;
+			remoteInfo = Nekobu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AE22D541B7ED1430024E221 /* Nekobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nekobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE22D581B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE22D591B7ED1430024E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AE22D5B1B7ED1430024E221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AE22D5E1B7ED1430024E221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AE22D601B7ED1430024E221 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9AE22D631B7ED1430024E221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9AE22D691B7ED1430024E221 /* NekobuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NekobuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE22D6E1B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE22D6F1B7ED1430024E221 /* NekobuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NekobuTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AE22D511B7ED1420024E221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE22D661B7ED1430024E221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AE22D4B1B7ED1420024E221 = {
+			isa = PBXGroup;
+			children = (
+				9AE22D561B7ED1430024E221 /* Nekobu */,
+				9AE22D6C1B7ED1430024E221 /* NekobuTests */,
+				9AE22D551B7ED1430024E221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AE22D551B7ED1430024E221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D541B7ED1430024E221 /* Nekobu.app */,
+				9AE22D691B7ED1430024E221 /* NekobuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AE22D561B7ED1430024E221 /* Nekobu */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D591B7ED1430024E221 /* AppDelegate.swift */,
+				9AE22D5B1B7ED1430024E221 /* ViewController.swift */,
+				9AE22D5D1B7ED1430024E221 /* Main.storyboard */,
+				9AE22D601B7ED1430024E221 /* Images.xcassets */,
+				9AE22D621B7ED1430024E221 /* LaunchScreen.xib */,
+				9AE22D571B7ED1430024E221 /* Supporting Files */,
+			);
+			path = Nekobu;
+			sourceTree = "<group>";
+		};
+		9AE22D571B7ED1430024E221 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D581B7ED1430024E221 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AE22D6C1B7ED1430024E221 /* NekobuTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D6F1B7ED1430024E221 /* NekobuTests.swift */,
+				9AE22D6D1B7ED1430024E221 /* Supporting Files */,
+			);
+			path = NekobuTests;
+			sourceTree = "<group>";
+		};
+		9AE22D6D1B7ED1430024E221 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D6E1B7ED1430024E221 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AE22D531B7ED1420024E221 /* Nekobu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE22D731B7ED1430024E221 /* Build configuration list for PBXNativeTarget "Nekobu" */;
+			buildPhases = (
+				9AE22D501B7ED1420024E221 /* Sources */,
+				9AE22D511B7ED1420024E221 /* Frameworks */,
+				9AE22D521B7ED1420024E221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nekobu;
+			productName = Nekobu;
+			productReference = 9AE22D541B7ED1430024E221 /* Nekobu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AE22D681B7ED1430024E221 /* NekobuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE22D761B7ED1430024E221 /* Build configuration list for PBXNativeTarget "NekobuTests" */;
+			buildPhases = (
+				9AE22D651B7ED1430024E221 /* Sources */,
+				9AE22D661B7ED1430024E221 /* Frameworks */,
+				9AE22D671B7ED1430024E221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AE22D6B1B7ED1430024E221 /* PBXTargetDependency */,
+			);
+			name = NekobuTests;
+			productName = NekobuTests;
+			productReference = 9AE22D691B7ED1430024E221 /* NekobuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AE22D4C1B7ED1420024E221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = naoyashiga;
+				TargetAttributes = {
+					9AE22D531B7ED1420024E221 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					9AE22D681B7ED1430024E221 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 9AE22D531B7ED1420024E221;
+					};
+				};
+			};
+			buildConfigurationList = 9AE22D4F1B7ED1420024E221 /* Build configuration list for PBXProject "Nekobu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AE22D4B1B7ED1420024E221;
+			productRefGroup = 9AE22D551B7ED1430024E221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AE22D531B7ED1420024E221 /* Nekobu */,
+				9AE22D681B7ED1430024E221 /* NekobuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AE22D521B7ED1420024E221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */,
+				9AE22D641B7ED1430024E221 /* LaunchScreen.xib in Resources */,
+				9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE22D671B7ED1430024E221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AE22D501B7ED1420024E221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE22D5C1B7ED1430024E221 /* ViewController.swift in Sources */,
+				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE22D651B7ED1430024E221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE22D701B7ED1430024E221 /* NekobuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AE22D6B1B7ED1430024E221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AE22D531B7ED1420024E221 /* Nekobu */;
+			targetProxy = 9AE22D6A1B7ED1430024E221 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AE22D5D1B7ED1430024E221 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE22D5E1B7ED1430024E221 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AE22D621B7ED1430024E221 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE22D631B7ED1430024E221 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AE22D711B7ED1430024E221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AE22D721B7ED1430024E221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AE22D741B7ED1430024E221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nekobu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AE22D751B7ED1430024E221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Nekobu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9AE22D771B7ED1430024E221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NekobuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nekobu.app/Nekobu";
+			};
+			name = Debug;
+		};
+		9AE22D781B7ED1430024E221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NekobuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nekobu.app/Nekobu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AE22D4F1B7ED1420024E221 /* Build configuration list for PBXProject "Nekobu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE22D711B7ED1430024E221 /* Debug */,
+				9AE22D721B7ED1430024E221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE22D731B7ED1430024E221 /* Build configuration list for PBXNativeTarget "Nekobu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE22D741B7ED1430024E221 /* Debug */,
+				9AE22D751B7ED1430024E221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AE22D761B7ED1430024E221 /* Build configuration list for PBXNativeTarget "NekobuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE22D771B7ED1430024E221 /* Debug */,
+				9AE22D781B7ED1430024E221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AE22D4C1B7ED1420024E221 /* Project object */;
+}
