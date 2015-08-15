@@ -10,4 +10,5 @@ import Foundation
 
 struct Media {
     var thumbNailURL: NSURL?
+    var standardImageURL: NSURL?
 }

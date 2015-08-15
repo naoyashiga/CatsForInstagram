@@ -35,7 +35,10 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
                 if let array = json["data"].array {
                     
                     for d in array {
-                        var media = Media(thumbNailURL: d["images"]["thumbnail"]["url"].URL)
+                        var media = Media(
+                            thumbNailURL: d["images"]["thumbnail"]["url"].URL,
+                            standardImageURL: d["images"]["standard_resolution"]["url"].URL
+                        )
                         
                         self.mediaList.append(media)
                     }
@@ -77,7 +80,7 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         let photoDetailVC = PhotoDetailViewController(nibName: "PhotoDetailViewController", bundle: nil)
         photoDetailVC.modalPresentationStyle = .Custom
         photoDetailVC.transitioningDelegate = self
-        photoDetailVC.detailImageURL = media.thumbNailURL
+        photoDetailVC.detailImageURL = media.standardImageURL
         
         presentViewController(photoDetailVC, animated: true, completion: {
             
