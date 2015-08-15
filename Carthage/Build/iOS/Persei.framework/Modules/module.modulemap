@@ -1,0 +1,10 @@
+framework module Persei {
+  umbrella header "Persei.h"
+
+  export *
+  module * { export * }
+}
+
+module Persei.Swift {
+    header "Persei-Swift.h"
+}

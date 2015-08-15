@@ -7,18 +7,12 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Alamofire.request(.GET, Config.TAG)
-            .responseJSON { _, _, JSON, _ in
-                println(JSON)
-        }
     }
 
     override func didReceiveMemoryWarning() {

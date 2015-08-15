@@ -16,6 +16,12 @@
 		9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */; };
 		9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */; };
 		9AE22D811B7ED77A0024E221 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D801B7ED77A0024E221 /* Config.swift */; };
+		9AE22D851B7EE6210024E221 /* Persei.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22D841B7EE6210024E221 /* Persei.framework */; };
+		9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D871B7EE69A0024E221 /* TopCollectionViewController.swift */; };
+		9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D8A1B7EE6BF0024E221 /* TopCollectionViewCell.swift */; };
+		9AE22D8D1B7EE6BF0024E221 /* TopCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D8B1B7EE6BF0024E221 /* TopCollectionViewCell.xib */; };
+		9AE22D911B7EE7660024E221 /* UICollectionView+NibSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D901B7EE7660024E221 /* UICollectionView+NibSetting.swift */; };
+		9AE22D931B7EE8620024E221 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D921B7EE8620024E221 /* BaseCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +48,12 @@
 		9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = ../Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		9AE22D801B7ED77A0024E221 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		9AE22D841B7EE6210024E221 /* Persei.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Persei.framework; path = ../Carthage/Build/iOS/Persei.framework; sourceTree = "<group>"; };
+		9AE22D871B7EE69A0024E221 /* TopCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCollectionViewController.swift; sourceTree = "<group>"; };
+		9AE22D8A1B7EE6BF0024E221 /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AE22D8B1B7EE6BF0024E221 /* TopCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AE22D901B7EE7660024E221 /* UICollectionView+NibSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+NibSetting.swift"; sourceTree = "<group>"; };
+		9AE22D921B7EE8620024E221 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			files = (
 				9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */,
 				9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */,
+				9AE22D851B7EE6210024E221 /* Persei.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +98,12 @@
 		9AE22D561B7ED1430024E221 /* Nekobu */ = {
 			isa = PBXGroup;
 			children = (
+				9AE22D8E1B7EE7450024E221 /* UI */,
 				9AE22D7F1B7ED7670024E221 /* Config */,
 				9AE22D591B7ED1430024E221 /* AppDelegate.swift */,
 				9AE22D5B1B7ED1430024E221 /* ViewController.swift */,
+				9AE22D891B7EE6A20024E221 /* View */,
+				9AE22D861B7EE6800024E221 /* Controllers */,
 				9AE22D5D1B7ED1430024E221 /* Main.storyboard */,
 				9AE22D601B7ED1430024E221 /* Images.xcassets */,
 				9AE22D621B7ED1430024E221 /* LaunchScreen.xib */,
@@ -125,6 +141,7 @@
 		9AE22D7E1B7ED6C10024E221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AE22D841B7EE6210024E221 /* Persei.framework */,
 				9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */,
 				9AE22D7A1B7ED41D0024E221 /* Alamofire.framework */,
 			);
@@ -137,6 +154,56 @@
 				9AE22D801B7ED77A0024E221 /* Config.swift */,
 			);
 			name = Config;
+			sourceTree = "<group>";
+		};
+		9AE22D861B7EE6800024E221 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D951B7EE92B0024E221 /* Top */,
+				9AE22D941B7EE9230024E221 /* Base */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9AE22D891B7EE6A20024E221 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D8A1B7EE6BF0024E221 /* TopCollectionViewCell.swift */,
+				9AE22D8B1B7EE6BF0024E221 /* TopCollectionViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9AE22D8E1B7EE7450024E221 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D8F1B7EE74D0024E221 /* CollectionView */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		9AE22D8F1B7EE74D0024E221 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D901B7EE7660024E221 /* UICollectionView+NibSetting.swift */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		9AE22D941B7EE9230024E221 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D921B7EE8620024E221 /* BaseCollectionViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		9AE22D951B7EE92B0024E221 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22D871B7EE69A0024E221 /* TopCollectionViewController.swift */,
+			);
+			name = Top;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AE22D8D1B7EE6BF0024E221 /* TopCollectionViewCell.xib in Resources */,
 				9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */,
 				9AE22D641B7ED1430024E221 /* LaunchScreen.xib in Resources */,
 				9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */,
@@ -244,6 +312,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Persei.framework",
 			);
 			outputPaths = (
 			);
@@ -260,7 +329,11 @@
 			files = (
 				9AE22D5C1B7ED1430024E221 /* ViewController.swift in Sources */,
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
+				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
+				9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */,
+				9AE22D931B7EE8620024E221 /* BaseCollectionViewController.swift in Sources */,
 				9AE22D811B7ED77A0024E221 /* Config.swift in Sources */,
+				9AE22D911B7EE7660024E221 /* UICollectionView+NibSetting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
