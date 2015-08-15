@@ -7,18 +7,37 @@
         <!--Navigation Controller-->
         <scene sceneID="bCM-q0-i41">
             <objects>
-                <navigationController navigationBarHidden="YES" id="itW-46-HcM" sceneMemberID="viewController">
+                <navigationController id="itW-46-HcM" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b5a-R6-HqU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="q0J-bK-oFN" kind="relationship" relationship="rootViewController" id="lwr-32-s1W"/>
+                        <segue destination="OKr-K6-tJ4" kind="relationship" relationship="rootViewController" id="s4A-M7-sMV"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sK-Ck-FcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="198" y="256"/>
+        </scene>
+        <!--Page Menu View Controller-->
+        <scene sceneID="Pwr-jg-cUc">
+            <objects>
+                <viewController id="OKr-K6-tJ4" customClass="PageMenuViewController" customModule="Nekobu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dUw-yO-c8o"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvQ-zl-IUT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3MA-ne-yzI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="z3s-ZW-lVv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ad9-Dg-Hfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="256"/>
         </scene>
         <!--Top Collection View Controller-->
         <scene sceneID="jA2-B4-V4Y">
@@ -53,7 +72,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCv-jW-APG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="882" y="256"/>
+            <point key="canvasLocation" x="1766" y="256"/>
         </scene>
     </scenes>
 </document>
