@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoDetailViewController" customModule="Nekobu" customModuleProvider="target">
             <connections>
+                <outlet property="detailImageView" destination="gT3-gg-0Xl" id="1qg-v1-N2e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +14,57 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gT3-gg-0Xl" userLabel="DetailImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="aBg-bc-YJl"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69i-t6-mx2">
+                    <rect key="frame" x="174" y="417" width="56" height="30"/>
+                    <state key="normal" title="Favorite">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="favoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="w6F-lX-tpW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DC7-az-ISp">
+                    <rect key="frame" x="372" y="417" width="38" height="30"/>
+                    <state key="normal" title="share">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareButtonTapped:" destination="-1" eventType="touchUpInside" id="cA1-zI-3vI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-ud-MCD">
+                    <rect key="frame" x="274" y="540" width="52" height="30"/>
+                    <state key="normal" title="dismiss">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissButtonTapped:" destination="-1" eventType="touchUpInside" id="HDo-2I-3pt"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gT3-gg-0Xl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HYP-3y-wfS"/>
+                <constraint firstAttribute="bottom" secondItem="4gP-ud-MCD" secondAttribute="bottom" constant="30" id="I4h-WP-Ynu"/>
+                <constraint firstItem="DC7-az-ISp" firstAttribute="top" secondItem="gT3-gg-0Xl" secondAttribute="bottom" constant="17" id="KuK-6n-7R5"/>
+                <constraint firstAttribute="centerX" secondItem="4gP-ud-MCD" secondAttribute="centerX" id="VxP-pb-94y"/>
+                <constraint firstItem="69i-t6-mx2" firstAttribute="top" secondItem="gT3-gg-0Xl" secondAttribute="bottom" constant="17" id="ako-IU-C1i"/>
+                <constraint firstItem="gT3-gg-0Xl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lEK-fG-Jqf"/>
+                <constraint firstAttribute="centerX" secondItem="DC7-az-ISp" secondAttribute="centerX" constant="-91" id="mTf-P6-oAu"/>
+                <constraint firstAttribute="trailing" secondItem="gT3-gg-0Xl" secondAttribute="trailing" id="sLg-Pt-Gvf"/>
+                <constraint firstAttribute="centerX" secondItem="69i-t6-mx2" secondAttribute="centerX" constant="98" id="zmh-Td-kSs"/>
+            </constraints>
         </view>
+        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="9rR-MN-PQa">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+        </imageView>
     </objects>
 </document>

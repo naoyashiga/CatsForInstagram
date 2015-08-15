@@ -9,13 +9,23 @@
 import UIKit
 
 class PhotoDetailViewController: UIViewController {
+    @IBOutlet var detailImageView: UIImageView!
+    var detailImageURL: NSURL?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        detailImageView.sd_setImageWithURL(detailImageURL)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+    @IBAction func favoriteButtonTapped(sender: UIButton) {
+    }
+    @IBAction func shareButtonTapped(sender: UIButton) {
+    }
+    @IBAction func dismissButtonTapped(sender: UIButton) {
+    }
 }
