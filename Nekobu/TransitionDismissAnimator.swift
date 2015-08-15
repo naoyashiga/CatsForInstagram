@@ -13,8 +13,8 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
     var sourceVC = UIViewController()
     var destinationVC = UIViewController()
     
-    let kBackwardAnimationDuration: NSTimeInterval = 0.4
-    let kBackwardCompleteAnimationDuration: NSTimeInterval = 0.4
+    let kBackwardAnimationDuration: NSTimeInterval = 0.3
+    let kBackwardCompleteAnimationDuration: NSTimeInterval = 0.3
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
         return kBackwardAnimationDuration
@@ -44,16 +44,19 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
             destinationImageViewFrame = destinationViewController.transitionDestinationImageViewFrame()
         }
         
+        if let photoDetailViewController = sourceVC as? PhotoDetailViewController {
+            photoDetailViewController.detailImageView.hidden = true
+        }
+        
         UIView.animateWithDuration(
             kBackwardCompleteAnimationDuration,
             delay: 0,
-            usingSpringWithDamping: 3.4,
-            initialSpringVelocity: 0,
             options: .CurveEaseOut,
             animations: {
                 sourceImageView.frame = destinationImageViewFrame
                 
-                fromVC.view.alpha = 0.0
+//                sourceImageView.alpha = 0
+//                fromVC.view.alpha = 0.0
             
             }, completion: {finished in
                 if finished {

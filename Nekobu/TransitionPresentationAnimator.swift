@@ -12,8 +12,8 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
     var sourceVC = UIViewController()
     var destinationVC = UIViewController()
     
-    let kForwardAnimationDuration: NSTimeInterval = 0.4
-    let kForwardCompleteAnimationDuration: NSTimeInterval = 0.4
+    let kForwardAnimationDuration: NSTimeInterval = 0.3
+    let kForwardCompleteAnimationDuration: NSTimeInterval = 0.3
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
         return kForwardAnimationDuration
@@ -44,6 +44,9 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         if let destinationViewController = destinationVC as? RPZoomTransitionAnimating {
             destinationImageView = destinationViewController.transitionSourceImageView()
             destinationImageView.hidden = true
+            destinationImageView.alpha = 0
+            
+            
             
             destinationImageViewFrame = destinationViewController.transitionDestinationImageViewFrame()
         }
@@ -51,11 +54,10 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         UIView.animateWithDuration(
             kForwardCompleteAnimationDuration,
             delay: 0,
-            usingSpringWithDamping: 3.4,
-            initialSpringVelocity: 0,
             options: .CurveEaseOut,
             animations: {
                 sourceImageView.frame = destinationImageViewFrame
+                
                 
             }, completion: { finished in
                 if finished {
@@ -63,6 +65,16 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
                     sourceImageView.removeFromSuperview()
                 }
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
+        })
+        
+        UIView.animateWithDuration(
+            kForwardCompleteAnimationDuration / 4,
+            delay: kForwardCompleteAnimationDuration / 2,
+            options: .CurveEaseOut,
+            animations: {
+                destinationImageView.alpha = 1
+                
+            }, completion: { finished in
         })
     }
 }

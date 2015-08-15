@@ -83,15 +83,15 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         let media = mediaList[indexPath.row]
         let photoDetailVC = PhotoDetailViewController(nibName: "PhotoDetailViewController", bundle: nil)
         photoDetailVC.modalPresentationStyle = .Custom
-//        photoDetailVC.transitioningDelegate = PresentationManager()
         photoDetailVC.transitioningDelegate = self
+        
         photoDetailVC.detailImageURL = media.standardImageURL
         
         presentViewController(photoDetailVC, animated: true, completion: nil)
     }
     
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
-//        return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: presenting)
+        
         return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: source)
     }
     
@@ -137,6 +137,8 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         let cell = collectionView?.cellForItemAtIndexPath(selectedIndexPath) as! TopCollectionViewCell
         let cellFrameInSuperview = cell.thumbNailImageView.convertRect(cell.thumbNailImageView.frame, toView: collectionView?.superview)
         
-        return cellFrameInSuperview
+        let resizedCellFrameInSuperview = CGRectMake(cellFrameInSuperview.origin.x, cellFrameInSuperview.origin.y + PageMenuConstraint.menuHeight, cellFrameInSuperview.size.width, cellFrameInSuperview.size.height)
+        
+        return resizedCellFrameInSuperview
     }
 }

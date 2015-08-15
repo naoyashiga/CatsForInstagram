@@ -38,7 +38,7 @@ class PageMenuViewController: UIViewController {
             .UnselectedMenuItemLabelColor(UIColor.unselectedMenuItemLabelColor()),
             .SelectionIndicatorHeight(2.0),
             .MenuItemFont(UIFont(name: "HiraKakuProN-W6", size: 12.0)!),
-            .MenuHeight(30.0),
+            .MenuHeight(PageMenuConstraint.menuHeight),
             .MenuItemWidth(80.0),
             .MenuMargin(0.0),
             //            "useMenuLikeSegmentedControl": true,

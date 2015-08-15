@@ -10,8 +10,9 @@ import UIKit
 
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var detailImageView: UIImageView!
+    
     var detailImageURL: NSURL?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
