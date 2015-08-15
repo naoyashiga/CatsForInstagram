@@ -36,13 +36,13 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         toViewController.view.layoutIfNeeded()
         
         if let sourceViewController = sourceVC as? RPZoomTransitionAnimating {
-            sourceImageView.image = sourceViewController.transitionSourceImageView().image
-            sourceImageView.frame = sourceViewController.transitionSourceImageView().frame
+            sourceImageView.image = sourceViewController.calculatedPositionSourceImageView().image
+            sourceImageView.frame = sourceViewController.calculatedPositionSourceImageView().frame
             containerView.addSubview(sourceImageView)
         }
         
         if let destinationViewController = destinationVC as? RPZoomTransitionAnimating {
-            destinationImageView = destinationViewController.transitionSourceImageView()
+            destinationImageView = destinationViewController.sourceImageView()
             destinationImageView.hidden = true
             destinationImageView.alpha = 0
             

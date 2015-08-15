@@ -58,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/TopCollectionViewController.swift"
-            timestampString = "461327390.61999"
+            timestampString = "461330652.3286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
-            landmarkName = "transitionSourceImageView()"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "calculatedPositionSourceImageView()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/PhotoDetailViewController.swift"
-            timestampString = "461327390.61999"
+            timestampString = "461330121.336865"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "transitionDestinationImageViewFrame()"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/TopCollectionViewController.swift"
-            timestampString = "461329510.547857"
+            timestampString = "461330652.3286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "transitionDestinationImageViewFrame()"
             landmarkType = "5">
          </BreakpointContent>

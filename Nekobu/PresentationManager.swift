@@ -9,8 +9,8 @@
 import UIKit
 
 @objc public protocol RPZoomTransitionAnimating {
-    func transitionSourceImageView() -> UIImageView
-    func transitionSourceBackgroundColor() -> UIColor
+    func calculatedPositionSourceImageView() -> UIImageView
+    func sourceImageView() -> UIImageView
     func transitionDestinationImageViewFrame() -> CGRect
 }
 

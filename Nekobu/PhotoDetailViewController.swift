@@ -38,12 +38,15 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func transitionSourceImageView() -> UIImageView {
+    func sourceImageView() -> UIImageView {
         return detailImageView
     }
     
-    func transitionSourceBackgroundColor() -> UIColor {
-        return view.backgroundColor!
+    func calculatedPositionSourceImageView() -> UIImageView {
+        let calculatedImageView = UIImageView()
+        calculatedImageView.image = detailImageView.image
+        calculatedImageView.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y, detailImageView.frame.width, detailImageView.frame.height)
+        return calculatedImageView
     }
     
     func transitionDestinationImageViewFrame() -> CGRect {

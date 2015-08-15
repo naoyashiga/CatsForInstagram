@@ -32,13 +32,13 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
         containerView.addSubview(fromVC.view)
         
         if let sourceViewController = sourceVC as? RPZoomTransitionAnimating {
-            sourceImageView.image = sourceViewController.transitionSourceImageView().image
-            sourceImageView.frame = sourceViewController.transitionSourceImageView().frame
+            sourceImageView.image = sourceViewController.calculatedPositionSourceImageView().image
+            sourceImageView.frame = sourceViewController.calculatedPositionSourceImageView().frame
             containerView.addSubview(sourceImageView)
         }
         
         if let destinationViewController = destinationVC as? RPZoomTransitionAnimating {
-            destinationImageView = destinationViewController.transitionSourceImageView()
+            destinationImageView = destinationViewController.calculatedPositionSourceImageView()
             destinationImageView.hidden = true
             
             destinationImageViewFrame = destinationViewController.transitionDestinationImageViewFrame()

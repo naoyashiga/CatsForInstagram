@@ -113,8 +113,13 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         return animator
     }
     
-    //MARK: NSZoomTransitionAnimating
-    func transitionSourceImageView() -> UIImageView {
+    //MARK: RPZoomTransitionAnimating
+    func sourceImageView() -> UIImageView {
+        //使用しない
+        return UIImageView()
+    }
+    
+    func calculatedPositionSourceImageView() -> UIImageView {
         if let selectedIndexPath = collectionView?.indexPathsForSelectedItems().first as? NSIndexPath {
             self.selectedIndexPath = selectedIndexPath
         }
@@ -127,10 +132,6 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         imageView.userInteractionEnabled = false
         imageView.frame = cell.thumbNailImageView.convertRect(cell.thumbNailImageView.frame, toView: collectionView?.superview)
         return imageView
-    }
-    
-    func transitionSourceBackgroundColor() -> UIColor {
-        return UIColor.blackColor()
     }
     
     func transitionDestinationImageViewFrame() -> CGRect {
