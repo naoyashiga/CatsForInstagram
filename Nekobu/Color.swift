@@ -35,11 +35,11 @@ extension UIColor {
     
     //MARK: Tab Color
     class func scrollMenuBackgroundColor() -> UIColor {
-        return UIColor.hexStr("5e4185", alpha: 1)
+        return UIColor.hexStr("AAD9D1", alpha: 1)
     }
     
     class func selectionIndicatorColor() -> UIColor {
-        return UIColor.hexStr("efefef", alpha: 1)
+        return UIColor.hexStr("72505E", alpha: 1)
     }
     
     class func bottomMenuHairlineColor() -> UIColor {
@@ -47,10 +47,10 @@ extension UIColor {
     }
     
     class func selectedMenuItemLabelColor() -> UIColor {
-        return UIColor.hexStr("efefef", alpha: 1)
+        return UIColor.hexStr("72505E", alpha: 1)
     }
     
     class func unselectedMenuItemLabelColor() -> UIColor {
-        return UIColor.hexStr("2b284d", alpha: 1)
+        return UIColor.hexStr("efefef", alpha: 1)
     }
 }
