@@ -11,6 +11,7 @@ import RealmSwift
 
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var detailImageView: UIImageView!
+    @IBOutlet var favoriteButton: UIButton!
     
     var detailImageURL: NSURL?
     var media = Media()
@@ -22,6 +23,19 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         view.clipsToBounds = true
         
         detailImageView.sd_setImageWithURL(detailImageURL)
+        
+        let realm = Realm()
+        let predicate = NSPredicate(format: "id == %@", media.id)
+        
+        if realm.objects(Favorite).filter(predicate).count == 0 {
+            //お気に入り未登録
+            println("お気に入り未登録")
+            favoriteButton.selected = false
+        } else {
+            //お気に入り登録済み
+            println("お気に入り登録済み")
+            favoriteButton.selected = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,26 +43,48 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
 
     @IBAction func favoriteButtonTapped(sender: UIButton) {
-        let favorite = Favorite()
-        favorite.id = media.id
-        
-        if let url = media.lowResolutionImageURL {
-            favorite.lowResolutionImageURLString = url.absoluteString!
-        }
-        
-        if let url = media.standardResolutionImageURL {
-            favorite.standardResolutionImageURLString = url.absoluteString!
-        }
-        
-        favorite.createdAt = NSDate().timeIntervalSince1970
         
         let realm = Realm()
         
-        realm.write {
-            println("add fav")
-            realm.add(favorite, update: true)
-        }
+        let predicate = NSPredicate(format: "id == %@", media.id)
+        let exisitingFavoriteArray = realm.objects(Favorite).filter(predicate)
         
+        if favoriteButton.selected {
+            //お気に入り削除
+            if exisitingFavoriteArray.count != 0 {
+                
+                realm.write {
+                    println("remove fav")
+                    realm.delete(exisitingFavoriteArray[0])
+                    
+                    self.favoriteButton.selected = false
+                }
+            }
+            
+        } else {
+            //お気に入り追加
+            if exisitingFavoriteArray.count == 0 {
+                let favorite = Favorite()
+                favorite.id = media.id
+                
+                if let url = media.lowResolutionImageURL {
+                    favorite.lowResolutionImageURLString = url.absoluteString!
+                }
+                
+                if let url = media.standardResolutionImageURL {
+                    favorite.standardResolutionImageURLString = url.absoluteString!
+                }
+                
+                favorite.createdAt = NSDate().timeIntervalSince1970
+                
+                realm.write {
+                    println("add fav")
+                    realm.add(favorite, update: true)
+                    
+                    self.favoriteButton.selected = true
+                }
+            }
+        }
     }
     
     @IBAction func shareButtonTapped(sender: UIButton) {

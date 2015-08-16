@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoDetailViewController" customModule="Nekobu" customModuleProvider="target">
             <connections>
                 <outlet property="detailImageView" destination="gT3-gg-0Xl" id="1qg-v1-N2e"/>
+                <outlet property="favoriteButton" destination="69i-t6-mx2" id="rFn-nG-XmB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,13 +23,13 @@
                         <constraint firstAttribute="width" secondItem="gT3-gg-0Xl" secondAttribute="height" multiplier="1:1" id="Now-gP-Y6f"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69i-t6-mx2">
-                    <rect key="frame" x="101" y="430" width="56" height="30"/>
-                    <color key="backgroundColor" red="0.89595562849999999" green="0.32168762620000002" blue="0.44314015670000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Favorite">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69i-t6-mx2" userLabel="favoriteButton">
+                    <rect key="frame" x="113" y="430" width="32" height="29"/>
+                    <state key="normal" image="fav_off">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <state key="selected" image="fav_on"/>
                     <connections>
                         <action selector="favoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="w6F-lX-tpW"/>
                     </connections>
@@ -71,4 +72,8 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="fav_off" width="32" height="29"/>
+        <image name="fav_on" width="32" height="29"/>
+    </resources>
 </document>
