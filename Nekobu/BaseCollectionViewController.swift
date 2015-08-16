@@ -19,6 +19,7 @@ struct cellMargin {
 }
 
 class BaseCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +32,20 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
         
         if let collectionView = collectionView {
             collectionView.contentInset = UIEdgeInsetsMake(edgeInsetTop, 0, edgeInsetBottom, 0)
+            
+            refreshControl = UIRefreshControl()
+            refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
+            collectionView.addSubview(refreshControl)
         }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func refresh() {
+        collectionView?.reloadData()
+        refreshControl.endRefreshing()
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
