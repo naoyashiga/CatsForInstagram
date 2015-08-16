@@ -40,6 +40,7 @@
 		9AE22DCA1B7F37CA0024E221 /* SwiftyJSON+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DC91B7F37CA0024E221 /* SwiftyJSON+Request.swift */; };
 		9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DCC1B7F513D0024E221 /* PageMenuConstraint.swift */; };
 		9AE22DCF1B7F67700024E221 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DCE1B7F67700024E221 /* Pagination.swift */; };
+		9AE22DD11B8018510024E221 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD01B8018510024E221 /* Video.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		9AE22DC91B7F37CA0024E221 /* SwiftyJSON+Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Request.swift"; sourceTree = "<group>"; };
 		9AE22DCC1B7F513D0024E221 /* PageMenuConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuConstraint.swift; sourceTree = "<group>"; };
 		9AE22DCE1B7F67700024E221 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
+		9AE22DD01B8018510024E221 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE22DA51B7F04180024E221 /* Media.swift */,
+				9AE22DD01B8018510024E221 /* Video.swift */,
 				9AE22DCE1B7F67700024E221 /* Pagination.swift */,
 			);
 			name = Model;
@@ -504,6 +507,7 @@
 				9AE22D9D1B7EFB070024E221 /* Color.swift in Sources */,
 				9AE22DB01B7F0B270024E221 /* FavoriteCollectionViewCell.swift in Sources */,
 				9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */,
+				9AE22DD11B8018510024E221 /* Video.swift in Sources */,
 				9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */,
 				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
 				9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */,

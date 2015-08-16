@@ -51,12 +51,34 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
                 if let array = json["data"].array {
                     
                     for d in array {
-                        var media = Media(
-                            lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
-                            standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL
-                        )
                         
-                        self.mediaList.append(media)
+                        let media: Media
+                        
+                        if d["type"].string == "image" {
+                            media = Media(
+                                type: "image",
+                                lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
+                                standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL,
+                                video: nil
+                            )
+                            
+                            self.mediaList.append(media)
+                            
+                        } else if d["type"].string == "video" {
+//                            let video = Video(
+//                                lowResolutionVideoURL: d["videos"]["low_resolution"]["url"].URL,
+//                                standardResolutionVideoURL: d["videos"]["standard_resolution"]["url"].URL
+//                                )
+//                            
+//                            media = Media(
+//                                type: "video",
+//                                lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
+//                                standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL,
+//                                video: video
+//                            )
+//                            
+//                            self.mediaList.append(media)
+                        }
                     }
                 }
                 
@@ -87,9 +109,10 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(topReuseId.cell, forIndexPath: indexPath) as! TopCollectionViewCell
     
         let media = mediaList[indexPath.row]
+        
         cell.thumbNailImageView.loadingImageBySDWebImage(media)
         
-        if indexPath.row == mediaList.count - 1 {
+        if indexPath.row == mediaList.count - 4 {
             println("end contents")
             loadPhoto(requestURL: pagenation.nextURLString)
         }

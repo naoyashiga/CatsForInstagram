@@ -11,6 +11,7 @@ import UIKit
 class TopCollectionViewCell: UICollectionViewCell {
     @IBOutlet var thumbNailImageView: UIImageView!
 
+    @IBOutlet var playVideoImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
