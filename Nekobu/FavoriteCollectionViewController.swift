@@ -27,6 +27,10 @@ class FavoriteCollectionViewController: BaseCollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        collectionView?.emptyDataSetDelegate = self
+        collectionView?.emptyDataSetSource = self
+        
         collectionView?.applyCellNib(cellNibName: favoriteReuseId.cell)
     }
 

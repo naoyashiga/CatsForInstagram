@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
+		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D591B7ED1430024E221 /* AppDelegate.swift */; };
 		9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D5D1B7ED1430024E221 /* Main.storyboard */; };
 		9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D601B7ED1430024E221 /* Images.xcassets */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
+		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AE22D541B7ED1430024E221 /* Nekobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nekobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE22D581B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE22D591B7ED1430024E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 				9AE22DA31B7F01690024E221 /* WebImage.framework in Frameworks */,
 				9AE22DD41B8021AD0024E221 /* Realm.framework in Frameworks */,
 				9AE22DD51B8021AD0024E221 /* RealmSwift.framework in Frameworks */,
+				9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +194,7 @@
 		9AE22D7E1B7ED6C10024E221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */,
 				9AE22DD21B8021AD0024E221 /* Realm.framework */,
 				9AE22DD31B8021AD0024E221 /* RealmSwift.framework */,
 				9AE22DA21B7F01690024E221 /* WebImage.framework */,
@@ -314,6 +320,7 @@
 			children = (
 				9AE22DA81B7F0ABA0024E221 /* FavoriteCollectionViewController.swift */,
 				9AE22DA91B7F0ABA0024E221 /* FavoriteCollectionViewController.xib */,
+				9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */,
 			);
 			name = Favorite;
 			sourceTree = "<group>";
@@ -510,6 +517,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DZNEmptyDataSet.framework",
 			);
 			outputPaths = (
 			);
@@ -538,6 +546,7 @@
 				9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */,
 				9AE22DA61B7F04180024E221 /* Media.swift in Sources */,
 				9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */,
+				9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */,
 				9AE22DC11B7F32FA0024E221 /* TransitionPresentationAnimator.swift in Sources */,
 				9AE22D931B7EE8620024E221 /* BaseCollectionViewController.swift in Sources */,
 				9AE22DBF1B7F32CF0024E221 /* PresentationManager.swift in Sources */,
@@ -759,6 +768,7 @@
 				9AE22D751B7ED1430024E221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AE22D761B7ED1430024E221 /* Build configuration list for PBXNativeTarget "NekobuTests" */ = {
 			isa = XCConfigurationList;
@@ -767,6 +777,7 @@
 				9AE22D781B7ED1430024E221 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
