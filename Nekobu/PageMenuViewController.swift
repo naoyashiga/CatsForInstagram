@@ -15,6 +15,7 @@ class PageMenuViewController: UIViewController {
     private struct NibNameSet {
         static let topVC = "TopCollectionViewController"
         static let favVC = "FavoriteCollectionViewController"
+        static let settingVC = "SettingCollectionViewController"
     }
     
     override func viewDidLoad() {
@@ -22,12 +23,15 @@ class PageMenuViewController: UIViewController {
         
         let topVC = TopCollectionViewController(nibName: NibNameSet.topVC, bundle: nil)
         let favVC = FavoriteCollectionViewController(nibName: NibNameSet.favVC, bundle: nil)
+        let settingVC = SettingCollectionViewController(nibName: NibNameSet.settingVC, bundle: nil)
         
         topVC.title = "tag"
         favVC.title = "fav"
+        settingVC.title = "setting"
         
         controllerArray.append(topVC)
         controllerArray.append(favVC)
+        controllerArray.append(settingVC)
         
         let parameters: [CAPSPageMenuOption] = [
             .ScrollMenuBackgroundColor(UIColor.scrollMenuBackgroundColor()),

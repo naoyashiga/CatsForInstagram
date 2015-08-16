@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
+		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
+		9AB976601B8159490079A194 /* SettingCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB9765E1B8159490079A194 /* SettingCollectionViewController.xib */; };
+		9AB976641B8159760079A194 /* SettingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976621B8159760079A194 /* SettingCollectionViewCell.swift */; };
+		9AB976651B8159760079A194 /* SettingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB976631B8159760079A194 /* SettingCollectionViewCell.xib */; };
 		9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D591B7ED1430024E221 /* AppDelegate.swift */; };
 		9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D5D1B7ED1430024E221 /* Main.storyboard */; };
 		9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D601B7ED1430024E221 /* Images.xcassets */; };
@@ -62,6 +66,10 @@
 /* Begin PBXFileReference section */
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
+		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
+		9AB9765E1B8159490079A194 /* SettingCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCollectionViewController.xib; sourceTree = "<group>"; };
+		9AB976621B8159760079A194 /* SettingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AB976631B8159760079A194 /* SettingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AE22D541B7ED1430024E221 /* Nekobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nekobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE22D581B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE22D591B7ED1430024E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +138,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9AB9765A1B8158C70079A194 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */,
+				9AB9765E1B8159490079A194 /* SettingCollectionViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		9AB976611B8159530079A194 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9AB976621B8159760079A194 /* SettingCollectionViewCell.swift */,
+				9AB976631B8159760079A194 /* SettingCollectionViewCell.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 		9AE22D4B1B7ED1420024E221 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +242,7 @@
 		9AE22D861B7EE6800024E221 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9AB9765A1B8158C70079A194 /* Setting */,
 				9AE22DB21B7F14330024E221 /* Detail */,
 				9AE22DA71B7F0A900024E221 /* Favorite */,
 				9AE22D981B7EFA460024E221 /* PageMenu */,
@@ -228,6 +255,7 @@
 		9AE22D891B7EE6A20024E221 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9AB976611B8159530079A194 /* Setting */,
 				9AE22DAD1B7F0B0B0024E221 /* Favorite */,
 				9AE22DAC1B7F0B050024E221 /* Top */,
 			);
@@ -486,10 +514,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AE22DAB1B7F0ABA0024E221 /* FavoriteCollectionViewController.xib in Resources */,
+				9AB976651B8159760079A194 /* SettingCollectionViewCell.xib in Resources */,
 				9AE22D8D1B7EE6BF0024E221 /* TopCollectionViewCell.xib in Resources */,
 				9AE22DB81B7F22530024E221 /* PhotoDetailViewController.xib in Resources */,
 				9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */,
 				9AE22D641B7ED1430024E221 /* LaunchScreen.xib in Resources */,
+				9AB976601B8159490079A194 /* SettingCollectionViewController.xib in Resources */,
 				9AE22D9F1B7EFB7D0024E221 /* TopCollectionViewController.xib in Resources */,
 				9AE22DB11B7F0B270024E221 /* FavoriteCollectionViewCell.xib in Resources */,
 				9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */,
@@ -543,6 +573,7 @@
 				9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */,
 				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
 				9AE22DD71B8022130024E221 /* Favorite.swift in Sources */,
+				9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */,
 				9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */,
 				9AE22DA61B7F04180024E221 /* Media.swift in Sources */,
 				9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */,
@@ -556,6 +587,7 @@
 				9AE22D971B7EFA360024E221 /* CAPSPageMenu.swift in Sources */,
 				9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */,
 				9AE22D911B7EE7660024E221 /* UICollectionView+NibSetting.swift in Sources */,
+				9AB976641B8159760079A194 /* SettingCollectionViewCell.swift in Sources */,
 				9AE22DCA1B7F37CA0024E221 /* SwiftyJSON+Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
