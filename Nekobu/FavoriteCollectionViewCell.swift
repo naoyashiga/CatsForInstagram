@@ -9,6 +9,7 @@
 import UIKit
 
 class FavoriteCollectionViewCell: UICollectionViewCell {
+    @IBOutlet var thumbNailImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

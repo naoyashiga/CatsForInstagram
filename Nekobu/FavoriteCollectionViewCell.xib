@@ -25,6 +25,9 @@
                 <constraint firstAttribute="trailing" secondItem="O1c-Gi-nFa" secondAttribute="trailing" id="iPF-rg-6GG"/>
                 <constraint firstItem="O1c-Gi-nFa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vXA-Zj-kPW"/>
             </constraints>
+            <connections>
+                <outlet property="thumbNailImageView" destination="O1c-Gi-nFa" id="qEJ-wa-cyw"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>

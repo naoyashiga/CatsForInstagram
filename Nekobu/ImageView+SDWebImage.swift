@@ -10,10 +10,11 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    func loadingImageBySDWebImage(media: Media) {
+    func loadingImageBySDWebImage(url: NSURL) {
         
         sd_setImageWithURL(
-            media.lowResolutionImageURL,
+            url,
+//            media.lowResolutionImageURL,
 //            media.standardImageURL,
             completed: { image, error, type, URL in
                 

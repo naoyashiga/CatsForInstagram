@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import RealmSwift
 
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var detailImageView: UIImageView!
     
     var detailImageURL: NSURL?
+    var media = Media()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,25 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
 
     @IBAction func favoriteButtonTapped(sender: UIButton) {
+        let favorite = Favorite()
+        favorite.id = media.id
+        
+        if let url = media.lowResolutionImageURL {
+            favorite.lowResolutionImageURLString = url.absoluteString!
+        }
+        
+        if let url = media.standardResolutionImageURL {
+            favorite.standardResolutionImageURLString = url.absoluteString!
+        }
+        
+        favorite.createdAt = NSDate().timeIntervalSince1970
+        
+        let realm = Realm()
+        
+        realm.write {
+            println("add fav")
+            realm.add(favorite, update: true)
+        }
         
     }
     

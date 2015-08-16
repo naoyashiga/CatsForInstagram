@@ -41,6 +41,9 @@
 		9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DCC1B7F513D0024E221 /* PageMenuConstraint.swift */; };
 		9AE22DCF1B7F67700024E221 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DCE1B7F67700024E221 /* Pagination.swift */; };
 		9AE22DD11B8018510024E221 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD01B8018510024E221 /* Video.swift */; };
+		9AE22DD41B8021AD0024E221 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22DD21B8021AD0024E221 /* Realm.framework */; };
+		9AE22DD51B8021AD0024E221 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22DD31B8021AD0024E221 /* RealmSwift.framework */; };
+		9AE22DD71B8022130024E221 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD61B8022130024E221 /* Favorite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 		9AE22DCC1B7F513D0024E221 /* PageMenuConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageMenuConstraint.swift; sourceTree = "<group>"; };
 		9AE22DCE1B7F67700024E221 /* Pagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		9AE22DD01B8018510024E221 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		9AE22DD21B8021AD0024E221 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		9AE22DD31B8021AD0024E221 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		9AE22DD61B8022130024E221 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,8 @@
 				9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */,
 				9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */,
 				9AE22DA31B7F01690024E221 /* WebImage.framework in Frameworks */,
+				9AE22DD41B8021AD0024E221 /* Realm.framework in Frameworks */,
+				9AE22DD51B8021AD0024E221 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +187,8 @@
 		9AE22D7E1B7ED6C10024E221 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9AE22DD21B8021AD0024E221 /* Realm.framework */,
+				9AE22DD31B8021AD0024E221 /* RealmSwift.framework */,
 				9AE22DA21B7F01690024E221 /* WebImage.framework */,
 				9AE22D961B7EFA360024E221 /* CAPSPageMenu.swift */,
 				9AE22D791B7ED41D0024E221 /* SwiftyJSON.framework */,
@@ -291,6 +301,7 @@
 				9AE22DA51B7F04180024E221 /* Media.swift */,
 				9AE22DD01B8018510024E221 /* Video.swift */,
 				9AE22DCE1B7F67700024E221 /* Pagination.swift */,
+				9AE22DD61B8022130024E221 /* Favorite.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -486,6 +497,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 			);
 			outputPaths = (
 			);
@@ -510,6 +523,7 @@
 				9AE22DD11B8018510024E221 /* Video.swift in Sources */,
 				9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */,
 				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
+				9AE22DD71B8022130024E221 /* Favorite.swift in Sources */,
 				9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */,
 				9AE22DA61B7F04180024E221 /* Media.swift in Sources */,
 				9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */,

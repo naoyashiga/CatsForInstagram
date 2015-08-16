@@ -54,9 +54,11 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
                         
                         let media: Media
                         
+                        
                         if d["type"].string == "image" {
                             media = Media(
                                 type: "image",
+                                id: d["id"].stringValue,
                                 lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
                                 standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL,
                                 video: nil
@@ -110,7 +112,10 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
     
         let media = mediaList[indexPath.row]
         
-        cell.thumbNailImageView.loadingImageBySDWebImage(media)
+        if let thumbNailImageURL = media.lowResolutionImageURL {
+            cell.thumbNailImageView.loadingImageBySDWebImage(thumbNailImageURL)
+        }
+        
         
         if indexPath.row == mediaList.count - 4 {
             println("end contents")
@@ -129,6 +134,8 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         photoDetailVC.transitioningDelegate = self
         
         photoDetailVC.detailImageURL = media.standardResolutionImageURL
+        photoDetailVC.media = media
+        
         
         presentViewController(photoDetailVC, animated: true, completion: nil)
     }

@@ -10,6 +10,7 @@ import Foundation
 
 struct Media {
     var type = ""
+    var id = ""
     var lowResolutionImageURL: NSURL?
     var standardResolutionImageURL: NSURL?
     var video: Video?
