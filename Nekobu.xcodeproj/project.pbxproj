@@ -44,6 +44,7 @@
 		9AE22DD41B8021AD0024E221 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22DD21B8021AD0024E221 /* Realm.framework */; };
 		9AE22DD51B8021AD0024E221 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22DD31B8021AD0024E221 /* RealmSwift.framework */; };
 		9AE22DD71B8022130024E221 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD61B8022130024E221 /* Favorite.swift */; };
+		9AE22DDA1B8046C60024E221 /* UIButton+AnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD91B8046C60024E221 /* UIButton+AnimationExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		9AE22DD21B8021AD0024E221 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		9AE22DD31B8021AD0024E221 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		9AE22DD61B8022130024E221 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		9AE22DD91B8046C60024E221 /* UIButton+AnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+AnimationExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +231,7 @@
 		9AE22D8E1B7EE7450024E221 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9AE22DD81B8046B20024E221 /* Button */,
 				9AE22DCB1B7F512B0024E221 /* Constraint */,
 				9AE22DC41B7F35EA0024E221 /* ImageView */,
 				9AE22DB91B7F30350024E221 /* Animation */,
@@ -386,6 +389,14 @@
 			name = Constraint;
 			sourceTree = "<group>";
 		};
+		9AE22DD81B8046B20024E221 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9AE22DD91B8046C60024E221 /* UIButton+AnimationExtension.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -531,6 +542,7 @@
 				9AE22D931B7EE8620024E221 /* BaseCollectionViewController.swift in Sources */,
 				9AE22DBF1B7F32CF0024E221 /* PresentationManager.swift in Sources */,
 				9AE22DB71B7F22530024E221 /* PhotoDetailViewController.swift in Sources */,
+				9AE22DDA1B8046C60024E221 /* UIButton+AnimationExtension.swift in Sources */,
 				9AE22D811B7ED77A0024E221 /* Config.swift in Sources */,
 				9AE22D971B7EFA360024E221 /* CAPSPageMenu.swift in Sources */,
 				9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */,

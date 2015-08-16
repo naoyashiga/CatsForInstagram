@@ -12,6 +12,7 @@ import RealmSwift
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var detailImageView: UIImageView!
     @IBOutlet var favoriteButton: UIButton!
+    @IBOutlet var dismissButton: UIButton!
     
     var detailImageURL: NSURL?
     var media = Media()
@@ -85,6 +86,8 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
                 }
             }
         }
+        
+        favoriteButton.playBounceAnimation()
     }
     
     @IBAction func shareButtonTapped(sender: UIButton) {
@@ -92,9 +95,11 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     @IBAction func dismissButtonTapped(sender: UIButton) {
+        dismissButton.playBounceAnimation()
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    // MARK: RPZoomTransitionAnimating
     func sourceImageView() -> UIImageView {
         return detailImageView
     }

@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoDetailViewController" customModule="Nekobu" customModuleProvider="target">
             <connections>
                 <outlet property="detailImageView" destination="gT3-gg-0Xl" id="1qg-v1-N2e"/>
+                <outlet property="dismissButton" destination="4gP-ud-MCD" id="J78-yE-DJi"/>
                 <outlet property="favoriteButton" destination="69i-t6-mx2" id="rFn-nG-XmB"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -34,7 +35,7 @@
                         <action selector="favoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="w6F-lX-tpW"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-ud-MCD">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-ud-MCD" userLabel="dismissButton">
                     <rect key="frame" x="176" y="538" width="52" height="30"/>
                     <color key="backgroundColor" red="0.89595562849999999" green="0.32168762620000002" blue="0.44314015670000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="dismiss">

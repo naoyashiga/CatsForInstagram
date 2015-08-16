@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/PhotoDetailViewController.swift"
-            timestampString = "461391429.252911"
+            timestampString = "461391726.082642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "transitionDestinationImageViewFrame()"
             landmarkType = "5">
          </BreakpointContent>
