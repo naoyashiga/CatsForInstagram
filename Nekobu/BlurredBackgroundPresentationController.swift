@@ -44,7 +44,7 @@ class BlurredBackgroundPresentationController: UIPresentationController {
         var presentedViewFrame = CGRectZero
         
         var width:CGFloat = containerView.bounds.size.width * 0.85
-        var height:CGFloat = containerView.bounds.size.height  * 0.75
+        var height:CGFloat = containerView.bounds.size.height  * 0.8
         
         presentedViewFrame.size = CGSizeMake(width,height)
         presentedViewFrame.origin = CGPointMake(containerView.bounds.size.width / 2.0, containerView.bounds.size.height / 2.0)
