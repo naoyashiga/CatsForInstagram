@@ -66,8 +66,6 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
                                 video: nil
                             )
                             
-                            println(media.standardResolutionImageURL!)
-                            
                             self.mediaList.append(media)
                             
                         } else if d["type"].string == "video" {

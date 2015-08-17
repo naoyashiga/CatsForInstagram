@@ -24,7 +24,7 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let edgeInsetBottom:CGFloat = PageMenuConstraint.menuHeight
+        let edgeInsetBottom:CGFloat = 0
         let edgeInsetTop:CGFloat = 0
         
         cellSize.width = view.bounds.width / 2
