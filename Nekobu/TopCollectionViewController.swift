@@ -120,12 +120,12 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
 //            }
 //        }
         
+        // 低画質画像を読みこみ、表示
         if let thumbNailImageURL = media.lowResolutionImageURL {
             cell.thumbNailImageView.loadingImageBySDWebImage(thumbNailImageURL) { loadedImage in
                 self.mediaList[indexPath.row].lowResolutionBase64ImageString = loadedImage.Image2String()
             }
         }
-        
         
         if indexPath.row == mediaList.count - 2 {
             println("end contents")
