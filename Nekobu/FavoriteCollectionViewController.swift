@@ -52,11 +52,8 @@ class FavoriteCollectionViewController: BaseCollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(favoriteReuseId.cell, forIndexPath: indexPath) as! FavoriteCollectionViewCell
     
         let favorite = favorites[indexPath.row]
-        let thumbNailImageURL = NSURL(string: favorite.lowResolutionImageURLString)
+        cell.thumbNailImageView.image = favorite.lowResolutionBase64ImageString.String2Image()
         
-        if let thumbNailImageURL = thumbNailImageURL {
-            cell.thumbNailImageView.loadingImageBySDWebImage(thumbNailImageURL)
-        }
         
         return cell
     }

@@ -61,6 +61,8 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
                                 id: d["id"].stringValue,
                                 lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
                                 standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL,
+                                lowResolutionBase64ImageString: "",
+                                standardResolutionBase64ImageString: "",
                                 video: nil
                             )
                             
@@ -115,11 +117,13 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         let media = mediaList[indexPath.row]
         
         if let thumbNailImageURL = media.lowResolutionImageURL {
-            cell.thumbNailImageView.loadingImageBySDWebImage(thumbNailImageURL)
+            cell.thumbNailImageView.loadingImageBySDWebImage(thumbNailImageURL) { loadedImage in
+                self.mediaList[indexPath.row].lowResolutionBase64ImageString = loadedImage.Image2String()
+            }
         }
         
         
-        if indexPath.row == mediaList.count - 4 {
+        if indexPath.row == mediaList.count - 2 {
             println("end contents")
             loadPhoto(requestURL: pagenation.nextURLString)
         }

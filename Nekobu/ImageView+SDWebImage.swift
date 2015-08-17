@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    func loadingImageBySDWebImage(url: NSURL) {
+    func loadingImageBySDWebImage(url: NSURL, callback: (UIImage) -> ()) {
         
         sd_setImageWithURL(
             url,
@@ -19,6 +19,8 @@ extension UIImageView {
             completed: { image, error, type, URL in
                 
                 self.alpha = 0
+                
+                callback(image)
                 
                 UIView.animateWithDuration(0.25,
                     animations: {

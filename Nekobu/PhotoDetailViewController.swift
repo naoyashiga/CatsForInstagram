@@ -24,7 +24,11 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         view.layer.cornerRadius = 10.0
         view.clipsToBounds = true
         
-        detailImageView.sd_setImageWithURL(detailImageURL)
+        detailImageView.sd_setImageWithURL(
+            detailImageURL,
+            completed: { image, error, type, URL in
+                self.media.standardResolutionBase64ImageString = image.Image2String()
+        })
         
         let realm = Realm()
         let predicate = NSPredicate(format: "id == %@", media.id)
@@ -69,13 +73,8 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
                 let favorite = Favorite()
                 favorite.id = media.id
                 
-                if let url = media.lowResolutionImageURL {
-                    favorite.lowResolutionImageURLString = url.absoluteString!
-                }
-                
-                if let url = media.standardResolutionImageURL {
-                    favorite.standardResolutionImageURLString = url.absoluteString!
-                }
+                favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
+                favorite.standardResolutionBase64ImageString = media.standardResolutionBase64ImageString
                 
                 favorite.createdAt = NSDate().timeIntervalSince1970
                 
