@@ -11,12 +11,19 @@ import RealmSwift
 //import LINEActivity
 
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
-    @IBOutlet var detailImageView: UIImageView!
+    @IBOutlet var detailImageView: UIImageView! {
+        didSet {
+//            detailImageView.image = media.standardResolutionBase64ImageString.String2Image()
+            detailImageView.image = media.lowResolutionBase64ImageString.String2Image()
+        }
+    }
     @IBOutlet var favoriteButton: UIButton!
     @IBOutlet var dismissButton: UIButton!
     
     var detailImageURL: NSURL?
     var media = Media()
+    
+    var savingImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,11 +31,12 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         view.layer.cornerRadius = 10.0
         view.clipsToBounds = true
         
-        detailImageView.sd_setImageWithURL(
-            detailImageURL,
-            completed: { image, error, type, URL in
-                self.media.standardResolutionBase64ImageString = image.Image2String()
-        })
+        
+//        detailImageView.sd_setImageWithURL(
+//            detailImageURL,
+//            completed: { image, error, type, URL in
+//                self.media.standardResolutionBase64ImageString = image.Image2String()
+//        })
         
         let realm = Realm()
         let predicate = NSPredicate(format: "id == %@", media.id)
@@ -119,11 +127,26 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     @IBAction func saveImageButtonTapped(sender: UIButton) {
-        if let savingImage = detailImageView.image {
-            UIImageWriteToSavedPhotosAlbum(savingImage, self, "image:didFinishSavingWithError:contextInfo:", nil)
-        } else {
-            println("保存したい画像を取得できませんでした")
-        }
+        
+        //高画質画像を読み込み、保存
+        savingImageView.sd_setImageWithURL(
+            media.standardResolutionImageURL,
+            completed: { savingImage, error, type, URL in
+                
+                if error == nil {
+                    UIImageWriteToSavedPhotosAlbum(savingImage, self, "image:didFinishSavingWithError:contextInfo:", nil)
+                    
+                } else {
+                    println("保存したい画像を取得できませんでした")
+                    
+                }
+        })
+        
+//        if let savingImage = detailImageView.image {
+//            UIImageWriteToSavedPhotosAlbum(savingImage, self, "image:didFinishSavingWithError:contextInfo:", nil)
+//        } else {
+//            println("保存したい画像を取得できませんでした")
+//        }
     }
     
     @IBAction func dismissButtonTapped(sender: UIButton) {

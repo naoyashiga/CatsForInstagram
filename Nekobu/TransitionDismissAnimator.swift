@@ -49,15 +49,22 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
         }
         
         UIView.animateWithDuration(
+            kBackwardCompleteAnimationDuration / 3,
+            delay: 0,
+            options: .CurveEaseOut,
+            animations: {
+                fromVC.view.alpha = 0.0
+            
+            }, completion: nil
+        )
+        
+        UIView.animateWithDuration(
             kBackwardCompleteAnimationDuration,
             delay: 0,
             options: .CurveEaseOut,
             animations: {
                 sourceImageView.frame = destinationImageViewFrame
                 
-//                sourceImageView.alpha = 0
-//                fromVC.view.alpha = 0.0
-            
             }, completion: {finished in
                 if finished {
                     destinationImageView.removeFromSuperview()

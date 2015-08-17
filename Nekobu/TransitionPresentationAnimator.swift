@@ -35,6 +35,8 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         toViewController.view.setNeedsLayout()
         toViewController.view.layoutIfNeeded()
         
+        toViewController.view.alpha = 0
+        
         if let sourceViewController = sourceVC as? RPZoomTransitionAnimating {
             sourceImageView.image = sourceViewController.calculatedPositionSourceImageView().image
             sourceImageView.frame = sourceViewController.calculatedPositionSourceImageView().frame
@@ -43,9 +45,8 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         
         if let destinationViewController = destinationVC as? RPZoomTransitionAnimating {
             destinationImageView = destinationViewController.sourceImageView()
-            destinationImageView.hidden = true
+//            destinationImageView.hidden = true
             destinationImageView.alpha = 0
-            
             
             
             destinationImageViewFrame = destinationViewController.transitionDestinationImageViewFrame()
@@ -57,12 +58,13 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
             options: .CurveEaseOut,
             animations: {
                 sourceImageView.frame = destinationImageViewFrame
+                toViewController.view.alpha = 1.0
                 
                 
             }, completion: { finished in
                 if finished {
-                    destinationImageView.hidden = false
-                    sourceImageView.removeFromSuperview()
+//                    destinationImageView.hidden = false
+//                    sourceImageView.removeFromSuperview()
                 }
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled())
         })
@@ -75,6 +77,9 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
                 destinationImageView.alpha = 1
                 
             }, completion: { finished in
+                if finished {
+                    sourceImageView.removeFromSuperview()
+                }
         })
     }
 }

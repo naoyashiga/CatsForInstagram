@@ -114,6 +114,12 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
     
         let media = mediaList[indexPath.row]
         
+//        if let thumbNailImageURL = media.standardResolutionImageURL {
+//            cell.thumbNailImageView.loadingImageBySDWebImage(thumbNailImageURL) { loadedImage in
+//                self.mediaList[indexPath.row].standardResolutionBase64ImageString = loadedImage.Image2String()
+//            }
+//        }
+        
         if let thumbNailImageURL = media.lowResolutionImageURL {
             cell.thumbNailImageView.loadingImageBySDWebImage(thumbNailImageURL) { loadedImage in
                 self.mediaList[indexPath.row].lowResolutionBase64ImageString = loadedImage.Image2String()
@@ -185,6 +191,8 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         imageView.clipsToBounds = true
         imageView.userInteractionEnabled = false
         imageView.frame = cell.thumbNailImageView.convertRect(cell.thumbNailImageView.frame, toView: collectionView?.superview)
+        
+        imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y + PageMenuConstraint.menuHeight, imageView.frame.size.width, imageView.frame.size.height)
         return imageView
     }
     
