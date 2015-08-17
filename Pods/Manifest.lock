@@ -1,1 +1,10 @@
+PODS:
+  - LINEActivity (0.2.0)
+
+DEPENDENCIES:
+  - LINEActivity (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  LINEActivity: 3cf844b075bc7f8338ea86b41bd46acd5ec934d8
+
 COCOAPODS: 0.38.2

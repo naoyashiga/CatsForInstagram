@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+//import LINEActivity
 
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var detailImageView: UIImageView!
@@ -92,6 +93,30 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     
     @IBAction func shareButtonTapped(sender: UIButton) {
         
+        var sharedText = "#ねこ部 のネコかわいい!"
+        
+        var sharedURL = NSURL(string: "instagram://media?id=\(media.id)")!
+        var activityItems = [AnyObject]()
+        
+        if let sharedImage = detailImageView.image {
+            activityItems = [sharedText,sharedURL,sharedImage]
+        } else {
+            activityItems = [sharedText,sharedURL]
+        }
+        
+        let LineKit = LINEActivity()
+        let myApplicationActivities = [LineKit]
+        
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: myApplicationActivities)
+        
+        let excludedActivityTypes = [
+            UIActivityTypePostToWeibo,
+            UIActivityTypePrint
+        ]
+        
+        activityVC.excludedActivityTypes = excludedActivityTypes
+        
+        presentViewController(activityVC, animated: true, completion: nil)
     }
     
     @IBAction func dismissButtonTapped(sender: UIButton) {

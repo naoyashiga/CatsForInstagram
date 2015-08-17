@@ -51,6 +51,7 @@
 		9AE22DD51B8021AD0024E221 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22DD31B8021AD0024E221 /* RealmSwift.framework */; };
 		9AE22DD71B8022130024E221 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD61B8022130024E221 /* Favorite.swift */; };
 		9AE22DDA1B8046C60024E221 /* UIButton+AnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD91B8046C60024E221 /* UIButton+AnimationExtension.swift */; };
+		E51D539D850DA8B6FDFCBCB0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8423A87BA27069615DAC24C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +65,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07FDB047653FF62FC9653927 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		31F9B4C17813FC45BEC8DD84 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
 		9AB9765E1B8159490079A194 /* SettingCollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCollectionViewController.xib; sourceTree = "<group>"; };
 		9AB976621B8159760079A194 /* SettingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AB976631B8159760079A194 /* SettingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AB976661B81896A0079A194 /* Nekobu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nekobu-Bridging-Header.h"; sourceTree = "<group>"; };
 		9AE22D541B7ED1430024E221 /* Nekobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nekobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE22D581B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE22D591B7ED1430024E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 		9AE22DD31B8021AD0024E221 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		9AE22DD61B8022130024E221 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		9AE22DD91B8046C60024E221 /* UIButton+AnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+AnimationExtension.swift"; sourceTree = "<group>"; };
+		D8423A87BA27069615DAC24C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +130,7 @@
 				9AE22DD41B8021AD0024E221 /* Realm.framework in Frameworks */,
 				9AE22DD51B8021AD0024E221 /* RealmSwift.framework in Frameworks */,
 				9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */,
+				E51D539D850DA8B6FDFCBCB0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +144,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31C41909A3CCCE52B457CED6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8423A87BA27069615DAC24C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9AB9765A1B8158C70079A194 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +176,8 @@
 				9AE22D561B7ED1430024E221 /* Nekobu */,
 				9AE22D6C1B7ED1430024E221 /* NekobuTests */,
 				9AE22D551B7ED1430024E221 /* Products */,
+				ED6EF0CB4B84AACD8E3E8D00 /* Pods */,
+				31C41909A3CCCE52B457CED6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -196,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE22D581B7ED1430024E221 /* Info.plist */,
+				9AB976661B81896A0079A194 /* Nekobu-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -432,6 +449,15 @@
 			name = Button;
 			sourceTree = "<group>";
 		};
+		ED6EF0CB4B84AACD8E3E8D00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07FDB047653FF62FC9653927 /* Pods.debug.xcconfig */,
+				31F9B4C17813FC45BEC8DD84 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,10 +465,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AE22D731B7ED1430024E221 /* Build configuration list for PBXNativeTarget "Nekobu" */;
 			buildPhases = (
+				9046EF8DCBF46DB66DF1045D /* Check Pods Manifest.lock */,
 				9AE22D501B7ED1420024E221 /* Sources */,
 				9AE22D511B7ED1420024E221 /* Frameworks */,
 				9AE22D521B7ED1420024E221 /* Resources */,
 				9AE22D7D1B7ED44C0024E221 /* ShellScript */,
+				9D8B0183623ABBD2FC23D13C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -536,6 +564,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9046EF8DCBF46DB66DF1045D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		9AE22D7D1B7ED44C0024E221 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -554,6 +597,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		9D8B0183623ABBD2FC23D13C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -717,8 +775,10 @@
 		};
 		9AE22D741B7ED1430024E221 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07FDB047653FF62FC9653927 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -728,13 +788,17 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0d946c6e-8cb9-4df4-afab-4c9de01fd9f7";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nekobu/Nekobu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9AE22D751B7ED1430024E221 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F9B4C17813FC45BEC8DD84 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -744,6 +808,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0d946c6e-8cb9-4df4-afab-4c9de01fd9f7";
+				SWIFT_OBJC_BRIDGING_HEADER = "Nekobu/Nekobu-Bridging-Header.h";
 			};
 			name = Release;
 		};
