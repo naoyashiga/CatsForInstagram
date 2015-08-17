@@ -13,6 +13,8 @@
 		9AB976601B8159490079A194 /* SettingCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB9765E1B8159490079A194 /* SettingCollectionViewController.xib */; };
 		9AB976641B8159760079A194 /* SettingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976621B8159760079A194 /* SettingCollectionViewCell.swift */; };
 		9AB976651B8159760079A194 /* SettingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AB976631B8159760079A194 /* SettingCollectionViewCell.xib */; };
+		9AB9766B1B8192A70079A194 /* UIImage+Image2String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9766A1B8192A70079A194 /* UIImage+Image2String.swift */; };
+		9AB9766E1B8194180079A194 /* String+String2Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9766D1B8194180079A194 /* String+String2Image.swift */; };
 		9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22D591B7ED1430024E221 /* AppDelegate.swift */; };
 		9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D5D1B7ED1430024E221 /* Main.storyboard */; };
 		9AE22D611B7ED1430024E221 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE22D601B7ED1430024E221 /* Images.xcassets */; };
@@ -74,6 +76,8 @@
 		9AB976621B8159760079A194 /* SettingCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AB976631B8159760079A194 /* SettingCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AB976661B81896A0079A194 /* Nekobu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nekobu-Bridging-Header.h"; sourceTree = "<group>"; };
+		9AB9766A1B8192A70079A194 /* UIImage+Image2String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Image2String.swift"; sourceTree = "<group>"; };
+		9AB9766D1B8194180079A194 /* String+String2Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+String2Image.swift"; sourceTree = "<group>"; };
 		9AE22D541B7ED1430024E221 /* Nekobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nekobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE22D581B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE22D591B7ED1430024E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +172,22 @@
 				9AB976631B8159760079A194 /* SettingCollectionViewCell.xib */,
 			);
 			name = Setting;
+			sourceTree = "<group>";
+		};
+		9AB976691B81928A0079A194 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9766A1B8192A70079A194 /* UIImage+Image2String.swift */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		9AB9766C1B8193F40079A194 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9766D1B8194180079A194 /* String+String2Image.swift */,
+			);
+			name = String;
 			sourceTree = "<group>";
 		};
 		9AE22D4B1B7ED1420024E221 = {
@@ -282,6 +302,8 @@
 		9AE22D8E1B7EE7450024E221 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9AB9766C1B8193F40079A194 /* String */,
+				9AB976691B81928A0079A194 /* Image */,
 				9AE22DD81B8046B20024E221 /* Button */,
 				9AE22DCB1B7F512B0024E221 /* Constraint */,
 				9AE22DC41B7F35EA0024E221 /* ImageView */,
@@ -624,6 +646,7 @@
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
 				9AE22DAA1B7F0ABA0024E221 /* FavoriteCollectionViewController.swift in Sources */,
 				9AE22DCF1B7F67700024E221 /* Pagination.swift in Sources */,
+				9AB9766E1B8194180079A194 /* String+String2Image.swift in Sources */,
 				9AE22D9D1B7EFB070024E221 /* Color.swift in Sources */,
 				9AE22DB01B7F0B270024E221 /* FavoriteCollectionViewCell.swift in Sources */,
 				9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */,
@@ -641,6 +664,7 @@
 				9AE22DBF1B7F32CF0024E221 /* PresentationManager.swift in Sources */,
 				9AE22DB71B7F22530024E221 /* PhotoDetailViewController.swift in Sources */,
 				9AE22DDA1B8046C60024E221 /* UIButton+AnimationExtension.swift in Sources */,
+				9AB9766B1B8192A70079A194 /* UIImage+Image2String.swift in Sources */,
 				9AE22D811B7ED77A0024E221 /* Config.swift in Sources */,
 				9AE22D971B7EFA360024E221 /* CAPSPageMenu.swift in Sources */,
 				9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */,
