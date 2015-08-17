@@ -119,9 +119,31 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         presentViewController(activityVC, animated: true, completion: nil)
     }
     
+    @IBAction func saveImageButtonTapped(sender: UIButton) {
+        if let savingImage = detailImageView.image {
+            UIImageWriteToSavedPhotosAlbum(savingImage, self, "image:didFinishSavingWithError:contextInfo:", nil)
+        } else {
+            println("保存したい画像を取得できませんでした")
+        }
+    }
+    
     @IBAction func dismissButtonTapped(sender: UIButton) {
         dismissButton.playBounceAnimation()
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func image(image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutablePointer<Void>) {
+        var title = "保存完了"
+        var message = "カメラロールに保存できました"
+        
+        if error != nil {
+            title = "エラー"
+            message = "カメラロールへの保存に失敗しました"
+            println(error.code)
+        }
+        
+        let alert = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
+        alert.show()
     }
     
     // MARK: RPZoomTransitionAnimating

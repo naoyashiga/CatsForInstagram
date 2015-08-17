@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/PhotoDetailViewController.swift"
-            timestampString = "461474559.63666"
+            timestampString = "461475262.982941"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "shareButtonTapped(_:)"
             landmarkType = "5">
          </BreakpointContent>
