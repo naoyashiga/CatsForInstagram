@@ -8,13 +8,19 @@
 
 import UIKit
 import RealmSwift
-//import LINEActivity
+import WebImage
 
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var detailImageView: UIImageView! {
         didSet {
 //            detailImageView.image = media.standardResolutionBase64ImageString.String2Image()
-            detailImageView.image = media.lowResolutionBase64ImageString.String2Image()
+//            detailImageView.image = media.lowResolutionBase64ImageString.String2Image()
+            
+            SDWebImageManager.sharedManager().imageCache.queryDiskCacheForKey(media.lowResolutionImageURL?.absoluteString
+                , done: { (image: UIImage!, type: SDImageCacheType) -> Void in
+                    
+                    self.detailImageView.image = image
+            })
         }
     }
     @IBOutlet var favoriteButton: UIButton!
@@ -78,8 +84,17 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         } else {
             //お気に入り追加
             if exisitingFavoriteArray.count == 0 {
+                
+//                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: String(media.id))
+                
                 let favorite = Favorite()
                 favorite.id = media.id
+                //高画質版のURLを保存したい
+                
+//                if let lowResolutionImageURL = media.lowResolutionImageURL {
+//                    favorite.lowResolutionImageURLString = lowResolutionImageURL.absoluteString!
+//                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: favorite.lowResolutionImageURLString)
+//                }
                 
                 favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
                 favorite.standardResolutionBase64ImageString = media.standardResolutionBase64ImageString

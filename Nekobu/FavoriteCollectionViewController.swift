@@ -54,6 +54,12 @@ class FavoriteCollectionViewController: BaseCollectionViewController {
         let favorite = favorites[indexPath.row]
         cell.thumbNailImageView.image = favorite.lowResolutionBase64ImageString.String2Image()
         
+//        let imageCache = SDImageCache(namespace: "sampleCache")
+//        SDWebImageManager.sharedManager().imageCache.queryDiskCacheForKey(favorite.lowResolutionImageURLString
+//            , done: { (image: UIImage!, type: SDImageCacheType) -> Void in
+//                
+//                cell.thumbNailImageView.image = image
+//        })
         
         return cell
     }
