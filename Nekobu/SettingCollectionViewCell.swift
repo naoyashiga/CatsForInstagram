@@ -9,6 +9,7 @@
 import UIKit
 
 class SettingCollectionViewCell: UICollectionViewCell {
+    @IBOutlet var titleLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

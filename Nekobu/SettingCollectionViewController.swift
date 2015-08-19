@@ -14,6 +14,15 @@ struct settingReuseId {
 }
 
 class SettingCollectionViewController: BaseCollectionViewController {
+    var reviewMenu = [
+        "レビューを書いて応援する",
+        "他のアプリを見る"
+    ]
+    var snsMenu = [
+        "Twitter",
+        "Facebook",
+        "LINE"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +33,10 @@ class SettingCollectionViewController: BaseCollectionViewController {
         
         cellSize.width = view.bounds.width
         cellSize.height = 80
+        
+        if let collectionView = collectionView {
+            collectionView.contentInset = UIEdgeInsetsMake(10, cellMargin.horizontal / 2, 0, cellMargin.horizontal / 2)
+        }
         
         collectionView?.applyHeaderNib(headerNibName: settingReuseId.headerView)
         collectionView?.applyCellNib(cellNibName: settingReuseId.cell)
@@ -36,11 +49,16 @@ class SettingCollectionViewController: BaseCollectionViewController {
     // MARK: UICollectionViewDataSource
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 3
+        return 2
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        
+        if section == 0 {
+            return reviewMenu.count
+        } else {
+            return snsMenu.count
+        }
     }
     
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
@@ -48,6 +66,7 @@ class SettingCollectionViewController: BaseCollectionViewController {
         switch kind {
         case UICollectionElementKindSectionHeader:
             var headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: settingReuseId.headerView, forIndexPath: indexPath) as! SettingHeaderView
+            
             
             return setCornerRadius(headerView: headerView)
             
@@ -59,6 +78,15 @@ class SettingCollectionViewController: BaseCollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(settingReuseId.cell, forIndexPath: indexPath) as! SettingCollectionViewCell
+        
+        switch indexPath.section {
+        case 0:
+            cell.titleLabel.text = reviewMenu[0]
+        case 1:
+            cell.titleLabel.text = snsMenu[indexPath.row]
+        default:
+            break;
+        }
         
         return cell
     }

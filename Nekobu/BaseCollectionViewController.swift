@@ -33,6 +33,7 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
         if let collectionView = collectionView {
             collectionView.contentInset = UIEdgeInsetsMake(edgeInsetTop, 0, edgeInsetBottom, 0)
             
+            collectionView.backgroundColor = UIColor.viewBackgroundColor()
             refreshControl = UIRefreshControl()
             refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
             collectionView.addSubview(refreshControl)

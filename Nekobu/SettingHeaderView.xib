@@ -13,7 +13,7 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZJ-XD-N3S">
                     <rect key="frame" x="8" y="14" width="304" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -24,6 +24,9 @@
                 <constraint firstItem="UZJ-XD-N3S" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="b0H-lO-u9U"/>
                 <constraint firstAttribute="trailing" secondItem="UZJ-XD-N3S" secondAttribute="trailing" constant="8" id="vZq-ad-7R3"/>
             </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="UZJ-XD-N3S" id="7SO-Ls-rbX"/>
+            </connections>
         </collectionReusableView>
     </objects>
 </document>
