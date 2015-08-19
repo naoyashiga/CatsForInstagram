@@ -20,6 +20,8 @@ class SettingCollectionViewController: BaseCollectionViewController {
         
         view.backgroundColor = UIColor.viewBackgroundColor()
         
+        collectionView?.backgroundColor = UIColor.viewBackgroundColor()
+        
         cellSize.width = view.bounds.width
         cellSize.height = 80
         
@@ -34,7 +36,7 @@ class SettingCollectionViewController: BaseCollectionViewController {
     // MARK: UICollectionViewDataSource
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 1
+        return 3
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -66,7 +68,19 @@ class SettingCollectionViewController: BaseCollectionViewController {
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
+    override func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSize(width: cellSize.width - cellMargin.horizontal, height: cellSize.height)
+    }
+    
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: cellSize.width, height: 45)
+        return CGSize(width: cellSize.width - cellMargin.horizontal, height: 45)
+    }
+    
+    override func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return 1.0
+    }
+    
+    override func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 1, left: 0, bottom: 10, right: 0)
     }
 }
