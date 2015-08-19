@@ -1,5 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.1"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/LINEActivity"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/LINEActivity"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"LINEActivity" -framework "Foundation" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds" "${PODS_ROOT}/Headers/Public/LINEActivity"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" -isystem "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK/GoogleMobileAds" -isystem "${PODS_ROOT}/Headers/Public/LINEActivity"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"LINEActivity" -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "EventKit" -framework "EventKitUI" -framework "Foundation" -framework "GoogleMobileAds" -framework "MessageUI" -framework "StoreKit" -framework "SystemConfiguration" -framework "UIKit" -weak_framework "AdSupport"
 PODS_ROOT = ${SRCROOT}/Pods

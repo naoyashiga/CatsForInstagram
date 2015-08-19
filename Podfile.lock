@@ -1,10 +1,13 @@
 PODS:
+  - Google-Mobile-Ads-SDK (7.4.1)
   - LINEActivity (0.2.0)
 
 DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
   - LINEActivity (~> 0.2.0)
 
 SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: dce4c2728daa0bcbd88b6e3dc111b718a07b1eb6
   LINEActivity: 3cf844b075bc7f8338ea86b41bd46acd5ec934d8
 
 COCOAPODS: 0.38.2

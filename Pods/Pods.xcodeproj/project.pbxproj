@@ -7,59 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64FD3CB168067327C9D55333BBCC3464 /* LINEActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 17805F54A30AC09764B653F669C52762 /* LINEActivity.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		11BA103A04E7436DA148609E0B5D20F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35204A1DD5E289F3EDB1A477AC92645 /* UIKit.framework */; };
+		2F84A324156FF081A7951C6F605C29F9 /* LINEActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BB7F563901FB2A3FE927FE765C8E2F /* LINEActivity.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5509A99747056FA6401A347328272735 /* LINEActivity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 473ADD529BB15C870627F6AE6B6BB00F /* LINEActivity-dummy.m */; };
 		6716CF060A48B9BDA7D3EB39114B9C44 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2564E6C668B1E6FC549C7231F9067CC /* Pods-dummy.m */; };
-		B792A40D2F5B96D88FD9EBC1CB6E0CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F74D665145D62E8CBC50F8CE2847CE /* Foundation.framework */; };
-		BB63A6A225D0B35E345E37065A3BFB4F /* LINEActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 4120FFCE00EE86692F9269538435304E /* LINEActivity.h */; };
-		D80574E2B693C0B6DCDB78A60E2D972C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03F74D665145D62E8CBC50F8CE2847CE /* Foundation.framework */; };
-		F42CAAFBE4EE8CE8C7156A9D62CE9F6E /* LINEActivity-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F47B0A68C76AAE4F70D5C9EFF5E54 /* LINEActivity-dummy.m */; };
-		F7EB2C29FC5A55A9D2AF70D1EC4FDD6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B237C78A4310B4F2D36CB33D89E3B629 /* UIKit.framework */; };
+		7806D081E02FFE44DC5C702119CAE188 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B45EBA732028E9EE36926147104D73 /* Foundation.framework */; };
+		B2E31F5A0C259C0CB3A450ECD440B378 /* LINEActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 590C70DA9CC372853D0786BB8171B6D2 /* LINEActivity.h */; };
+		B792A40D2F5B96D88FD9EBC1CB6E0CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B45EBA732028E9EE36926147104D73 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C88ADACC1B1283AE55C545598765F8D3 /* PBXContainerItemProxy */ = {
+		FF4523756AC5F0A9F04FA9EACAAE4703 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B526A697C89F06E7CDF912CACA1FC8E3;
+			remoteGlobalIDString = DA82D6D10E8431FE28FB053409A5B1D0;
 			remoteInfo = LINEActivity;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03F74D665145D62E8CBC50F8CE2847CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		04499E987E74B43DEEA5B3B6859EE6FB /* LINEActivity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LINEActivity.xcconfig; sourceTree = "<group>"; };
 		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		172634709C459340F84CD88BD5BCB3EB /* LINEActivity.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LINEActivity.xcconfig; sourceTree = "<group>"; };
-		17805F54A30AC09764B653F669C52762 /* LINEActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LINEActivity.m; path = LINEActivity/LINEActivity.m; sourceTree = "<group>"; };
-		2FA9327B0874D3E9BF7792EAFFA5457F /* LINEActivityIcon@2x~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "LINEActivityIcon@2x~ipad.png"; path = "LINEActivity/LINEActivityIcon@2x~ipad.png"; sourceTree = "<group>"; };
-		4120FFCE00EE86692F9269538435304E /* LINEActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LINEActivity.h; path = LINEActivity/LINEActivity.h; sourceTree = "<group>"; };
-		4F901621D93AD1A59293A59A4406CCED /* LINEActivityIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "LINEActivityIcon@2x.png"; path = "LINEActivity/LINEActivityIcon@2x.png"; sourceTree = "<group>"; };
+		2B3B56F970A0DA31DCD8BAEF732B8A4D /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.4.1/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		41748FD4035B8E72861381D11011C0BB /* LINEActivity-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LINEActivity-Private.xcconfig"; sourceTree = "<group>"; };
+		473ADD529BB15C870627F6AE6B6BB00F /* LINEActivity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LINEActivity-dummy.m"; sourceTree = "<group>"; };
+		590C70DA9CC372853D0786BB8171B6D2 /* LINEActivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LINEActivity.h; path = LINEActivity/LINEActivity.h; sourceTree = "<group>"; };
 		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		69B3E998326FF4864B7C1465EFE84FDE /* LINEActivity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LINEActivity-prefix.pch"; sourceTree = "<group>"; };
-		82929A3E5E53C63799F424F199D0AEB9 /* LINEActivityIcon~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "LINEActivityIcon~ipad.png"; path = "LINEActivity/LINEActivityIcon~ipad.png"; sourceTree = "<group>"; };
-		8A834AF64D11EDA4D0664B30CB98EF3D /* libLINEActivity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLINEActivity.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F1F47B0A68C76AAE4F70D5C9EFF5E54 /* LINEActivity-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LINEActivity-dummy.m"; sourceTree = "<group>"; };
+		7E88BA08A4F1D4E5E2133B48C5FF9358 /* LINEActivityIcon~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "LINEActivityIcon~ipad.png"; path = "LINEActivity/LINEActivityIcon~ipad.png"; sourceTree = "<group>"; };
+		A35204A1DD5E289F3EDB1A477AC92645 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A60082EFD5DA9AAA687C6EEFE2A52971 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		B237C78A4310B4F2D36CB33D89E3B629 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A6B45EBA732028E9EE36926147104D73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ACA234263930FB83280401B74B005210 /* LINEActivity-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LINEActivity-prefix.pch"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		BF84A2BA65FF3D1F6D5C8C5018BC7AC8 /* LINEActivityIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = LINEActivityIcon.png; path = LINEActivity/LINEActivityIcon.png; sourceTree = "<group>"; };
 		C2564E6C668B1E6FC549C7231F9067CC /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		C7BB7F563901FB2A3FE927FE765C8E2F /* LINEActivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LINEActivity.m; path = LINEActivity/LINEActivity.m; sourceTree = "<group>"; };
 		C90703FF5665EEFCAF23B88F710110D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9286C4FA66D5B93FB7C0F1889CAD527 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		E1DE4F0398EEBF66C4ADD8ADE02C61C9 /* LINEActivity-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "LINEActivity-Private.xcconfig"; sourceTree = "<group>"; };
+		D0C8C91A3F49B1D42A4B9DA2A7D55140 /* libLINEActivity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLINEActivity.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE52E353052CC1205C0C0DBAE69F006C /* LINEActivityIcon@2x~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "LINEActivityIcon@2x~ipad.png"; path = "LINEActivity/LINEActivityIcon@2x~ipad.png"; sourceTree = "<group>"; };
+		E9AA3F46EB7CFF4512747E074EB85112 /* LINEActivityIcon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "LINEActivityIcon@2x.png"; path = "LINEActivity/LINEActivityIcon@2x.png"; sourceTree = "<group>"; };
+		EF0FACEBD38F901D0D8B168D55D7A856 /* LINEActivityIcon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = LINEActivityIcon.png; path = LINEActivity/LINEActivityIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D2DA046E3A1D17754CB297FD1E1D5A3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D80574E2B693C0B6DCDB78A60E2D972C /* Foundation.framework in Frameworks */,
-				F7EB2C29FC5A55A9D2AF70D1EC4FDD6A /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C740DF445B5A40EE4F533748A792AD4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,15 +60,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDDEF286F60CC66F49920567D85C2387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7806D081E02FFE44DC5C702119CAE188 /* Foundation.framework in Frameworks */,
+				11BA103A04E7436DA148609E0B5D20F5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		270BE49F7FFA5E5B92018ACF063FCEF3 /* Pods */ = {
+		395C2C04861EAB80273F6A7DB9D954FF /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				A7D64A3367DEBAC71B07D532617EDB2B /* LINEActivity */,
+				88ECA5199A79755D85E6357C57293BDA /* Frameworks */,
 			);
-			name = Pods;
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -87,16 +88,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		44CCAB7281A1B04268E5B45BEC9A79CE /* Support Files */ = {
+		43B13FD882EDA97093E9CEC221FC8707 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				172634709C459340F84CD88BD5BCB3EB /* LINEActivity.xcconfig */,
-				E1DE4F0398EEBF66C4ADD8ADE02C61C9 /* LINEActivity-Private.xcconfig */,
-				9F1F47B0A68C76AAE4F70D5C9EFF5E54 /* LINEActivity-dummy.m */,
-				69B3E998326FF4864B7C1465EFE84FDE /* LINEActivity-prefix.pch */,
+				04499E987E74B43DEEA5B3B6859EE6FB /* LINEActivity.xcconfig */,
+				41748FD4035B8E72861381D11011C0BB /* LINEActivity-Private.xcconfig */,
+				473ADD529BB15C870627F6AE6B6BB00F /* LINEActivity-dummy.m */,
+				ACA234263930FB83280401B74B005210 /* LINEActivity-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/LINEActivity";
+			sourceTree = "<group>";
+		};
+		49F1E6AA836825F6597A4868689B4C8A /* LINEActivity */ = {
+			isa = PBXGroup;
+			children = (
+				590C70DA9CC372853D0786BB8171B6D2 /* LINEActivity.h */,
+				C7BB7F563901FB2A3FE927FE765C8E2F /* LINEActivity.m */,
+				79B16B5E7093F41C5F5D95F948AB8E3E /* Resources */,
+				43B13FD882EDA97093E9CEC221FC8707 /* Support Files */,
+			);
+			path = LINEActivity;
+			sourceTree = "<group>";
+		};
+		79B16B5E7093F41C5F5D95F948AB8E3E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF0FACEBD38F901D0D8B168D55D7A856 /* LINEActivityIcon.png */,
+				E9AA3F46EB7CFF4512747E074EB85112 /* LINEActivityIcon@2x.png */,
+				DE52E353052CC1205C0C0DBAE69F006C /* LINEActivityIcon@2x~ipad.png */,
+				7E88BA08A4F1D4E5E2133B48C5FF9358 /* LINEActivityIcon~ipad.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -104,10 +127,27 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				270BE49F7FFA5E5B92018ACF063FCEF3 /* Pods */,
+				91556CC00BF896887849438121811F58 /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
 				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		88ECA5199A79755D85E6357C57293BDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B3B56F970A0DA31DCD8BAEF732B8A4D /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91556CC00BF896887849438121811F58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				395C2C04861EAB80273F6A7DB9D954FF /* Google-Mobile-Ads-SDK */,
+				49F1E6AA836825F6597A4868689B4C8A /* LINEActivity */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
@@ -124,21 +164,10 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		A7D64A3367DEBAC71B07D532617EDB2B /* LINEActivity */ = {
-			isa = PBXGroup;
-			children = (
-				4120FFCE00EE86692F9269538435304E /* LINEActivity.h */,
-				17805F54A30AC09764B653F669C52762 /* LINEActivity.m */,
-				DE2306DA88607FAE2625DB97157064FA /* Resources */,
-				44CCAB7281A1B04268E5B45BEC9A79CE /* Support Files */,
-			);
-			path = LINEActivity;
-			sourceTree = "<group>";
-		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8A834AF64D11EDA4D0664B30CB98EF3D /* libLINEActivity.a */,
+				D0C8C91A3F49B1D42A4B9DA2A7D55140 /* libLINEActivity.a */,
 				C90703FF5665EEFCAF23B88F710110D1 /* libPods.a */,
 			);
 			name = Products;
@@ -147,8 +176,8 @@
 		D0FB9306D21AF23A056944AE037CBFFF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				03F74D665145D62E8CBC50F8CE2847CE /* Foundation.framework */,
-				B237C78A4310B4F2D36CB33D89E3B629 /* UIKit.framework */,
+				A6B45EBA732028E9EE36926147104D73 /* Foundation.framework */,
+				A35204A1DD5E289F3EDB1A477AC92645 /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -161,25 +190,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		DE2306DA88607FAE2625DB97157064FA /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BF84A2BA65FF3D1F6D5C8C5018BC7AC8 /* LINEActivityIcon.png */,
-				4F901621D93AD1A59293A59A4406CCED /* LINEActivityIcon@2x.png */,
-				2FA9327B0874D3E9BF7792EAFFA5457F /* LINEActivityIcon@2x~ipad.png */,
-				82929A3E5E53C63799F424F199D0AEB9 /* LINEActivityIcon~ipad.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7AB860E53B73719D498043D34360CBCB /* Headers */ = {
+		451D649792632A46B893F2CF74A99C16 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB63A6A225D0B35E345E37065A3BFB4F /* LINEActivity.h in Headers */,
+				B2E31F5A0C259C0CB3A450ECD440B378 /* LINEActivity.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,20 +214,20 @@
 			buildRules = (
 			);
 			dependencies = (
-				022436BFEE2511A215ADED4473C4D5E3 /* PBXTargetDependency */,
+				0A23ADA3025DA2F33CF528196AEDD34C /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
 			productReference = C90703FF5665EEFCAF23B88F710110D1 /* libPods.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B526A697C89F06E7CDF912CACA1FC8E3 /* LINEActivity */ = {
+		DA82D6D10E8431FE28FB053409A5B1D0 /* LINEActivity */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E233EAF60F6A11E624F5E0E32B2DAD75 /* Build configuration list for PBXNativeTarget "LINEActivity" */;
+			buildConfigurationList = DC563B8739F0972EE38EC0EB71B79FD3 /* Build configuration list for PBXNativeTarget "LINEActivity" */;
 			buildPhases = (
-				A0F469EC0B47A3BF151D0712F9628522 /* Sources */,
-				0D2DA046E3A1D17754CB297FD1E1D5A3 /* Frameworks */,
-				7AB860E53B73719D498043D34360CBCB /* Headers */,
+				C1FB1077F0CC4DCAA4043003FC80EB9B /* Sources */,
+				FDDEF286F60CC66F49920567D85C2387 /* Frameworks */,
+				451D649792632A46B893F2CF74A99C16 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -217,7 +235,7 @@
 			);
 			name = LINEActivity;
 			productName = LINEActivity;
-			productReference = 8A834AF64D11EDA4D0664B30CB98EF3D /* libLINEActivity.a */;
+			productReference = D0C8C91A3F49B1D42A4B9DA2A7D55140 /* libLINEActivity.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +259,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B526A697C89F06E7CDF912CACA1FC8E3 /* LINEActivity */,
+				DA82D6D10E8431FE28FB053409A5B1D0 /* LINEActivity */,
 				A4344194290B1FC3AE0067036C77BF63 /* Pods */,
 			);
 		};
@@ -256,23 +274,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0F469EC0B47A3BF151D0712F9628522 /* Sources */ = {
+		C1FB1077F0CC4DCAA4043003FC80EB9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42CAAFBE4EE8CE8C7156A9D62CE9F6E /* LINEActivity-dummy.m in Sources */,
-				64FD3CB168067327C9D55333BBCC3464 /* LINEActivity.m in Sources */,
+				5509A99747056FA6401A347328272735 /* LINEActivity-dummy.m in Sources */,
+				2F84A324156FF081A7951C6F605C29F9 /* LINEActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		022436BFEE2511A215ADED4473C4D5E3 /* PBXTargetDependency */ = {
+		0A23ADA3025DA2F33CF528196AEDD34C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LINEActivity;
-			target = B526A697C89F06E7CDF912CACA1FC8E3 /* LINEActivity */;
-			targetProxy = C88ADACC1B1283AE55C545598765F8D3 /* PBXContainerItemProxy */;
+			target = DA82D6D10E8431FE28FB053409A5B1D0 /* LINEActivity */;
+			targetProxy = FF4523756AC5F0A9F04FA9EACAAE4703 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -326,38 +344,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		8BEA9F3FF28AE882E85AC607D23D225A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1DE4F0398EEBF66C4ADD8ADE02C61C9 /* LINEActivity-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LINEActivity/LINEActivity-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		9C5EB4962201DCFC332148E509A1A791 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1DE4F0398EEBF66C4ADD8ADE02C61C9 /* LINEActivity-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/LINEActivity/LINEActivity-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -414,6 +400,38 @@
 			};
 			name = Debug;
 		};
+		F7F52D3329D71CDAAFDF9E4641AD5AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41748FD4035B8E72861381D11011C0BB /* LINEActivity-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LINEActivity/LINEActivity-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FF21C64FC66D30172B0817C4C3FC594A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41748FD4035B8E72861381D11011C0BB /* LINEActivity-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/LINEActivity/LINEActivity-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,11 +453,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E233EAF60F6A11E624F5E0E32B2DAD75 /* Build configuration list for PBXNativeTarget "LINEActivity" */ = {
+		DC563B8739F0972EE38EC0EB71B79FD3 /* Build configuration list for PBXNativeTarget "LINEActivity" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C5EB4962201DCFC332148E509A1A791 /* Debug */,
-				8BEA9F3FF28AE882E85AC607D23D225A /* Release */,
+				F7F52D3329D71CDAAFDF9E4641AD5AF4 /* Debug */,
+				FF21C64FC66D30172B0817C4C3FC594A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

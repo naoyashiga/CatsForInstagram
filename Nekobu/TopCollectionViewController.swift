@@ -10,12 +10,13 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import WebImage
+import GoogleMobileAds
 
 struct topReuseId {
     static let cell = "TopCollectionViewCell"
 }
 
-class TopCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating {
+class TopCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating, GADBannerViewDelegate {
     var mediaList = [Media]() {
         didSet {
 //            collectionView?.reloadData()
@@ -33,6 +34,7 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         
         collectionView?.applyCellNib(cellNibName: topReuseId.cell)
 
+        settingAd()
         
         loadPhoto(requestURL: Config.TAG)
     }
@@ -40,6 +42,24 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func settingAd(){
+        let MY_BANNER_UNIT_ID = "ca-app-pub-9360978553412745/9261475110"
+        
+        var origin = CGPointMake(
+            0.0,
+            view.bounds.height - CGSizeFromGADAdSize(kGADAdSizeBanner).height - PageMenuConstraint.menuHeight)
+        
+        var size = GADAdSizeFullWidthPortraitWithHeight(50) // set size to 50
+        var adB = GADBannerView(adSize: size, origin: origin) // create the banner
+        adB.adUnitID = MY_BANNER_UNIT_ID  //"ca-app-pub-XXXXXXXX/XXXXXXX"
+        adB.delegate = self // ??
+        adB.rootViewController = self // ??
+        self.view.addSubview(adB) // ??
+        var request = GADRequest() // create request
+        request.testDevices = [kGADSimulatorID]; // set it to "test" request
+        adB.loadRequest(request) // actually load it (?)
     }
     
     func loadPhoto(#requestURL: String) {
