@@ -81,7 +81,7 @@ class SettingCollectionViewController: BaseCollectionViewController {
         
         switch indexPath.section {
         case 0:
-            cell.titleLabel.text = reviewMenu[0]
+            cell.titleLabel.text = reviewMenu[indexPath.row]
         case 1:
             cell.titleLabel.text = snsMenu[indexPath.row]
         default:
@@ -93,6 +93,21 @@ class SettingCollectionViewController: BaseCollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(settingReuseId.cell, forIndexPath: indexPath) as! SettingCollectionViewCell
+        
+        switch indexPath.section {
+        case 0:
+            
+            if indexPath.row == 0 {
+                transitionToReviewPage()
+            } else {
+                transitionToOtherAppPage()
+            }
+            
+        case 1:
+            break
+        default:
+            break
+        }
     }
     
     // MARK: UICollectionViewDelegateFlowLayout
@@ -110,5 +125,24 @@ class SettingCollectionViewController: BaseCollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 1, left: 0, bottom: 10, right: 0)
+    }
+    
+    func openAppStore(urlStr:String){
+        let url = NSURL(string:urlStr)
+        let app:UIApplication = UIApplication.sharedApplication()
+        app.openURL(url!)
+    }
+    
+    func transitionToOtherAppPage() {
+        let otherAppURL = "itms-apps://itunes.apple.com/jp/artist/naoya-sugimoto/id933472785"
+        
+        openAppStore(otherAppURL)
+    }
+    func transitionToReviewPage() {
+        let APP_ID = "1031396732"
+        
+        let reviewURL = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=" + APP_ID
+        
+        openAppStore(reviewURL)
     }
 }
