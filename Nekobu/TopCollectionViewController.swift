@@ -16,7 +16,7 @@ struct topReuseId {
     static let cell = "TopCollectionViewCell"
 }
 
-class TopCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating, GADBannerViewDelegate {
+class TopCollectionViewController: PhotoCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating, GADBannerViewDelegate {
     var mediaList = [Media]() {
         didSet {
 //            collectionView?.reloadData()
@@ -30,9 +30,9 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.viewBackgroundColor()
-        
-        collectionView?.applyCellNib(cellNibName: topReuseId.cell)
+        if let collectionView = collectionView {
+            collectionView.applyCellNib(cellNibName: topReuseId.cell)
+        }
 
         settingAd()
         
@@ -58,8 +58,8 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         adB.rootViewController = self // ??
         self.view.addSubview(adB) // ??
         var request = GADRequest() // create request
-//        request.testDevices = [kGADSimulatorID]; // set it to "test" request
-        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
+        request.testDevices = [kGADSimulatorID]; // set it to "test" request
+//        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
         adB.loadRequest(request) // actually load it (?)
     }
     

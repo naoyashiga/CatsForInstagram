@@ -16,7 +16,7 @@ struct favoriteReuseId {
     static let cell = "FavoriteCollectionViewCell"
 }
 
-class FavoriteCollectionViewController: BaseCollectionViewController {
+class FavoriteCollectionViewController: PhotoCollectionViewController {
     private var favorites: Results<Favorite> {
         get {
             let realm = Realm()
@@ -28,10 +28,12 @@ class FavoriteCollectionViewController: BaseCollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView?.emptyDataSetDelegate = self
-        collectionView?.emptyDataSetSource = self
-        
-        collectionView?.applyCellNib(cellNibName: favoriteReuseId.cell)
+        if let collectionView = collectionView {
+            collectionView.emptyDataSetDelegate = self
+            collectionView.emptyDataSetSource = self
+            
+            collectionView.applyCellNib(cellNibName: favoriteReuseId.cell)
+        }
     }
 
     override func didReceiveMemoryWarning() {

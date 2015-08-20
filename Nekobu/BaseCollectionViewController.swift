@@ -19,11 +19,17 @@ struct cellMargin {
 }
 
 class BaseCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
-    var refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setCollectionView()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func setCollectionView() {
         let edgeInsetBottom:CGFloat = 0
         let edgeInsetTop:CGFloat = 0
         
@@ -34,19 +40,8 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
             collectionView.contentInset = UIEdgeInsetsMake(edgeInsetTop, 0, edgeInsetBottom, 0)
             
             collectionView.backgroundColor = UIColor.viewBackgroundColor()
-            refreshControl = UIRefreshControl()
-            refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
-            collectionView.addSubview(refreshControl)
         }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    func refresh() {
-        collectionView?.reloadData()
-        refreshControl.endRefreshing()
+        
     }
     
     func setCornerRadius<T: UICollectionReusableView>(#headerView:T) -> T {
