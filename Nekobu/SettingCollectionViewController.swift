@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Social
 
 struct settingReuseId {
     static let cell = "SettingCollectionViewCell"
@@ -14,6 +15,7 @@ struct settingReuseId {
 }
 
 class SettingCollectionViewController: BaseCollectionViewController {
+    let appStoreURL = "http://appstore.com/cats-for-instagram"
     var reviewMenu = [
         "レビューを書いて応援する",
         "他のアプリを見る"
@@ -104,6 +106,16 @@ class SettingCollectionViewController: BaseCollectionViewController {
             }
             
         case 1:
+            switch indexPath.row {
+            case 0:
+                postToTwitter()
+            case 1:
+                postToFacebook()
+            case 2:
+                postToLINE()
+            default:
+                postToTwitter()
+            }
             break
         default:
             break
@@ -144,5 +156,31 @@ class SettingCollectionViewController: BaseCollectionViewController {
         let reviewURL = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=" + APP_ID
         
         openAppStore(reviewURL)
+    }
+    
+    func postToFacebook(){
+        let vc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+        let shareText = "iOSアプリ「ねこ部」かわいい " + appStoreURL
+        vc.setInitialText(shareText)
+        presentViewController(vc,animated:true,completion:nil)
+    }
+    
+    func postToTwitter(){
+        let vc = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+        let shareText = "iOSアプリ「ねこ部」かわいい " + appStoreURL
+        //テキストを設定
+        vc.setInitialText(shareText)
+        presentViewController(vc,animated:true,completion:nil)
+    }
+    
+    func postToLINE(){
+        let shareText = "iOSアプリ「ねこ部」かわいい " + appStoreURL
+        let encodedText = shareText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        
+        var shareURL = NSURL(string: "line://msg/text/" + encodedText)
+        
+        if (UIApplication.sharedApplication().canOpenURL(shareURL!)) {
+            UIApplication.sharedApplication().openURL(shareURL!)
+        }
     }
 }
