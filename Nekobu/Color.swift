@@ -33,6 +33,14 @@ extension UIColor {
         return UIColor.hexStr("ffa633", alpha: 1)
     }
     
+    class func cellLightBackgroundColor() -> UIColor {
+        return UIColor.hexStr("ffffff", alpha: 1)
+    }
+    
+    class func cellSelectedBackgroundColor() -> UIColor {
+        return UIColor.hexStr("AAD9D1", alpha: 0.6)
+    }
+    
     //MARK: Tab Color
     class func scrollMenuBackgroundColor() -> UIColor {
         return UIColor.hexStr("AAD9D1", alpha: 1)

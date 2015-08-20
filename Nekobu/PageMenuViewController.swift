@@ -27,7 +27,7 @@ class PageMenuViewController: UIViewController {
         
         topVC.title = "tag"
         favVC.title = "fav"
-        settingVC.title = "setting"
+        settingVC.title = "other"
         
         controllerArray.append(topVC)
         controllerArray.append(favVC)

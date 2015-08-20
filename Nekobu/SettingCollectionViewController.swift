@@ -21,9 +21,8 @@ class SettingCollectionViewController: BaseCollectionViewController {
         "他のアプリを見る"
     ]
     var snsMenu = [
-        "Twitter",
-        "Facebook",
-        "LINE"
+        "Twitterでつぶやく",
+        "LINEに送る"
     ]
     
     override func viewDidLoad() {
@@ -69,6 +68,15 @@ class SettingCollectionViewController: BaseCollectionViewController {
         case UICollectionElementKindSectionHeader:
             var headerView = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: settingReuseId.headerView, forIndexPath: indexPath) as! SettingHeaderView
             
+            switch indexPath.section {
+            case 0:
+                headerView.titleLabel.text = "応援"
+            case 1:
+                headerView.titleLabel.text = "アプリを友だちに紹介"
+            default:
+                break
+            }
+            
             
             return setCornerRadius(headerView: headerView)
             
@@ -90,6 +98,18 @@ class SettingCollectionViewController: BaseCollectionViewController {
             break;
         }
         
+        //通常の背景
+        let backgroundView = UIView()
+        backgroundView.bounds = cell.bounds
+        backgroundView.backgroundColor = UIColor.cellLightBackgroundColor()
+        cell.backgroundView = backgroundView
+        
+        //選択時の背景
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.bounds = cell.bounds
+        selectedBackgroundView.backgroundColor = UIColor.cellSelectedBackgroundColor()
+        cell.selectedBackgroundView = selectedBackgroundView
+        
         return cell
     }
     
@@ -110,11 +130,9 @@ class SettingCollectionViewController: BaseCollectionViewController {
             case 0:
                 postToTwitter()
             case 1:
-                postToFacebook()
-            case 2:
                 postToLINE()
             default:
-                postToTwitter()
+                break
             }
             break
         default:
@@ -158,23 +176,16 @@ class SettingCollectionViewController: BaseCollectionViewController {
         openAppStore(reviewURL)
     }
     
-    func postToFacebook(){
-        let vc = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-        let shareText = "iOSアプリ「ねこ部」かわいい " + appStoreURL
-        vc.setInitialText(shareText)
-        presentViewController(vc,animated:true,completion:nil)
-    }
-    
     func postToTwitter(){
         let vc = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        let shareText = "iOSアプリ「ねこ部」かわいい " + appStoreURL
+        let shareText = "iOSアプリ「ねこ部」ねこの写真がたくさん見れるよ! " + appStoreURL
         //テキストを設定
         vc.setInitialText(shareText)
         presentViewController(vc,animated:true,completion:nil)
     }
     
     func postToLINE(){
-        let shareText = "iOSアプリ「ねこ部」かわいい " + appStoreURL
+        let shareText = "iOSアプリ「ねこ部」ねこの写真がたくさん見れるよ! " + appStoreURL
         let encodedText = shareText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         
         var shareURL = NSURL(string: "line://msg/text/" + encodedText)

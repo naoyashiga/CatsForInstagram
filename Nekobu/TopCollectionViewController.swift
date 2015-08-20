@@ -58,7 +58,8 @@ class TopCollectionViewController: BaseCollectionViewController, UIViewControlle
         adB.rootViewController = self // ??
         self.view.addSubview(adB) // ??
         var request = GADRequest() // create request
-        request.testDevices = [kGADSimulatorID]; // set it to "test" request
+//        request.testDevices = [kGADSimulatorID]; // set it to "test" request
+        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
         adB.loadRequest(request) // actually load it (?)
     }
     
