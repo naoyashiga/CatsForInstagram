@@ -23,13 +23,6 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fav_off" translatesAutoresizingMaskIntoConstraints="NO" id="JtK-MS-Enu">
-                    <rect key="frame" x="133" y="52" width="335" height="286"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="286" id="B2c-Jn-hul"/>
-                        <constraint firstAttribute="width" constant="335" id="rSs-GX-yD9"/>
-                    </constraints>
-                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOd-BQ-tki" userLabel="cancelButton">
                     <rect key="frame" x="150" y="457" width="300" height="49"/>
                     <constraints>
@@ -39,12 +32,18 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="review_text" translatesAutoresizingMaskIntoConstraints="NO" id="JtK-MS-Enu">
+                    <rect key="frame" x="167" y="122" width="266" height="219"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="219" id="B2c-Jn-hul"/>
+                        <constraint firstAttribute="width" constant="266" id="rSs-GX-yD9"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="eP4-7k-pd8" firstAttribute="top" secondItem="JtK-MS-Enu" secondAttribute="bottom" constant="43" id="3f8-mg-egY"/>
+                <constraint firstItem="eP4-7k-pd8" firstAttribute="top" secondItem="JtK-MS-Enu" secondAttribute="bottom" constant="40" id="3f8-mg-egY"/>
                 <constraint firstAttribute="centerX" secondItem="eP4-7k-pd8" secondAttribute="centerX" id="LMp-ev-vRc"/>
-                <constraint firstItem="JtK-MS-Enu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="52" id="NAF-sS-2Ee"/>
+                <constraint firstItem="JtK-MS-Enu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="122" id="NAF-sS-2Ee"/>
                 <constraint firstItem="uOd-BQ-tki" firstAttribute="top" secondItem="eP4-7k-pd8" secondAttribute="bottom" constant="28" id="Qkb-ss-s3w"/>
                 <constraint firstAttribute="centerX" secondItem="JtK-MS-Enu" secondAttribute="centerX" id="ekR-5b-6R0"/>
                 <constraint firstAttribute="centerX" secondItem="uOd-BQ-tki" secondAttribute="centerX" id="qXa-Ni-HPN"/>
@@ -53,8 +52,8 @@
         </view>
     </objects>
     <resources>
-        <image name="fav_off" width="46" height="44"/>
         <image name="review_cancel" width="249" height="49"/>
         <image name="review_on" width="249" height="48"/>
+        <image name="review_text" width="266" height="219"/>
     </resources>
 </document>
