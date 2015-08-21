@@ -10,6 +10,8 @@
 		9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */; };
 		9A19BBD51B82A2FC00D75786 /* SettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */; };
 		9A6C75CE1B86952200956212 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */; };
+		9A6C75D21B869E0E00956212 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75D01B869E0E00956212 /* ReviewViewController.swift */; };
+		9A6C75D31B869E0E00956212 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75D11B869E0E00956212 /* ReviewViewController.xib */; };
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
@@ -75,6 +77,8 @@
 		9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingHeaderView.swift; sourceTree = "<group>"; };
 		9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderView.xib; sourceTree = "<group>"; };
 		9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		9A6C75D01B869E0E00956212 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		9A6C75D11B869E0E00956212 /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,15 @@
 				D8423A87BA27069615DAC24C /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A6C75CF1B869DDF00956212 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				9A6C75D01B869E0E00956212 /* ReviewViewController.swift */,
+				9A6C75D11B869E0E00956212 /* ReviewViewController.xib */,
+			);
+			name = Review;
 			sourceTree = "<group>";
 		};
 		9AB9765A1B8158C70079A194 /* Setting */ = {
@@ -287,6 +300,7 @@
 		9AE22D861B7EE6800024E221 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9A6C75CF1B869DDF00956212 /* Review */,
 				9AB9765A1B8158C70079A194 /* Setting */,
 				9AE22DB21B7F14330024E221 /* Detail */,
 				9AE22DA71B7F0A900024E221 /* Favorite */,
@@ -574,6 +588,7 @@
 			files = (
 				9AE22DAB1B7F0ABA0024E221 /* FavoriteCollectionViewController.xib in Resources */,
 				9AB976651B8159760079A194 /* SettingCollectionViewCell.xib in Resources */,
+				9A6C75D31B869E0E00956212 /* ReviewViewController.xib in Resources */,
 				9AE22D8D1B7EE6BF0024E221 /* TopCollectionViewCell.xib in Resources */,
 				9AE22DB81B7F22530024E221 /* PhotoDetailViewController.xib in Resources */,
 				9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */,
@@ -658,6 +673,7 @@
 				9AE22DAA1B7F0ABA0024E221 /* FavoriteCollectionViewController.swift in Sources */,
 				9AE22DCF1B7F67700024E221 /* Pagination.swift in Sources */,
 				9AB9766E1B8194180079A194 /* String+String2Image.swift in Sources */,
+				9A6C75D21B869E0E00956212 /* ReviewViewController.swift in Sources */,
 				9AE22D9D1B7EFB070024E221 /* Color.swift in Sources */,
 				9AE22DB01B7F0B270024E221 /* FavoriteCollectionViewCell.swift in Sources */,
 				9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */,

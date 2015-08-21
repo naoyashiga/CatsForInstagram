@@ -34,6 +34,7 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
         let edgeInsetTop:CGFloat = 0
         
         cellSize.width = view.bounds.width / 2
+        
         cellSize.height = view.bounds.width / 2
         
         if let collectionView = collectionView {

@@ -16,7 +16,7 @@ struct favoriteReuseId {
     static let cell = "FavoriteCollectionViewCell"
 }
 
-class FavoriteCollectionViewController: PhotoCollectionViewController {
+class FavoriteCollectionViewController: PhotoCollectionViewController, UIViewControllerTransitioningDelegate {
     private var favorites: Results<Favorite> {
         get {
             let realm = Realm()
@@ -28,12 +28,25 @@ class FavoriteCollectionViewController: PhotoCollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         if let collectionView = collectionView {
             collectionView.emptyDataSetDelegate = self
             collectionView.emptyDataSetSource = self
             
             collectionView.applyCellNib(cellNibName: favoriteReuseId.cell)
         }
+    }
+    
+    func openReviewModal() {
+        let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
+        reviewVC.modalPresentationStyle = .Custom
+        reviewVC.transitioningDelegate = self
+        presentViewController(reviewVC, animated: true, completion: nil)
+    }
+    
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
+        
+        return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: source)
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,5 +81,7 @@ class FavoriteCollectionViewController: PhotoCollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(favoriteReuseId.cell, forIndexPath: indexPath) as! FavoriteCollectionViewCell
+        
+        openReviewModal()
     }
 }
