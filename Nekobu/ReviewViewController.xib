@@ -14,18 +14,13 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-7k-pd8" userLabel="reviewButton">
-                    <rect key="frame" x="150" y="381" width="300" height="48"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="review_text" translatesAutoresizingMaskIntoConstraints="NO" id="JtK-MS-Enu">
+                    <rect key="frame" x="167" y="122" width="266" height="219"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="300" id="csU-5S-QnD"/>
+                        <constraint firstAttribute="height" constant="219" id="B2c-Jn-hul"/>
+                        <constraint firstAttribute="width" constant="266" id="rSs-GX-yD9"/>
                     </constraints>
-                    <state key="normal" image="review_on">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="reviewButtonTapped:" destination="-1" eventType="touchUpInside" id="kZr-AU-h9Z"/>
-                    </connections>
-                </button>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOd-BQ-tki" userLabel="cancelButton">
                     <rect key="frame" x="150" y="457" width="300" height="49"/>
                     <constraints>
@@ -38,19 +33,26 @@
                         <action selector="cacelButtonTapped:" destination="-1" eventType="touchUpInside" id="EY0-8H-FIt"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="review_text" translatesAutoresizingMaskIntoConstraints="NO" id="JtK-MS-Enu">
-                    <rect key="frame" x="167" y="122" width="266" height="219"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-7k-pd8" userLabel="reviewButton">
+                    <rect key="frame" x="125" y="349" width="350" height="90"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="219" id="B2c-Jn-hul"/>
-                        <constraint firstAttribute="width" constant="266" id="rSs-GX-yD9"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="LzT-o9-Cc8"/>
+                        <constraint firstAttribute="width" constant="350" id="csU-5S-QnD"/>
+                        <constraint firstAttribute="height" constant="90" id="x11-2y-hDb"/>
                     </constraints>
-                </imageView>
+                    <state key="normal" image="review_on">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="reviewButtonTapped:" destination="-1" eventType="touchUpInside" id="kZr-AU-h9Z"/>
+                    </connections>
+                </button>
             </subviews>
             <constraints>
-                <constraint firstItem="eP4-7k-pd8" firstAttribute="top" secondItem="JtK-MS-Enu" secondAttribute="bottom" constant="40" id="3f8-mg-egY"/>
+                <constraint firstItem="eP4-7k-pd8" firstAttribute="top" secondItem="JtK-MS-Enu" secondAttribute="bottom" constant="8" id="3f8-mg-egY"/>
                 <constraint firstAttribute="centerX" secondItem="eP4-7k-pd8" secondAttribute="centerX" id="LMp-ev-vRc"/>
                 <constraint firstItem="JtK-MS-Enu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="122" id="NAF-sS-2Ee"/>
-                <constraint firstItem="uOd-BQ-tki" firstAttribute="top" secondItem="eP4-7k-pd8" secondAttribute="bottom" constant="28" id="Qkb-ss-s3w"/>
+                <constraint firstItem="uOd-BQ-tki" firstAttribute="top" secondItem="eP4-7k-pd8" secondAttribute="bottom" constant="18" id="Qkb-ss-s3w"/>
                 <constraint firstAttribute="centerX" secondItem="JtK-MS-Enu" secondAttribute="centerX" id="ekR-5b-6R0"/>
                 <constraint firstAttribute="centerX" secondItem="uOd-BQ-tki" secondAttribute="centerX" id="qXa-Ni-HPN"/>
             </constraints>

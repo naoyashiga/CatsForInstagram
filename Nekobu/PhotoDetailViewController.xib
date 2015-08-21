@@ -56,7 +56,11 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-ud-MCD" userLabel="dismissButton">
-                    <rect key="frame" x="180" y="551" width="41" height="41"/>
+                    <rect key="frame" x="10" y="512" width="380" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="8B3-ae-1wj"/>
+                        <constraint firstAttribute="width" constant="380" id="Ulf-oF-oqA"/>
+                    </constraints>
                     <state key="normal" image="cancel">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
