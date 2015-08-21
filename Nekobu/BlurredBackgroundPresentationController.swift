@@ -62,7 +62,7 @@ class BlurredBackgroundPresentationController: UIPresentationController {
         containerView.insertSubview(dimmingView, atIndex: 0)
         
         presentedViewController.transitionCoordinator()?.animateAlongsideTransition({ (context) -> Void in
-            self.dimmingView.alpha = 0.7
+            self.dimmingView.alpha = 0.8
             }, completion: nil)
     }
     

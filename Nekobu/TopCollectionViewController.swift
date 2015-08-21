@@ -58,8 +58,8 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         adB.rootViewController = self // ??
         self.view.addSubview(adB) // ??
         var request = GADRequest() // create request
-        request.testDevices = [kGADSimulatorID]; // set it to "test" request
-//        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
+//        request.testDevices = [kGADSimulatorID]
+        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
         adB.loadRequest(request) // actually load it (?)
     }
     
@@ -167,19 +167,19 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         photoDetailVC.detailImageURL = media.standardResolutionImageURL
         photoDetailVC.media = media
         
-        
-        presentViewController(photoDetailVC, animated: true, completion: nil)
+        view.window?.rootViewController?.presentViewController(photoDetailVC, animated: true, completion: nil)
     }
     
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
         
-        return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: source)
+        
+        return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: self)
     }
     
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         let animator = TransitionPresentationAnimator()
-        animator.sourceVC = source
+        animator.sourceVC = self
         animator.destinationVC = presented
         
         return animator
