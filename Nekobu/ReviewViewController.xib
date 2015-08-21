@@ -15,7 +15,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-7k-pd8" userLabel="reviewButton">
-                    <rect key="frame" x="48" y="381" width="504" height="48"/>
+                    <rect key="frame" x="150" y="381" width="300" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="csU-5S-QnD"/>
+                    </constraints>
                     <state key="normal" image="review_on">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -27,8 +30,11 @@
                         <constraint firstAttribute="width" constant="335" id="rSs-GX-yD9"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOd-BQ-tki" userLabel="reviewButton">
-                    <rect key="frame" x="48" y="457" width="504" height="49"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOd-BQ-tki" userLabel="cancelButton">
+                    <rect key="frame" x="150" y="457" width="300" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="iMN-Cv-tj6"/>
+                    </constraints>
                     <state key="normal" image="review_cancel">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -37,13 +43,11 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="eP4-7k-pd8" firstAttribute="top" secondItem="JtK-MS-Enu" secondAttribute="bottom" constant="43" id="3f8-mg-egY"/>
-                <constraint firstItem="uOd-BQ-tki" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="48" id="53s-0P-Zc2"/>
-                <constraint firstAttribute="trailing" secondItem="uOd-BQ-tki" secondAttribute="trailing" constant="48" id="Avi-5y-hdn"/>
+                <constraint firstAttribute="centerX" secondItem="eP4-7k-pd8" secondAttribute="centerX" id="LMp-ev-vRc"/>
                 <constraint firstItem="JtK-MS-Enu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="52" id="NAF-sS-2Ee"/>
-                <constraint firstAttribute="trailing" secondItem="eP4-7k-pd8" secondAttribute="trailing" constant="48" id="Q8b-ED-aUK"/>
                 <constraint firstItem="uOd-BQ-tki" firstAttribute="top" secondItem="eP4-7k-pd8" secondAttribute="bottom" constant="28" id="Qkb-ss-s3w"/>
                 <constraint firstAttribute="centerX" secondItem="JtK-MS-Enu" secondAttribute="centerX" id="ekR-5b-6R0"/>
-                <constraint firstItem="eP4-7k-pd8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="48" id="l5G-MP-wxZ"/>
+                <constraint firstAttribute="centerX" secondItem="uOd-BQ-tki" secondAttribute="centerX" id="qXa-Ni-HPN"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
         </view>
