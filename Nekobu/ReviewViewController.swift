@@ -18,4 +18,26 @@ class ReviewViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func openAppStore(urlStr:String){
+        let url = NSURL(string:urlStr)
+        let app:UIApplication = UIApplication.sharedApplication()
+        app.openURL(url!)
+    }
+    
+    func transitionToReviewPage() {
+        let APP_ID = "1031396732"
+        
+        let reviewURL = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=" + APP_ID
+        
+        openAppStore(reviewURL)
+    }
+    
+    @IBAction func reviewButtonTapped(sender: UIButton) {
+        transitionToReviewPage()
+    }
+    
+    @IBAction func cacelButtonTapped(sender: UIButton) {
+        presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

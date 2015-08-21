@@ -18,12 +18,12 @@ class BlurredBackgroundPresentationController: UIPresentationController {
     
     func setupDimmingView() {
         dimmingView = UIView()
-        
-        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light)) as UIVisualEffectView
-        visualEffectView.frame = dimmingView.bounds
-        visualEffectView.autoresizingMask = .FlexibleHeight | .FlexibleWidth
-        
-        dimmingView.addSubview(visualEffectView)
+        dimmingView.backgroundColor = UIColor.blackColor()
+//        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light)) as UIVisualEffectView
+//        visualEffectView.frame = dimmingView.bounds
+//        visualEffectView.autoresizingMask = .FlexibleHeight | .FlexibleWidth
+//        
+//        dimmingView.addSubview(visualEffectView)
         
         let tapRecognizer = UITapGestureRecognizer(target: self, action: "dimmingViewTapped:")
         dimmingView.addGestureRecognizer(tapRecognizer)
@@ -56,14 +56,13 @@ class BlurredBackgroundPresentationController: UIPresentationController {
     }
     
     override func presentationTransitionWillBegin() {
-        dimmingView.alpha = 0.0
         dimmingView.frame = containerView.bounds
         dimmingView.alpha = 0.0
         
         containerView.insertSubview(dimmingView, atIndex: 0)
         
         presentedViewController.transitionCoordinator()?.animateAlongsideTransition({ (context) -> Void in
-            self.dimmingView.alpha = 1.0
+            self.dimmingView.alpha = 0.7
             }, completion: nil)
     }
     

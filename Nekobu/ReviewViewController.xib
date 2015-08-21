@@ -22,6 +22,9 @@
                     <state key="normal" image="review_on">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="reviewButtonTapped:" destination="-1" eventType="touchUpInside" id="kZr-AU-h9Z"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOd-BQ-tki" userLabel="cancelButton">
                     <rect key="frame" x="150" y="457" width="300" height="49"/>
@@ -31,6 +34,9 @@
                     <state key="normal" image="review_cancel">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="cacelButtonTapped:" destination="-1" eventType="touchUpInside" id="EY0-8H-FIt"/>
+                    </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="review_text" translatesAutoresizingMaskIntoConstraints="NO" id="JtK-MS-Enu">
                     <rect key="frame" x="167" y="122" width="266" height="219"/>
