@@ -16,7 +16,7 @@ struct topReuseId {
     static let cell = "TopCollectionViewCell"
 }
 
-class TopCollectionViewController: PhotoCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating, GADBannerViewDelegate {
+class TopCollectionViewController: PhotoCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating, GADBannerViewDelegate, GADInterstitialDelegate {
     var mediaList = [Media]() {
         didSet {
 //            collectionView?.reloadData()
@@ -27,6 +27,8 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
     
     var selectedIndexPath = NSIndexPath()
     
+    var interstitial:GADInterstitial?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,6 +36,7 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
             collectionView.applyCellNib(cellNibName: topReuseId.cell)
         }
 
+        settingInterstitialAd()
         settingAd()
         
         loadPhoto(requestURL: Config.TAG)
@@ -44,9 +47,15 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         // Dispose of any resources that can be recreated.
     }
     
-    deinit {
-        println("WebviewControllerは正しく解放されました")
+    func settingInterstitialAd() {
+        interstitial = GADInterstitial(adUnitID: AdManager.ADUNIT_ID)
+        interstitial!.delegate = self
+        var request = GADRequest() // create request
+//        request.testDevices = [kGADSimulatorID]
+        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
+        interstitial!.loadRequest(request)
     }
+    
     func settingAd(){
         let MY_BANNER_UNIT_ID = "ca-app-pub-9360978553412745/9261475110"
         
@@ -116,7 +125,6 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
                     self.pagenation = Pagenation(nextURLString: nextURLString)
                 }
                 
-                println("reload")
                 self.collectionView?.reloadData()
             }
         })
@@ -153,7 +161,6 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         }
         
         if indexPath.row == mediaList.count - 4 {
-            println("end contents")
             loadPhoto(requestURL: pagenation.nextURLString)
         }
     
@@ -175,14 +182,15 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         ReviewManager.update()
         
         if(ReviewManager.isReview){
+            //レビューまだの人
             if(ReviewManager.reviewCounter != 0 && ReviewManager.reviewCounter % ReviewManager.Cycle.top == 0){
                 let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
                 reviewVC.modalPresentationStyle = .Custom
                 reviewVC.transitioningDelegate = self
                 view.window?.rootViewController?.presentViewController(reviewVC, animated: true, completion: nil)
             } else {
-                view.window?.rootViewController?.presentViewController(photoDetailVC, animated: true, completion: nil)
-                
+                //レビューをしていない人は広告が出る
+                checkInterstitialAd(photoDetailViewController: photoDetailVC)
             }
             
             ReviewManager.countUp()
@@ -190,6 +198,24 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         } else {
             view.window?.rootViewController?.presentViewController(photoDetailVC, animated: true, completion: nil)
         }
+    }
+    
+    func checkInterstitialAd(#photoDetailViewController: PhotoDetailViewController) {
+        AdManager.setAdCounter()
+        
+        if AdManager.adCounter != 0 && AdManager.adCounter % AdManager.Cycle.top == 0{
+            if(interstitial!.isReady){
+                interstitial!.presentFromRootViewController(self)
+            }
+            
+            //次の広告の準備
+            settingInterstitialAd()
+        } else {
+            
+            view.window?.rootViewController?.presentViewController(photoDetailViewController, animated: true, completion: nil)
+        }
+        
+        AdManager.countUp()
     }
     
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {

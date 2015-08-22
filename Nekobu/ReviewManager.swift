@@ -13,7 +13,7 @@ final class ReviewManager: NSObject {
     static var isReview = true
     
      struct Cycle {
-        static var top = 10
+        static var top = 9
         static var photoDetail = 3
     }
     

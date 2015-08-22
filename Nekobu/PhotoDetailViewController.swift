@@ -46,11 +46,9 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         
         if realm.objects(Favorite).filter(predicate).count == 0 {
             //お気に入り未登録
-            println("お気に入り未登録")
             favoriteButton.selected = false
         } else {
             //お気に入り登録済み
-            println("お気に入り登録済み")
             favoriteButton.selected = true
         }
     }
@@ -144,7 +142,6 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
             if exisitingFavoriteArray.count != 0 {
                 
                 realm.write {
-                    println("remove fav")
                     realm.delete(exisitingFavoriteArray[0])
                     
                     self.favoriteButton.selected = false
@@ -177,7 +174,6 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
                 favorite.createdAt = NSDate().timeIntervalSince1970
                 
                 realm.write {
-                    println("add fav")
                     realm.add(favorite, update: true)
                     
                     self.favoriteButton.selected = true

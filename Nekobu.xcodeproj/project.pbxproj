@@ -11,6 +11,7 @@
 		9A19BBD51B82A2FC00D75786 /* SettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */; };
 		9A2DEE7E1B8762E300488078 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */; };
 		9A2DEE801B881F5900488078 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE7F1B881F5900488078 /* ReviewManager.swift */; };
+		9A2DEE841B88444700488078 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE831B88444700488078 /* AdManager.swift */; };
 		9A6C75CE1B86952200956212 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */; };
 		9A6C75D21B869E0E00956212 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75D01B869E0E00956212 /* ReviewViewController.swift */; };
 		9A6C75D31B869E0E00956212 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75D11B869E0E00956212 /* ReviewViewController.xib */; };
@@ -80,6 +81,7 @@
 		9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderView.xib; sourceTree = "<group>"; };
 		9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		9A2DEE7F1B881F5900488078 /* ReviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
+		9A2DEE831B88444700488078 /* AdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 		9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		9A6C75D01B869E0E00956212 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		9A6C75D11B869E0E00956212 /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
@@ -176,6 +178,14 @@
 				9A2DEE7F1B881F5900488078 /* ReviewManager.swift */,
 			);
 			name = Review;
+			sourceTree = "<group>";
+		};
+		9A2DEE821B88442E00488078 /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				9A2DEE831B88444700488078 /* AdManager.swift */,
+			);
+			name = Ad;
 			sourceTree = "<group>";
 		};
 		9A6C75CF1B869DDF00956212 /* Review */ = {
@@ -477,6 +487,7 @@
 		9AE22DC71B7F379E0024E221 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9A2DEE821B88442E00488078 /* Ad */,
 				9A2DEE811B881FAA00488078 /* Review */,
 				9AE22DC81B7F37AB0024E221 /* NetWorking */,
 				9AE22D8E1B7EE7450024E221 /* UI */,
@@ -692,6 +703,7 @@
 				9A2DEE7E1B8762E300488078 /* FavoriteDetailViewController.swift in Sources */,
 				9AE22DB01B7F0B270024E221 /* FavoriteCollectionViewCell.swift in Sources */,
 				9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */,
+				9A2DEE841B88444700488078 /* AdManager.swift in Sources */,
 				9AE22DD11B8018510024E221 /* Video.swift in Sources */,
 				9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */,
 				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
