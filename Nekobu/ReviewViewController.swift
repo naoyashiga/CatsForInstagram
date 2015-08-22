@@ -35,9 +35,15 @@ class ReviewViewController: UIViewController {
     
     @IBAction func reviewButtonTapped(sender: UIButton) {
         transitionToReviewPage()
+        
+        ReviewManager.updateReviewStatus()
     }
     
     @IBAction func cacelButtonTapped(sender: UIButton) {
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 }

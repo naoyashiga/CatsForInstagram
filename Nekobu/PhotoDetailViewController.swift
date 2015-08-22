@@ -199,8 +199,14 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
             println(error.code)
         }
         
-        let alert = UIAlertView(title: title, message: message, delegate: nil, cancelButtonTitle: nil, otherButtonTitles: "OK")
-        alert.show()
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        
+        let okAction = UIAlertAction(title: "OK", style: .Default) { (action) -> Void in
+        }
+        
+        ac.addAction(okAction)
+        
+        presentViewController(ac, animated: true, completion: nil)
     }
     
     // MARK: RPZoomTransitionAnimating
@@ -218,5 +224,9 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     func transitionDestinationImageViewFrame() -> CGRect {
         let calculatedFrame = CGRectMake(view.frame.origin.x, view.frame.origin.y, detailImageView.frame.width, detailImageView.frame.height)
         return calculatedFrame
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
     }
 }

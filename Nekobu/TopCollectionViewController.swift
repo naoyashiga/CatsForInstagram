@@ -171,10 +171,11 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         photoDetailVC.media = media
         
         //レビュー訴求
-        ReviewManager.setting()
+        
+        ReviewManager.update()
         
         if(ReviewManager.isReview){
-            if(ReviewManager.reviewCounter != 0 && ReviewManager.reviewCounter % ReviewManager.REVIEW_CYCLE == 0){
+            if(ReviewManager.reviewCounter != 0 && ReviewManager.reviewCounter % ReviewManager.Cycle.top == 0){
                 let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
                 reviewVC.modalPresentationStyle = .Custom
                 reviewVC.transitioningDelegate = self
@@ -185,6 +186,9 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
             }
             
             ReviewManager.countUp()
+            
+        } else {
+            view.window?.rootViewController?.presentViewController(photoDetailVC, animated: true, completion: nil)
         }
     }
     

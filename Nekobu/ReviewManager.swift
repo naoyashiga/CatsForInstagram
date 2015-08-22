@@ -9,12 +9,20 @@
 import Foundation
 
 final class ReviewManager: NSObject {
-    static let REVIEW_CYCLE = 3
     static var reviewCounter = 0
     static var isReview = true
     
+     struct Cycle {
+        static var top = 10
+        static var photoDetail = 3
+    }
+    
     static func setting() {
         setReviewCounter()
+        setIsReview()
+    }
+    
+    static func update() {
         setIsReview()
     }
     
@@ -46,5 +54,15 @@ final class ReviewManager: NSObject {
         reviewCounter = reviewCounter + 1
         println(reviewCounter)
         ud.setInteger(reviewCounter, forKey: "reviewCounter")
+    }
+    
+    static func updateReviewStatus() {
+        let ud = NSUserDefaults.standardUserDefaults()
+        if(ud.objectForKey("isReview") == nil){
+            ud.setObject(false, forKey: "isReview")
+        }else{
+            //更新
+            ud.setBool(false, forKey: "isReview")
+        }
     }
 }
