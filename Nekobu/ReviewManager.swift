@@ -46,7 +46,7 @@ final class ReviewManager: NSObject {
     
     static func countUp(){
         reviewCounter = reviewCounter + 1
-        println(reviewCounter)
+//        println(reviewCounter)
         ud.setInteger(reviewCounter, forKey: "reviewCounter")
     }
     

@@ -31,7 +31,7 @@ final class AdManager: NSObject {
     
     static func countUp(){
         adCounter = adCounter + 1
-        println(adCounter)
+//        println(adCounter)
         ud.setInteger(adCounter, forKey: "adCounter")
     }
 }
