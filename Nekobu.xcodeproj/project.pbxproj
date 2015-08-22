@@ -10,6 +10,7 @@
 		9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */; };
 		9A19BBD51B82A2FC00D75786 /* SettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */; };
 		9A2DEE7E1B8762E300488078 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */; };
+		9A2DEE801B881F5900488078 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE7F1B881F5900488078 /* ReviewManager.swift */; };
 		9A6C75CE1B86952200956212 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */; };
 		9A6C75D21B869E0E00956212 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75D01B869E0E00956212 /* ReviewViewController.swift */; };
 		9A6C75D31B869E0E00956212 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75D11B869E0E00956212 /* ReviewViewController.xib */; };
@@ -78,6 +79,7 @@
 		9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingHeaderView.swift; sourceTree = "<group>"; };
 		9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderView.xib; sourceTree = "<group>"; };
 		9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
+		9A2DEE7F1B881F5900488078 /* ReviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
 		9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		9A6C75D01B869E0E00956212 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		9A6C75D11B869E0E00956212 /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
@@ -166,6 +168,14 @@
 				D8423A87BA27069615DAC24C /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A2DEE811B881FAA00488078 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				9A2DEE7F1B881F5900488078 /* ReviewManager.swift */,
+			);
+			name = Review;
 			sourceTree = "<group>";
 		};
 		9A6C75CF1B869DDF00956212 /* Review */ = {
@@ -467,6 +477,7 @@
 		9AE22DC71B7F379E0024E221 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9A2DEE811B881FAA00488078 /* Review */,
 				9AE22DC81B7F37AB0024E221 /* NetWorking */,
 				9AE22D8E1B7EE7450024E221 /* UI */,
 			);
@@ -699,6 +710,7 @@
 				9AE22D811B7ED77A0024E221 /* Config.swift in Sources */,
 				9AE22D971B7EFA360024E221 /* CAPSPageMenu.swift in Sources */,
 				9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */,
+				9A2DEE801B881F5900488078 /* ReviewManager.swift in Sources */,
 				9AE22D911B7EE7660024E221 /* UICollectionView+NibSetting.swift in Sources */,
 				9AB976641B8159760079A194 /* SettingCollectionViewCell.swift in Sources */,
 				9A6C75CE1B86952200956212 /* PhotoCollectionViewController.swift in Sources */,

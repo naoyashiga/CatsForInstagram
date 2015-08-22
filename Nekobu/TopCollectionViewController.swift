@@ -170,7 +170,22 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         
         photoDetailVC.media = media
         
-        view.window?.rootViewController?.presentViewController(photoDetailVC, animated: true, completion: nil)
+        //レビュー訴求
+        ReviewManager.setting()
+        
+        if(ReviewManager.isReview){
+            if(ReviewManager.reviewCounter != 0 && ReviewManager.reviewCounter % ReviewManager.REVIEW_CYCLE == 0){
+                let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
+                reviewVC.modalPresentationStyle = .Custom
+                reviewVC.transitioningDelegate = self
+                view.window?.rootViewController?.presentViewController(reviewVC, animated: true, completion: nil)
+            } else {
+                view.window?.rootViewController?.presentViewController(photoDetailVC, animated: true, completion: nil)
+                
+            }
+            
+            ReviewManager.countUp()
+        }
     }
     
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {

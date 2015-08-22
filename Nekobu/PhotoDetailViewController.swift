@@ -29,13 +29,11 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
 //    var detailImageURL: NSURL?
     var media = Media()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.layer.cornerRadius = 10.0
         view.clipsToBounds = true
-        
         
 //        detailImageView.sd_setImageWithURL(
 //            detailImageURL,
@@ -59,6 +57,9 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
     }
 
     @IBAction func favoriteButtonTapped(sender: UIButton) {

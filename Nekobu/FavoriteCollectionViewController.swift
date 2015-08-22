@@ -39,12 +39,6 @@ class FavoriteCollectionViewController: PhotoCollectionViewController, UIViewCon
         }
     }
     
-    func openReviewModal() {
-        let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
-        reviewVC.modalPresentationStyle = .Custom
-        reviewVC.transitioningDelegate = self
-        presentViewController(reviewVC, animated: true, completion: nil)
-    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
