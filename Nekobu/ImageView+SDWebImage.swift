@@ -14,18 +14,18 @@ extension UIImageView {
         
         sd_setImageWithURL(
             url,
-//            media.lowResolutionImageURL,
-//            media.standardImageURL,
             completed: { image, error, type, URL in
                 
-                self.alpha = 0
+//                self.alpha = 0
                 
                 callback(image)
                 
-                UIView.animateWithDuration(0.25,
-                    animations: {
-                        self.alpha = 1
-                })
+                //TODO: アニメーションは重いので落ちる原因になる
+//                
+//                UIView.animateWithDuration(0.25,
+//                    animations: {
+//                        self.alpha = 1
+//                })
         })
     }
 }
