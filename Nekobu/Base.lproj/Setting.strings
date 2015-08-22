@@ -1,0 +1,10 @@
+/* 
+  Setting.strings
+  Nekobu
+
+  Created by naoyashiga on 2015/08/22.
+  Copyright (c) 2015年 naoyashiga. All rights reserved.
+*/
+
+shareText = "iOS App 'Cats for Instagram' ";
+otherAppURL = "itms-apps://itunes.apple.com/us/artist/naoya-sugimoto/id933472785";

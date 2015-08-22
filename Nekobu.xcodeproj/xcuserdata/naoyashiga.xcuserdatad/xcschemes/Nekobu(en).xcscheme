@@ -20,20 +20,6 @@
                ReferencedContainer = "container:Nekobu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AE22D681B7ED1430024E221"
-               BuildableName = "NekobuTests.xctest"
-               BlueprintName = "NekobuTests"
-               ReferencedContainer = "container:Nekobu.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +28,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AE22D681B7ED1430024E221"
-               BuildableName = "NekobuTests.xctest"
-               BlueprintName = "NekobuTests"
-               ReferencedContainer = "container:Nekobu.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
@@ -73,8 +49,8 @@
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES"
       showNonLocalizedStrings = "YES"
-      language = "ja"
-      region = "JP">
+      language = "en"
+      region = "US">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -85,12 +61,6 @@
             ReferencedContainer = "container:Nekobu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "-AppleLanguages (ja)"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

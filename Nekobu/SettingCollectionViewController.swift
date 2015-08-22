@@ -15,15 +15,19 @@ struct settingReuseId {
 }
 
 class SettingCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate {
-    let appStoreURL = "http://appstore.com/cats-for-instagram"
     var reviewMenu = [
-        "レビューを書いて応援する(広告が減ります)",
-        "他のアプリを見る"
+        NSLocalizedString("transitionToReviewPageTitle", tableName: "Setting", comment: ""),
+        NSLocalizedString("transitionToOtherAppPageTitle", tableName: "Setting", comment: "")
     ]
+    
     var snsMenu = [
-        "Twitterでつぶやく",
-        "LINEに送る"
+        NSLocalizedString("cellPostToTwitterTitle", tableName: "Setting", comment: ""),
+        NSLocalizedString("cellPostToLineTitle", tableName: "Setting", comment: "")
     ]
+    
+    let appStoreURL = "http://appstore.com/cats-for-instagram"
+    
+    var shareText = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +41,11 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
         
         collectionView?.applyHeaderNib(headerNibName: settingReuseId.headerView)
         collectionView?.applyCellNib(cellNibName: settingReuseId.cell)
+        
+        let localizedshareText = NSLocalizedString("shareText", tableName: "Setting", comment: "")
+        shareText = localizedshareText + appStoreURL
+        
+        println(shareText)
     }
     
     override func didReceiveMemoryWarning() {
@@ -160,10 +169,11 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
     }
     
     func transitionToOtherAppPage() {
-        let otherAppURL = "itms-apps://itunes.apple.com/jp/artist/naoya-sugimoto/id933472785"
+        let otherAppURL = NSLocalizedString("otherAppURL", tableName: "Setting", value: "itms-apps://itunes.apple.com/jp/artist/naoya-sugimoto/id933472785", comment: "")
         
         openAppStore(otherAppURL)
     }
+    
     func transitionToReviewPage() {
         let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
         reviewVC.modalPresentationStyle = .Custom
@@ -173,14 +183,12 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
     
     func postToTwitter(){
         let vc = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        let shareText = "iOSアプリ「ねこ部」ねこの写真がたくさん見れるよ! " + appStoreURL
         //テキストを設定
         vc.setInitialText(shareText)
         presentViewController(vc,animated:true,completion:nil)
     }
     
     func postToLINE(){
-        let shareText = "iOSアプリ「ねこ部」ねこの写真がたくさん見れるよ! " + appStoreURL
         let encodedText = shareText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         
         var shareURL = NSURL(string: "line://msg/text/" + encodedText)

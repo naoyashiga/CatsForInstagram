@@ -50,7 +50,7 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         interstitial = GADInterstitial(adUnitID: AdManager.ADUNIT_ID)
         interstitial!.delegate = self
         let request = GADRequest() // create request
-//        request.testDevices = [kGADSimulatorID]
+        request.testDevices = [kGADSimulatorID]
 //        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
         interstitial!.loadRequest(request)
     }
@@ -71,7 +71,7 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         view.addSubview(adB)
         
         let request = GADRequest()
-//        request.testDevices = [kGADSimulatorID]
+        request.testDevices = [kGADSimulatorID]
 //        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
         adB.loadRequest(request)
     }

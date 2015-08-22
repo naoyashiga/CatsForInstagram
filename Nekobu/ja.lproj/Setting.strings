@@ -1,0 +1,14 @@
+/* 
+  Setting.strings
+  Nekobu
+
+  Created by naoyashiga on 2015/08/22.
+  Copyright (c) 2015年 naoyashiga. All rights reserved.
+*/
+
+shareText = "iOSアプリ「ねこ部」ねこの写真がたくさん見れるよ! ";
+otherAppURL = "itms-apps://itunes.apple.com/jp/artist/naoya-sugimoto/id933472785";
+transitionToReviewPageTitle = "レビューを書いて応援する(広告が減ります)"
+transitionToOtherAppPageTitle = "他のアプリを見る"
+cellPostToTwitterTitle = "Twitterでつぶやく"
+cellPostToLineTitle = "LINEに送る"
