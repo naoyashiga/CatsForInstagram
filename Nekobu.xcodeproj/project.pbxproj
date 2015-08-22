@@ -17,6 +17,7 @@
 		9A6C75D31B869E0E00956212 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75D11B869E0E00956212 /* ReviewViewController.xib */; };
 		9A9C2EB51B88786C0040B030 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2EB71B88786C0040B030 /* Localizable.strings */; };
 		9A9C2EBB1B887C0D0040B030 /* Setting.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2EBD1B887C0D0040B030 /* Setting.strings */; };
+		9A9C2EC31B8884E00040B030 /* Detail.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2EC51B8884E00040B030 /* Detail.strings */; };
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
@@ -91,7 +92,10 @@
 		9A9C2EB81B8878A50040B030 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9A9C2EBC1B887C0D0040B030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Setting.strings; sourceTree = "<group>"; };
 		9A9C2EBE1B887C260040B030 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Setting.strings; sourceTree = "<group>"; };
-		9A9C2EBF1B887F240040B030 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Setting.strings; sourceTree = "<group>"; };
+		9A9C2EC01B8883EE0040B030 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Setting.strings; sourceTree = "<group>"; };
+		9A9C2EC41B8884E00040B030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Detail.strings; sourceTree = "<group>"; };
+		9A9C2EC61B8884E20040B030 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Detail.strings; sourceTree = "<group>"; };
+		9A9C2EC71B8884E20040B030 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Detail.strings; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 			children = (
 				9A9C2EB71B88786C0040B030 /* Localizable.strings */,
 				9A9C2EBD1B887C0D0040B030 /* Setting.strings */,
+				9A9C2EC51B8884E00040B030 /* Detail.strings */,
 			);
 			name = Localize;
 			sourceTree = "<group>";
@@ -629,6 +634,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9C2EC31B8884E00040B030 /* Detail.strings in Resources */,
 				9AE22DAB1B7F0ABA0024E221 /* FavoriteCollectionViewController.xib in Resources */,
 				9AB976651B8159760079A194 /* SettingCollectionViewCell.xib in Resources */,
 				9A6C75D31B869E0E00956212 /* ReviewViewController.xib in Resources */,
@@ -783,9 +789,19 @@
 			children = (
 				9A9C2EBC1B887C0D0040B030 /* Base */,
 				9A9C2EBE1B887C260040B030 /* ja */,
-				9A9C2EBF1B887F240040B030 /* en */,
+				9A9C2EC01B8883EE0040B030 /* en */,
 			);
 			name = Setting.strings;
+			sourceTree = "<group>";
+		};
+		9A9C2EC51B8884E00040B030 /* Detail.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9C2EC41B8884E00040B030 /* Base */,
+				9A9C2EC61B8884E20040B030 /* en */,
+				9A9C2EC71B8884E20040B030 /* ja */,
+			);
+			name = Detail.strings;
 			sourceTree = "<group>";
 		};
 		9AE22D5D1B7ED1430024E221 /* Main.storyboard */ = {

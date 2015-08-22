@@ -75,9 +75,9 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
             
             switch indexPath.section {
             case 0:
-                headerView.titleLabel.text = "応援"
+                headerView.titleLabel.text = NSLocalizedString("reviewSectionTitle", tableName: "Setting", comment: "")
             case 1:
-                headerView.titleLabel.text = "アプリを友だちに紹介"
+                headerView.titleLabel.text = NSLocalizedString("shareSectionTitle", tableName: "Setting", comment: "")
             default:
                 break
             }
