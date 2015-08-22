@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewViewController" customModule="Nekobu" customModuleProvider="target">
             <connections>
+                <outlet property="cancelButton" destination="uOd-BQ-tki" id="uKr-Fr-3gl"/>
+                <outlet property="reviewButton" destination="eP4-7k-pd8" id="6C2-XT-oUG"/>
+                <outlet property="reviewTextImageView" destination="JtK-MS-Enu" id="Djw-6y-pBD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

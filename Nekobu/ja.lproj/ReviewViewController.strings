@@ -1,0 +1,3 @@
+textImageName = "review_text.png";
+reviewButtonImageName = "review_cancel.png";
+cancellButtonImageName = "review_on.png";

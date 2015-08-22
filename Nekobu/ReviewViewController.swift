@@ -9,10 +9,12 @@
 import UIKit
 
 class ReviewViewController: UIViewController {
+    @IBOutlet var reviewTextImageView: UIImageView!
+    @IBOutlet var cancelButton: UIButton!
+    @IBOutlet var reviewButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     override func didReceiveMemoryWarning() {
