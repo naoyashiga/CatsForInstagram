@@ -71,7 +71,7 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
             if (error != nil) {
                 println("Error with registration: \(error?.localizedDescription)")
             } else {
-                println(json)
+//                println(json)
                 if let array = json["data"].array {
                     
                     for d in array {

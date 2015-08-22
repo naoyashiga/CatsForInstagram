@@ -13,7 +13,7 @@ extension FavoriteCollectionViewController: DZNEmptyDataSetSource, DZNEmptyDataS
     
     // MARK: DZNEmptyDataSetSource
     func imageForEmptyDataSet(scrollView: UIScrollView!) -> UIImage! {
-        return UIImage(named: "like.png")
+        return UIImage(named: "fav_off.png")
     }
     
     func imageTintColorForEmptyDataSet(scrollView: UIScrollView!) -> UIColor! {
@@ -26,14 +26,14 @@ extension FavoriteCollectionViewController: DZNEmptyDataSetSource, DZNEmptyDataS
         return NSAttributedString(string: text, attributes: [NSFontAttributeName: font])
     }
     
-//    func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
-//        let text = "最大30件まで登録できます"
-//        let font = UIFont(name: FontSet.medium, size: 14)!
-//        return NSAttributedString(string: text, attributes: [NSFontAttributeName: font])
-//    }
+    func descriptionForEmptyDataSet(scrollView: UIScrollView!) -> NSAttributedString! {
+        let text = "feedのねこ写真をタップ後、星マークをタップ!"
+        let font = UIFont(name: "HiraKakuProN-W3", size: 14)!
+        return NSAttributedString(string: text, attributes: [NSFontAttributeName: font])
+    }
     
     func buttonImageForEmptyDataSet(scrollView: UIScrollView!, forState state: UIControlState) -> UIImage! {
-        return UIImage(named: "reload_gray.png")
+        return UIImage(named: "reloadButton.png")
     }
     
     func emptyDataSetDidTapButton(scrollView: UIScrollView!) {
