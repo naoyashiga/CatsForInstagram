@@ -15,6 +15,7 @@ class FavoriteDetailViewController: PhotoDetailViewController {
     
     struct Tmp {
         var id = ""
+        var standardResolutionURLString = ""
         var lowResolutionBase64ImageString = ""
         var standardResolutionBase64ImageString = ""
     }
@@ -29,6 +30,7 @@ class FavoriteDetailViewController: PhotoDetailViewController {
         
         //favoriteをコピー
         tmpFavorite.id = favorite.id
+        tmpFavorite.standardResolutionURLString = favorite.standardResolutionURLString
         tmpFavorite.lowResolutionBase64ImageString = favorite.lowResolutionBase64ImageString
         tmpFavorite.standardResolutionBase64ImageString = favorite.standardResolutionBase64ImageString
 
@@ -86,4 +88,23 @@ class FavoriteDetailViewController: PhotoDetailViewController {
         
         favoriteButton.playBounceAnimation()
     }
+    
+    override func saveImageToCameraRoll() {
+        var savingImageView = UIImageView()
+        
+        //高画質画像を読み込み、保存
+        savingImageView.sd_setImageWithURL(
+            NSURL(string: tmpFavorite.standardResolutionURLString),
+            completed: { savingImage, error, type, URL in
+                
+                if error == nil {
+                    UIImageWriteToSavedPhotosAlbum(savingImage, self, "image:didFinishSavingWithError:contextInfo:", nil)
+                    
+                } else {
+                    println("保存したい画像を取得できませんでした")
+                    
+                }
+        })
+    }
+    
 }

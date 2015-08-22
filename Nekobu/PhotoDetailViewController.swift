@@ -26,10 +26,9 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var favoriteButton: UIButton!
     @IBOutlet var dismissButton: UIButton!
     
-    var detailImageURL: NSURL?
+//    var detailImageURL: NSURL?
     var media = Media()
     
-    var savingImageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,6 +94,16 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     @IBAction func saveImageButtonTapped(sender: UIButton) {
+        saveImageToCameraRoll()
+    }
+    
+    @IBAction func dismissButtonTapped(sender: UIButton) {
+        dismissButton.playBounceAnimation()
+        presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func saveImageToCameraRoll() {
+        var savingImageView = UIImageView()
         
         //高画質画像を読み込み、保存
         savingImageView.sd_setImageWithURL(
@@ -109,17 +118,6 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
                     
                 }
         })
-        
-//        if let savingImage = detailImageView.image {
-//            UIImageWriteToSavedPhotosAlbum(savingImage, self, "image:didFinishSavingWithError:contextInfo:", nil)
-//        } else {
-//            println("保存したい画像を取得できませんでした")
-//        }
-    }
-    
-    @IBAction func dismissButtonTapped(sender: UIButton) {
-        dismissButton.playBounceAnimation()
-        presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
     func updateFavorite() {
@@ -154,6 +152,10 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
 //                    favorite.lowResolutionImageURLString = lowResolutionImageURL.absoluteString!
 //                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: favorite.lowResolutionImageURLString)
 //                }
+                
+                if let standardResolutionImageURL = media.standardResolutionImageURL {
+                    favorite.standardResolutionURLString = standardResolutionImageURL.absoluteString!
+                }
                 
                 favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
                 favorite.standardResolutionBase64ImageString = media.standardResolutionBase64ImageString

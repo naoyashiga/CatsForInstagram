@@ -11,6 +11,7 @@ import RealmSwift
 class Favorite: Object {
     dynamic var id = ""
     dynamic var lowResolutionImageURLString = ""
+    dynamic var standardResolutionURLString = ""
     dynamic var lowResolutionBase64ImageString = ""
     dynamic var standardResolutionBase64ImageString = ""
     

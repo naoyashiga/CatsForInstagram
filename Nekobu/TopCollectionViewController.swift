@@ -151,7 +151,7 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
             }
         }
         
-        if indexPath.row == mediaList.count - 2 {
+        if indexPath.row == mediaList.count - 4 {
             println("end contents")
             loadPhoto(requestURL: pagenation.nextURLString)
         }
@@ -167,7 +167,6 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         photoDetailVC.modalPresentationStyle = .Custom
         photoDetailVC.transitioningDelegate = self
         
-        photoDetailVC.detailImageURL = media.standardResolutionImageURL
         photoDetailVC.media = media
         
         view.window?.rootViewController?.presentViewController(photoDetailVC, animated: true, completion: nil)
