@@ -15,32 +15,23 @@ final class AdManager: NSObject {
     
     private static let ud = NSUserDefaults.standardUserDefaults()
     
-    static var interstitial:GADInterstitial?
-    
     struct Cycle {
-        static var top = 8
-    }
-    
-    static func updateInterstitial() {
-        interstitial = GADInterstitial(adUnitID: ADUNIT_ID)
-        interstitial!.loadRequest(GADRequest())
+        static var top = 9
     }
     
     static func setAdCounter(){
         
-        if(ud.objectForKey("adCounter") == nil){
+        if ud.objectForKey("adCounter") == nil {
             ud.setObject(0, forKey: "adCounter")
-        }else{
+        } else {
             adCounter = ud.integerForKey("adCounter")
         }
+        
     }
     
     static func countUp(){
-        
         adCounter = adCounter + 1
         println(adCounter)
         ud.setInteger(adCounter, forKey: "adCounter")
-        
     }
-    
 }

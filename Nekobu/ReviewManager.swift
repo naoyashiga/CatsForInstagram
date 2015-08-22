@@ -12,9 +12,10 @@ final class ReviewManager: NSObject {
     static var reviewCounter = 0
     static var isReview = true
     
+    private static let ud = NSUserDefaults.standardUserDefaults()
+    
      struct Cycle {
-        static var top = 2
-        static var photoDetail = 3
+        static var top = 8
     }
     
     static func setting() {
@@ -27,20 +28,15 @@ final class ReviewManager: NSObject {
     }
     
     private static func setReviewCounter(){
-        //ユーザデフォルト
-        let ud = NSUserDefaults.standardUserDefaults()
-        if(ud.objectForKey("reviewCounter") == nil){
-            //カウンター
+        if ud.objectForKey("reviewCounter") == nil {
             ud.setObject(0, forKey: "reviewCounter")
-        }else{
+        } else {
             reviewCounter = ud.integerForKey("reviewCounter")
         }
     }
     
     private static func setIsReview(){
-        let ud = NSUserDefaults.standardUserDefaults()
-        if(ud.objectForKey("isReview") == nil){
-            //レビューを許可
+        if ud.objectForKey("isReview") == nil {
             ud.setObject(true, forKey: "isReview")
             isReview = true
         }else{
@@ -49,19 +45,15 @@ final class ReviewManager: NSObject {
     }
     
     static func countUp(){
-        //カウンター増加
-        let ud = NSUserDefaults.standardUserDefaults()
         reviewCounter = reviewCounter + 1
         println(reviewCounter)
         ud.setInteger(reviewCounter, forKey: "reviewCounter")
     }
     
     static func updateReviewStatus() {
-        let ud = NSUserDefaults.standardUserDefaults()
-        if(ud.objectForKey("isReview") == nil){
+        if ud.objectForKey("isReview") == nil {
             ud.setObject(false, forKey: "isReview")
-        }else{
-            //更新
+        } else {
             ud.setBool(false, forKey: "isReview")
         }
     }

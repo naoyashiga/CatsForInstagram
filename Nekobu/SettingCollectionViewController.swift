@@ -14,10 +14,10 @@ struct settingReuseId {
     static let headerView = "SettingHeaderView"
 }
 
-class SettingCollectionViewController: BaseCollectionViewController {
+class SettingCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate {
     let appStoreURL = "http://appstore.com/cats-for-instagram"
     var reviewMenu = [
-        "レビューを書いて応援する",
+        "レビューを書いて応援する(広告が減ります)",
         "他のアプリを見る"
     ]
     var snsMenu = [
@@ -27,10 +27,6 @@ class SettingCollectionViewController: BaseCollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor.viewBackgroundColor()
-        
-        collectionView?.backgroundColor = UIColor.viewBackgroundColor()
         
         cellSize.width = view.bounds.width
         cellSize.height = 80
@@ -169,11 +165,10 @@ class SettingCollectionViewController: BaseCollectionViewController {
         openAppStore(otherAppURL)
     }
     func transitionToReviewPage() {
-        let APP_ID = "1031396732"
-        
-        let reviewURL = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=" + APP_ID
-        
-        openAppStore(reviewURL)
+        let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
+        reviewVC.modalPresentationStyle = .Custom
+        reviewVC.transitioningDelegate = self
+        view.window?.rootViewController?.presentViewController(reviewVC, animated: true, completion: nil)
     }
     
     func postToTwitter(){
@@ -193,5 +188,10 @@ class SettingCollectionViewController: BaseCollectionViewController {
         if (UIApplication.sharedApplication().canOpenURL(shareURL!)) {
             UIApplication.sharedApplication().openURL(shareURL!)
         }
+    }
+    
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
+        
+        return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: self)
     }
 }
