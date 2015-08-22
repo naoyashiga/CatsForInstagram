@@ -6,4 +6,8 @@
   Copyright (c) 2015年 naoyashiga. All rights reserved.
 */
 
-shareText = "iOSアプリ「ねこ部」ねこの写真がたくさん見れるよ! ";
+shareText = "#ねこ部 のネコかわいい!";
+saveToCameraRollTitle = "保存完了";
+saveToCameraRollMessage = "カメラロールに保存できました";
+saveToCameraRollErrorTitle = "エラー";
+saveToCameraRollErrorMessage = "カメラロールへの保存に失敗しました";

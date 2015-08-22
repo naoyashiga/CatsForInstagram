@@ -78,7 +78,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     func postToSNS(#id: String, webPageLinkString: String) {
-        var sharedText = "#ねこ部 のネコかわいい!"
+        var sharedText = NSLocalizedString("shareText", tableName: "Detail", comment: "")
         
         var sharedURL = NSURL(string: webPageLinkString)!
 //        var sharedURL = NSURL(string: "instagram://media?id=\(id)")!
@@ -186,12 +186,12 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     func image(image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutablePointer<Void>) {
-        var title = "保存完了"
-        var message = "カメラロールに保存できました"
+        var title = NSLocalizedString("saveToCameraRollTitle", tableName: "Detail", comment: "")
+        var message = NSLocalizedString("saveToCameraRollMessage", tableName: "Detail", comment: "")
         
         if error != nil {
-            title = "エラー"
-            message = "カメラロールへの保存に失敗しました"
+            title = NSLocalizedString("saveToCameraRollErrorTitle", tableName: "Detail", comment: "")
+            message = NSLocalizedString("saveToCameraRollErrorMessage", tableName: "Detail", comment: "")
             println(error.code)
         }
         

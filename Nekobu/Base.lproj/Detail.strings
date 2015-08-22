@@ -5,3 +5,9 @@
   Created by naoyashiga on 2015/08/22.
   Copyright (c) 2015年 naoyashiga. All rights reserved.
 */
+
+shareText = "#ねこ部 #catsofinstagram";
+saveToCameraRollTitle = "Success";
+saveToCameraRollMessage = "Complete to save to camera roll";
+saveToCameraRollErrorTitle = "Error";
+saveToCameraRollErrorMessage = "Failure to save";
