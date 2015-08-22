@@ -14,6 +14,7 @@ class Favorite: Object {
     dynamic var standardResolutionURLString = ""
     dynamic var lowResolutionBase64ImageString = ""
     dynamic var standardResolutionBase64ImageString = ""
+    dynamic var webPageLinkString = ""
     
     dynamic var createdAt:Double = 0
     

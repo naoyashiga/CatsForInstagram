@@ -18,6 +18,7 @@ class FavoriteDetailViewController: PhotoDetailViewController {
         var standardResolutionURLString = ""
         var lowResolutionBase64ImageString = ""
         var standardResolutionBase64ImageString = ""
+        var webPageLinkString = ""
     }
 
     override func viewDidLoad() {
@@ -33,6 +34,7 @@ class FavoriteDetailViewController: PhotoDetailViewController {
         tmpFavorite.standardResolutionURLString = favorite.standardResolutionURLString
         tmpFavorite.lowResolutionBase64ImageString = favorite.lowResolutionBase64ImageString
         tmpFavorite.standardResolutionBase64ImageString = favorite.standardResolutionBase64ImageString
+        tmpFavorite.webPageLinkString = favorite.webPageLinkString
 
         let realm = Realm()
         let predicate = NSPredicate(format: "id == %@", favorite.id)
@@ -105,6 +107,10 @@ class FavoriteDetailViewController: PhotoDetailViewController {
                     
                 }
         })
+    }
+    
+    override func shareButtonTapped(sender: UIButton) {
+        postToSNS(id: tmpFavorite.id, webPageLinkString: tmpFavorite.webPageLinkString)
     }
     
 }

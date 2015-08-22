@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/TopCollectionViewController.swift"
-            timestampString = "461854462.31644"
+            timestampString = "461902836.883394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "179"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/FavoriteDetailViewController.swift"
-            timestampString = "461901377.536182"
+            timestampString = "461902836.883394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "updateFavorite()"
             landmarkType = "5">
             <Locations>
@@ -105,11 +105,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/FavoriteDetailViewController.swift"
-            timestampString = "461901377.536182"
+            timestampString = "461902836.883394"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "updateFavorite()"
             landmarkType = "5">
          </BreakpointContent>

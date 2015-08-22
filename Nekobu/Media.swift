@@ -15,5 +15,6 @@ struct Media {
     var standardResolutionImageURL: NSURL?
     var lowResolutionBase64ImageString = ""
     var standardResolutionBase64ImageString = ""
+    var webPageLinkString: String = ""
     var video: Video?
 }

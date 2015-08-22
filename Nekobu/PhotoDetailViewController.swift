@@ -66,10 +66,23 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     @IBAction func shareButtonTapped(sender: UIButton) {
-        
+        postToSNS(id: media.id, webPageLinkString: media.webPageLinkString)
+    }
+    
+    @IBAction func saveImageButtonTapped(sender: UIButton) {
+        saveImageToCameraRoll()
+    }
+    
+    @IBAction func dismissButtonTapped(sender: UIButton) {
+        dismissButton.playBounceAnimation()
+        presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func postToSNS(#id: String, webPageLinkString: String) {
         var sharedText = "#ねこ部 のネコかわいい!"
         
-        var sharedURL = NSURL(string: "instagram://media?id=\(media.id)")!
+        var sharedURL = NSURL(string: webPageLinkString)!
+//        var sharedURL = NSURL(string: "instagram://media?id=\(id)")!
         var activityItems = [AnyObject]()
         
         if let sharedImage = detailImageView.image {
@@ -84,6 +97,13 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: myApplicationActivities)
         
         let excludedActivityTypes = [
+            UIActivityTypeMessage,
+            UIActivityTypeMail,
+            UIActivityTypeAssignToContact,
+            UIActivityTypeAddToReadingList,
+            UIActivityTypePostToFlickr,
+            UIActivityTypePostToVimeo,
+            UIActivityTypePostToTencentWeibo,
             UIActivityTypePostToWeibo,
             UIActivityTypePrint
         ]
@@ -91,15 +111,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         activityVC.excludedActivityTypes = excludedActivityTypes
         
         presentViewController(activityVC, animated: true, completion: nil)
-    }
-    
-    @IBAction func saveImageButtonTapped(sender: UIButton) {
-        saveImageToCameraRoll()
-    }
-    
-    @IBAction func dismissButtonTapped(sender: UIButton) {
-        dismissButton.playBounceAnimation()
-        presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+        
     }
     
     func saveImageToCameraRoll() {
@@ -159,6 +171,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
                 
                 favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
                 favorite.standardResolutionBase64ImageString = media.standardResolutionBase64ImageString
+                favorite.webPageLinkString = media.webPageLinkString
                 
                 favorite.createdAt = NSDate().timeIntervalSince1970
                 
