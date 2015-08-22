@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */; };
 		9A19BBD51B82A2FC00D75786 /* SettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */; };
+		9A2DEE7E1B8762E300488078 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */; };
 		9A6C75CE1B86952200956212 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */; };
 		9A6C75D21B869E0E00956212 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75D01B869E0E00956212 /* ReviewViewController.swift */; };
 		9A6C75D31B869E0E00956212 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A6C75D11B869E0E00956212 /* ReviewViewController.xib */; };
@@ -76,6 +77,7 @@
 		31F9B4C17813FC45BEC8DD84 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingHeaderView.swift; sourceTree = "<group>"; };
 		9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderView.xib; sourceTree = "<group>"; };
+		9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		9A6C75D01B869E0E00956212 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		9A6C75D11B869E0E00956212 /* ReviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
@@ -437,6 +439,7 @@
 			isa = PBXGroup;
 			children = (
 				9AE22DB31B7F167D0024E221 /* BlurredBackgroundPresentationController.swift */,
+				9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */,
 				9AE22DB51B7F22530024E221 /* PhotoDetailViewController.swift */,
 				9AE22DB61B7F22530024E221 /* PhotoDetailViewController.xib */,
 			);
@@ -675,6 +678,7 @@
 				9AB9766E1B8194180079A194 /* String+String2Image.swift in Sources */,
 				9A6C75D21B869E0E00956212 /* ReviewViewController.swift in Sources */,
 				9AE22D9D1B7EFB070024E221 /* Color.swift in Sources */,
+				9A2DEE7E1B8762E300488078 /* FavoriteDetailViewController.swift in Sources */,
 				9AE22DB01B7F0B270024E221 /* FavoriteCollectionViewCell.swift in Sources */,
 				9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */,
 				9AE22DD11B8018510024E221 /* Video.swift in Sources */,

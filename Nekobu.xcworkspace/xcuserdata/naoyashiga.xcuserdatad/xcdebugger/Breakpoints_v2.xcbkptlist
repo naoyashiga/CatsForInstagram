@@ -26,12 +26,107 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Nekobu/TopCollectionViewController.swift"
-            timestampString = "461853520.939175"
+            timestampString = "461854462.31644"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "presentationControllerForPresentedViewController(_:presentingViewController:sourceViewController:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nekobu/FavoriteDetailViewController.swift"
+            timestampString = "461898218.250171"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "updateFavorite()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nekobu/FavoriteDetailViewController.swift"
+            timestampString = "461898218.250171"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "updateFavorite()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nekobu.FavoriteDetailViewController.updateFavorite (Nekobu.FavoriteDetailViewController)() -&gt; ()"
+                  moduleName = "Nekobu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/FavoriteDetailViewController.swift"
+                  timestampString = "461896997.968893"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nekobu.FavoriteDetailViewController.(updateFavorite (Nekobu.FavoriteDetailViewController) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "Nekobu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/FavoriteDetailViewController.swift"
+                  timestampString = "461896997.969238"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Nekobu.FavoriteDetailViewController.(updateFavorite (Nekobu.FavoriteDetailViewController) -&gt; () -&gt; ()).(closure #2)"
+                  moduleName = "Nekobu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/FavoriteDetailViewController.swift"
+                  timestampString = "461896997.969492"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Nekobu/FavoriteDetailViewController.swift"
+            timestampString = "461898218.250171"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "updateFavorite()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

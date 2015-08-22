@@ -44,6 +44,9 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         // Dispose of any resources that can be recreated.
     }
     
+    deinit {
+        println("WebviewControllerは正しく解放されました")
+    }
     func settingAd(){
         let MY_BANNER_UNIT_ID = "ca-app-pub-9360978553412745/9261475110"
         

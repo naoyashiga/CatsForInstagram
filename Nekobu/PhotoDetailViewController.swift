@@ -63,54 +63,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
 
     @IBAction func favoriteButtonTapped(sender: UIButton) {
-        
-        let realm = Realm()
-        
-        let predicate = NSPredicate(format: "id == %@", media.id)
-        let exisitingFavoriteArray = realm.objects(Favorite).filter(predicate)
-        
-        if favoriteButton.selected {
-            //お気に入り削除
-            if exisitingFavoriteArray.count != 0 {
-                
-                realm.write {
-                    println("remove fav")
-                    realm.delete(exisitingFavoriteArray[0])
-                    
-                    self.favoriteButton.selected = false
-                }
-            }
-            
-        } else {
-            //お気に入り追加
-            if exisitingFavoriteArray.count == 0 {
-                
-//                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: String(media.id))
-                
-                let favorite = Favorite()
-                favorite.id = media.id
-                //高画質版のURLを保存したい
-                
-//                if let lowResolutionImageURL = media.lowResolutionImageURL {
-//                    favorite.lowResolutionImageURLString = lowResolutionImageURL.absoluteString!
-//                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: favorite.lowResolutionImageURLString)
-//                }
-                
-                favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
-                favorite.standardResolutionBase64ImageString = media.standardResolutionBase64ImageString
-                
-                favorite.createdAt = NSDate().timeIntervalSince1970
-                
-                realm.write {
-                    println("add fav")
-                    realm.add(favorite, update: true)
-                    
-                    self.favoriteButton.selected = true
-                }
-            }
-        }
-        
-        favoriteButton.playBounceAnimation()
+        updateFavorite()
     }
     
     @IBAction func shareButtonTapped(sender: UIButton) {
@@ -167,6 +120,57 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBAction func dismissButtonTapped(sender: UIButton) {
         dismissButton.playBounceAnimation()
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func updateFavorite() {
+        let realm = Realm()
+        
+        let predicate = NSPredicate(format: "id == %@", media.id)
+        let exisitingFavoriteArray = realm.objects(Favorite).filter(predicate)
+        
+        if favoriteButton.selected {
+            //お気に入り削除
+            if exisitingFavoriteArray.count != 0 {
+                
+                realm.write {
+                    println("remove fav")
+                    realm.delete(exisitingFavoriteArray[0])
+                    
+                    self.favoriteButton.selected = false
+                }
+            }
+            
+        } else {
+            //お気に入り追加
+            if exisitingFavoriteArray.count == 0 {
+                
+//                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: String(media.id))
+                
+                let favorite = Favorite()
+                favorite.id = media.id
+                //高画質版のURLを保存したい
+                
+//                if let lowResolutionImageURL = media.lowResolutionImageURL {
+//                    favorite.lowResolutionImageURLString = lowResolutionImageURL.absoluteString!
+//                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: favorite.lowResolutionImageURLString)
+//                }
+                
+                favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
+                favorite.standardResolutionBase64ImageString = media.standardResolutionBase64ImageString
+                
+                favorite.createdAt = NSDate().timeIntervalSince1970
+                
+                realm.write {
+                    println("add fav")
+                    realm.add(favorite, update: true)
+                    
+                    self.favoriteButton.selected = true
+                }
+            }
+        }
+        
+        favoriteButton.playBounceAnimation()
+        
     }
     
     func image(image: UIImage, didFinishSavingWithError error: NSError!, contextInfo: UnsafeMutablePointer<Void>) {
