@@ -25,7 +25,7 @@ class PageMenuViewController: UIViewController {
         let favVC = FavoriteCollectionViewController(nibName: NibNameSet.favVC, bundle: nil)
         let settingVC = SettingCollectionViewController(nibName: NibNameSet.settingVC, bundle: nil)
         
-        topVC.title = "tag"
+        topVC.title = "feed"
         favVC.title = "fav"
         settingVC.title = "other"
         
