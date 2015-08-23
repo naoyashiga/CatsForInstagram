@@ -24,6 +24,10 @@
 		9A9C2EDC1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */; };
 		9A9C2EDE1B894E540040B030 /* AdConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDD1B894E540040B030 /* AdConstraints.swift */; };
 		9A9C2EE01B8953320040B030 /* BaseUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDF1B8953320040B030 /* BaseUserDefaultManager.swift */; };
+		9A9C2EE41B8961E10040B030 /* SettingCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EE31B8961E10040B030 /* SettingCollectionViewController+UIViewControllerTransitioningDelegate.swift */; };
+		9A9C2EE71B89628C0040B030 /* SettingCollectionViewController+SNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EE61B89628C0040B030 /* SettingCollectionViewController+SNS.swift */; };
+		9A9C2EE91B8962E90040B030 /* SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EE81B8962E90040B030 /* SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift */; };
+		9A9C2EEC1B8965700040B030 /* AppConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EEB1B8965700040B030 /* AppConstraints.swift */; };
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
@@ -107,6 +111,10 @@
 		9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+GoogleMobileAds.swift"; sourceTree = "<group>"; };
 		9A9C2EDD1B894E540040B030 /* AdConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdConstraints.swift; sourceTree = "<group>"; };
 		9A9C2EDF1B8953320040B030 /* BaseUserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUserDefaultManager.swift; sourceTree = "<group>"; };
+		9A9C2EE31B8961E10040B030 /* SettingCollectionViewController+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingCollectionViewController+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		9A9C2EE61B89628C0040B030 /* SettingCollectionViewController+SNS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingCollectionViewController+SNS.swift"; sourceTree = "<group>"; };
+		9A9C2EE81B8962E90040B030 /* SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		9A9C2EEB1B8965700040B030 /* AppConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstraints.swift; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -266,9 +274,37 @@
 			name = UserDefault;
 			sourceTree = "<group>";
 		};
+		9A9C2EE21B8961B60040B030 /* Extension+Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9A9C2EE31B8961E10040B030 /* SettingCollectionViewController+UIViewControllerTransitioningDelegate.swift */,
+				9A9C2EE81B8962E90040B030 /* SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift */,
+			);
+			name = "Extension+Delegate";
+			sourceTree = "<group>";
+		};
+		9A9C2EE51B8962640040B030 /* Extension+SNS */ = {
+			isa = PBXGroup;
+			children = (
+				9A9C2EE61B89628C0040B030 /* SettingCollectionViewController+SNS.swift */,
+			);
+			name = "Extension+SNS";
+			sourceTree = "<group>";
+		};
+		9A9C2EEA1B8965460040B030 /* Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				9A9C2EEB1B8965700040B030 /* AppConstraints.swift */,
+				9AE22DCC1B7F513D0024E221 /* PageMenuConstraint.swift */,
+			);
+			name = Constraints;
+			sourceTree = "<group>";
+		};
 		9AB9765A1B8158C70079A194 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				9A9C2EE51B8962640040B030 /* Extension+SNS */,
+				9A9C2EE21B8961B60040B030 /* Extension+Delegate */,
 				9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */,
 				9AB9765E1B8159490079A194 /* SettingCollectionViewController.xib */,
 			);
@@ -419,7 +455,6 @@
 				9AB9766C1B8193F40079A194 /* String */,
 				9AB976691B81928A0079A194 /* Image */,
 				9AE22DD81B8046B20024E221 /* Button */,
-				9AE22DCB1B7F512B0024E221 /* Constraint */,
 				9AE22DC41B7F35EA0024E221 /* ImageView */,
 				9AE22DB91B7F30350024E221 /* Animation */,
 				9AE22D9B1B7EFAEA0024E221 /* Color */,
@@ -559,6 +594,7 @@
 		9AE22DC71B7F379E0024E221 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9A9C2EEA1B8965460040B030 /* Constraints */,
 				9A9C2EE11B8953390040B030 /* UserDefault */,
 				9AE22DC81B7F37AB0024E221 /* NetWorking */,
 				9AE22D8E1B7EE7450024E221 /* UI */,
@@ -572,14 +608,6 @@
 				9AE22DC91B7F37CA0024E221 /* SwiftyJSON+Request.swift */,
 			);
 			name = NetWorking;
-			sourceTree = "<group>";
-		};
-		9AE22DCB1B7F512B0024E221 /* Constraint */ = {
-			isa = PBXGroup;
-			children = (
-				9AE22DCC1B7F513D0024E221 /* PageMenuConstraint.swift */,
-			);
-			name = Constraint;
 			sourceTree = "<group>";
 		};
 		9AE22DD81B8046B20024E221 /* Button */ = {
@@ -770,6 +798,7 @@
 				9AE22D9A1B7EFA610024E221 /* PageMenuViewController.swift in Sources */,
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
 				9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */,
+				9A9C2EE71B89628C0040B030 /* SettingCollectionViewController+SNS.swift in Sources */,
 				9AE22DAA1B7F0ABA0024E221 /* FavoriteCollectionViewController.swift in Sources */,
 				9AE22DCF1B7F67700024E221 /* Pagination.swift in Sources */,
 				9AB9766E1B8194180079A194 /* String+String2Image.swift in Sources */,
@@ -777,6 +806,7 @@
 				9AE22D9D1B7EFB070024E221 /* Color.swift in Sources */,
 				9A2DEE7E1B8762E300488078 /* FavoriteDetailViewController.swift in Sources */,
 				9AE22DB01B7F0B270024E221 /* FavoriteCollectionViewCell.swift in Sources */,
+				9A9C2EEC1B8965700040B030 /* AppConstraints.swift in Sources */,
 				9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */,
 				9A2DEE841B88444700488078 /* AdManager.swift in Sources */,
 				9A9C2ED31B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */,
@@ -784,6 +814,7 @@
 				9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */,
 				9A9C2ED11B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift in Sources */,
 				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
+				9A9C2EE41B8961E10040B030 /* SettingCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */,
 				9AE22DD71B8022130024E221 /* Favorite.swift in Sources */,
 				9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */,
 				9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */,
@@ -802,6 +833,7 @@
 				9A9C2EE01B8953320040B030 /* BaseUserDefaultManager.swift in Sources */,
 				9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */,
 				9A2DEE801B881F5900488078 /* ReviewManager.swift in Sources */,
+				9A9C2EE91B8962E90040B030 /* SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift in Sources */,
 				9A9C2EDC1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift in Sources */,
 				9AE22D911B7EE7660024E221 /* UICollectionView+NibSetting.swift in Sources */,
 				9AB976641B8159760079A194 /* SettingCollectionViewCell.swift in Sources */,

@@ -23,14 +23,11 @@ class ReviewViewController: UIViewController {
     
     func openAppStore(urlStr:String){
         let url = NSURL(string:urlStr)
-        let app:UIApplication = UIApplication.sharedApplication()
-        app.openURL(url!)
+        UIApplication.sharedApplication().openURL(url!)
     }
     
     func transitionToReviewPage() {
-        let APP_ID = "1031396732"
-        
-        let reviewURL = "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=" + APP_ID
+        let reviewURL = AppConstraints.reviewURLString + AppConstraints.appID
         
         openAppStore(reviewURL)
     }

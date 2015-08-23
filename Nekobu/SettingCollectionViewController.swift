@@ -7,14 +7,13 @@
 //
 
 import UIKit
-import Social
 
 struct settingReuseId {
     static let cell = "SettingCollectionViewCell"
     static let headerView = "SettingHeaderView"
 }
 
-class SettingCollectionViewController: BaseCollectionViewController, UIViewControllerTransitioningDelegate {
+class SettingCollectionViewController: BaseCollectionViewController {
     var reviewMenu = [
         NSLocalizedString("transitionToReviewPageTitle", tableName: "Setting", comment: ""),
         NSLocalizedString("transitionToOtherAppPageTitle", tableName: "Setting", comment: "")
@@ -24,8 +23,6 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
         NSLocalizedString("cellPostToTwitterTitle", tableName: "Setting", comment: ""),
         NSLocalizedString("cellPostToLineTitle", tableName: "Setting", comment: "")
     ]
-    
-    let appStoreURL = "http://appstore.com/cats-for-instagram"
     
     var shareText = ""
     
@@ -37,15 +34,12 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
         
         if let collectionView = collectionView {
             collectionView.contentInset = UIEdgeInsetsMake(10, cellMargin.horizontal / 2, 0, cellMargin.horizontal / 2)
+            collectionView.applyHeaderNib(headerNibName: settingReuseId.headerView)
+            collectionView.applyCellNib(cellNibName: settingReuseId.cell)
         }
         
-        collectionView?.applyHeaderNib(headerNibName: settingReuseId.headerView)
-        collectionView?.applyCellNib(cellNibName: settingReuseId.cell)
-        
         let localizedshareText = NSLocalizedString("shareText", tableName: "Setting", comment: "")
-        shareText = localizedshareText + appStoreURL
-        
-        println(shareText)
+        shareText = localizedshareText + AppConstraints.appStoreURLString
     }
     
     override func didReceiveMemoryWarning() {
@@ -102,19 +96,7 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
             break;
         }
         
-        //通常の背景
-        let backgroundView = UIView()
-        backgroundView.bounds = cell.bounds
-        backgroundView.backgroundColor = UIColor.cellLightBackgroundColor()
-        cell.backgroundView = backgroundView
-        
-        //選択時の背景
-        let selectedBackgroundView = UIView()
-        selectedBackgroundView.bounds = cell.bounds
-        selectedBackgroundView.backgroundColor = UIColor.cellSelectedBackgroundColor()
-        cell.selectedBackgroundView = selectedBackgroundView
-        
-        return cell
+        return getSelectedBackgroundViewCell(cell: cell)
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
@@ -144,61 +126,19 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
         }
     }
     
-    // MARK: UICollectionViewDelegateFlowLayout
-    override func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: cellSize.width - cellMargin.horizontal, height: cellSize.height)
-    }
-    
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: cellSize.width - cellMargin.horizontal, height: 45)
-    }
-    
-    override func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
-        return 1.0
-    }
-    
-    override func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 1, left: 0, bottom: 10, right: 0)
-    }
-    
-    func openAppStore(urlStr:String){
-        let url = NSURL(string:urlStr)
-        let app:UIApplication = UIApplication.sharedApplication()
-        app.openURL(url!)
-    }
-    
-    func transitionToOtherAppPage() {
-        let otherAppURL = NSLocalizedString("otherAppURL", tableName: "Setting", value: "itms-apps://itunes.apple.com/jp/artist/naoya-sugimoto/id933472785", comment: "")
+    private func getSelectedBackgroundViewCell(#cell: SettingCollectionViewCell) -> SettingCollectionViewCell {
+        //通常の背景
+        let backgroundView = UIView()
+        backgroundView.bounds = cell.bounds
+        backgroundView.backgroundColor = UIColor.cellLightBackgroundColor()
+        cell.backgroundView = backgroundView
         
-        openAppStore(otherAppURL)
-    }
-    
-    func transitionToReviewPage() {
-        let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
-        reviewVC.modalPresentationStyle = .Custom
-        reviewVC.transitioningDelegate = self
-        view.window?.rootViewController?.presentViewController(reviewVC, animated: true, completion: nil)
-    }
-    
-    func postToTwitter(){
-        let vc = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        //テキストを設定
-        vc.setInitialText(shareText)
-        presentViewController(vc,animated:true,completion:nil)
-    }
-    
-    func postToLINE(){
-        let encodedText = shareText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+        //選択時の背景
+        let selectedBackgroundView = UIView()
+        selectedBackgroundView.bounds = cell.bounds
+        selectedBackgroundView.backgroundColor = UIColor.cellSelectedBackgroundColor()
+        cell.selectedBackgroundView = selectedBackgroundView
         
-        var shareURL = NSURL(string: "line://msg/text/" + encodedText)
-        
-        if (UIApplication.sharedApplication().canOpenURL(shareURL!)) {
-            UIApplication.sharedApplication().openURL(shareURL!)
-        }
-    }
-    
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
-        
-        return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: self)
+        return cell
     }
 }
