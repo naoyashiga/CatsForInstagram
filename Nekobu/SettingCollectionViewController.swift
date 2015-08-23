@@ -82,7 +82,6 @@ class SettingCollectionViewController: BaseCollectionViewController, UIViewContr
                 break
             }
             
-            
             return setCornerRadius(headerView: headerView)
             
         default:

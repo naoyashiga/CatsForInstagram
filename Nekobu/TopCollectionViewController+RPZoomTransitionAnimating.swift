@@ -10,7 +10,6 @@ import Foundation
 
 extension TopCollectionViewController: RPZoomTransitionAnimating {
 
-    //MARK: RPZoomTransitionAnimating
     func sourceImageView() -> UIImageView {
         //使用しない
         return UIImageView()

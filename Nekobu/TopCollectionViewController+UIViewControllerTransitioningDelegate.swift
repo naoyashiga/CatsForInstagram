@@ -12,7 +12,6 @@ extension TopCollectionViewController: UIViewControllerTransitioningDelegate {
 
     func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
         
-        
         return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: self)
     }
     

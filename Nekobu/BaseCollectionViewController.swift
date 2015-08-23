@@ -34,15 +34,12 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
         let edgeInsetTop:CGFloat = 0
         
         cellSize.width = view.bounds.width / 2
-        
         cellSize.height = view.bounds.width / 2
         
         if let collectionView = collectionView {
             collectionView.contentInset = UIEdgeInsetsMake(edgeInsetTop, 0, edgeInsetBottom, 0)
-            
             collectionView.backgroundColor = UIColor.viewBackgroundColor()
         }
-        
     }
     
     func setCornerRadius<T: UICollectionReusableView>(#headerView:T) -> T {

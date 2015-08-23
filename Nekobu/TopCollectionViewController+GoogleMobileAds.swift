@@ -50,8 +50,8 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
             
             //次の広告の準備
             settingInterstitialAd()
-        } else {
             
+        } else {
             view.window?.rootViewController?.presentViewController(photoDetailViewController, animated: true, completion: nil)
         }
         

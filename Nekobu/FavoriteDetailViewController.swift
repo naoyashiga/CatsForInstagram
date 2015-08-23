@@ -104,7 +104,6 @@ class FavoriteDetailViewController: PhotoDetailViewController {
                     
                 } else {
                     println("保存したい画像を取得できませんでした")
-                    
                 }
         })
     }
@@ -112,5 +111,4 @@ class FavoriteDetailViewController: PhotoDetailViewController {
     override func shareButtonTapped(sender: UIButton) {
         postToSNS(id: tmpFavorite.id, webPageLinkString: tmpFavorite.webPageLinkString)
     }
-    
 }
