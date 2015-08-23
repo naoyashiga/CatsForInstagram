@@ -17,6 +17,8 @@
 		9A9C2EBB1B887C0D0040B030 /* Setting.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2EBD1B887C0D0040B030 /* Setting.strings */; };
 		9A9C2EC31B8884E00040B030 /* Detail.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2EC51B8884E00040B030 /* Detail.strings */; };
 		9A9C2EC81B8889C30040B030 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2ECA1B8889C30040B030 /* ReviewViewController.xib */; };
+		9A9C2ED11B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED01B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift */; };
+		9A9C2ED31B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED21B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift */; };
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
@@ -93,6 +95,8 @@
 		9A9C2EC61B8884E20040B030 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Detail.strings; sourceTree = "<group>"; };
 		9A9C2EC71B8884E20040B030 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Detail.strings; sourceTree = "<group>"; };
 		9A9C2EC91B8889C30040B030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ReviewViewController.xib; sourceTree = "<group>"; };
+		9A9C2ED01B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+RPZoomTransitionAnimating.swift"; sourceTree = "<group>"; };
+		9A9C2ED21B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -451,6 +455,8 @@
 				9AE22DA81B7F0ABA0024E221 /* FavoriteCollectionViewController.swift */,
 				9AE22DA91B7F0ABA0024E221 /* FavoriteCollectionViewController.xib */,
 				9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */,
+				9A9C2ED01B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift */,
+				9A9C2ED21B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift */,
 			);
 			name = Favorite;
 			sourceTree = "<group>";
@@ -725,8 +731,10 @@
 				9AE22DB01B7F0B270024E221 /* FavoriteCollectionViewCell.swift in Sources */,
 				9AE22DB41B7F167D0024E221 /* BlurredBackgroundPresentationController.swift in Sources */,
 				9A2DEE841B88444700488078 /* AdManager.swift in Sources */,
+				9A9C2ED31B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */,
 				9AE22DD11B8018510024E221 /* Video.swift in Sources */,
 				9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */,
+				9A9C2ED11B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift in Sources */,
 				9AE22D8C1B7EE6BF0024E221 /* TopCollectionViewCell.swift in Sources */,
 				9AE22DD71B8022130024E221 /* Favorite.swift in Sources */,
 				9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */,
