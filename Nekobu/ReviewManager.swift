@@ -14,8 +14,13 @@ final class ReviewManager: NSObject {
     
     private static let ud = NSUserDefaults.standardUserDefaults()
     
-     struct Cycle {
+    struct Cycle {
         static var top = 8
+    }
+    
+    struct keyName {
+        static let reviewCounter = "reviewCounter"
+        static let isReview = "isReview"
     }
     
     static func setting() {
@@ -28,33 +33,32 @@ final class ReviewManager: NSObject {
     }
     
     private static func setReviewCounter(){
-        if ud.objectForKey("reviewCounter") == nil {
-            ud.setObject(0, forKey: "reviewCounter")
+        if ud.objectForKey(keyName.reviewCounter) == nil {
+            ud.setObject(0, forKey: keyName.reviewCounter)
         } else {
-            reviewCounter = ud.integerForKey("reviewCounter")
+            reviewCounter = ud.integerForKey(keyName.reviewCounter)
         }
     }
     
     private static func setIsReview(){
-        if ud.objectForKey("isReview") == nil {
-            ud.setObject(true, forKey: "isReview")
+        if ud.objectForKey(keyName.isReview) == nil {
+            ud.setObject(true, forKey: keyName.isReview)
             isReview = true
         }else{
-            isReview = ud.boolForKey("isReview")
+            isReview = ud.boolForKey(keyName.isReview)
         }
     }
     
     static func countUp(){
         reviewCounter = reviewCounter + 1
-//        println(reviewCounter)
-        ud.setInteger(reviewCounter, forKey: "reviewCounter")
+        ud.setInteger(reviewCounter, forKey: keyName.reviewCounter)
     }
     
     static func updateReviewStatus() {
-        if ud.objectForKey("isReview") == nil {
-            ud.setObject(false, forKey: "isReview")
+        if ud.objectForKey(keyName.isReview) == nil {
+            ud.setObject(false, forKey: keyName.isReview)
         } else {
-            ud.setBool(false, forKey: "isReview")
+            ud.setBool(false, forKey: keyName.isReview)
         }
     }
 }

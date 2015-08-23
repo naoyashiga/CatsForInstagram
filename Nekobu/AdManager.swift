@@ -14,23 +14,26 @@ final class AdManager: NSObject {
     
     private static let ud = NSUserDefaults.standardUserDefaults()
     
+    struct keyName {
+        static let adCounter = "adCounter"
+    }
+    
     struct Cycle {
         static var top = 9
     }
     
     static func setAdCounter(){
         
-        if ud.objectForKey("adCounter") == nil {
-            ud.setObject(0, forKey: "adCounter")
+        if ud.objectForKey(keyName.adCounter) == nil {
+            ud.setObject(0, forKey: keyName.adCounter)
         } else {
-            adCounter = ud.integerForKey("adCounter")
+            adCounter = ud.integerForKey(keyName.adCounter)
         }
         
     }
     
     static func countUp(){
         adCounter = adCounter + 1
-//        println(adCounter)
-        ud.setInteger(adCounter, forKey: "adCounter")
+        ud.setInteger(adCounter, forKey: keyName.adCounter)
     }
 }
