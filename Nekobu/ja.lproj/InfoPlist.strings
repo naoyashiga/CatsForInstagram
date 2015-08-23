@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Nekobu
+
+  Created by naoyashiga on 2015/08/23.
+  Copyright (c) 2015年 naoyashiga. All rights reserved.
+*/
+"CFBundleDisplayName" = "ねこ部";
+"CFBundleName" = "ねこ部";

@@ -28,6 +28,7 @@
 		9A9C2EE71B89628C0040B030 /* SettingCollectionViewController+SNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EE61B89628C0040B030 /* SettingCollectionViewController+SNS.swift */; };
 		9A9C2EE91B8962E90040B030 /* SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EE81B8962E90040B030 /* SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift */; };
 		9A9C2EEC1B8965700040B030 /* AppConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EEB1B8965700040B030 /* AppConstraints.swift */; };
+		9A9C2EFA1B89767F0040B030 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2EFC1B89767F0040B030 /* InfoPlist.strings */; };
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
@@ -115,6 +116,10 @@
 		9A9C2EE61B89628C0040B030 /* SettingCollectionViewController+SNS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingCollectionViewController+SNS.swift"; sourceTree = "<group>"; };
 		9A9C2EE81B8962E90040B030 /* SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SettingCollectionViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
 		9A9C2EEB1B8965700040B030 /* AppConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstraints.swift; sourceTree = "<group>"; };
+		9A9C2EF41B8973760040B030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		9A9C2EFB1B89767F0040B030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A9C2EFD1B8976810040B030 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A9C2EFE1B8976820040B030 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +130,6 @@
 		9AB9766A1B8192A70079A194 /* UIImage+Image2String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Image2String.swift"; sourceTree = "<group>"; };
 		9AB9766D1B8194180079A194 /* String+String2Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+String2Image.swift"; sourceTree = "<group>"; };
 		9AE22D541B7ED1430024E221 /* Nekobu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nekobu.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AE22D581B7ED1430024E221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AE22D591B7ED1430024E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AE22D5E1B7ED1430024E221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AE22D601B7ED1430024E221 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 			children = (
 				9A9C2EBD1B887C0D0040B030 /* Setting.strings */,
 				9A9C2EC51B8884E00040B030 /* Detail.strings */,
+				9A9C2EFC1B89767F0040B030 /* InfoPlist.strings */,
 			);
 			name = Localize;
 			sourceTree = "<group>";
@@ -380,7 +385,7 @@
 		9AE22D571B7ED1430024E221 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9AE22D581B7ED1430024E221 /* Info.plist */,
+				9A9C2EF51B8973760040B030 /* Info.plist */,
 				9AB976661B81896A0079A194 /* Nekobu-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
@@ -715,6 +720,7 @@
 				9AE22DAB1B7F0ABA0024E221 /* FavoriteCollectionViewController.xib in Resources */,
 				9AB976651B8159760079A194 /* SettingCollectionViewCell.xib in Resources */,
 				9A9C2EC81B8889C30040B030 /* ReviewViewController.xib in Resources */,
+				9A9C2EFA1B89767F0040B030 /* InfoPlist.strings in Resources */,
 				9AE22D8D1B7EE6BF0024E221 /* TopCollectionViewCell.xib in Resources */,
 				9AE22DB81B7F22530024E221 /* PhotoDetailViewController.xib in Resources */,
 				9AE22D5F1B7ED1430024E221 /* Main.storyboard in Resources */,
@@ -890,6 +896,24 @@
 			name = ReviewViewController.xib;
 			sourceTree = "<group>";
 		};
+		9A9C2EF51B8973760040B030 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9C2EF41B8973760040B030 /* Base */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		9A9C2EFC1B89767F0040B030 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9C2EFB1B89767F0040B030 /* Base */,
+				9A9C2EFD1B8976810040B030 /* en */,
+				9A9C2EFE1B8976820040B030 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		9AE22D5D1B7ED1430024E221 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1005,7 +1029,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Nekobu/Info.plist;
+				INFOPLIST_FILE = Nekobu/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0d946c6e-8cb9-4df4-afab-4c9de01fd9f7";
@@ -1025,7 +1049,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Nekobu/Info.plist;
+				INFOPLIST_FILE = Nekobu/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0d946c6e-8cb9-4df4-afab-4c9de01fd9f7";
