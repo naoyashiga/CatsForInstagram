@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        ReviewManager.setting()
+        ReviewManager.initialSetting()
         
         setSchemaVersion(5, Realm.defaultPath,
             { migration, oldSchemaVersion in

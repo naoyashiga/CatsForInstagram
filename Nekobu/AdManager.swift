@@ -9,10 +9,7 @@
 import Foundation
 import GoogleMobileAds
 
-final class AdManager: NSObject {
-    static var adCounter = 0
-    
-    private static let ud = NSUserDefaults.standardUserDefaults()
+final class AdManager: BaseUserDefaultManager {
     
     struct keyName {
         static let adCounter = "adCounter"
@@ -20,20 +17,5 @@ final class AdManager: NSObject {
     
     struct Cycle {
         static var top = 9
-    }
-    
-    static func setAdCounter(){
-        
-        if ud.objectForKey(keyName.adCounter) == nil {
-            ud.setObject(0, forKey: keyName.adCounter)
-        } else {
-            adCounter = ud.integerForKey(keyName.adCounter)
-        }
-        
-    }
-    
-    static func countUp(){
-        adCounter = adCounter + 1
-        ud.setInteger(adCounter, forKey: keyName.adCounter)
     }
 }

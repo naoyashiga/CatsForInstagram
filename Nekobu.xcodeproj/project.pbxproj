@@ -23,6 +23,7 @@
 		9A9C2ED91B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED81B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift */; };
 		9A9C2EDC1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */; };
 		9A9C2EDE1B894E540040B030 /* AdConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDD1B894E540040B030 /* AdConstraints.swift */; };
+		9A9C2EE01B8953320040B030 /* BaseUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDF1B8953320040B030 /* BaseUserDefaultManager.swift */; };
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
@@ -105,6 +106,7 @@
 		9A9C2ED81B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+RPZoomTransitionAnimating.swift"; sourceTree = "<group>"; };
 		9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+GoogleMobileAds.swift"; sourceTree = "<group>"; };
 		9A9C2EDD1B894E540040B030 /* AdConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdConstraints.swift; sourceTree = "<group>"; };
+		9A9C2EDF1B8953320040B030 /* BaseUserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseUserDefaultManager.swift; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -252,6 +254,16 @@
 				9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */,
 			);
 			name = "Extension+GoogleMobileAds";
+			sourceTree = "<group>";
+		};
+		9A9C2EE11B8953390040B030 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				9A2DEE821B88442E00488078 /* Ad */,
+				9A2DEE811B881FAA00488078 /* Review */,
+				9A9C2EDF1B8953320040B030 /* BaseUserDefaultManager.swift */,
+			);
+			name = UserDefault;
 			sourceTree = "<group>";
 		};
 		9AB9765A1B8158C70079A194 /* Setting */ = {
@@ -547,8 +559,7 @@
 		9AE22DC71B7F379E0024E221 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				9A2DEE821B88442E00488078 /* Ad */,
-				9A2DEE811B881FAA00488078 /* Review */,
+				9A9C2EE11B8953390040B030 /* UserDefault */,
 				9AE22DC81B7F37AB0024E221 /* NetWorking */,
 				9AE22D8E1B7EE7450024E221 /* UI */,
 			);
@@ -788,6 +799,7 @@
 				9AB9766B1B8192A70079A194 /* UIImage+Image2String.swift in Sources */,
 				9AE22D811B7ED77A0024E221 /* Config.swift in Sources */,
 				9AE22D971B7EFA360024E221 /* CAPSPageMenu.swift in Sources */,
+				9A9C2EE01B8953320040B030 /* BaseUserDefaultManager.swift in Sources */,
 				9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */,
 				9A2DEE801B881F5900488078 /* ReviewManager.swift in Sources */,
 				9A9C2EDC1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift in Sources */,

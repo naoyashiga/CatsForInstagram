@@ -134,11 +134,9 @@ class TopCollectionViewController: PhotoCollectionViewController {
         
         //レビュー訴求
         
-        ReviewManager.update()
-        
         if(ReviewManager.isReview){
             //レビューまだの人
-            if(ReviewManager.reviewCounter != 0 && ReviewManager.reviewCounter % ReviewManager.Cycle.top == 0){
+            if(ReviewManager.counter != 0 && ReviewManager.counter % ReviewManager.Cycle.top == 0){
                 let reviewVC = ReviewViewController(nibName: "ReviewViewController", bundle: nil)
                 reviewVC.modalPresentationStyle = .Custom
                 reviewVC.transitioningDelegate = self
@@ -148,7 +146,7 @@ class TopCollectionViewController: PhotoCollectionViewController {
                 checkInterstitialAd(photoDetailViewController: photoDetailVC)
             }
             
-            ReviewManager.countUp()
+            ReviewManager.countUp(ReviewManager.keyName.reviewCounter)
             
         } else {
             view.window?.rootViewController?.presentViewController(photoDetailVC, animated: true, completion: nil)

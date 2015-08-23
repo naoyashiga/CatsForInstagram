@@ -41,9 +41,9 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
     }
 
     func checkInterstitialAd(#photoDetailViewController: PhotoDetailViewController) {
-        AdManager.setAdCounter()
+        AdManager.mySetCounter(AdManager.keyName.adCounter)
         
-        if AdManager.adCounter != 0 && AdManager.adCounter % AdManager.Cycle.top == 0{
+        if AdManager.counter != 0 && AdManager.counter % AdManager.Cycle.top == 0{
             if(interstitial!.isReady){
                 interstitial!.presentFromRootViewController(self)
             }
@@ -55,6 +55,6 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
             view.window?.rootViewController?.presentViewController(photoDetailViewController, animated: true, completion: nil)
         }
         
-        AdManager.countUp()
+        AdManager.countUp(AdManager.keyName.adCounter)
     }
 }
