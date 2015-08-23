@@ -12,16 +12,15 @@ import GoogleMobileAds
 extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDelegate {
 
     func settingInterstitialAd() {
-        interstitial = GADInterstitial(adUnitID: AdManager.ADUNIT_ID)
+        interstitial = GADInterstitial(adUnitID: AdConstraints.interstitialAdUnitID)
         interstitial!.delegate = self
-        let request = GADRequest() // create request
+        let request = GADRequest()
 //        request.testDevices = [kGADSimulatorID]
-        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
+        request.testDevices = [AdConstraints.realDeviceID]
         interstitial!.loadRequest(request)
     }
     
     func settingAd(){
-        let MY_BANNER_UNIT_ID = "ca-app-pub-9360978553412745/9261475110"
         
         let origin = CGPointMake(
             0.0,
@@ -29,7 +28,7 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         
         let size = GADAdSizeFullWidthPortraitWithHeight(50)
         let adB = GADBannerView(adSize: size, origin: origin)
-        adB.adUnitID = MY_BANNER_UNIT_ID
+        adB.adUnitID = AdConstraints.bannerAdUnitID
         adB.delegate = self
         adB.rootViewController = self
         
@@ -37,7 +36,7 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         
         let request = GADRequest()
 //        request.testDevices = [kGADSimulatorID]
-        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
+        request.testDevices = [AdConstraints.realDeviceID]
         adB.loadRequest(request)
     }
 

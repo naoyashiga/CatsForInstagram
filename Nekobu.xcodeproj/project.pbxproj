@@ -22,6 +22,7 @@
 		9A9C2ED71B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED61B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift */; };
 		9A9C2ED91B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED81B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift */; };
 		9A9C2EDC1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */; };
+		9A9C2EDE1B894E540040B030 /* AdConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDD1B894E540040B030 /* AdConstraints.swift */; };
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
@@ -103,6 +104,7 @@
 		9A9C2ED61B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
 		9A9C2ED81B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+RPZoomTransitionAnimating.swift"; sourceTree = "<group>"; };
 		9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+GoogleMobileAds.swift"; sourceTree = "<group>"; };
+		9A9C2EDD1B894E540040B030 /* AdConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdConstraints.swift; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				9A2DEE831B88444700488078 /* AdManager.swift */,
+				9A9C2EDD1B894E540040B030 /* AdConstraints.swift */,
 			);
 			name = Ad;
 			sourceTree = "<group>";
@@ -774,6 +777,7 @@
 				9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */,
 				9AE22DC31B7F33170024E221 /* TransitionDismissAnimator.swift in Sources */,
 				9AE22DA61B7F04180024E221 /* Media.swift in Sources */,
+				9A9C2EDE1B894E540040B030 /* AdConstraints.swift in Sources */,
 				9AE22D881B7EE69A0024E221 /* TopCollectionViewController.swift in Sources */,
 				9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */,
 				9AE22DC11B7F32FA0024E221 /* TransitionPresentationAnimator.swift in Sources */,

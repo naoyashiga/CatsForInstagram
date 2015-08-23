@@ -11,7 +11,6 @@ import GoogleMobileAds
 
 final class AdManager: NSObject {
     static var adCounter = 0
-    static let ADUNIT_ID = "ca-app-pub-9360978553412745/4402139911"
     
     private static let ud = NSUserDefaults.standardUserDefaults()
     
