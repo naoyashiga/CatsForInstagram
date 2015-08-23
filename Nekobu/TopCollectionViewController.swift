@@ -16,7 +16,7 @@ struct topReuseId {
     static let cell = "TopCollectionViewCell"
 }
 
-class TopCollectionViewController: PhotoCollectionViewController, UIViewControllerTransitioningDelegate, RPZoomTransitionAnimating, GADBannerViewDelegate, GADInterstitialDelegate {
+class TopCollectionViewController: PhotoCollectionViewController {
     var mediaList = [Media]() {
         didSet {
 //            collectionView?.reloadData()
@@ -46,36 +46,6 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         super.didReceiveMemoryWarning()
     }
     
-    func settingInterstitialAd() {
-        interstitial = GADInterstitial(adUnitID: AdManager.ADUNIT_ID)
-        interstitial!.delegate = self
-        let request = GADRequest() // create request
-        request.testDevices = [kGADSimulatorID]
-//        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
-        interstitial!.loadRequest(request)
-    }
-    
-    func settingAd(){
-        let MY_BANNER_UNIT_ID = "ca-app-pub-9360978553412745/9261475110"
-        
-        let origin = CGPointMake(
-            0.0,
-            view.bounds.height - CGSizeFromGADAdSize(kGADAdSizeBanner).height - PageMenuConstraint.menuHeight)
-        
-        let size = GADAdSizeFullWidthPortraitWithHeight(50)
-        let adB = GADBannerView(adSize: size, origin: origin)
-        adB.adUnitID = MY_BANNER_UNIT_ID
-        adB.delegate = self
-        adB.rootViewController = self
-        
-        view.addSubview(adB)
-        
-        let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
-//        request.testDevices = ["0b0df889514cace63baf0d3f248e5295"]
-        adB.loadRequest(request)
-    }
-    
     func loadPhoto(#requestURL: String) {
         Alamofire.request(.GET, requestURL).responseSwiftyJSON({ (_, _, json, error) in
             if (error != nil) {
@@ -87,7 +57,6 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
                     for d in array {
                         
                         let media: Media
-                        
                         
                         if d["type"].string == "image" {
                             media = Media(
@@ -103,20 +72,6 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
                             
                             self.mediaList.append(media)
                             
-                        } else if d["type"].string == "video" {
-//                            let video = Video(
-//                                lowResolutionVideoURL: d["videos"]["low_resolution"]["url"].URL,
-//                                standardResolutionVideoURL: d["videos"]["standard_resolution"]["url"].URL
-//                                )
-//                            
-//                            media = Media(
-//                                type: "video",
-//                                lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
-//                                standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL,
-//                                video: video
-//                            )
-//                            
-//                            self.mediaList.append(media)
                         }
                     }
                 }
@@ -137,7 +92,6 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
-
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return mediaList.count
@@ -201,77 +155,4 @@ class TopCollectionViewController: PhotoCollectionViewController, UIViewControll
         }
     }
     
-    func checkInterstitialAd(#photoDetailViewController: PhotoDetailViewController) {
-        AdManager.setAdCounter()
-        
-        if AdManager.adCounter != 0 && AdManager.adCounter % AdManager.Cycle.top == 0{
-            if(interstitial!.isReady){
-                interstitial!.presentFromRootViewController(self)
-            }
-            
-            //次の広告の準備
-            settingInterstitialAd()
-        } else {
-            
-            view.window?.rootViewController?.presentViewController(photoDetailViewController, animated: true, completion: nil)
-        }
-        
-        AdManager.countUp()
-    }
-    
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
-        
-        
-        return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: self)
-    }
-    
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        let animator = TransitionPresentationAnimator()
-        animator.sourceVC = self
-        animator.destinationVC = presented
-        
-        return animator
-    }
-    
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        let animator = TransitionDismissAnimator()
-        animator.sourceVC = dismissed
-        animator.destinationVC = self
-        
-        return animator
-    }
-    
-    //MARK: RPZoomTransitionAnimating
-    func sourceImageView() -> UIImageView {
-        //使用しない
-        return UIImageView()
-    }
-    
-    func calculatedPositionSourceImageView() -> UIImageView {
-        if let selectedIndexPath = collectionView?.indexPathsForSelectedItems().first as? NSIndexPath {
-            self.selectedIndexPath = selectedIndexPath
-        }
-        
-        let cell = collectionView?.cellForItemAtIndexPath(self.selectedIndexPath) as! TopCollectionViewCell
-        let imageView = UIImageView(image: cell.thumbNailImageView.image)
-        
-        imageView.contentMode = cell.thumbNailImageView.contentMode
-        imageView.clipsToBounds = true
-        imageView.userInteractionEnabled = false
-        imageView.frame = cell.thumbNailImageView.convertRect(cell.thumbNailImageView.frame, toView: collectionView?.superview)
-        
-        imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y + PageMenuConstraint.menuHeight, imageView.frame.size.width, imageView.frame.size.height)
-        return imageView
-    }
-    
-    func transitionDestinationImageViewFrame() -> CGRect {
-        let cell = collectionView?.cellForItemAtIndexPath(selectedIndexPath) as! TopCollectionViewCell
-        let cellFrameInSuperview = cell.thumbNailImageView.convertRect(cell.thumbNailImageView.frame, toView: collectionView?.superview)
-        
-        let resizedCellFrameInSuperview = CGRectMake(cellFrameInSuperview.origin.x, cellFrameInSuperview.origin.y + PageMenuConstraint.menuHeight, cellFrameInSuperview.size.width, cellFrameInSuperview.size.height)
-        
-        return resizedCellFrameInSuperview
-    }
 }

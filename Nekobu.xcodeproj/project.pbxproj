@@ -19,6 +19,9 @@
 		9A9C2EC81B8889C30040B030 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2ECA1B8889C30040B030 /* ReviewViewController.xib */; };
 		9A9C2ED11B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED01B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift */; };
 		9A9C2ED31B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED21B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift */; };
+		9A9C2ED71B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED61B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift */; };
+		9A9C2ED91B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2ED81B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift */; };
+		9A9C2EDC1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */; };
 		9AB976571B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */; };
 		9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */; };
 		9AB9765F1B8159490079A194 /* SettingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */; };
@@ -97,6 +100,9 @@
 		9A9C2EC91B8889C30040B030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ReviewViewController.xib; sourceTree = "<group>"; };
 		9A9C2ED01B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+RPZoomTransitionAnimating.swift"; sourceTree = "<group>"; };
 		9A9C2ED21B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		9A9C2ED61B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+UIViewControllerTransitioningDelegate.swift"; sourceTree = "<group>"; };
+		9A9C2ED81B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+RPZoomTransitionAnimating.swift"; sourceTree = "<group>"; };
+		9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TopCollectionViewController+GoogleMobileAds.swift"; sourceTree = "<group>"; };
 		9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteCollectionViewController+DZNEmptyDataSet.swift"; sourceTree = "<group>"; };
 		9AB976581B80AF2C0079A194 /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DZNEmptyDataSet.framework; path = ../Carthage/Build/iOS/DZNEmptyDataSet.framework; sourceTree = "<group>"; };
 		9AB9765D1B8159490079A194 /* SettingCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +222,33 @@
 				9A9C2EC51B8884E00040B030 /* Detail.strings */,
 			);
 			name = Localize;
+			sourceTree = "<group>";
+		};
+		9A9C2ED41B8948370040B030 /* Extension+Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */,
+				9A9C2ED01B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift */,
+				9A9C2ED21B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift */,
+			);
+			name = "Extension+Delegate";
+			sourceTree = "<group>";
+		};
+		9A9C2ED51B89487F0040B030 /* Extension+Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9A9C2ED61B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift */,
+				9A9C2ED81B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift */,
+			);
+			name = "Extension+Delegate";
+			sourceTree = "<group>";
+		};
+		9A9C2EDA1B8949F30040B030 /* Extension+GoogleMobileAds */ = {
+			isa = PBXGroup;
+			children = (
+				9A9C2EDB1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift */,
+			);
+			name = "Extension+GoogleMobileAds";
 			sourceTree = "<group>";
 		};
 		9AB9765A1B8158C70079A194 /* Setting */ = {
@@ -400,6 +433,8 @@
 		9AE22D951B7EE92B0024E221 /* Top */ = {
 			isa = PBXGroup;
 			children = (
+				9A9C2EDA1B8949F30040B030 /* Extension+GoogleMobileAds */,
+				9A9C2ED51B89487F0040B030 /* Extension+Delegate */,
 				9AE22D871B7EE69A0024E221 /* TopCollectionViewController.swift */,
 				9AE22D9E1B7EFB7D0024E221 /* TopCollectionViewController.xib */,
 			);
@@ -452,11 +487,9 @@
 		9AE22DA71B7F0A900024E221 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				9A9C2ED41B8948370040B030 /* Extension+Delegate */,
 				9AE22DA81B7F0ABA0024E221 /* FavoriteCollectionViewController.swift */,
 				9AE22DA91B7F0ABA0024E221 /* FavoriteCollectionViewController.xib */,
-				9AB976561B80AEA50079A194 /* FavoriteCollectionViewController+DZNEmptyDataSet.swift */,
-				9A9C2ED01B8946070040B030 /* FavoriteCollectionViewController+RPZoomTransitionAnimating.swift */,
-				9A9C2ED21B89477F0040B030 /* FavoriteCollectionViewController+UIViewControllerTransitioningDelegate.swift */,
 			);
 			name = Favorite;
 			sourceTree = "<group>";
@@ -719,6 +752,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9C2ED71B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */,
 				9AE22D9A1B7EFA610024E221 /* PageMenuViewController.swift in Sources */,
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
 				9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */,
@@ -752,9 +786,11 @@
 				9AE22D971B7EFA360024E221 /* CAPSPageMenu.swift in Sources */,
 				9AE22DC61B7F36050024E221 /* ImageView+SDWebImage.swift in Sources */,
 				9A2DEE801B881F5900488078 /* ReviewManager.swift in Sources */,
+				9A9C2EDC1B894A240040B030 /* TopCollectionViewController+GoogleMobileAds.swift in Sources */,
 				9AE22D911B7EE7660024E221 /* UICollectionView+NibSetting.swift in Sources */,
 				9AB976641B8159760079A194 /* SettingCollectionViewCell.swift in Sources */,
 				9A6C75CE1B86952200956212 /* PhotoCollectionViewController.swift in Sources */,
+				9A9C2ED91B89491C0040B030 /* TopCollectionViewController+RPZoomTransitionAnimating.swift in Sources */,
 				9AE22DCA1B7F37CA0024E221 /* SwiftyJSON+Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
