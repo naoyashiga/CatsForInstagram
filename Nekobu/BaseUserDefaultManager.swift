@@ -24,7 +24,6 @@ class BaseUserDefaultManager: NSObject {
     static func countUp(keyName: String){
         counter = counter + 1
         
-        print(counter)
         ud.setInteger(counter, forKey: keyName)
     }
     

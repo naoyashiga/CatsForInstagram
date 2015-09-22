@@ -55,7 +55,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
             }
             
         } catch {
-            fatalError("cant set favorites")
+            fatalError("cant set favorites PhotoDetailViewController")
         }
     }
 
@@ -110,7 +110,9 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
             UIActivityTypePostToVimeo,
             UIActivityTypePostToTencentWeibo,
             UIActivityTypePostToWeibo,
-            UIActivityTypePrint
+            UIActivityTypePrint,
+            UIActivityTypeSaveToCameraRoll,
+            UIActivityTypeAirDrop
         ]
         
         activityVC.excludedActivityTypes = excludedActivityTypes

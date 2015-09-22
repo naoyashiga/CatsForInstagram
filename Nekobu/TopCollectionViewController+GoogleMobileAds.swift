@@ -15,7 +15,7 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         interstitial = GADInterstitial(adUnitID: AdConstraints.interstitialAdUnitID)
         interstitial!.delegate = self
         let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
+//        request.testDevices = [kGADSimulatorID]
 //        request.testDevices = [AdConstraints.realDeviceID]
         interstitial!.loadRequest(request)
     }
@@ -35,18 +35,16 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         view.addSubview(adB)
         
         let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
+//        request.testDevices = [kGADSimulatorID]
 //        request.testDevices = [AdConstraints.realDeviceID]
         adB.loadRequest(request)
     }
 
     func checkInterstitialAd(photoDetailViewController photoDetailViewController: PhotoDetailViewController) {
         
+        print(AdManager.counter)
+        
         if AdManager.counter != 0 && AdManager.counter % AdManager.Cycle.top == 0{
-            if(interstitial!.isReady){
-                interstitial!.presentFromRootViewController(self)
-            }
-            
             //次の広告の準備
             settingInterstitialAd()
             
@@ -55,5 +53,17 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         }
         
         AdManager.countUp(AdManager.keyName.adCounter)
+    }
+    
+    func interstitialDidReceiveAd(ad: GADInterstitial!) {
+        if let interstitial = interstitial {
+            if(interstitial.isReady){
+                interstitial.presentFromRootViewController(self)
+            }
+        }
+    }
+    
+    func interstitialDidDismissScreen(ad: GADInterstitial!) {
+        interstitial = nil
     }
 }

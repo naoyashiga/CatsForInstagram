@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6DF5DB6C2DA3FF73A335AAFB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80199A3D3B6F0EF239BFC41 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9A0718FB1BB131FF00F2CDCD /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0718FA1BB131FF00F2CDCD /* RealmManager.swift */; settings = {ASSET_TAGS = (); }; };
 		9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */; };
 		9A19BBD51B82A2FC00D75786 /* SettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */; };
 		9A2DEE7E1B8762E300488078 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */; };
@@ -89,6 +90,7 @@
 /* Begin PBXFileReference section */
 		07FDB047653FF62FC9653927 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		31F9B4C17813FC45BEC8DD84 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9A0718FA1BB131FF00F2CDCD /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingHeaderView.swift; sourceTree = "<group>"; };
 		9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingHeaderView.xib; sourceTree = "<group>"; };
 		9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 				A80199A3D3B6F0EF239BFC41 /* Pods.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A0718F91BB131E600F2CDCD /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				9A0718FA1BB131FF00F2CDCD /* RealmManager.swift */,
+			);
+			name = DB;
 			sourceTree = "<group>";
 		};
 		9A2DEE811B881FAA00488078 /* Review */ = {
@@ -604,6 +614,7 @@
 		9AE22DC71B7F379E0024E221 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9A0718F91BB131E600F2CDCD /* DB */,
 				9A9C2EEA1B8965460040B030 /* Constraints */,
 				9A9C2EE11B8953390040B030 /* UserDefault */,
 				9AE22D8E1B7EE7450024E221 /* UI */,
@@ -816,6 +827,7 @@
 				9AE22D9A1B7EFA610024E221 /* PageMenuViewController.swift in Sources */,
 				9A3359981B951ECB007CEDBB /* Device.swift in Sources */,
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
+				9A0718FB1BB131FF00F2CDCD /* RealmManager.swift in Sources */,
 				9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */,
 				9A9C2EE71B89628C0040B030 /* SettingCollectionViewController+SNS.swift in Sources */,
 				9AE22DAA1B7F0ABA0024E221 /* FavoriteCollectionViewController.swift in Sources */,
@@ -966,6 +978,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1012,6 +1025,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Naoya Sugimoto (5JW3B2ZP2Q)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

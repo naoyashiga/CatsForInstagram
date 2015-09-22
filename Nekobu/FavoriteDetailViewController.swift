@@ -50,7 +50,7 @@ class FavoriteDetailViewController: PhotoDetailViewController {
             }
             
         } catch {
-            fatalError("cant set favorites")
+            fatalError("cant set favorites FavoriteDetailViewController viewDidLoad")
         }
     }
 
@@ -97,7 +97,7 @@ class FavoriteDetailViewController: PhotoDetailViewController {
             }
             
         } catch {
-            fatalError("cant set favorites")
+            fatalError("cant set favorites updateFavorite FavoriteDetailViewController")
         }
         
         

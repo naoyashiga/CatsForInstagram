@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 import WebImage
 import RealmSwift
 
@@ -25,7 +23,7 @@ class FavoriteCollectionViewController: PhotoCollectionViewController {
                 return realm.objects(Favorite).sorted("createdAt", ascending: false)
                 
             } catch {
-                fatalError("cant set favorites")
+                fatalError("cant set favorites FavoriteCollectionViewController")
             }
         }
     }
