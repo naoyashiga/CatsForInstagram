@@ -76,7 +76,6 @@ class FavoriteCollectionViewController: PhotoCollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(favoriteReuseId.cell, forIndexPath: indexPath) as! FavoriteCollectionViewCell
         
         let favorite = favorites[indexPath.row]
         let favoriteDetailVC = FavoriteDetailViewController(nibName: "PhotoDetailViewController", bundle: nil)

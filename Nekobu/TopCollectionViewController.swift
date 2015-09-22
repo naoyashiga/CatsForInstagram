@@ -47,44 +47,46 @@ class TopCollectionViewController: PhotoCollectionViewController {
     }
     
     func loadPhoto(requestURL requestURL: String) {
-        Alamofire.request(.GET, requestURL).responseSwiftyJSON({ (_, _, json, error) in
-            if (error != nil) {
-                print("Error with registration: \(error?.localizedDescription)")
+        Alamofire.request(.GET, requestURL).responseJSON { _, _, result in
+            
+            var responseJSON: JSON
+            if result.isFailure {
+                responseJSON = JSON.null
             } else {
-//                println(json)
-                if let array = json["data"].array {
+                responseJSON = SwiftyJSON.JSON(result.value!)
+            }
+            
+            if let array = responseJSON["data"].array {
+                
+                for d in array {
                     
-                    for d in array {
+                    let media: Media
+                    
+                    if d["type"].string == "image" {
+                        media = Media(
+                            type: "image",
+                            id: d["id"].stringValue,
+                            lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
+                            standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL,
+                            lowResolutionBase64ImageString: "",
+                            standardResolutionBase64ImageString: "",
+                            webPageLinkString: d["link"].stringValue,
+                            video: nil
+                        )
                         
-                        let media: Media
+                        self.mediaList.append(media)
                         
-                        if d["type"].string == "image" {
-                            media = Media(
-                                type: "image",
-                                id: d["id"].stringValue,
-                                lowResolutionImageURL: d["images"]["low_resolution"]["url"].URL,
-                                standardResolutionImageURL: d["images"]["standard_resolution"]["url"].URL,
-                                lowResolutionBase64ImageString: "",
-                                standardResolutionBase64ImageString: "",
-                                webPageLinkString: d["link"].stringValue,
-                                video: nil
-                            )
-                            
-                            self.mediaList.append(media)
-                            
-                        }
                     }
                 }
-                
-                
-                if let nextURLString = json["pagination"]["next_url"].string {
-                    self.pagenation = Pagenation(nextURLString: nextURLString)
-                }
-                
-                self.collectionView?.reloadData()
             }
-        })
-        
+            
+            
+            if let nextURLString = responseJSON["pagination"]["next_url"].string {
+                self.pagenation = Pagenation(nextURLString: nextURLString)
+            }
+            
+            self.collectionView?.reloadData()
+        }
     }
 
     // MARK: UICollectionViewDataSource
@@ -123,7 +125,6 @@ class TopCollectionViewController: PhotoCollectionViewController {
     }
     
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(topReuseId.cell, forIndexPath: indexPath) as! TopCollectionViewCell
         
         let media = mediaList[indexPath.row]
         let photoDetailVC = PhotoDetailViewController(nibName: "PhotoDetailViewController", bundle: nil)

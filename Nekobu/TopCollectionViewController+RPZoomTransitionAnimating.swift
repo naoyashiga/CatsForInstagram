@@ -16,8 +16,8 @@ extension TopCollectionViewController: RPZoomTransitionAnimating {
     }
     
     func calculatedPositionSourceImageView() -> UIImageView {
-        if let selectedIndexPath = collectionView?.indexPathsForSelectedItems().first as? NSIndexPath {
-            self.selectedIndexPath = selectedIndexPath
+        if let selectedItems = collectionView?.indexPathsForSelectedItems()?.first {
+            self.selectedIndexPath = selectedItems
         }
         
         let cell = collectionView?.cellForItemAtIndexPath(self.selectedIndexPath) as! TopCollectionViewCell

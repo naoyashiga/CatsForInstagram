@@ -22,7 +22,10 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         
-        let containerView = transitionContext.containerView()
+        guard let containerView = transitionContext.containerView() else {
+            return
+        }
+        
         let fromVC = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
         
         let sourceImageView = UIImageView()

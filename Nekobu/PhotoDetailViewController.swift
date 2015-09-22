@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import WebImage
+import LINEActivity
 
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var detailImageView: UIImageView! {
@@ -41,15 +42,20 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
 //                self.media.standardResolutionBase64ImageString = image.Image2String()
 //        })
         
-        let realm = Realm()
-        let predicate = NSPredicate(format: "id == %@", media.id)
-        
-        if realm.objects(Favorite).filter(predicate).count == 0 {
-            //お気に入り未登録
-            favoriteButton.selected = false
-        } else {
-            //お気に入り登録済み
-            favoriteButton.selected = true
+        do {
+            let realm = try Realm()
+            let predicate = NSPredicate(format: "id == %@", media.id)
+            
+            if realm.objects(Favorite).filter(predicate).count == 0 {
+                //お気に入り未登録
+                favoriteButton.selected = false
+            } else {
+                //お気に入り登録済み
+                favoriteButton.selected = true
+            }
+            
+        } catch {
+            fatalError("cant set favorites")
         }
     }
 
@@ -132,53 +138,59 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     func updateFavorite() {
-        let realm = Realm()
         
-        let predicate = NSPredicate(format: "id == %@", media.id)
-        let exisitingFavoriteArray = realm.objects(Favorite).filter(predicate)
+        do {
+            let realm = try Realm()
         
-        if favoriteButton.selected {
-            //お気に入り削除
-            if exisitingFavoriteArray.count != 0 {
-                
-                realm.write {
-                    realm.delete(exisitingFavoriteArray[0])
+            let predicate = NSPredicate(format: "id == %@", media.id)
+            let exisitingFavoriteArray = realm.objects(Favorite).filter(predicate)
+            
+            if favoriteButton.selected {
+                //お気に入り削除
+                if exisitingFavoriteArray.count != 0 {
                     
-                    self.favoriteButton.selected = false
+                    try realm.write {
+                        realm.delete(exisitingFavoriteArray[0])
+                        
+                        self.favoriteButton.selected = false
+                    }
+                }
+                
+            } else {
+                //お気に入り追加
+                if exisitingFavoriteArray.count == 0 {
+                    
+                    //                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: String(media.id))
+                    
+                    let favorite = Favorite()
+                    favorite.id = media.id
+                    //高画質版のURLを保存したい
+                    
+                    //                if let lowResolutionImageURL = media.lowResolutionImageURL {
+                    //                    favorite.lowResolutionImageURLString = lowResolutionImageURL.absoluteString!
+                    //                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: favorite.lowResolutionImageURLString)
+                    //                }
+                    
+                    if let standardResolutionImageURL = media.standardResolutionImageURL {
+                        favorite.standardResolutionURLString = standardResolutionImageURL.absoluteString
+                    }
+                    
+                    favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
+                    favorite.standardResolutionBase64ImageString = media.standardResolutionBase64ImageString
+                    favorite.webPageLinkString = media.webPageLinkString
+                    
+                    favorite.createdAt = NSDate().timeIntervalSince1970
+                    
+                    try realm.write {
+                        realm.add(favorite, update: true)
+                        
+                        self.favoriteButton.selected = true
+                    }
                 }
             }
             
-        } else {
-            //お気に入り追加
-            if exisitingFavoriteArray.count == 0 {
-                
-//                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: String(media.id))
-                
-                let favorite = Favorite()
-                favorite.id = media.id
-                //高画質版のURLを保存したい
-                
-//                if let lowResolutionImageURL = media.lowResolutionImageURL {
-//                    favorite.lowResolutionImageURLString = lowResolutionImageURL.absoluteString!
-//                SDWebImageManager.sharedManager().imageCache.storeImage(media.standardResolutionBase64ImageString.String2Image(), forKey: favorite.lowResolutionImageURLString)
-//                }
-                
-                if let standardResolutionImageURL = media.standardResolutionImageURL {
-                    favorite.standardResolutionURLString = standardResolutionImageURL.absoluteString
-                }
-                
-                favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
-                favorite.standardResolutionBase64ImageString = media.standardResolutionBase64ImageString
-                favorite.webPageLinkString = media.webPageLinkString
-                
-                favorite.createdAt = NSDate().timeIntervalSince1970
-                
-                realm.write {
-                    realm.add(favorite, update: true)
-                    
-                    self.favoriteButton.selected = true
-                }
-            }
+        } catch {
+            fatalError("error in updateFavorite")
         }
         
         favoriteButton.playBounceAnimation()

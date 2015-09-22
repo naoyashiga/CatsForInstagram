@@ -21,7 +21,10 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         
-        let containerView = transitionContext.containerView()
+        guard let containerView = transitionContext.containerView() else {
+            return
+        }
+        
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
         
         let sourceImageView = UIImageView()

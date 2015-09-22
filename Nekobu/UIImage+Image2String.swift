@@ -15,7 +15,7 @@ extension UIImage {
         let jpegData = UIImageJPEGRepresentation(self, 0.5)
         
         let encodeString =
-        jpegData.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
+        jpegData!.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
         
         return encodeString
     }
