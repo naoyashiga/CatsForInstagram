@@ -94,6 +94,8 @@ typedef struct _NSZone NSZone;
 @class RLMRealm;
 @class RLMObjectSchema;
 @class RLMSchema;
+@class RLMProperty;
+@class RLMListBase;
 
 
 /// In Realm you define your model classes by subclassing <code>Object</code> and adding properties to be persisted.
@@ -164,16 +166,6 @@ SWIFT_CLASS("_TtC10RealmSwift6Object")
 /// for string and int properties.
 /// :returns: <code>Array</code> of property names to index.
 + (NSArray * __nonnull)indexedProperties;
-
-/// Returns the value for the property identified by the given key.
-/// :param: key The name of one of the receiver's properties.
-/// :returns: The value for the property identified by <code>key</code>.
-- (id __nullable)valueForKey:(NSString * __nonnull)key;
-
-/// Sets the property of the receiver specified by the given key to the given value.
-/// :param: value The value for the property identified by <code>key</code>.
-/// :param: key   The name of one of the receiver's properties.
-- (void)setValue:(id __nullable)value forKey:(NSString * __nonnull)key;
 - (id __nullable)objectForKeyedSubscript:(NSString * __nonnull)key;
 - (void)setObject:(id __nullable)value forKeyedSubscript:(NSString * __nonnull)key;
 
@@ -184,19 +176,25 @@ SWIFT_CLASS("_TtC10RealmSwift6Object")
 /// WARNING: This is an internal initializer not intended for public use.
 /// :nodoc:
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithValue:(id __nonnull)value schema:(RLMSchema * __nonnull)schema OBJC_DESIGNATED_INITIALIZER;
+- (RLMListBase * __nonnull)listForProperty:(RLMProperty * __nonnull)prop;
 @end
 
 
 
 /// Object interface which allows untyped getters and setters for Objects.
+/// :nodoc:
 SWIFT_CLASS("_TtC10RealmSwift13DynamicObject")
 @interface DynamicObject : Object
+- (RLMListBase * __nonnull)listForProperty:(RLMProperty * __nonnull)prop;
 
 /// <dl><dt>nodoc</dt><dd></dd></dl>
 - (id __nullable)valueForUndefinedKey:(NSString * __nonnull)key;
 
 /// <dl><dt>nodoc</dt><dd></dd></dl>
 - (void)setValue:(id __nullable)value forUndefinedKey:(NSString * __nonnull)key;
+
+/// <dl><dt>nodoc</dt><dd></dd></dl>
++ (BOOL)shouldIncludeInDefaultSchema;
 - (SWIFT_NULLABILITY(nonnull) instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithValue:(id __nonnull)value OBJC_DESIGNATED_INITIALIZER;
 - (SWIFT_NULLABILITY(nonnull) instancetype)initWithRealm:(RLMRealm * __nonnull)realm schema:(RLMObjectSchema * __nonnull)schema OBJC_DESIGNATED_INITIALIZER;

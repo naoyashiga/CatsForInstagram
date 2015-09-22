@@ -8,7 +8,7 @@
 
 shareText = "iOSアプリ「ねこ部」ねこの写真がたくさん見れるよ! ";
 otherAppURL = "itms-apps://itunes.apple.com/jp/artist/naoya-sugimoto/id933472785";
-transitionToReviewPageTitle = "レビューを書いて応援する\n(ビデオ広告がなくなります)";
+transitionToReviewPageTitle = "レビューを書いて応援する\n(開発者が大喜びします)";
 transitionToOtherAppPageTitle = "他のアプリを見る";
 cellPostToTwitterTitle = "Twitterでつぶやく";
 cellPostToLineTitle = "LINEに送る";

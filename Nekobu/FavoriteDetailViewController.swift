@@ -36,15 +36,21 @@ class FavoriteDetailViewController: PhotoDetailViewController {
         tmpFavorite.standardResolutionBase64ImageString = favorite.standardResolutionBase64ImageString
         tmpFavorite.webPageLinkString = favorite.webPageLinkString
 
-        let realm = Realm()
-        let predicate = NSPredicate(format: "id == %@", favorite.id)
         
-        if realm.objects(Favorite).filter(predicate).count == 0 {
-            //お気に入り未登録
-            favoriteButton.selected = false
-        } else {
-            //お気に入り登録済み
-            favoriteButton.selected = true
+        do {
+            let realm = try Realm()
+            let predicate = NSPredicate(format: "id == %@", favorite.id)
+            
+            if realm.objects(Favorite).filter(predicate).count == 0 {
+                //お気に入り未登録
+                favoriteButton.selected = false
+            } else {
+                //お気に入り登録済み
+                favoriteButton.selected = true
+            }
+            
+        } catch {
+            fatalError("cant set favorites")
         }
     }
 
@@ -53,46 +59,53 @@ class FavoriteDetailViewController: PhotoDetailViewController {
     }
     
     override func updateFavorite() {
-        let realm = Realm()
         
-        let predicate = NSPredicate(format: "id == %@", tmpFavorite.id)
-        let exisitingFavoriteArray = realm.objects(Favorite).filter(predicate)
-        
-        if favoriteButton.selected {
-            //お気に入り削除
-            if exisitingFavoriteArray.count != 0 {
-                
-                realm.write {
-                    realm.delete(exisitingFavoriteArray[0])
+        do {
+            let realm = try Realm()
+            
+            let predicate = NSPredicate(format: "id == %@", tmpFavorite.id)
+            let exisitingFavoriteArray = realm.objects(Favorite).filter(predicate)
+            
+            if favoriteButton.selected {
+                //お気に入り削除
+                if exisitingFavoriteArray.count != 0 {
                     
-                    self.favoriteButton.selected = false
+                    try realm.write {
+                        realm.delete(exisitingFavoriteArray[0])
+                        
+                        self.favoriteButton.selected = false
+                    }
+                }
+                
+            } else {
+                //お気に入り追加
+                if exisitingFavoriteArray.count == 0 {
+                    
+                    let addingFavorite = Favorite()
+                    addingFavorite.id = tmpFavorite.id
+                    addingFavorite.lowResolutionBase64ImageString = tmpFavorite.lowResolutionBase64ImageString
+                    addingFavorite.standardResolutionBase64ImageString = tmpFavorite.standardResolutionBase64ImageString
+                    
+                    addingFavorite.createdAt = NSDate().timeIntervalSince1970
+                    
+                    try realm.write {
+                        realm.add(addingFavorite, update: true)
+                        
+                        self.favoriteButton.selected = true
+                    }
                 }
             }
             
-        } else {
-            //お気に入り追加
-            if exisitingFavoriteArray.count == 0 {
-                
-                let addingFavorite = Favorite()
-                addingFavorite.id = tmpFavorite.id
-                addingFavorite.lowResolutionBase64ImageString = tmpFavorite.lowResolutionBase64ImageString
-                addingFavorite.standardResolutionBase64ImageString = tmpFavorite.standardResolutionBase64ImageString
-                
-                addingFavorite.createdAt = NSDate().timeIntervalSince1970
-                
-                realm.write {
-                    realm.add(addingFavorite, update: true)
-                    
-                    self.favoriteButton.selected = true
-                }
-            }
+        } catch {
+            fatalError("cant set favorites")
         }
+        
         
         favoriteButton.playBounceAnimation()
     }
     
     override func saveImageToCameraRoll() {
-        var savingImageView = UIImageView()
+        let savingImageView = UIImageView()
         
         //高画質画像を読み込み、保存
         savingImageView.sd_setImageWithURL(
@@ -103,7 +116,7 @@ class FavoriteDetailViewController: PhotoDetailViewController {
                     UIImageWriteToSavedPhotosAlbum(savingImage, self, "image:didFinishSavingWithError:contextInfo:", nil)
                     
                 } else {
-                    println("保存したい画像を取得できませんでした")
+                    print("保存したい画像を取得できませんでした")
                 }
         })
     }

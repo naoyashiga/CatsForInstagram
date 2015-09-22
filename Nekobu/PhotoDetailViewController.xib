@@ -45,16 +45,6 @@
                         <action selector="shareButtonTapped:" destination="-1" eventType="touchUpInside" id="cA1-zI-3vI"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyJ-e5-1vf" userLabel="saveImageButton">
-                    <rect key="frame" x="178" y="430" width="45" height="42"/>
-                    <state key="normal" image="save">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="saveImageButtonTapped:" destination="-1" eventType="touchUpInside" id="gle-Q1-26x"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-ud-MCD" userLabel="dismissButton">
                     <rect key="frame" x="10" y="512" width="380" height="80"/>
                     <constraints>
@@ -75,12 +65,10 @@
                 <constraint firstAttribute="bottom" secondItem="4gP-ud-MCD" secondAttribute="bottom" constant="8" id="I4h-WP-Ynu"/>
                 <constraint firstItem="DC7-az-ISp" firstAttribute="top" secondItem="gT3-gg-0Xl" secondAttribute="bottom" constant="33" id="KuK-6n-7R5"/>
                 <constraint firstAttribute="centerX" secondItem="4gP-ud-MCD" secondAttribute="centerX" id="VxP-pb-94y"/>
-                <constraint firstAttribute="centerX" secondItem="JyJ-e5-1vf" secondAttribute="centerX" id="YG6-5A-9Zw"/>
                 <constraint firstItem="69i-t6-mx2" firstAttribute="top" secondItem="gT3-gg-0Xl" secondAttribute="bottom" constant="29" id="ako-IU-C1i"/>
                 <constraint firstItem="gT3-gg-0Xl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lEK-fG-Jqf"/>
                 <constraint firstAttribute="centerX" secondItem="DC7-az-ISp" secondAttribute="centerX" constant="-100" id="mTf-P6-oAu"/>
                 <constraint firstAttribute="trailing" secondItem="gT3-gg-0Xl" secondAttribute="trailing" id="sLg-Pt-Gvf"/>
-                <constraint firstItem="JyJ-e5-1vf" firstAttribute="top" secondItem="gT3-gg-0Xl" secondAttribute="bottom" constant="30" id="uaY-vO-Ede"/>
                 <constraint firstAttribute="centerX" secondItem="69i-t6-mx2" secondAttribute="centerX" constant="100" id="zmh-Td-kSs"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -91,7 +79,6 @@
         <image name="cancel" width="41" height="41"/>
         <image name="fav_off" width="46" height="44"/>
         <image name="fav_on" width="45" height="43"/>
-        <image name="save" width="45" height="42"/>
         <image name="share" width="46" height="41"/>
     </resources>
 </document>

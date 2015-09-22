@@ -8,7 +8,7 @@
 
 shareText = "iOS App 'Cats for Instagram' ";
 otherAppURL = "itms-apps://itunes.apple.com/us/artist/naoya-sugimoto/id933472785";
-transitionToReviewPageTitle = "Review (Video Ad will be removed)";
+transitionToReviewPageTitle = "Review \n(this app developer would smile)";
 transitionToOtherAppPageTitle = "Check other apps";
 cellPostToTwitterTitle = "Post to Twitter";
 cellPostToLineTitle = "Post to LINE";

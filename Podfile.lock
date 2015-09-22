@@ -1,13 +1,38 @@
 PODS:
   - Google-Mobile-Ads-SDK (7.4.1)
   - LINEActivity (0.2.0)
+  - Realm (0.95.0):
+    - Realm/Headers (= 0.95.0)
+  - Realm/Headers (0.95.0)
+  - RealmSwift (0.95.0):
+    - Realm (= 0.95.0)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
   - LINEActivity (~> 0.2.0)
+  - Realm (from `https://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
+  - RealmSwift (from `https://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
+
+EXTERNAL SOURCES:
+  Realm:
+    :branch: swift-2.0
+    :git: https://github.com/realm/realm-cocoa.git
+  RealmSwift:
+    :branch: swift-2.0
+    :git: https://github.com/realm/realm-cocoa.git
+
+CHECKOUT OPTIONS:
+  Realm:
+    :commit: e4397aa856088322c41b9b1c6c76fc30f1938c55
+    :git: https://github.com/realm/realm-cocoa.git
+  RealmSwift:
+    :commit: e4397aa856088322c41b9b1c6c76fc30f1938c55
+    :git: https://github.com/realm/realm-cocoa.git
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: dce4c2728daa0bcbd88b6e3dc111b718a07b1eb6
   LINEActivity: 3cf844b075bc7f8338ea86b41bd46acd5ec934d8
+  Realm: 1c28007bd496af94dba8c76d50719164e706a521
+  RealmSwift: 9864524dd99c2cb7b4643c29513ef8447fe63724
 
 COCOAPODS: 0.38.2

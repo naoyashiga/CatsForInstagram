@@ -19,9 +19,14 @@ struct favoriteReuseId {
 class FavoriteCollectionViewController: PhotoCollectionViewController {
     private var favorites: Results<Favorite> {
         get {
-            let realm = Realm()
-            //新しい順に並べる
-            return realm.objects(Favorite).sorted("createdAt", ascending: false)
+            do {
+                let realm = try Realm()
+                //新しい順に並べる
+                return realm.objects(Favorite).sorted("createdAt", ascending: false)
+                
+            } catch {
+                fatalError("cant set favorites")
+            }
         }
     }
     

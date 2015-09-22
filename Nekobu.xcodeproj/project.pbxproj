@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DF5DB6C2DA3FF73A335AAFB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80199A3D3B6F0EF239BFC41 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A19BBD21B82A2FC00D75786 /* SettingHeaderView.swift */; };
 		9A19BBD51B82A2FC00D75786 /* SettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A19BBD31B82A2FC00D75786 /* SettingHeaderView.xib */; };
 		9A2DEE7E1B8762E300488078 /* FavoriteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */; };
 		9A2DEE801B881F5900488078 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE7F1B881F5900488078 /* ReviewManager.swift */; };
 		9A2DEE841B88444700488078 /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2DEE831B88444700488078 /* AdManager.swift */; };
+		9A3359981B951ECB007CEDBB /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3359971B951ECB007CEDBB /* Device.swift */; };
 		9A6C75CE1B86952200956212 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */; };
 		9A6C75D21B869E0E00956212 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6C75D01B869E0E00956212 /* ReviewViewController.swift */; };
 		9A9C2EBB1B887C0D0040B030 /* Setting.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9C2EBD1B887C0D0040B030 /* Setting.strings */; };
@@ -71,11 +73,8 @@
 		9AE22DCD1B7F513D0024E221 /* PageMenuConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DCC1B7F513D0024E221 /* PageMenuConstraint.swift */; };
 		9AE22DCF1B7F67700024E221 /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DCE1B7F67700024E221 /* Pagination.swift */; };
 		9AE22DD11B8018510024E221 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD01B8018510024E221 /* Video.swift */; };
-		9AE22DD41B8021AD0024E221 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22DD21B8021AD0024E221 /* Realm.framework */; };
-		9AE22DD51B8021AD0024E221 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE22DD31B8021AD0024E221 /* RealmSwift.framework */; };
 		9AE22DD71B8022130024E221 /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD61B8022130024E221 /* Favorite.swift */; };
 		9AE22DDA1B8046C60024E221 /* UIButton+AnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE22DD91B8046C60024E221 /* UIButton+AnimationExtension.swift */; };
-		E51D539D850DA8B6FDFCBCB0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8423A87BA27069615DAC24C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +95,7 @@
 		9A2DEE7D1B8762E300488078 /* FavoriteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDetailViewController.swift; sourceTree = "<group>"; };
 		9A2DEE7F1B881F5900488078 /* ReviewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
 		9A2DEE831B88444700488078 /* AdManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		9A3359971B951ECB007CEDBB /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		9A6C75CD1B86952200956212 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		9A6C75D01B869E0E00956212 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		9A9C2EBC1B887C0D0040B030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Setting.strings; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 		9AE22DD31B8021AD0024E221 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = ../Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		9AE22DD61B8022130024E221 /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
 		9AE22DD91B8046C60024E221 /* UIButton+AnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+AnimationExtension.swift"; sourceTree = "<group>"; };
-		D8423A87BA27069615DAC24C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80199A3D3B6F0EF239BFC41 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,10 +181,8 @@
 				9AE22D7B1B7ED41D0024E221 /* SwiftyJSON.framework in Frameworks */,
 				9AE22D7C1B7ED41D0024E221 /* Alamofire.framework in Frameworks */,
 				9AE22DA31B7F01690024E221 /* WebImage.framework in Frameworks */,
-				9AE22DD41B8021AD0024E221 /* Realm.framework in Frameworks */,
-				9AE22DD51B8021AD0024E221 /* RealmSwift.framework in Frameworks */,
 				9AB976591B80AF2C0079A194 /* DZNEmptyDataSet.framework in Frameworks */,
-				E51D539D850DA8B6FDFCBCB0 /* libPods.a in Frameworks */,
+				6DF5DB6C2DA3FF73A335AAFB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +199,7 @@
 		31C41909A3CCCE52B457CED6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D8423A87BA27069615DAC24C /* libPods.a */,
+				A80199A3D3B6F0EF239BFC41 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,6 +219,14 @@
 				9A9C2EDD1B894E540040B030 /* AdConstraints.swift */,
 			);
 			name = Ad;
+			sourceTree = "<group>";
+		};
+		9A3359961B951EB8007CEDBB /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				9A3359971B951ECB007CEDBB /* Device.swift */,
+			);
+			name = Device;
 			sourceTree = "<group>";
 		};
 		9A6C75CF1B869DDF00956212 /* Review */ = {
@@ -457,6 +463,7 @@
 		9AE22D8E1B7EE7450024E221 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				9A3359961B951EB8007CEDBB /* Device */,
 				9AB9766C1B8193F40079A194 /* String */,
 				9AB976691B81928A0079A194 /* Image */,
 				9AE22DD81B8046B20024E221 /* Button */,
@@ -645,6 +652,7 @@
 				9AE22D521B7ED1420024E221 /* Resources */,
 				9AE22D7D1B7ED44C0024E221 /* ShellScript */,
 				9D8B0183623ABBD2FC23D13C /* Copy Pods Resources */,
+				B51EA546175777EF953F31EE /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -679,6 +687,8 @@
 		9AE22D4C1B7ED1420024E221 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = naoyashiga;
 				TargetAttributes = {
@@ -768,8 +778,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/WebImage.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/DZNEmptyDataSet.framework",
 			);
 			outputPaths = (
@@ -793,6 +801,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B51EA546175777EF953F31EE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -802,6 +825,7 @@
 			files = (
 				9A9C2ED71B8948A50040B030 /* TopCollectionViewController+UIViewControllerTransitioningDelegate.swift in Sources */,
 				9AE22D9A1B7EFA610024E221 /* PageMenuViewController.swift in Sources */,
+				9A3359981B951ECB007CEDBB /* Device.swift in Sources */,
 				9AE22D5A1B7ED1430024E221 /* AppDelegate.swift in Sources */,
 				9A19BBD41B82A2FC00D75786 /* SettingHeaderView.swift in Sources */,
 				9A9C2EE71B89628C0040B030 /* SettingCollectionViewController+SNS.swift in Sources */,

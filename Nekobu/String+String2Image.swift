@@ -13,7 +13,7 @@ extension String {
     func String2Image() -> UIImage? {
         
         //空白を+に変換する
-        var base64String = stringByReplacingOccurrencesOfString(" ", withString:"+",options: nil, range:nil)
+        let base64String = stringByReplacingOccurrencesOfString(" ", withString:"+",options: [], range:nil)
         
         //BASE64の文字列をデコードしてNSDataを生成
         let decodeBase64:NSData? =

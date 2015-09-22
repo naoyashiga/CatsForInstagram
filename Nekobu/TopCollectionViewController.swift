@@ -46,10 +46,10 @@ class TopCollectionViewController: PhotoCollectionViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func loadPhoto(#requestURL: String) {
+    func loadPhoto(requestURL requestURL: String) {
         Alamofire.request(.GET, requestURL).responseSwiftyJSON({ (_, _, json, error) in
             if (error != nil) {
-                println("Error with registration: \(error?.localizedDescription)")
+                print("Error with registration: \(error?.localizedDescription)")
             } else {
 //                println(json)
                 if let array = json["data"].array {

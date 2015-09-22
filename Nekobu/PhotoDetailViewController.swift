@@ -77,10 +77,10 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func postToSNS(#id: String, webPageLinkString: String) {
-        var sharedText = NSLocalizedString("shareText", tableName: "Detail", comment: "")
+    func postToSNS(id id: String, webPageLinkString: String) {
+        let sharedText = NSLocalizedString("shareText", tableName: "Detail", comment: "")
         
-        var sharedURL = NSURL(string: webPageLinkString)!
+        let sharedURL = NSURL(string: webPageLinkString)!
 //        var sharedURL = NSURL(string: "instagram://media?id=\(id)")!
         var activityItems = [AnyObject]()
         
@@ -114,7 +114,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     func saveImageToCameraRoll() {
-        var savingImageView = UIImageView()
+        let savingImageView = UIImageView()
         
         //高画質画像を読み込み、保存
         savingImageView.sd_setImageWithURL(
@@ -125,7 +125,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
                     UIImageWriteToSavedPhotosAlbum(savingImage, self, "image:didFinishSavingWithError:contextInfo:", nil)
                     
                 } else {
-                    println("保存したい画像を取得できませんでした")
+                    print("保存したい画像を取得できませんでした")
                     
                 }
         })
@@ -164,7 +164,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
 //                }
                 
                 if let standardResolutionImageURL = media.standardResolutionImageURL {
-                    favorite.standardResolutionURLString = standardResolutionImageURL.absoluteString!
+                    favorite.standardResolutionURLString = standardResolutionImageURL.absoluteString
                 }
                 
                 favorite.lowResolutionBase64ImageString = media.lowResolutionBase64ImageString
@@ -192,7 +192,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         if error != nil {
             title = NSLocalizedString("saveToCameraRollErrorTitle", tableName: "Detail", comment: "")
             message = NSLocalizedString("saveToCameraRollErrorMessage", tableName: "Detail", comment: "")
-            println(error.code)
+            print(error.code)
         }
         
         let ac = UIAlertController(title: title, message: message, preferredStyle: .Alert)

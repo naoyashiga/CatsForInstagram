@@ -42,9 +42,9 @@ class BaseCollectionViewController: UICollectionViewController, UICollectionView
         }
     }
     
-    func setCornerRadius<T: UICollectionReusableView>(#headerView:T) -> T {
+    func setCornerRadius<T: UICollectionReusableView>(headerView headerView:T) -> T {
         let cornerRadius: CGFloat = 5.0
-        let maskPath = UIBezierPath(roundedRect: headerView.bounds, byRoundingCorners: (UIRectCorner.TopLeft | UIRectCorner.TopRight), cornerRadii: CGSizeMake(cornerRadius, cornerRadius))
+        let maskPath = UIBezierPath(roundedRect: headerView.bounds, byRoundingCorners: ([UIRectCorner.TopLeft, UIRectCorner.TopRight]), cornerRadii: CGSizeMake(cornerRadius, cornerRadius))
         let maskLayer = CAShapeLayer()
         maskLayer.frame = headerView.bounds
         maskLayer.path = maskPath.CGPath

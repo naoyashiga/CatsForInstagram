@@ -10,7 +10,7 @@ import Foundation
 
 extension FavoriteCollectionViewController: UIViewControllerTransitioningDelegate {
 
-    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController!, sourceViewController source: UIViewController) -> UIPresentationController? {
+    func presentationControllerForPresentedViewController(presented: UIViewController, presentingViewController presenting: UIViewController, sourceViewController source: UIViewController) -> UIPresentationController? {
         
         return BlurredBackgroundPresentationController(presentedViewController: presented, presentingViewController: self)
     }

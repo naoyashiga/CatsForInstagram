@@ -15,7 +15,7 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
     let kForwardAnimationDuration: NSTimeInterval = 0.3
     let kForwardCompleteAnimationDuration: NSTimeInterval = 0.3
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return kForwardAnimationDuration
     }
     
@@ -24,7 +24,7 @@ class TransitionPresentationAnimator: NSObject, UIViewControllerAnimatedTransiti
         let containerView = transitionContext.containerView()
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
         
-        var sourceImageView = UIImageView()
+        let sourceImageView = UIImageView()
         var destinationImageView = UIImageView()
         var destinationImageViewFrame = CGRect()
         

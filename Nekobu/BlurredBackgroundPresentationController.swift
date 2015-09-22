@@ -11,7 +11,7 @@ import UIKit
 class BlurredBackgroundPresentationController: UIPresentationController {
     var dimmingView: UIView!
     
-    override init(presentedViewController: UIViewController!, presentingViewController: UIViewController!) {
+    override init(presentedViewController: UIViewController, presentingViewController: UIViewController) {
         super.init(presentedViewController: presentedViewController, presentingViewController: presentingViewController)
         setupDimmingView()
     }
@@ -45,6 +45,10 @@ class BlurredBackgroundPresentationController: UIPresentationController {
         
         var width:CGFloat = containerView.bounds.size.width * 0.85
         var height:CGFloat = containerView.bounds.size.height  * 0.8
+        
+        if UIScreen.mainScreen().bounds.size.height <= 480 {
+            height = containerView.bounds.size.height  * 0.9
+        }
         
         presentedViewFrame.size = CGSizeMake(width,height)
         presentedViewFrame.origin = CGPointMake(containerView.bounds.size.width / 2.0, containerView.bounds.size.height / 2.0)

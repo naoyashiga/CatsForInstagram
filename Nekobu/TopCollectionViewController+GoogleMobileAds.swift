@@ -16,7 +16,7 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         interstitial!.delegate = self
         let request = GADRequest()
 //        request.testDevices = [kGADSimulatorID]
-        request.testDevices = [AdConstraints.realDeviceID]
+//        request.testDevices = [AdConstraints.realDeviceID]
         interstitial!.loadRequest(request)
     }
     
@@ -36,12 +36,11 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         
         let request = GADRequest()
 //        request.testDevices = [kGADSimulatorID]
-        request.testDevices = [AdConstraints.realDeviceID]
+//        request.testDevices = [AdConstraints.realDeviceID]
         adB.loadRequest(request)
     }
 
-    func checkInterstitialAd(#photoDetailViewController: PhotoDetailViewController) {
-        AdManager.mySetCounter(AdManager.keyName.adCounter)
+    func checkInterstitialAd(photoDetailViewController photoDetailViewController: PhotoDetailViewController) {
         
         if AdManager.counter != 0 && AdManager.counter % AdManager.Cycle.top == 0{
             if(interstitial!.isReady){

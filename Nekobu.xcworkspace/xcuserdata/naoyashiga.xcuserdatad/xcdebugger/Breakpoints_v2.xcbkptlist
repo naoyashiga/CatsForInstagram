@@ -25,61 +25,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nekobu/FavoriteDetailViewController.swift"
-            timestampString = "461902836.883394"
+            filePath = "Nekobu/BlurredBackgroundPresentationController.swift"
+            timestampString = "462758037.931355"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "updateFavorite()"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "frameOfPresentedViewInContainerView()"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Nekobu.FavoriteDetailViewController.updateFavorite (Nekobu.FavoriteDetailViewController)() -&gt; ()"
-                  moduleName = "Nekobu"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/FavoriteDetailViewController.swift"
-                  timestampString = "461896997.968893"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "20">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Nekobu.FavoriteDetailViewController.(updateFavorite (Nekobu.FavoriteDetailViewController) -&gt; () -&gt; ()).(closure #1)"
-                  moduleName = "Nekobu"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/FavoriteDetailViewController.swift"
-                  timestampString = "461896997.969238"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Nekobu.FavoriteDetailViewController.(updateFavorite (Nekobu.FavoriteDetailViewController) -&gt; () -&gt; ()).(closure #2)"
-                  moduleName = "Nekobu"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/FavoriteDetailViewController.swift"
-                  timestampString = "461896997.969492"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -88,14 +41,46 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Nekobu/FavoriteDetailViewController.swift"
-            timestampString = "461902836.883394"
+            filePath = "Nekobu/Device.swift"
+            timestampString = "462758106.084325"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "updateFavorite()"
-            landmarkType = "5">
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "Singleton"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_5CAD6F415E1C4F19462F93CB0D0CC98B_func1"
+                  moduleName = "Nekobu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/Device.swift"
+                  timestampString = "462758106.103105"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "3">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Nekobu.Device.(TheCurrentDeviceHeight.getter : CoreGraphics.CGFloat).(Singleton #1).height.unsafeMutableAddressor : CoreGraphics.CGFloat"
+                  moduleName = "Nekobu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/Device.swift"
+                  timestampString = "462758106.103357"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

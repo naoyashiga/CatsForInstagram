@@ -16,7 +16,7 @@ class TransitionDismissAnimator : NSObject, UIViewControllerAnimatedTransitionin
     let kBackwardAnimationDuration: NSTimeInterval = 0.3
     let kBackwardCompleteAnimationDuration: NSTimeInterval = 0.3
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {
+    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return kBackwardAnimationDuration
     }
     
