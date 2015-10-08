@@ -16,6 +16,6 @@ final class AdManager: BaseUserDefaultManager {
     }
     
     struct Cycle {
-        static var top = 3
+        static var top = 10
     }
 }

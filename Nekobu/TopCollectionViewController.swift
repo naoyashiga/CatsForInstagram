@@ -36,7 +36,7 @@ class TopCollectionViewController: PhotoCollectionViewController {
             collectionView.applyCellNib(cellNibName: topReuseId.cell)
         }
 
-        settingInterstitialAd()
+//        settingInterstitialAd()
         settingAd()
         
         loadPhoto(requestURL: Config.TAG)

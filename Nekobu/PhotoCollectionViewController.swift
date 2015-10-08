@@ -19,7 +19,7 @@ class PhotoCollectionViewController: BaseCollectionViewController {
         if let collectionView = collectionView {
             refreshControl = UIRefreshControl()
             refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
-            collectionView.addSubview(refreshControl)
+//            collectionView.addSubview(refreshControl)
         }
     }
 
