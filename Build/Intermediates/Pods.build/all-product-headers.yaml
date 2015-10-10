@@ -4,6 +4,38 @@
   'roots': [
     {
       'type': 'directory',
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/LINEActivity.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "LINEActivity-Swift.h",
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/LINEActivity.framework/Headers/LINEActivity-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "LINEActivity-umbrella.h",
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Target Support Files/LINEActivity/LINEActivity-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "LINEActivity.h",
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/LINEActivity/LINEActivity/LINEActivity.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/LINEActivity.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphonesimulator/LINEActivity.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
       'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/Pods.framework/Headers",
       'contents': [
         {

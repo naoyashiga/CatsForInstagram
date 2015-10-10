@@ -132,9 +132,8 @@
     return NO;
 }
 
-- (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view
+- (void)emptyDataSetDidTapView:(UIScrollView *)scrollView
 {
-
     NSLog(@"%s",__FUNCTION__);
 }
 

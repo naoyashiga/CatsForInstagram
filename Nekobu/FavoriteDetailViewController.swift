@@ -122,6 +122,6 @@ class FavoriteDetailViewController: PhotoDetailViewController {
     }
     
     override func shareButtonTapped(sender: UIButton) {
-//        postToSNS(id: tmpFavorite.id, webPageLinkString: tmpFavorite.webPageLinkString)
+        postToSNS(id: tmpFavorite.id, webPageLinkString: tmpFavorite.webPageLinkString)
     }
 }

@@ -235,15 +235,13 @@
     return NO;
 }
 
-- (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view
+- (void)emptyDataSetDidTapView:(UIScrollView *)scrollView
 {
-
     [self.searchDisplayController setActive:NO animated:YES];
 }
 
-- (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button
+- (void)emptyDataSetDidTapButton:(UIScrollView *)scrollView
 {
-
     NSLog(@"%s",__FUNCTION__);
 }
 
