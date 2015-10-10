@@ -305,22 +305,7 @@ typedef void(^RLMNotificationBlock)(NSString *notification, RLMRealm *realm);
 
  Calling this when not in a write transaction will throw an exception.
  */
-- (void)commitWriteTransaction RLM_SWIFT_UNAVAILABLE("");
-
-/**
- Commits all writes operations in the current write transaction.
-
- After this is called the `RLMRealm` reverts back to being read-only.
-
- Calling this when not in a write transaction will throw an exception.
-
- @param error If an error occurs, upon return contains an `NSError` object
-              that describes the problem. If you are not interested in
-              possible errors, pass in `NULL`.
-
- @return Whether the transaction succeeded.
- */
-- (BOOL)commitWriteTransaction:(NSError **)error;
+- (void)commitWriteTransaction;
 
 /**
  Revert all writes made in the current write transaction and end the transaction.
@@ -352,19 +337,7 @@ typedef void(^RLMNotificationBlock)(NSString *notification, RLMRealm *realm);
 /**
  Helper to perform a block within a transaction.
  */
-- (void)transactionWithBlock:(void(^)(void))block RLM_SWIFT_UNAVAILABLE("");
-
-/**
- Helper to perform a block within a transaction.
-
- @param block The block to perform.
- @param error If an error occurs, upon return contains an `NSError` object
-              that describes the problem. If you are not interested in
-              possible errors, pass in `NULL`.
-
- @return Whether the transaction succeeded.
- */
-- (BOOL)transactionWithBlock:(void(^)(void))block error:(NSError **)error;
+- (void)transactionWithBlock:(void(^)(void))block;
 
 /**
  Update an `RLMRealm` and outstanding objects to point to the most recent data for this `RLMRealm`.
