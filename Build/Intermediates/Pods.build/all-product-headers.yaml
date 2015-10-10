@@ -4,12 +4,12 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Pods.framework/Headers",
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/Pods.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Pods-Swift.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Pods.framework/Headers/Pods-Swift.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/Pods.framework/Headers/Pods-Swift.h"
         },
         {
           'type': 'file',
@@ -20,18 +20,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Pods.framework/Modules",
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/Pods.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphoneos/Pods.build/module.modulemap"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers",
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/Realm.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -116,7 +116,7 @@
         {
           'type': 'file',
           'name': "Realm-Swift.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/Realm-Swift.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/Realm.framework/Headers/Realm-Swift.h"
         },
         {
           'type': 'file',
@@ -127,18 +127,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Modules",
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/Realm.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/module.modulemap"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphonesimulator/Realm.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders",
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/Realm.framework/PrivateHeaders",
       'contents': [
         {
           'type': 'file',
@@ -209,12 +209,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Headers",
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "RealmSwift-Swift.h",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Headers/RealmSwift-Swift.h"
         },
         {
           'type': 'file',
@@ -225,12 +225,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Modules",
+      'name': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphonesimulator/RealmSwift.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphoneos/RealmSwift.build/module.modulemap"
+          'external-contents': "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphonesimulator/RealmSwift.build/module.modulemap"
         }
       ]
     }
