@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 import WebImage
-//import LINEActivity
+import LINEActivity
 
 class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     @IBOutlet var detailImageView: UIImageView! {
@@ -71,7 +71,7 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
     }
     
     @IBAction func shareButtonTapped(sender: UIButton) {
-//        postToSNS(id: media.id, webPageLinkString: media.webPageLinkString)
+        postToSNS(id: media.id, webPageLinkString: media.webPageLinkString)
     }
     
     @IBAction func saveImageButtonTapped(sender: UIButton) {
@@ -83,43 +83,43 @@ class PhotoDetailViewController: UIViewController, RPZoomTransitionAnimating {
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
     }
     
-//    func postToSNS(id id: String, webPageLinkString: String) {
-//        let sharedText = NSLocalizedString("shareText", tableName: "Detail", comment: "")
-//        
-//        let sharedURL = NSURL(string: webPageLinkString)!
-////        var sharedURL = NSURL(string: "instagram://media?id=\(id)")!
-//        var activityItems = [AnyObject]()
-//        
-//        if let sharedImage = detailImageView.image {
-//            activityItems = [sharedText,sharedURL,sharedImage]
-//        } else {
-//            activityItems = [sharedText,sharedURL]
-//        }
-//        
-//        let LineKit = LINEActivity()
-//        let myApplicationActivities = [LineKit]
-//        
-//        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: myApplicationActivities)
-//        
-//        let excludedActivityTypes = [
-//            UIActivityTypeMessage,
-//            UIActivityTypeMail,
-//            UIActivityTypeAssignToContact,
-//            UIActivityTypeAddToReadingList,
-//            UIActivityTypePostToFlickr,
-//            UIActivityTypePostToVimeo,
-//            UIActivityTypePostToTencentWeibo,
-//            UIActivityTypePostToWeibo,
-//            UIActivityTypePrint,
-//            UIActivityTypeSaveToCameraRoll,
-//            UIActivityTypeAirDrop
-//        ]
-//        
-//        activityVC.excludedActivityTypes = excludedActivityTypes
-//        
-//        presentViewController(activityVC, animated: true, completion: nil)
-//        
-//    }
+    func postToSNS(id id: String, webPageLinkString: String) {
+        let sharedText = NSLocalizedString("shareText", tableName: "Detail", comment: "")
+        
+        let sharedURL = NSURL(string: webPageLinkString)!
+//        var sharedURL = NSURL(string: "instagram://media?id=\(id)")!
+        var activityItems = [AnyObject]()
+        
+        if let sharedImage = detailImageView.image {
+            activityItems = [sharedText,sharedURL,sharedImage]
+        } else {
+            activityItems = [sharedText,sharedURL]
+        }
+        
+        let LineKit = LINEActivity()
+        let myApplicationActivities = [LineKit]
+        
+        let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: myApplicationActivities)
+        
+        let excludedActivityTypes = [
+            UIActivityTypeMessage,
+            UIActivityTypeMail,
+            UIActivityTypeAssignToContact,
+            UIActivityTypeAddToReadingList,
+            UIActivityTypePostToFlickr,
+            UIActivityTypePostToVimeo,
+            UIActivityTypePostToTencentWeibo,
+            UIActivityTypePostToWeibo,
+            UIActivityTypePrint,
+            UIActivityTypeSaveToCameraRoll,
+            UIActivityTypeAirDrop
+        ]
+        
+        activityVC.excludedActivityTypes = excludedActivityTypes
+        
+        presentViewController(activityVC, animated: true, completion: nil)
+        
+    }
     
     func saveImageToCameraRoll() {
         let savingImageView = UIImageView()

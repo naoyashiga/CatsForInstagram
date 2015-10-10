@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AdManager.mySetCounter(AdManager.keyName.adCounter)
         
         let config = Realm.Configuration(
-            schemaVersion: 6,
+            schemaVersion: 5,
             migrationBlock: { migration, oldSchemaVersion in
                 if (oldSchemaVersion < 1) {
                 }

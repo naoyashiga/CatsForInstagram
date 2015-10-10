@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Alpha Labs, Inc. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 // MARK: - Device Structure
 

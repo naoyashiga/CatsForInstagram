@@ -196,15 +196,13 @@ static NSString *CellIdentifier = @"ColorViewCell";
     return YES;
 }
 
-- (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view
+- (void)emptyDataSetDidTapView:(UIScrollView *)scrollView
 {
-
     NSLog(@"%s",__FUNCTION__);
 }
 
-- (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button
+- (void)emptyDataSetDidTapButton:(UIScrollView *)scrollView
 {
-
     NSLog(@"%s",__FUNCTION__);
 }
 

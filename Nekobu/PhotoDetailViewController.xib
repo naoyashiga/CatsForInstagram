@@ -26,7 +26,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69i-t6-mx2" userLabel="favoriteButton">
-                    <rect key="frame" x="177" y="429" width="46" height="44"/>
+                    <rect key="frame" x="77" y="429" width="46" height="44"/>
                     <state key="normal" image="fav_off">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -34,6 +34,16 @@
                     <state key="selected" image="fav_on"/>
                     <connections>
                         <action selector="favoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="w6F-lX-tpW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DC7-az-ISp">
+                    <rect key="frame" x="277" y="433" width="46" height="41"/>
+                    <state key="normal" image="share">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shareButtonTapped:" destination="-1" eventType="touchUpInside" id="cA1-zI-3vI"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gP-ud-MCD" userLabel="dismissButton">
@@ -54,11 +64,13 @@
             <constraints>
                 <constraint firstItem="gT3-gg-0Xl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HYP-3y-wfS"/>
                 <constraint firstAttribute="bottom" secondItem="4gP-ud-MCD" secondAttribute="bottom" constant="8" id="I4h-WP-Ynu"/>
+                <constraint firstItem="DC7-az-ISp" firstAttribute="top" secondItem="gT3-gg-0Xl" secondAttribute="bottom" constant="33" id="KuK-6n-7R5"/>
                 <constraint firstAttribute="centerX" secondItem="4gP-ud-MCD" secondAttribute="centerX" id="VxP-pb-94y"/>
                 <constraint firstItem="69i-t6-mx2" firstAttribute="top" secondItem="gT3-gg-0Xl" secondAttribute="bottom" constant="29" id="ako-IU-C1i"/>
                 <constraint firstItem="gT3-gg-0Xl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lEK-fG-Jqf"/>
+                <constraint firstAttribute="centerX" secondItem="DC7-az-ISp" secondAttribute="centerX" constant="-100" id="mTf-P6-oAu"/>
                 <constraint firstAttribute="trailing" secondItem="gT3-gg-0Xl" secondAttribute="trailing" id="sLg-Pt-Gvf"/>
-                <constraint firstAttribute="centerX" secondItem="69i-t6-mx2" secondAttribute="centerX" id="zmh-Td-kSs"/>
+                <constraint firstAttribute="centerX" secondItem="69i-t6-mx2" secondAttribute="centerX" constant="100" id="zmh-Td-kSs"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -68,5 +80,6 @@
         <image name="cancel" width="41" height="41"/>
         <image name="fav_off" width="46" height="44"/>
         <image name="fav_on" width="45" height="43"/>
+        <image name="share" width="46" height="41"/>
     </resources>
 </document>
