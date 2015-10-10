@@ -1,1 +1,12 @@
+Nekobu/AdConstraints.swift
 Pods/*
+# OS X
+.DS_Store
+
+# Xcode
+build/
+
+# Pod
+Pods/*
+
+Carthage/Build
