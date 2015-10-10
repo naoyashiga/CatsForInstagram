@@ -1,0 +1,397 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo8UIButton", ""]
+- ["CSo8UIButton", "playBounceAnimation"]
+provides-dynamic-lookup:
+- "playBounceAnimation"
+depends-top-level:
+- "UIButton"
+- !private "StringLiteralType"
+- !private "Array"
+- !private "CAKeyframeAnimation"
+- !private "kCAAnimationCubic"
+- !private "NSTimeInterval"
+depends-member:
+- !private ["PSs16AbsoluteValuable", "init"]
+- !private ["P10RealmSwift11AddableType", "init"]
+- !private ["PSs9AnyObject", "CAKeyframeAnimation"]
+- !private ["PSs9AnyObject", "NSTimeInterval"]
+- !private ["PSs9AnyObject", "addAnimation"]
+- !private ["PSs9AnyObject", "calculationMode"]
+- !private ["PSs9AnyObject", "deinit"]
+- !private ["PSs9AnyObject", "duration"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "kCAAnimationCubic"]
+- !private ["PSs9AnyObject", "layer"]
+- ["PSs9AnyObject", "playBounceAnimation"]
+- !private ["PSs9AnyObject", "values"]
+- !private ["Sa", "Element"]
+- !private ["PSs23ArrayLiteralConvertible", "Element"]
+- !private ["PSo8CAAction", "calculationMode"]
+- !private ["PSo8CAAction", "duration"]
+- !private ["PSo8CAAction", "init"]
+- !private ["PSo8CAAction", "values"]
+- !private ["CSo11CAAnimation", "calculationMode"]
+- !private ["CSo11CAAnimation", "duration"]
+- !private ["CSo11CAAnimation", "values"]
+- !private ["CSo19CAKeyframeAnimation", "calculationMode"]
+- !private ["CSo19CAKeyframeAnimation", "duration"]
+- !private ["CSo19CAKeyframeAnimation", "init"]
+- !private ["CSo19CAKeyframeAnimation", "values"]
+- !private ["CSo7CALayer", "addAnimation"]
+- !private ["PSo13CAMediaTiming", "addAnimation"]
+- !private ["PSo13CAMediaTiming", "calculationMode"]
+- !private ["PSo13CAMediaTiming", "duration"]
+- !private ["PSo13CAMediaTiming", "init"]
+- !private ["PSo13CAMediaTiming", "values"]
+- !private ["CSo19CAPropertyAnimation", "calculationMode"]
+- !private ["CSo19CAPropertyAnimation", "duration"]
+- !private ["CSo19CAPropertyAnimation", "values"]
+- !private ["PSs11CVarArgType", "CAKeyframeAnimation"]
+- !private ["PSs11CVarArgType", "NSTimeInterval"]
+- !private ["PSs11CVarArgType", "addAnimation"]
+- !private ["PSs11CVarArgType", "calculationMode"]
+- !private ["PSs11CVarArgType", "duration"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "kCAAnimationCubic"]
+- !private ["PSs11CVarArgType", "layer"]
+- ["PSs11CVarArgType", "playBounceAnimation"]
+- !private ["PSs11CVarArgType", "values"]
+- !private ["PSs14CollectionType", "Element"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs28CustomDebugStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "CAKeyframeAnimation"]
+- !private ["PSs23CustomStringConvertible", "Element"]
+- !private ["PSs23CustomStringConvertible", "NSTimeInterval"]
+- !private ["PSs23CustomStringConvertible", "addAnimation"]
+- !private ["PSs23CustomStringConvertible", "calculationMode"]
+- !private ["PSs23CustomStringConvertible", "duration"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "kCAAnimationCubic"]
+- !private ["PSs23CustomStringConvertible", "layer"]
+- ["PSs23CustomStringConvertible", "playBounceAnimation"]
+- !private ["PSs23CustomStringConvertible", "values"]
+- !private ["Sd", "deinit"]
+- !private ["Sd", "init"]
+- !private ["PSs9Equatable", "CAKeyframeAnimation"]
+- !private ["PSs9Equatable", "NSTimeInterval"]
+- !private ["PSs9Equatable", "addAnimation"]
+- !private ["PSs9Equatable", "calculationMode"]
+- !private ["PSs9Equatable", "duration"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "kCAAnimationCubic"]
+- !private ["PSs9Equatable", "layer"]
+- ["PSs9Equatable", "playBounceAnimation"]
+- !private ["PSs9Equatable", "values"]
+- !private ["PSs23FloatLiteralConvertible", "init"]
+- !private ["PSs17FloatingPointType", "init"]
+- !private ["PSs8Hashable", "CAKeyframeAnimation"]
+- !private ["PSs8Hashable", "NSTimeInterval"]
+- !private ["PSs8Hashable", "addAnimation"]
+- !private ["PSs8Hashable", "calculationMode"]
+- !private ["PSs8Hashable", "duration"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "kCAAnimationCubic"]
+- !private ["PSs8Hashable", "layer"]
+- ["PSs8Hashable", "playBounceAnimation"]
+- !private ["PSs8Hashable", "values"]
+- !private ["PSs9Indexable", "Element"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
+- !private ["P10RealmSwift10MinMaxType", "init"]
+- !private ["PSs21MutableCollectionType", "Element"]
+- !private ["PSs16MutableIndexable", "Element"]
+- !private ["PSs16MutableSliceable", "Element"]
+- !private ["PSo8NSCoding", "CAKeyframeAnimation"]
+- !private ["PSo8NSCoding", "NSTimeInterval"]
+- !private ["PSo8NSCoding", "addAnimation"]
+- !private ["PSo8NSCoding", "calculationMode"]
+- !private ["PSo8NSCoding", "duration"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "kCAAnimationCubic"]
+- !private ["PSo8NSCoding", "layer"]
+- ["PSo8NSCoding", "playBounceAnimation"]
+- !private ["PSo8NSCoding", "values"]
+- !private ["PSo9NSCopying", "calculationMode"]
+- !private ["PSo9NSCopying", "duration"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "values"]
+- !private ["CSo8NSObject", "CAKeyframeAnimation"]
+- !private ["CSo8NSObject", "NSTimeInterval"]
+- !private ["CSo8NSObject", "addAnimation"]
+- !private ["CSo8NSObject", "calculationMode"]
+- !private ["CSo8NSObject", "duration"]
+- !private ["CSo8NSObject", "kCAAnimationCubic"]
+- !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "playBounceAnimation"]
+- !private ["CSo8NSObject", "values"]
+- !private ["PSo16NSObjectProtocol", "CAKeyframeAnimation"]
+- !private ["PSo16NSObjectProtocol", "NSTimeInterval"]
+- !private ["PSo16NSObjectProtocol", "addAnimation"]
+- !private ["PSo16NSObjectProtocol", "calculationMode"]
+- !private ["PSo16NSObjectProtocol", "duration"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "kCAAnimationCubic"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "playBounceAnimation"]
+- !private ["PSo16NSObjectProtocol", "values"]
+- !private ["Sq", "deinit"]
+- !private ["PSs30RangeReplaceableCollectionType", "Element"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs16SignedNumberType", "init"]
+- !private ["PSs10Strideable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "CAKeyframeAnimation"]
+- !private ["PSo29UIAccessibilityIdentification", "NSTimeInterval"]
+- !private ["PSo29UIAccessibilityIdentification", "kCAAnimationCubic"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- ["PSo29UIAccessibilityIdentification", "playBounceAnimation"]
+- !private ["PSo12UIAppearance", "CAKeyframeAnimation"]
+- !private ["PSo12UIAppearance", "NSTimeInterval"]
+- !private ["PSo12UIAppearance", "kCAAnimationCubic"]
+- !private ["PSo12UIAppearance", "layer"]
+- ["PSo12UIAppearance", "playBounceAnimation"]
+- !private ["PSo21UIAppearanceContainer", "CAKeyframeAnimation"]
+- !private ["PSo21UIAppearanceContainer", "NSTimeInterval"]
+- !private ["PSo21UIAppearanceContainer", "kCAAnimationCubic"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "playBounceAnimation"]
+- !private ["CSo8UIButton", "CAKeyframeAnimation"]
+- !private ["CSo8UIButton", "NSTimeInterval"]
+- !private ["CSo8UIButton", "kCAAnimationCubic"]
+- !private ["CSo8UIButton", "layer"]
+- ["CSo8UIButton", "playBounceAnimation"]
+- !private ["CSo9UIControl", "CAKeyframeAnimation"]
+- !private ["CSo9UIControl", "NSTimeInterval"]
+- !private ["CSo9UIControl", "kCAAnimationCubic"]
+- !private ["CSo9UIControl", "layer"]
+- ["CSo9UIControl", "playBounceAnimation"]
+- !private ["PSo17UICoordinateSpace", "CAKeyframeAnimation"]
+- !private ["PSo17UICoordinateSpace", "NSTimeInterval"]
+- !private ["PSo17UICoordinateSpace", "kCAAnimationCubic"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- ["PSo17UICoordinateSpace", "playBounceAnimation"]
+- !private ["PSo13UIDynamicItem", "CAKeyframeAnimation"]
+- !private ["PSo13UIDynamicItem", "NSTimeInterval"]
+- !private ["PSo13UIDynamicItem", "kCAAnimationCubic"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- ["PSo13UIDynamicItem", "playBounceAnimation"]
+- !private ["CSo11UIResponder", "CAKeyframeAnimation"]
+- !private ["CSo11UIResponder", "NSTimeInterval"]
+- !private ["CSo11UIResponder", "kCAAnimationCubic"]
+- !private ["CSo11UIResponder", "layer"]
+- ["CSo11UIResponder", "playBounceAnimation"]
+- !private ["PSo18UITraitEnvironment", "CAKeyframeAnimation"]
+- !private ["PSo18UITraitEnvironment", "NSTimeInterval"]
+- !private ["PSo18UITraitEnvironment", "kCAAnimationCubic"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "playBounceAnimation"]
+- !private ["CSo6UIView", "CAKeyframeAnimation"]
+- !private ["CSo6UIView", "NSTimeInterval"]
+- !private ["CSo6UIView", "kCAAnimationCubic"]
+- !private ["CSo6UIView", "layer"]
+- ["CSo6UIView", "playBounceAnimation"]
+- !private ["PSs10_ArrayType", "Element"]
+- !private ["PSs31_BuiltinFloatLiteralConvertible", "init"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["PSs19_CVarArgAlignedType", "init"]
+- !private ["PSs22_CVarArgPassedAsDouble", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "CAKeyframeAnimation"]
+- !private ["PSs12_Reflectable", "Element"]
+- !private ["PSs12_Reflectable", "NSTimeInterval"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "kCAAnimationCubic"]
+- !private ["PSs12_Reflectable", "layer"]
+- ["PSs12_Reflectable", "playBounceAnimation"]
+- !private ["PSs11_Strideable", "init"]
+depends-nominal:
+- !private "PSs16AbsoluteValuable"
+- !private "P10RealmSwift11AddableType"
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "PSo8CAAction"
+- !private "CSo11CAAnimation"
+- !private "CSo19CAKeyframeAnimation"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "CSo19CAPropertyAnimation"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "Sd"
+- "PSs9Equatable"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs17FloatingPointType"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "P10RealmSwift10MinMaxType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Sq"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs12SequenceType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "CSo8UIButton"
+- "CSo9UIControl"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
+- "CSo11UIResponder"
+- "PSo18UITraitEnvironment"
+- "CSo6UIView"
+- !private "PSs10_ArrayType"
+- !private "PSs31_BuiltinFloatLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs22_CVarArgPassedAsDouble"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/Nekobu-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealmUtil.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMListBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMResults.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMProperty.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMMigration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMCollection.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMArray.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/Realm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/MKAnnotationView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDImageCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/WebImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Modules/module.modulemap"
+interface-hash: "eee760a3f04b0556eed1a296371d2864"

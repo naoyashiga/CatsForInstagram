@@ -1,0 +1,16 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "93ffe4ad1fd8f79143f99f4264a1f61a"
+build_time: [497625055, 855858000]
+inputs: 
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/Schema.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/Object.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/Results.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/List.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/Migration.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/RealmConfiguration.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/Realm.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/Aliases.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/Property.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/Util.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/SortDescriptor.swift": [497621883, 0]
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/RealmSwift/RealmSwift/ObjectSchema.swift": [497621883, 0]

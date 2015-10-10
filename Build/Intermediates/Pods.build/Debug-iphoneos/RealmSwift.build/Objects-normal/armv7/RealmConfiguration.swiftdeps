@@ -1,0 +1,496 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "VC10RealmSwift5Realm13Configuration"
+provides-member:
+- ["C10RealmSwift5Realm", ""]
+- ["VC10RealmSwift5Realm13Configuration", ""]
+- ["C10RealmSwift5Realm", "Configuration"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- "MigrationBlock"
+- !private "gsub"
+- !private "StringLiteralType"
+- !private "RLMRealmValidatedEncryptionKey"
+- "RLMRealmConfiguration"
+- "UInt64"
+- !private "!="
+- "Realm"
+- "BooleanLiteralType"
+- !private "accessorMigrationBlock"
+- "Object"
+- "RLMSchema"
+- "String"
+- "CustomStringConvertible"
+- !private "??"
+- "NSData"
+depends-member:
+- !private ["P10RealmSwift11AddableType", "Distance"]
+- !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]
+- !private ["PSs9AnyObject", "Configuration"]
+- !private ["PSs9AnyObject", "RLMRealmConfiguration"]
+- !private ["PSs9AnyObject", "RLMRealmValidatedEncryptionKey"]
+- !private ["PSs9AnyObject", "RLMSchema"]
+- !private ["PSs9AnyObject", "UInt64"]
+- !private ["PSs9AnyObject", "accessorMigrationBlock"]
+- !private ["PSs9AnyObject", "customSchema"]
+- !private ["PSs9AnyObject", "defaultConfiguration"]
+- !private ["PSs9AnyObject", "defaultRealmPath"]
+- !private ["PSs9AnyObject", "description"]
+- !private ["PSs9AnyObject", "encryptionKey"]
+- !private ["PSs9AnyObject", "inMemoryIdentifier"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "migrationBlock"]
+- !private ["PSs9AnyObject", "objectClass"]
+- !private ["PSs9AnyObject", "objectSchema"]
+- !private ["PSs9AnyObject", "path"]
+- !private ["PSs9AnyObject", "readOnly"]
+- !private ["PSs9AnyObject", "rlmMigration"]
+- !private ["PSs9AnyObject", "schemaVersion"]
+- !private ["PSs9AnyObject", "setDefaultConfiguration"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "map"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "map"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs22BidirectionalIndexType", "init"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "customSchema"]
+- !private ["PSs11CVarArgType", "defaultConfiguration"]
+- !private ["PSs11CVarArgType", "defaultRealmPath"]
+- !private ["PSs11CVarArgType", "description"]
+- !private ["PSs11CVarArgType", "encryptionKey"]
+- !private ["PSs11CVarArgType", "inMemoryIdentifier"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "migrationBlock"]
+- !private ["PSs11CVarArgType", "objectSchema"]
+- !private ["PSs11CVarArgType", "path"]
+- !private ["PSs11CVarArgType", "readOnly"]
+- !private ["PSs11CVarArgType", "schemaVersion"]
+- !private ["PSs11CVarArgType", "setDefaultConfiguration"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "map"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "init"]
+- ["VC10RealmSwift5Realm13Configuration", "Bool"]
+- ["VC10RealmSwift5Realm13Configuration", "Configuration"]
+- ["VC10RealmSwift5Realm13Configuration", "MigrationBlock"]
+- ["VC10RealmSwift5Realm13Configuration", "NSData"]
+- ["VC10RealmSwift5Realm13Configuration", "Object"]
+- ["VC10RealmSwift5Realm13Configuration", "RLMRealmConfiguration"]
+- !private ["VC10RealmSwift5Realm13Configuration", "RLMRealmValidatedEncryptionKey"]
+- ["VC10RealmSwift5Realm13Configuration", "RLMSchema"]
+- ["VC10RealmSwift5Realm13Configuration", "String"]
+- ["VC10RealmSwift5Realm13Configuration", "UInt64"]
+- !private ["VC10RealmSwift5Realm13Configuration", "_encryptionKey"]
+- !private ["VC10RealmSwift5Realm13Configuration", "_inMemoryIdentifier"]
+- !private ["VC10RealmSwift5Realm13Configuration", "_path"]
+- !private ["VC10RealmSwift5Realm13Configuration", "accessorMigrationBlock"]
+- !private ["VC10RealmSwift5Realm13Configuration", "customSchema"]
+- ["VC10RealmSwift5Realm13Configuration", "defaultConfiguration"]
+- ["VC10RealmSwift5Realm13Configuration", "deinit"]
+- ["VC10RealmSwift5Realm13Configuration", "description"]
+- ["VC10RealmSwift5Realm13Configuration", "encryptionKey"]
+- ["VC10RealmSwift5Realm13Configuration", "fromRLMRealmConfiguration"]
+- !private ["VC10RealmSwift5Realm13Configuration", "gsub"]
+- ["VC10RealmSwift5Realm13Configuration", "inMemoryIdentifier"]
+- ["VC10RealmSwift5Realm13Configuration", "init"]
+- ["VC10RealmSwift5Realm13Configuration", "migrationBlock"]
+- ["VC10RealmSwift5Realm13Configuration", "objectTypes"]
+- ["VC10RealmSwift5Realm13Configuration", "path"]
+- ["VC10RealmSwift5Realm13Configuration", "readOnly"]
+- ["VC10RealmSwift5Realm13Configuration", "rlmConfiguration"]
+- ["VC10RealmSwift5Realm13Configuration", "schemaVersion"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "map"]
+- !private ["PSs23CustomStringConvertible", "Configuration"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "RLMRealmConfiguration"]
+- !private ["PSs23CustomStringConvertible", "RLMRealmValidatedEncryptionKey"]
+- !private ["PSs23CustomStringConvertible", "RLMSchema"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UInt64"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_encryptionKey"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "_inMemoryIdentifier"]
+- !private ["PSs23CustomStringConvertible", "_path"]
+- !private ["PSs23CustomStringConvertible", "accessorMigrationBlock"]
+- !private ["PSs23CustomStringConvertible", "customSchema"]
+- !private ["PSs23CustomStringConvertible", "defaultConfiguration"]
+- !private ["PSs23CustomStringConvertible", "defaultRealmPath"]
+- ["PSs23CustomStringConvertible", "description"]
+- !private ["PSs23CustomStringConvertible", "encryptionKey"]
+- !private ["PSs23CustomStringConvertible", "fromRLMRealmConfiguration"]
+- !private ["PSs23CustomStringConvertible", "gsub"]
+- !private ["PSs23CustomStringConvertible", "inMemoryIdentifier"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "map"]
+- !private ["PSs23CustomStringConvertible", "migrationBlock"]
+- !private ["PSs23CustomStringConvertible", "objectSchema"]
+- !private ["PSs23CustomStringConvertible", "objectTypes"]
+- !private ["PSs23CustomStringConvertible", "path"]
+- !private ["PSs23CustomStringConvertible", "readOnly"]
+- !private ["PSs23CustomStringConvertible", "rlmConfiguration"]
+- !private ["PSs23CustomStringConvertible", "schemaVersion"]
+- !private ["PSs23CustomStringConvertible", "setDefaultConfiguration"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Configuration"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "RLMRealmConfiguration"]
+- !private ["PSs9Equatable", "RLMRealmValidatedEncryptionKey"]
+- !private ["PSs9Equatable", "RLMSchema"]
+- !private ["PSs9Equatable", "UInt64"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "accessorMigrationBlock"]
+- !private ["PSs9Equatable", "customSchema"]
+- !private ["PSs9Equatable", "defaultConfiguration"]
+- !private ["PSs9Equatable", "defaultRealmPath"]
+- !private ["PSs9Equatable", "description"]
+- !private ["PSs9Equatable", "encryptionKey"]
+- !private ["PSs9Equatable", "inMemoryIdentifier"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "migrationBlock"]
+- !private ["PSs9Equatable", "objectSchema"]
+- !private ["PSs9Equatable", "path"]
+- !private ["PSs9Equatable", "readOnly"]
+- !private ["PSs9Equatable", "schemaVersion"]
+- !private ["PSs9Equatable", "setDefaultConfiguration"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "init"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "customSchema"]
+- !private ["PSs8Hashable", "defaultConfiguration"]
+- !private ["PSs8Hashable", "defaultRealmPath"]
+- !private ["PSs8Hashable", "description"]
+- !private ["PSs8Hashable", "encryptionKey"]
+- !private ["PSs8Hashable", "inMemoryIdentifier"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "migrationBlock"]
+- !private ["PSs8Hashable", "objectSchema"]
+- !private ["PSs8Hashable", "path"]
+- !private ["PSs8Hashable", "readOnly"]
+- !private ["PSs8Hashable", "schemaVersion"]
+- !private ["PSs8Hashable", "setDefaultConfiguration"]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "map"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "init"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "init"]
+- !private ["C10RealmSwift9Migration", "rlmMigration"]
+- !private ["P10RealmSwift10MinMaxType", "Distance"]
+- !private ["P10RealmSwift10MinMaxType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "map"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableIndexable", "map"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "map"]
+- !private ["PSo9NSCopying", "customSchema"]
+- !private ["PSo9NSCopying", "defaultConfiguration"]
+- !private ["PSo9NSCopying", "defaultRealmPath"]
+- !private ["PSo9NSCopying", "description"]
+- !private ["PSo9NSCopying", "encryptionKey"]
+- !private ["PSo9NSCopying", "inMemoryIdentifier"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "migrationBlock"]
+- !private ["PSo9NSCopying", "objectSchema"]
+- !private ["PSo9NSCopying", "path"]
+- !private ["PSo9NSCopying", "readOnly"]
+- !private ["PSo9NSCopying", "schemaVersion"]
+- !private ["PSo9NSCopying", "setDefaultConfiguration"]
+- !private ["CSo8NSObject", "customSchema"]
+- !private ["CSo8NSObject", "defaultConfiguration"]
+- !private ["CSo8NSObject", "defaultRealmPath"]
+- !private ["CSo8NSObject", "description"]
+- !private ["CSo8NSObject", "encryptionKey"]
+- !private ["CSo8NSObject", "inMemoryIdentifier"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "migrationBlock"]
+- !private ["CSo8NSObject", "objectSchema"]
+- !private ["CSo8NSObject", "path"]
+- !private ["CSo8NSObject", "readOnly"]
+- !private ["CSo8NSObject", "schemaVersion"]
+- !private ["CSo8NSObject", "setDefaultConfiguration"]
+- !private ["PSo16NSObjectProtocol", "customSchema"]
+- !private ["PSo16NSObjectProtocol", "defaultConfiguration"]
+- !private ["PSo16NSObjectProtocol", "defaultRealmPath"]
+- !private ["PSo16NSObjectProtocol", "description"]
+- !private ["PSo16NSObjectProtocol", "encryptionKey"]
+- !private ["PSo16NSObjectProtocol", "inMemoryIdentifier"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "migrationBlock"]
+- !private ["PSo16NSObjectProtocol", "objectSchema"]
+- !private ["PSo16NSObjectProtocol", "path"]
+- !private ["PSo16NSObjectProtocol", "readOnly"]
+- !private ["PSo16NSObjectProtocol", "schemaVersion"]
+- !private ["PSo16NSObjectProtocol", "setDefaultConfiguration"]
+- !private ["PSs21NilLiteralConvertible", "map"]
+- !private ["Sq", "deinit"]
+- !private ["Sq", "map"]
+- !private ["CSo21RLMRealmConfiguration", "customSchema"]
+- !private ["CSo21RLMRealmConfiguration", "defaultConfiguration"]
+- !private ["CSo21RLMRealmConfiguration", "defaultRealmPath"]
+- !private ["CSo21RLMRealmConfiguration", "description"]
+- !private ["CSo21RLMRealmConfiguration", "encryptionKey"]
+- !private ["CSo21RLMRealmConfiguration", "inMemoryIdentifier"]
+- !private ["CSo21RLMRealmConfiguration", "init"]
+- !private ["CSo21RLMRealmConfiguration", "migrationBlock"]
+- !private ["CSo21RLMRealmConfiguration", "path"]
+- !private ["CSo21RLMRealmConfiguration", "readOnly"]
+- !private ["CSo21RLMRealmConfiguration", "schemaVersion"]
+- !private ["CSo21RLMRealmConfiguration", "setDefaultConfiguration"]
+- !private ["CSo9RLMSchema", "init"]
+- !private ["CSo9RLMSchema", "objectSchema"]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs21RandomAccessIndexType", "init"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "map"]
+- ["C10RealmSwift5Realm", "Bool"]
+- ["C10RealmSwift5Realm", "Configuration"]
+- ["C10RealmSwift5Realm", "MigrationBlock"]
+- ["C10RealmSwift5Realm", "NSData"]
+- ["C10RealmSwift5Realm", "Object"]
+- ["C10RealmSwift5Realm", "RLMRealmConfiguration"]
+- !private ["C10RealmSwift5Realm", "RLMRealmValidatedEncryptionKey"]
+- ["C10RealmSwift5Realm", "RLMSchema"]
+- ["C10RealmSwift5Realm", "String"]
+- ["C10RealmSwift5Realm", "UInt64"]
+- !private ["C10RealmSwift5Realm", "accessorMigrationBlock"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "map"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "init"]
+- !private ["VSs6UInt64", "init"]
+- !private ["PSs19UnsignedIntegerType", "init"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "map"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["PSs19_CVarArgAlignedType", "init"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "map"]
+- !private ["PSs28_DisallowMixedSignArithmetic", "init"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "init"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "init"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "init"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "map"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs22_RandomAccessAmbiguity", "init"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "map"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "init"]
+depends-nominal:
+- !private "P10RealmSwift11AddableType"
+- !private "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "VC10RealmSwift5Realm13Configuration"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- !private "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- !private "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "C10RealmSwift9Migration"
+- !private "P10RealmSwift10MinMaxType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- !private "PSo9NSCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSs21NilLiteralConvertible"
+- !private "Sq"
+- !private "CSo21RLMRealmConfiguration"
+- !private "CSo9RLMSchema"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- "C10RealmSwift5Realm"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "VSs6UInt64"
+- !private "PSs19UnsignedIntegerType"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs28_DisallowMixedSignArithmetic"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+- !private "objectClass"
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Target Support Files/RealmSwift/RealmSwift-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphoneos/RealmSwift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMObjectBase_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMRealm_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMResults_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMRealm_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMRealmUtil.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMProperty_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMObject_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMObjectStore.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMObjectSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMMigration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMListBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMRealmConfiguration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMArray_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMAccessor.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMResults.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMRealmConfiguration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMRealm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMProperty.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMPlatform.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMObjectSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMObjectBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMMigration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMCollection.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/RLMArray.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Realm/include/realm/Realm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/Pods.build/Debug-iphoneos/Realm.build/module.modulemap"
+interface-hash: "91fbca003a1860b03984506eb6462307"

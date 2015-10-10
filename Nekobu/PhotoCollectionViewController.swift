@@ -15,20 +15,9 @@ class PhotoCollectionViewController: BaseCollectionViewController {
         super.viewDidLoad()
         
         setCollectionView()
-
-        if let collectionView = collectionView {
-            refreshControl = UIRefreshControl()
-            refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
-//            collectionView.addSubview(refreshControl)
-        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    func refresh() {
-        collectionView?.reloadData()
-        refreshControl.endRefreshing()
     }
 }

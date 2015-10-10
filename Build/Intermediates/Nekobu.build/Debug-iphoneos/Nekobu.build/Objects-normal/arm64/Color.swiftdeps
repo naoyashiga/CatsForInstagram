@@ -1,0 +1,414 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["CSo7UIColor", ""]
+- ["CSo7UIColor", "hexStr"]
+- ["CSo7UIColor", "viewBackgroundColor"]
+- ["CSo7UIColor", "navigationBarTintColor"]
+- ["CSo7UIColor", "cellLightBackgroundColor"]
+- ["CSo7UIColor", "cellSelectedBackgroundColor"]
+- ["CSo7UIColor", "scrollMenuBackgroundColor"]
+- ["CSo7UIColor", "selectionIndicatorColor"]
+- ["CSo7UIColor", "bottomMenuHairlineColor"]
+- ["CSo7UIColor", "selectedMenuItemLabelColor"]
+- ["CSo7UIColor", "unselectedMenuItemLabelColor"]
+provides-dynamic-lookup:
+- "selectionIndicatorColor"
+- "hexStr"
+- "cellSelectedBackgroundColor"
+- "bottomMenuHairlineColor"
+- "scrollMenuBackgroundColor"
+- "navigationBarTintColor"
+- "cellLightBackgroundColor"
+- "selectedMenuItemLabelColor"
+- "unselectedMenuItemLabelColor"
+- "viewBackgroundColor"
+depends-top-level:
+- "NSString"
+- !private "UnicodeScalarType"
+- "UIColor"
+- !private "UInt32"
+- !private "String"
+- !private "&"
+- !private "NSScanner"
+- !private "StringLiteralType"
+- !private "/"
+- "CGFloat"
+- !private "print"
+- !private ">>"
+depends-member:
+- !private ["PSs16AbsoluteValuable", "init"]
+- !private ["PSs9AnyObject", "CGFloat"]
+- !private ["PSs9AnyObject", "NSScanner"]
+- !private ["PSs9AnyObject", "UIColor"]
+- ["PSs9AnyObject", "bottomMenuHairlineColor"]
+- ["PSs9AnyObject", "cellLightBackgroundColor"]
+- ["PSs9AnyObject", "cellSelectedBackgroundColor"]
+- ["PSs9AnyObject", "hexStr"]
+- !private ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "navigationBarTintColor"]
+- !private ["PSs9AnyObject", "print"]
+- !private ["PSs9AnyObject", "scanHexInt"]
+- ["PSs9AnyObject", "scrollMenuBackgroundColor"]
+- ["PSs9AnyObject", "selectedMenuItemLabelColor"]
+- ["PSs9AnyObject", "selectionIndicatorColor"]
+- !private ["PSs9AnyObject", "stringByReplacingOccurrencesOfString"]
+- ["PSs9AnyObject", "unselectedMenuItemLabelColor"]
+- ["PSs9AnyObject", "viewBackgroundColor"]
+- !private ["PSs9AnyObject", "whiteColor"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["V12CoreGraphics7CGFloat", "init"]
+- !private ["PSs11CVarArgType", "CGFloat"]
+- !private ["PSs11CVarArgType", "NSScanner"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- ["PSs11CVarArgType", "bottomMenuHairlineColor"]
+- ["PSs11CVarArgType", "cellLightBackgroundColor"]
+- ["PSs11CVarArgType", "cellSelectedBackgroundColor"]
+- ["PSs11CVarArgType", "hexStr"]
+- !private ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "navigationBarTintColor"]
+- !private ["PSs11CVarArgType", "print"]
+- !private ["PSs11CVarArgType", "scanHexInt"]
+- ["PSs11CVarArgType", "scrollMenuBackgroundColor"]
+- ["PSs11CVarArgType", "selectedMenuItemLabelColor"]
+- ["PSs11CVarArgType", "selectionIndicatorColor"]
+- !private ["PSs11CVarArgType", "stringByReplacingOccurrencesOfString"]
+- ["PSs11CVarArgType", "unselectedMenuItemLabelColor"]
+- ["PSs11CVarArgType", "viewBackgroundColor"]
+- !private ["PSs11CVarArgType", "whiteColor"]
+- !private ["PSs10Comparable", "init"]
+- !private ["PSs23CustomStringConvertible", "CGFloat"]
+- !private ["PSs23CustomStringConvertible", "NSScanner"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["PSs23CustomStringConvertible", "bottomMenuHairlineColor"]
+- ["PSs23CustomStringConvertible", "cellLightBackgroundColor"]
+- ["PSs23CustomStringConvertible", "cellSelectedBackgroundColor"]
+- ["PSs23CustomStringConvertible", "hexStr"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "navigationBarTintColor"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- !private ["PSs23CustomStringConvertible", "scanHexInt"]
+- ["PSs23CustomStringConvertible", "scrollMenuBackgroundColor"]
+- ["PSs23CustomStringConvertible", "selectedMenuItemLabelColor"]
+- ["PSs23CustomStringConvertible", "selectionIndicatorColor"]
+- !private ["PSs23CustomStringConvertible", "stringByReplacingOccurrencesOfString"]
+- ["PSs23CustomStringConvertible", "unselectedMenuItemLabelColor"]
+- ["PSs23CustomStringConvertible", "viewBackgroundColor"]
+- !private ["PSs23CustomStringConvertible", "whiteColor"]
+- !private ["PSs9Equatable", "CGFloat"]
+- !private ["PSs9Equatable", "NSScanner"]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- ["PSs9Equatable", "bottomMenuHairlineColor"]
+- ["PSs9Equatable", "cellLightBackgroundColor"]
+- ["PSs9Equatable", "cellSelectedBackgroundColor"]
+- ["PSs9Equatable", "hexStr"]
+- !private ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "navigationBarTintColor"]
+- !private ["PSs9Equatable", "print"]
+- !private ["PSs9Equatable", "scanHexInt"]
+- ["PSs9Equatable", "scrollMenuBackgroundColor"]
+- ["PSs9Equatable", "selectedMenuItemLabelColor"]
+- ["PSs9Equatable", "selectionIndicatorColor"]
+- !private ["PSs9Equatable", "stringByReplacingOccurrencesOfString"]
+- ["PSs9Equatable", "unselectedMenuItemLabelColor"]
+- ["PSs9Equatable", "viewBackgroundColor"]
+- !private ["PSs9Equatable", "whiteColor"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs23FloatLiteralConvertible", "init"]
+- !private ["PSs17FloatingPointType", "init"]
+- !private ["PSs8Hashable", "CGFloat"]
+- !private ["PSs8Hashable", "NSScanner"]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- ["PSs8Hashable", "bottomMenuHairlineColor"]
+- ["PSs8Hashable", "cellLightBackgroundColor"]
+- ["PSs8Hashable", "cellSelectedBackgroundColor"]
+- ["PSs8Hashable", "hexStr"]
+- !private ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "navigationBarTintColor"]
+- !private ["PSs8Hashable", "print"]
+- !private ["PSs8Hashable", "scanHexInt"]
+- ["PSs8Hashable", "scrollMenuBackgroundColor"]
+- ["PSs8Hashable", "selectedMenuItemLabelColor"]
+- ["PSs8Hashable", "selectionIndicatorColor"]
+- !private ["PSs8Hashable", "stringByReplacingOccurrencesOfString"]
+- ["PSs8Hashable", "unselectedMenuItemLabelColor"]
+- ["PSs8Hashable", "viewBackgroundColor"]
+- !private ["PSs8Hashable", "whiteColor"]
+- !private ["PSs25IntegerLiteralConvertible", "init"]
+- !private ["PSo8NSCoding", "CGFloat"]
+- !private ["PSo8NSCoding", "NSScanner"]
+- !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "hexStr"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "stringByReplacingOccurrencesOfString"]
+- !private ["PSo8NSCoding", "whiteColor"]
+- !private ["PSo9NSCopying", "CGFloat"]
+- !private ["PSo9NSCopying", "NSScanner"]
+- !private ["PSo9NSCopying", "UIColor"]
+- !private ["PSo9NSCopying", "hexStr"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "print"]
+- !private ["PSo9NSCopying", "scanHexInt"]
+- !private ["PSo9NSCopying", "stringByReplacingOccurrencesOfString"]
+- !private ["PSo9NSCopying", "whiteColor"]
+- !private ["PSo16NSMutableCopying", "stringByReplacingOccurrencesOfString"]
+- ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "NSScanner"]
+- ["CSo8NSObject", "NSString"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UInt32"]
+- ["CSo8NSObject", "bottomMenuHairlineColor"]
+- ["CSo8NSObject", "cellLightBackgroundColor"]
+- ["CSo8NSObject", "cellSelectedBackgroundColor"]
+- ["CSo8NSObject", "hexStr"]
+- !private ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "navigationBarTintColor"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "scanHexInt"]
+- ["CSo8NSObject", "scrollMenuBackgroundColor"]
+- ["CSo8NSObject", "selectedMenuItemLabelColor"]
+- ["CSo8NSObject", "selectionIndicatorColor"]
+- !private ["CSo8NSObject", "stringByReplacingOccurrencesOfString"]
+- ["CSo8NSObject", "unselectedMenuItemLabelColor"]
+- ["CSo8NSObject", "viewBackgroundColor"]
+- !private ["CSo8NSObject", "whiteColor"]
+- !private ["PSo16NSObjectProtocol", "CGFloat"]
+- !private ["PSo16NSObjectProtocol", "NSScanner"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- ["PSo16NSObjectProtocol", "bottomMenuHairlineColor"]
+- ["PSo16NSObjectProtocol", "cellLightBackgroundColor"]
+- ["PSo16NSObjectProtocol", "cellSelectedBackgroundColor"]
+- ["PSo16NSObjectProtocol", "hexStr"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "navigationBarTintColor"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "scanHexInt"]
+- ["PSo16NSObjectProtocol", "scrollMenuBackgroundColor"]
+- ["PSo16NSObjectProtocol", "selectedMenuItemLabelColor"]
+- ["PSo16NSObjectProtocol", "selectionIndicatorColor"]
+- !private ["PSo16NSObjectProtocol", "stringByReplacingOccurrencesOfString"]
+- ["PSo16NSObjectProtocol", "unselectedMenuItemLabelColor"]
+- ["PSo16NSObjectProtocol", "viewBackgroundColor"]
+- !private ["PSo16NSObjectProtocol", "whiteColor"]
+- !private ["CSo9NSScanner", "init"]
+- !private ["CSo9NSScanner", "scanHexInt"]
+- !private ["PSo14NSSecureCoding", "CGFloat"]
+- !private ["PSo14NSSecureCoding", "NSScanner"]
+- !private ["PSo14NSSecureCoding", "UIColor"]
+- !private ["PSo14NSSecureCoding", "hexStr"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "print"]
+- !private ["PSo14NSSecureCoding", "stringByReplacingOccurrencesOfString"]
+- !private ["PSo14NSSecureCoding", "whiteColor"]
+- !private ["CSo8NSString", "deinit"]
+- !private ["CSo8NSString", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs16SignedNumberType", "init"]
+- !private ["PSs10Strideable", "init"]
+- !private ["PSs24StringLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- ["CSo7UIColor", "CGFloat"]
+- !private ["CSo7UIColor", "NSScanner"]
+- ["CSo7UIColor", "NSString"]
+- !private ["CSo7UIColor", "String"]
+- ["CSo7UIColor", "UIColor"]
+- !private ["CSo7UIColor", "UInt32"]
+- ["CSo7UIColor", "bottomMenuHairlineColor"]
+- ["CSo7UIColor", "cellLightBackgroundColor"]
+- ["CSo7UIColor", "cellSelectedBackgroundColor"]
+- ["CSo7UIColor", "hexStr"]
+- !private ["CSo7UIColor", "init"]
+- ["CSo7UIColor", "navigationBarTintColor"]
+- !private ["CSo7UIColor", "print"]
+- ["CSo7UIColor", "scrollMenuBackgroundColor"]
+- ["CSo7UIColor", "selectedMenuItemLabelColor"]
+- ["CSo7UIColor", "selectionIndicatorColor"]
+- ["CSo7UIColor", "unselectedMenuItemLabelColor"]
+- ["CSo7UIColor", "viewBackgroundColor"]
+- !private ["CSo7UIColor", "whiteColor"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs19_CVarArgAlignedType", "init"]
+- !private ["PSs22_CVarArgPassedAsDouble", "init"]
+- !private ["PSs16_CocoaStringType", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "init"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "stringByReplacingOccurrencesOfString"]
+- !private ["PSs11_Strideable", "init"]
+depends-nominal:
+- !private "PSs16AbsoluteValuable"
+- "PSs9AnyObject"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- !private "PSs10Comparable"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs23FloatLiteralConvertible"
+- !private "PSs17FloatingPointType"
+- "PSs8Hashable"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo9NSScanner"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "PSs24StringLiteralConvertible"
+- "CSo7UIColor"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs19_CVarArgAlignedType"
+- !private "PSs22_CVarArgPassedAsDouble"
+- !private "PSs16_CocoaStringType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs12_Reflectable"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/Nekobu-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMRealmUtil.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMListBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMResults.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMRealm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMProperty.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMMigration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMCollection.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMArray.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/Realm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/MKAnnotationView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDImageCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/WebImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Modules/module.modulemap"
+interface-hash: "9e403f5ce6fb735dd6cb3d7982db115b"

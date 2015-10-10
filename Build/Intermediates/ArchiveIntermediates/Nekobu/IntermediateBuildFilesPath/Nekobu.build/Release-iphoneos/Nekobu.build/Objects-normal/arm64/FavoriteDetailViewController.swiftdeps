@@ -1,0 +1,1114 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "FavoriteDetailViewController"
+provides-nominal:
+- "C6Nekobu28FavoriteDetailViewController"
+- "VC6Nekobu28FavoriteDetailViewController3Tmp"
+provides-member:
+- ["C6Nekobu28FavoriteDetailViewController", ""]
+- ["VC6Nekobu28FavoriteDetailViewController3Tmp", ""]
+provides-dynamic-lookup:
+- "updateFavorite"
+- "shareButtonTapped"
+- "saveImageToCameraRoll"
+- "viewDidLoad"
+- "favorite"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- !private "Realm"
+- !private "UIImageWriteToSavedPhotosAlbum"
+- !private "NSDate"
+- !private "UIImageView"
+- !private "NSURL"
+- "StringLiteralType"
+- !private "=="
+- "PhotoDetailViewController"
+- !private "NSPredicate"
+- !private "BooleanLiteralType"
+- "Favorite"
+- "UIButton"
+- "FavoriteDetailViewController"
+- !private "!="
+- !private "fatalError"
+- !private "print"
+depends-member:
+- !private ["P10RealmSwift11AddableType", "Distance"]
+- !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]
+- !private ["P10RealmSwift11AddableType", "_DisabledRangeIndex"]
+- ["PSs9AnyObject", "Favorite"]
+- !private ["PSs9AnyObject", "Generator"]
+- !private ["PSs9AnyObject", "Index"]
+- !private ["PSs9AnyObject", "NSDate"]
+- !private ["PSs9AnyObject", "NSPredicate"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "Realm"]
+- !private ["PSs9AnyObject", "String2Image"]
+- !private ["PSs9AnyObject", "SubSequence"]
+- ["PSs9AnyObject", "Tmp"]
+- !private ["PSs9AnyObject", "UIImageView"]
+- !private ["PSs9AnyObject", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSs9AnyObject", "_Element"]
+- !private ["PSs9AnyObject", "add"]
+- !private ["PSs9AnyObject", "cornerRadius"]
+- !private ["PSs9AnyObject", "count"]
+- !private ["PSs9AnyObject", "createdAt"]
+- !private ["PSs9AnyObject", "delete"]
+- !private ["PSs9AnyObject", "detailImageView"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "fatalError"]
+- ["PSs9AnyObject", "favorite"]
+- !private ["PSs9AnyObject", "favoriteButton"]
+- !private ["PSs9AnyObject", "filter"]
+- !private ["PSs9AnyObject", "id"]
+- !private ["PSs9AnyObject", "image"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "layer"]
+- !private ["PSs9AnyObject", "lowResolutionBase64ImageString"]
+- !private ["PSs9AnyObject", "objects"]
+- !private ["PSs9AnyObject", "playBounceAnimation"]
+- !private ["PSs9AnyObject", "print"]
+- ["PSs9AnyObject", "saveImageToCameraRoll"]
+- !private ["PSs9AnyObject", "sd_setImageWithURL"]
+- !private ["PSs9AnyObject", "selected"]
+- ["PSs9AnyObject", "shareButtonTapped"]
+- !private ["PSs9AnyObject", "standardResolutionBase64ImageString"]
+- !private ["PSs9AnyObject", "standardResolutionURLString"]
+- !private ["PSs9AnyObject", "subscript"]
+- !private ["PSs9AnyObject", "timeIntervalSince1970"]
+- ["PSs9AnyObject", "tmpFavorite"]
+- ["PSs9AnyObject", "updateFavorite"]
+- !private ["PSs9AnyObject", "view"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- !private ["PSs9AnyObject", "webPageLinkString"]
+- !private ["PSs9AnyObject", "write"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs22BidirectionalIndexType", "_DisabledRangeIndex"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["PSs11CVarArgType", "Distance"]
+- ["PSs11CVarArgType", "Favorite"]
+- !private ["PSs11CVarArgType", "Generator"]
+- !private ["PSs11CVarArgType", "Index"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "NSDate"]
+- !private ["PSs11CVarArgType", "NSPredicate"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "Realm"]
+- !private ["PSs11CVarArgType", "String2Image"]
+- !private ["PSs11CVarArgType", "SubSequence"]
+- ["PSs11CVarArgType", "Tmp"]
+- !private ["PSs11CVarArgType", "UIImageView"]
+- !private ["PSs11CVarArgType", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSs11CVarArgType", "_DisabledRangeIndex"]
+- !private ["PSs11CVarArgType", "_Element"]
+- !private ["PSs11CVarArgType", "cornerRadius"]
+- !private ["PSs11CVarArgType", "count"]
+- !private ["PSs11CVarArgType", "createdAt"]
+- !private ["PSs11CVarArgType", "detailImageView"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "fatalError"]
+- ["PSs11CVarArgType", "favorite"]
+- !private ["PSs11CVarArgType", "favoriteButton"]
+- !private ["PSs11CVarArgType", "filter"]
+- !private ["PSs11CVarArgType", "id"]
+- !private ["PSs11CVarArgType", "image"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "layer"]
+- !private ["PSs11CVarArgType", "lowResolutionBase64ImageString"]
+- !private ["PSs11CVarArgType", "playBounceAnimation"]
+- !private ["PSs11CVarArgType", "print"]
+- ["PSs11CVarArgType", "saveImageToCameraRoll"]
+- !private ["PSs11CVarArgType", "sd_setImageWithURL"]
+- !private ["PSs11CVarArgType", "selected"]
+- ["PSs11CVarArgType", "shareButtonTapped"]
+- !private ["PSs11CVarArgType", "standardResolutionBase64ImageString"]
+- !private ["PSs11CVarArgType", "standardResolutionURLString"]
+- !private ["PSs11CVarArgType", "subscript"]
+- !private ["PSs11CVarArgType", "timeIntervalSince1970"]
+- ["PSs11CVarArgType", "tmpFavorite"]
+- ["PSs11CVarArgType", "updateFavorite"]
+- !private ["PSs11CVarArgType", "view"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- !private ["PSs11CVarArgType", "webPageLinkString"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs14CollectionType", "filter"]
+- !private ["PSs14CollectionType", "subscript"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "String2Image"]
+- !private ["PSs10Comparable", "_DisabledRangeIndex"]
+- !private ["PSs28CustomDebugStringConvertible", "String2Image"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- ["PSs23CustomStringConvertible", "Favorite"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "NSDate"]
+- !private ["PSs23CustomStringConvertible", "NSPredicate"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "Realm"]
+- !private ["PSs23CustomStringConvertible", "String2Image"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- ["PSs23CustomStringConvertible", "Tmp"]
+- !private ["PSs23CustomStringConvertible", "UIImageView"]
+- !private ["PSs23CustomStringConvertible", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSs23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "cornerRadius"]
+- !private ["PSs23CustomStringConvertible", "count"]
+- !private ["PSs23CustomStringConvertible", "createdAt"]
+- !private ["PSs23CustomStringConvertible", "detailImageView"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "fatalError"]
+- ["PSs23CustomStringConvertible", "favorite"]
+- !private ["PSs23CustomStringConvertible", "favoriteButton"]
+- !private ["PSs23CustomStringConvertible", "filter"]
+- !private ["PSs23CustomStringConvertible", "id"]
+- !private ["PSs23CustomStringConvertible", "image"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "layer"]
+- !private ["PSs23CustomStringConvertible", "lowResolutionBase64ImageString"]
+- !private ["PSs23CustomStringConvertible", "playBounceAnimation"]
+- !private ["PSs23CustomStringConvertible", "print"]
+- ["PSs23CustomStringConvertible", "saveImageToCameraRoll"]
+- !private ["PSs23CustomStringConvertible", "sd_setImageWithURL"]
+- !private ["PSs23CustomStringConvertible", "selected"]
+- ["PSs23CustomStringConvertible", "shareButtonTapped"]
+- !private ["PSs23CustomStringConvertible", "standardResolutionBase64ImageString"]
+- !private ["PSs23CustomStringConvertible", "standardResolutionURLString"]
+- !private ["PSs23CustomStringConvertible", "subscript"]
+- !private ["PSs23CustomStringConvertible", "timeIntervalSince1970"]
+- ["PSs23CustomStringConvertible", "tmpFavorite"]
+- ["PSs23CustomStringConvertible", "updateFavorite"]
+- !private ["PSs23CustomStringConvertible", "view"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- !private ["PSs23CustomStringConvertible", "webPageLinkString"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "Distance"]
+- ["PSs9Equatable", "Favorite"]
+- !private ["PSs9Equatable", "Generator"]
+- !private ["PSs9Equatable", "Index"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "NSDate"]
+- !private ["PSs9Equatable", "NSPredicate"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "Realm"]
+- !private ["PSs9Equatable", "String2Image"]
+- !private ["PSs9Equatable", "SubSequence"]
+- ["PSs9Equatable", "Tmp"]
+- !private ["PSs9Equatable", "UIImageView"]
+- !private ["PSs9Equatable", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSs9Equatable", "_DisabledRangeIndex"]
+- !private ["PSs9Equatable", "_Element"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "add"]
+- !private ["PSs9Equatable", "cornerRadius"]
+- !private ["PSs9Equatable", "count"]
+- !private ["PSs9Equatable", "createdAt"]
+- !private ["PSs9Equatable", "delete"]
+- !private ["PSs9Equatable", "detailImageView"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "fatalError"]
+- ["PSs9Equatable", "favorite"]
+- !private ["PSs9Equatable", "favoriteButton"]
+- !private ["PSs9Equatable", "filter"]
+- !private ["PSs9Equatable", "id"]
+- !private ["PSs9Equatable", "image"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "layer"]
+- !private ["PSs9Equatable", "lowResolutionBase64ImageString"]
+- !private ["PSs9Equatable", "objects"]
+- !private ["PSs9Equatable", "playBounceAnimation"]
+- !private ["PSs9Equatable", "print"]
+- ["PSs9Equatable", "saveImageToCameraRoll"]
+- !private ["PSs9Equatable", "sd_setImageWithURL"]
+- !private ["PSs9Equatable", "selected"]
+- ["PSs9Equatable", "shareButtonTapped"]
+- !private ["PSs9Equatable", "standardResolutionBase64ImageString"]
+- !private ["PSs9Equatable", "standardResolutionURLString"]
+- !private ["PSs9Equatable", "subscript"]
+- !private ["PSs9Equatable", "timeIntervalSince1970"]
+- ["PSs9Equatable", "tmpFavorite"]
+- ["PSs9Equatable", "updateFavorite"]
+- !private ["PSs9Equatable", "view"]
+- ["PSs9Equatable", "viewDidLoad"]
+- !private ["PSs9Equatable", "webPageLinkString"]
+- !private ["PSs9Equatable", "write"]
+- ["PSs9Equatable", ""]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "String2Image"]
+- !private ["C6Nekobu8Favorite", "createdAt"]
+- !private ["C6Nekobu8Favorite", "deinit"]
+- !private ["C6Nekobu8Favorite", "id"]
+- ["C6Nekobu8Favorite", "init"]
+- !private ["C6Nekobu8Favorite", "lowResolutionBase64ImageString"]
+- !private ["C6Nekobu8Favorite", "standardResolutionBase64ImageString"]
+- !private ["C6Nekobu8Favorite", "standardResolutionURLString"]
+- !private ["C6Nekobu8Favorite", "webPageLinkString"]
+- ["C6Nekobu28FavoriteDetailViewController", "Favorite"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "NSDate"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "NSPredicate"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "NSURL"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "Realm"]
+- ["C6Nekobu28FavoriteDetailViewController", "Tmp"]
+- ["C6Nekobu28FavoriteDetailViewController", "UIButton"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "UIImageView"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "UIImageWriteToSavedPhotosAlbum"]
+- ["C6Nekobu28FavoriteDetailViewController", "deinit"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "detailImageView"]
+- ["C6Nekobu28FavoriteDetailViewController", "didReceiveMemoryWarning"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "fatalError"]
+- ["C6Nekobu28FavoriteDetailViewController", "favorite"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "favoriteButton"]
+- ["C6Nekobu28FavoriteDetailViewController", "init"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "print"]
+- ["C6Nekobu28FavoriteDetailViewController", "saveImageToCameraRoll"]
+- ["C6Nekobu28FavoriteDetailViewController", "shareButtonTapped"]
+- ["C6Nekobu28FavoriteDetailViewController", "tmpFavorite"]
+- ["C6Nekobu28FavoriteDetailViewController", "updateFavorite"]
+- !private ["C6Nekobu28FavoriteDetailViewController", "view"]
+- ["C6Nekobu28FavoriteDetailViewController", "viewDidLoad"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs16ForwardIndexType", "_DisabledRangeIndex"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "Distance"]
+- ["PSs8Hashable", "Favorite"]
+- !private ["PSs8Hashable", "Generator"]
+- !private ["PSs8Hashable", "Index"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "NSDate"]
+- !private ["PSs8Hashable", "NSPredicate"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "Realm"]
+- !private ["PSs8Hashable", "String2Image"]
+- !private ["PSs8Hashable", "SubSequence"]
+- ["PSs8Hashable", "Tmp"]
+- !private ["PSs8Hashable", "UIImageView"]
+- !private ["PSs8Hashable", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSs8Hashable", "_DisabledRangeIndex"]
+- !private ["PSs8Hashable", "_Element"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "cornerRadius"]
+- !private ["PSs8Hashable", "count"]
+- !private ["PSs8Hashable", "createdAt"]
+- !private ["PSs8Hashable", "detailImageView"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "fatalError"]
+- ["PSs8Hashable", "favorite"]
+- !private ["PSs8Hashable", "favoriteButton"]
+- !private ["PSs8Hashable", "filter"]
+- !private ["PSs8Hashable", "id"]
+- !private ["PSs8Hashable", "image"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "layer"]
+- !private ["PSs8Hashable", "lowResolutionBase64ImageString"]
+- !private ["PSs8Hashable", "playBounceAnimation"]
+- !private ["PSs8Hashable", "print"]
+- ["PSs8Hashable", "saveImageToCameraRoll"]
+- !private ["PSs8Hashable", "sd_setImageWithURL"]
+- !private ["PSs8Hashable", "selected"]
+- ["PSs8Hashable", "shareButtonTapped"]
+- !private ["PSs8Hashable", "standardResolutionBase64ImageString"]
+- !private ["PSs8Hashable", "standardResolutionURLString"]
+- !private ["PSs8Hashable", "subscript"]
+- !private ["PSs8Hashable", "timeIntervalSince1970"]
+- ["PSs8Hashable", "tmpFavorite"]
+- ["PSs8Hashable", "updateFavorite"]
+- !private ["PSs8Hashable", "view"]
+- ["PSs8Hashable", "viewDidLoad"]
+- !private ["PSs8Hashable", "webPageLinkString"]
+- ["PSs8Hashable", ""]
+- !private ["SQ", "deinit"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "count"]
+- !private ["PSs9Indexable", "filter"]
+- !private ["PSs9Indexable", "subscript"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "_DisabledRangeIndex"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "_DisabledRangeIndex"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "Distance"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "String2Image"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "_DisabledRangeIndex"]
+- !private ["P10RealmSwift10MinMaxType", "Distance"]
+- !private ["P10RealmSwift10MinMaxType", "IntegerLiteralType"]
+- !private ["P10RealmSwift10MinMaxType", "_DisabledRangeIndex"]
+- !private ["P10RealmSwift10MinMaxType", "init"]
+- !private ["P10RealmSwift10MinMaxType", "timeIntervalSince1970"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "String2Image"]
+- !private ["PSs14MirrorPathType", "_DisabledRangeIndex"]
+- ["PSo8NSCoding", "Favorite"]
+- !private ["PSo8NSCoding", "NSDate"]
+- !private ["PSo8NSCoding", "NSPredicate"]
+- !private ["PSo8NSCoding", "NSURL"]
+- !private ["PSo8NSCoding", "Realm"]
+- !private ["PSo8NSCoding", "String2Image"]
+- ["PSo8NSCoding", "Tmp"]
+- !private ["PSo8NSCoding", "UIImageView"]
+- !private ["PSo8NSCoding", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSo8NSCoding", "cornerRadius"]
+- !private ["PSo8NSCoding", "detailImageView"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "fatalError"]
+- ["PSo8NSCoding", "favorite"]
+- !private ["PSo8NSCoding", "favoriteButton"]
+- !private ["PSo8NSCoding", "image"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "playBounceAnimation"]
+- !private ["PSo8NSCoding", "print"]
+- ["PSo8NSCoding", "saveImageToCameraRoll"]
+- !private ["PSo8NSCoding", "sd_setImageWithURL"]
+- !private ["PSo8NSCoding", "selected"]
+- ["PSo8NSCoding", "shareButtonTapped"]
+- !private ["PSo8NSCoding", "timeIntervalSince1970"]
+- ["PSo8NSCoding", "tmpFavorite"]
+- ["PSo8NSCoding", "updateFavorite"]
+- !private ["PSo8NSCoding", "view"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "String2Image"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "timeIntervalSince1970"]
+- !private ["CSo6NSDate", "init"]
+- !private ["CSo6NSDate", "timeIntervalSince1970"]
+- !private ["CSo7NSError", "deinit"]
+- ["PSo26NSExtensionRequestHandling", "Favorite"]
+- !private ["PSo26NSExtensionRequestHandling", "NSDate"]
+- !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURL"]
+- !private ["PSo26NSExtensionRequestHandling", "Realm"]
+- ["PSo26NSExtensionRequestHandling", "Tmp"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSo26NSExtensionRequestHandling", "detailImageView"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "fatalError"]
+- ["PSo26NSExtensionRequestHandling", "favorite"]
+- !private ["PSo26NSExtensionRequestHandling", "favoriteButton"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- ["PSo26NSExtensionRequestHandling", "saveImageToCameraRoll"]
+- ["PSo26NSExtensionRequestHandling", "shareButtonTapped"]
+- ["PSo26NSExtensionRequestHandling", "tmpFavorite"]
+- ["PSo26NSExtensionRequestHandling", "updateFavorite"]
+- !private ["PSo26NSExtensionRequestHandling", "view"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo17NSFastEnumeration", "Generator"]
+- !private ["PSo17NSFastEnumeration", "Index"]
+- !private ["PSo17NSFastEnumeration", "SubSequence"]
+- !private ["PSo17NSFastEnumeration", "_Element"]
+- !private ["PSo17NSFastEnumeration", "count"]
+- !private ["PSo17NSFastEnumeration", "filter"]
+- !private ["PSo17NSFastEnumeration", "subscript"]
+- !private ["PSo16NSMutableCopying", "String2Image"]
+- ["CSo8NSObject", "Favorite"]
+- !private ["CSo8NSObject", "Generator"]
+- !private ["CSo8NSObject", "Index"]
+- !private ["CSo8NSObject", "NSDate"]
+- !private ["CSo8NSObject", "NSPredicate"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "Realm"]
+- !private ["CSo8NSObject", "String2Image"]
+- !private ["CSo8NSObject", "SubSequence"]
+- ["CSo8NSObject", "Tmp"]
+- ["CSo8NSObject", "UIButton"]
+- !private ["CSo8NSObject", "UIImageView"]
+- !private ["CSo8NSObject", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["CSo8NSObject", "_Element"]
+- !private ["CSo8NSObject", "cornerRadius"]
+- !private ["CSo8NSObject", "count"]
+- !private ["CSo8NSObject", "createdAt"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "detailImageView"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "fatalError"]
+- ["CSo8NSObject", "favorite"]
+- !private ["CSo8NSObject", "favoriteButton"]
+- !private ["CSo8NSObject", "filter"]
+- !private ["CSo8NSObject", "id"]
+- !private ["CSo8NSObject", "image"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "lowResolutionBase64ImageString"]
+- !private ["CSo8NSObject", "playBounceAnimation"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "saveImageToCameraRoll"]
+- !private ["CSo8NSObject", "sd_setImageWithURL"]
+- !private ["CSo8NSObject", "selected"]
+- ["CSo8NSObject", "shareButtonTapped"]
+- !private ["CSo8NSObject", "standardResolutionBase64ImageString"]
+- !private ["CSo8NSObject", "standardResolutionURLString"]
+- !private ["CSo8NSObject", "subscript"]
+- !private ["CSo8NSObject", "timeIntervalSince1970"]
+- ["CSo8NSObject", "tmpFavorite"]
+- ["CSo8NSObject", "updateFavorite"]
+- !private ["CSo8NSObject", "view"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["CSo8NSObject", "webPageLinkString"]
+- ["PSo16NSObjectProtocol", "Favorite"]
+- !private ["PSo16NSObjectProtocol", "Generator"]
+- !private ["PSo16NSObjectProtocol", "Index"]
+- !private ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSPredicate"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "Realm"]
+- !private ["PSo16NSObjectProtocol", "String2Image"]
+- !private ["PSo16NSObjectProtocol", "SubSequence"]
+- ["PSo16NSObjectProtocol", "Tmp"]
+- !private ["PSo16NSObjectProtocol", "UIImageView"]
+- !private ["PSo16NSObjectProtocol", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSo16NSObjectProtocol", "_Element"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
+- !private ["PSo16NSObjectProtocol", "count"]
+- !private ["PSo16NSObjectProtocol", "createdAt"]
+- !private ["PSo16NSObjectProtocol", "detailImageView"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "fatalError"]
+- ["PSo16NSObjectProtocol", "favorite"]
+- !private ["PSo16NSObjectProtocol", "favoriteButton"]
+- !private ["PSo16NSObjectProtocol", "filter"]
+- !private ["PSo16NSObjectProtocol", "id"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "lowResolutionBase64ImageString"]
+- !private ["PSo16NSObjectProtocol", "playBounceAnimation"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- ["PSo16NSObjectProtocol", "saveImageToCameraRoll"]
+- !private ["PSo16NSObjectProtocol", "sd_setImageWithURL"]
+- !private ["PSo16NSObjectProtocol", "selected"]
+- ["PSo16NSObjectProtocol", "shareButtonTapped"]
+- !private ["PSo16NSObjectProtocol", "standardResolutionBase64ImageString"]
+- !private ["PSo16NSObjectProtocol", "standardResolutionURLString"]
+- !private ["PSo16NSObjectProtocol", "subscript"]
+- !private ["PSo16NSObjectProtocol", "timeIntervalSince1970"]
+- ["PSo16NSObjectProtocol", "tmpFavorite"]
+- ["PSo16NSObjectProtocol", "updateFavorite"]
+- !private ["PSo16NSObjectProtocol", "view"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "webPageLinkString"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo11NSPredicate", "init"]
+- !private ["PSo14NSSecureCoding", "String2Image"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "timeIntervalSince1970"]
+- !private ["CSo8NSString", "String2Image"]
+- !private ["CSo5NSURL", "init"]
+- !private ["C10RealmSwift6Object", "createdAt"]
+- !private ["C10RealmSwift6Object", "deinit"]
+- !private ["C10RealmSwift6Object", "id"]
+- ["C10RealmSwift6Object", "init"]
+- !private ["C10RealmSwift6Object", "lowResolutionBase64ImageString"]
+- !private ["C10RealmSwift6Object", "standardResolutionBase64ImageString"]
+- !private ["C10RealmSwift6Object", "standardResolutionURLString"]
+- !private ["C10RealmSwift6Object", "webPageLinkString"]
+- !private ["Sq", "deinit"]
+- !private ["PSs16OutputStreamType", "String2Image"]
+- ["C6Nekobu25PhotoDetailViewController", "Favorite"]
+- !private ["C6Nekobu25PhotoDetailViewController", "NSDate"]
+- !private ["C6Nekobu25PhotoDetailViewController", "NSPredicate"]
+- !private ["C6Nekobu25PhotoDetailViewController", "NSURL"]
+- !private ["C6Nekobu25PhotoDetailViewController", "Realm"]
+- ["C6Nekobu25PhotoDetailViewController", "Tmp"]
+- ["C6Nekobu25PhotoDetailViewController", "UIButton"]
+- !private ["C6Nekobu25PhotoDetailViewController", "UIImageView"]
+- !private ["C6Nekobu25PhotoDetailViewController", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["C6Nekobu25PhotoDetailViewController", "detailImageView"]
+- ["C6Nekobu25PhotoDetailViewController", "didReceiveMemoryWarning"]
+- !private ["C6Nekobu25PhotoDetailViewController", "fatalError"]
+- ["C6Nekobu25PhotoDetailViewController", "favorite"]
+- !private ["C6Nekobu25PhotoDetailViewController", "favoriteButton"]
+- ["C6Nekobu25PhotoDetailViewController", "init"]
+- !private ["C6Nekobu25PhotoDetailViewController", "print"]
+- ["C6Nekobu25PhotoDetailViewController", "saveImageToCameraRoll"]
+- ["C6Nekobu25PhotoDetailViewController", "shareButtonTapped"]
+- ["C6Nekobu25PhotoDetailViewController", "tmpFavorite"]
+- ["C6Nekobu25PhotoDetailViewController", "updateFavorite"]
+- !private ["C6Nekobu25PhotoDetailViewController", "view"]
+- ["C6Nekobu25PhotoDetailViewController", "viewDidLoad"]
+- ["C6Nekobu25PhotoDetailViewController", ""]
+- !private ["CSo13RLMObjectBase", "createdAt"]
+- !private ["CSo13RLMObjectBase", "deinit"]
+- !private ["CSo13RLMObjectBase", "id"]
+- ["CSo13RLMObjectBase", "init"]
+- !private ["CSo13RLMObjectBase", "lowResolutionBase64ImageString"]
+- !private ["CSo13RLMObjectBase", "standardResolutionBase64ImageString"]
+- !private ["CSo13RLMObjectBase", "standardResolutionURLString"]
+- !private ["CSo13RLMObjectBase", "webPageLinkString"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "Favorite"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "NSDate"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "NSPredicate"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "NSURL"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "Realm"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "Tmp"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "UIImageView"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "detailImageView"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "didReceiveMemoryWarning"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "fatalError"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "favorite"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "favoriteButton"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "init"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "print"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "saveImageToCameraRoll"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "shareButtonTapped"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "tmpFavorite"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "updateFavorite"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "view"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "viewDidLoad"]
+- ["P6Nekobu25RPZoomTransitionAnimating", ""]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs21RandomAccessIndexType", "_DisabledRangeIndex"]
+- !private ["VSs5Range", "deinit"]
+- !private ["C10RealmSwift5Realm", "add"]
+- !private ["C10RealmSwift5Realm", "delete"]
+- !private ["C10RealmSwift5Realm", "init"]
+- !private ["C10RealmSwift5Realm", "objects"]
+- !private ["C10RealmSwift5Realm", "write"]
+- !private ["C10RealmSwift7Results", "Generator"]
+- !private ["C10RealmSwift7Results", "Index"]
+- !private ["C10RealmSwift7Results", "SubSequence"]
+- !private ["C10RealmSwift7Results", "_Element"]
+- !private ["C10RealmSwift7Results", "count"]
+- !private ["C10RealmSwift7Results", "deinit"]
+- !private ["C10RealmSwift7Results", "filter"]
+- !private ["C10RealmSwift7Results", "subscript"]
+- !private ["C10RealmSwift11ResultsBase", "Generator"]
+- !private ["C10RealmSwift11ResultsBase", "Index"]
+- !private ["C10RealmSwift11ResultsBase", "SubSequence"]
+- !private ["C10RealmSwift11ResultsBase", "_Element"]
+- !private ["C10RealmSwift11ResultsBase", "count"]
+- !private ["C10RealmSwift11ResultsBase", "filter"]
+- !private ["C10RealmSwift11ResultsBase", "subscript"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs12SequenceType", "filter"]
+- !private ["PSs12SequenceType", "subscript"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs17SignedIntegerType", "_DisabledRangeIndex"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "_DisabledRangeIndex"]
+- !private ["VSs5Slice", "Generator"]
+- !private ["VSs5Slice", "Index"]
+- !private ["VSs5Slice", "SubSequence"]
+- !private ["VSs5Slice", "_Element"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["PSs10Streamable", "String2Image"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "_DisabledRangeIndex"]
+- !private ["SS", "String2Image"]
+- !private ["SS", "deinit"]
+- !private ["PSs30StringInterpolationConvertible", "String2Image"]
+- !private ["PSs24StringLiteralConvertible", "String2Image"]
+- ["VC6Nekobu28FavoriteDetailViewController3Tmp", "id"]
+- ["VC6Nekobu28FavoriteDetailViewController3Tmp", "init"]
+- ["VC6Nekobu28FavoriteDetailViewController3Tmp", "lowResolutionBase64ImageString"]
+- ["VC6Nekobu28FavoriteDetailViewController3Tmp", "standardResolutionBase64ImageString"]
+- ["VC6Nekobu28FavoriteDetailViewController3Tmp", "standardResolutionURLString"]
+- ["VC6Nekobu28FavoriteDetailViewController3Tmp", "webPageLinkString"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "playBounceAnimation"]
+- !private ["PSo29UIAccessibilityIdentification", "sd_setImageWithURL"]
+- !private ["PSo29UIAccessibilityIdentification", "selected"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "playBounceAnimation"]
+- !private ["PSo12UIAppearance", "sd_setImageWithURL"]
+- !private ["PSo12UIAppearance", "selected"]
+- ["PSo21UIAppearanceContainer", "Favorite"]
+- !private ["PSo21UIAppearanceContainer", "NSDate"]
+- !private ["PSo21UIAppearanceContainer", "NSPredicate"]
+- !private ["PSo21UIAppearanceContainer", "NSURL"]
+- !private ["PSo21UIAppearanceContainer", "Realm"]
+- ["PSo21UIAppearanceContainer", "Tmp"]
+- !private ["PSo21UIAppearanceContainer", "UIImageView"]
+- !private ["PSo21UIAppearanceContainer", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSo21UIAppearanceContainer", "detailImageView"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "fatalError"]
+- ["PSo21UIAppearanceContainer", "favorite"]
+- !private ["PSo21UIAppearanceContainer", "favoriteButton"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "playBounceAnimation"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- ["PSo21UIAppearanceContainer", "saveImageToCameraRoll"]
+- !private ["PSo21UIAppearanceContainer", "sd_setImageWithURL"]
+- !private ["PSo21UIAppearanceContainer", "selected"]
+- ["PSo21UIAppearanceContainer", "shareButtonTapped"]
+- ["PSo21UIAppearanceContainer", "tmpFavorite"]
+- ["PSo21UIAppearanceContainer", "updateFavorite"]
+- !private ["PSo21UIAppearanceContainer", "view"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo8UIButton", "playBounceAnimation"]
+- !private ["CSo8UIButton", "selected"]
+- ["PSo18UIContentContainer", "Favorite"]
+- !private ["PSo18UIContentContainer", "NSDate"]
+- !private ["PSo18UIContentContainer", "NSPredicate"]
+- !private ["PSo18UIContentContainer", "NSURL"]
+- !private ["PSo18UIContentContainer", "Realm"]
+- ["PSo18UIContentContainer", "Tmp"]
+- !private ["PSo18UIContentContainer", "UIImageView"]
+- !private ["PSo18UIContentContainer", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSo18UIContentContainer", "detailImageView"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "fatalError"]
+- ["PSo18UIContentContainer", "favorite"]
+- !private ["PSo18UIContentContainer", "favoriteButton"]
+- ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "print"]
+- ["PSo18UIContentContainer", "saveImageToCameraRoll"]
+- ["PSo18UIContentContainer", "shareButtonTapped"]
+- ["PSo18UIContentContainer", "tmpFavorite"]
+- ["PSo18UIContentContainer", "updateFavorite"]
+- !private ["PSo18UIContentContainer", "view"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "playBounceAnimation"]
+- !private ["CSo9UIControl", "selected"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "playBounceAnimation"]
+- !private ["PSo17UICoordinateSpace", "sd_setImageWithURL"]
+- !private ["PSo17UICoordinateSpace", "selected"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "playBounceAnimation"]
+- !private ["PSo13UIDynamicItem", "sd_setImageWithURL"]
+- !private ["PSo13UIDynamicItem", "selected"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo11UIImageView", "init"]
+- !private ["CSo11UIImageView", "sd_setImageWithURL"]
+- ["CSo11UIResponder", "Favorite"]
+- !private ["CSo11UIResponder", "NSDate"]
+- !private ["CSo11UIResponder", "NSPredicate"]
+- !private ["CSo11UIResponder", "NSURL"]
+- !private ["CSo11UIResponder", "Realm"]
+- ["CSo11UIResponder", "Tmp"]
+- ["CSo11UIResponder", "UIButton"]
+- !private ["CSo11UIResponder", "UIImageView"]
+- !private ["CSo11UIResponder", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["CSo11UIResponder", "detailImageView"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "fatalError"]
+- ["CSo11UIResponder", "favorite"]
+- !private ["CSo11UIResponder", "favoriteButton"]
+- !private ["CSo11UIResponder", "image"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "playBounceAnimation"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "saveImageToCameraRoll"]
+- !private ["CSo11UIResponder", "sd_setImageWithURL"]
+- !private ["CSo11UIResponder", "selected"]
+- ["CSo11UIResponder", "shareButtonTapped"]
+- ["CSo11UIResponder", "tmpFavorite"]
+- ["CSo11UIResponder", "updateFavorite"]
+- !private ["CSo11UIResponder", "view"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "Favorite"]
+- !private ["PSo16UIStateRestoring", "NSDate"]
+- !private ["PSo16UIStateRestoring", "NSPredicate"]
+- !private ["PSo16UIStateRestoring", "NSURL"]
+- !private ["PSo16UIStateRestoring", "Realm"]
+- ["PSo16UIStateRestoring", "Tmp"]
+- !private ["PSo16UIStateRestoring", "UIImageView"]
+- !private ["PSo16UIStateRestoring", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSo16UIStateRestoring", "detailImageView"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "fatalError"]
+- ["PSo16UIStateRestoring", "favorite"]
+- !private ["PSo16UIStateRestoring", "favoriteButton"]
+- ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "print"]
+- ["PSo16UIStateRestoring", "saveImageToCameraRoll"]
+- ["PSo16UIStateRestoring", "shareButtonTapped"]
+- ["PSo16UIStateRestoring", "tmpFavorite"]
+- ["PSo16UIStateRestoring", "updateFavorite"]
+- !private ["PSo16UIStateRestoring", "view"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- ["PSo18UITraitEnvironment", "Favorite"]
+- !private ["PSo18UITraitEnvironment", "NSDate"]
+- !private ["PSo18UITraitEnvironment", "NSPredicate"]
+- !private ["PSo18UITraitEnvironment", "NSURL"]
+- !private ["PSo18UITraitEnvironment", "Realm"]
+- ["PSo18UITraitEnvironment", "Tmp"]
+- !private ["PSo18UITraitEnvironment", "UIImageView"]
+- !private ["PSo18UITraitEnvironment", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["PSo18UITraitEnvironment", "detailImageView"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "fatalError"]
+- ["PSo18UITraitEnvironment", "favorite"]
+- !private ["PSo18UITraitEnvironment", "favoriteButton"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "playBounceAnimation"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- ["PSo18UITraitEnvironment", "saveImageToCameraRoll"]
+- !private ["PSo18UITraitEnvironment", "sd_setImageWithURL"]
+- !private ["PSo18UITraitEnvironment", "selected"]
+- ["PSo18UITraitEnvironment", "shareButtonTapped"]
+- ["PSo18UITraitEnvironment", "tmpFavorite"]
+- ["PSo18UITraitEnvironment", "updateFavorite"]
+- !private ["PSo18UITraitEnvironment", "view"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "playBounceAnimation"]
+- !private ["CSo6UIView", "sd_setImageWithURL"]
+- !private ["CSo6UIView", "selected"]
+- ["CSo16UIViewController", "Favorite"]
+- !private ["CSo16UIViewController", "NSDate"]
+- !private ["CSo16UIViewController", "NSPredicate"]
+- !private ["CSo16UIViewController", "NSURL"]
+- !private ["CSo16UIViewController", "Realm"]
+- ["CSo16UIViewController", "Tmp"]
+- ["CSo16UIViewController", "UIButton"]
+- !private ["CSo16UIViewController", "UIImageView"]
+- !private ["CSo16UIViewController", "UIImageWriteToSavedPhotosAlbum"]
+- !private ["CSo16UIViewController", "detailImageView"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "fatalError"]
+- ["CSo16UIViewController", "favorite"]
+- !private ["CSo16UIViewController", "favoriteButton"]
+- ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "saveImageToCameraRoll"]
+- ["CSo16UIViewController", "shareButtonTapped"]
+- ["CSo16UIViewController", "tmpFavorite"]
+- ["CSo16UIViewController", "updateFavorite"]
+- !private ["CSo16UIViewController", "view"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- !private ["P9Alamofire20URLStringConvertible", "String2Image"]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "String2Image"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "String2Image"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "_DisabledRangeIndex"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "String2Image"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "String2Image"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "String2Image"]
+- !private ["PSs16_CocoaStringType", "String2Image"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs14_Incrementable", "_DisabledRangeIndex"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "_DisabledRangeIndex"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "_DisabledRangeIndex"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "String2Image"]
+- !private ["PSs21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["VSs26_OptionalNilComparisonType", "deinit"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs22_RandomAccessAmbiguity", "_DisabledRangeIndex"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "String2Image"]
+- !private ["PSs12_Reflectable", "_DisabledRangeIndex"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "image"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "layer"]
+- !private ["PSs12_Reflectable", "playBounceAnimation"]
+- !private ["PSs12_Reflectable", "sd_setImageWithURL"]
+- !private ["PSs12_Reflectable", "selected"]
+- !private ["PSs12_Reflectable", "timeIntervalSince1970"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs18_SignedIntegerType", "_DisabledRangeIndex"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "_DisabledRangeIndex"]
+depends-nominal:
+- !private "P10RealmSwift11AddableType"
+- "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- "C6Nekobu8Favorite"
+- "C6Nekobu28FavoriteDetailViewController"
+- !private "PSs16ForwardIndexType"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "SQ"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "P10SwiftyJSON17JSONSubscriptType"
+- !private "P10RealmSwift10MinMaxType"
+- !private "PSs14MirrorPathType"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSDate"
+- !private "CSo7NSError"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo17NSFastEnumeration"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo11NSPredicate"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo5NSURL"
+- "C10RealmSwift6Object"
+- !private "Sq"
+- !private "PSs16OutputStreamType"
+- "C6Nekobu25PhotoDetailViewController"
+- "CSo13RLMObjectBase"
+- "P6Nekobu25RPZoomTransitionAnimating"
+- !private "PSs21RandomAccessIndexType"
+- !private "VSs5Range"
+- !private "C10RealmSwift5Realm"
+- !private "C10RealmSwift7Results"
+- !private "C10RealmSwift11ResultsBase"
+- !private "V10ObjectiveC8Selector"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "VSs5Slice"
+- !private "VSs12StaticString"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- !private "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- "VC6Nekobu28FavoriteDetailViewController3Tmp"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo8UIButton"
+- "PSo18UIContentContainer"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "CSo11UIImageView"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "VSs26_OptionalNilComparisonType"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/Nekobu-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealmUtil.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMListBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMResults.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMProperty.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMMigration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMCollection.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMArray.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/Realm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/MKAnnotationView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDImageCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/WebImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Modules/module.modulemap"
+interface-hash: "8ec75ccbdd6212cb73f8e3478d2efd6d"

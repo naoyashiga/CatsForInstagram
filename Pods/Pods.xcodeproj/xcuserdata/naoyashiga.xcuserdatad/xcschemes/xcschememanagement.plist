@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LINEActivity.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0481CF442325957BD122A8E7B8BF2AA1</key>
+		<key>765435E03B00B93E607AA6C34F93D227</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1E84CBF21E8D8ACDDB14C80965990F28</key>
+		<key>9E17DD50A32F864637B0005FF85412F0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>569FA0CFBEB32D6909E57A3EB784E529</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>96DAE0C979767823F9D09EB65E00BECD</key>
+		<key>D33DE0D28F7598242D239A288E085711</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,7 +15,7 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         interstitial = GADInterstitial(adUnitID: AdConstraints.interstitialAdUnitID)
         interstitial!.delegate = self
         let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
+//        request.testDevices = [kGADSimulatorID]
 //        request.testDevices = [AdConstraints.realDeviceID]
         interstitial!.loadRequest(request)
     }
@@ -35,7 +35,7 @@ extension TopCollectionViewController: GADBannerViewDelegate, GADInterstitialDel
         view.addSubview(adB)
         
         let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
+//        request.testDevices = [kGADSimulatorID]
 //        request.testDevices = [AdConstraints.realDeviceID]
         adB.loadRequest(request)
     }

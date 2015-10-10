@@ -21,7 +21,7 @@ class SettingCollectionViewController: BaseCollectionViewController {
     
     var snsMenu = [
         NSLocalizedString("cellPostToTwitterTitle", tableName: "Setting", comment: ""),
-        NSLocalizedString("cellPostToLineTitle", tableName: "Setting", comment: "")
+//        NSLocalizedString("cellPostToLineTitle", tableName: "Setting", comment: "")
     ]
     
     var shareText = ""

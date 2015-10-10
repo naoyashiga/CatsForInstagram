@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 naoyashiga. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension TopCollectionViewController: RPZoomTransitionAnimating {
 

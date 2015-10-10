@@ -1,0 +1,835 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+- "C6Nekobu27TopCollectionViewController"
+provides-member:
+- ["C6Nekobu27TopCollectionViewController", ""]
+provides-dynamic-lookup:
+- "calculatedPositionSourceImageView"
+- "sourceImageView"
+- "transitionDestinationImageViewFrame"
+depends-top-level:
+- !private "PageMenuConstraint"
+- "UIImageView"
+- !private "+"
+- !private "BooleanLiteralType"
+- "RPZoomTransitionAnimating"
+- !private "TopCollectionViewCell"
+- "CGRect"
+- !private "CGRectMake"
+- "TopCollectionViewController"
+depends-member:
+- !private ["P10RealmSwift11AddableType", "Distance"]
+- !private ["P10RealmSwift11AddableType", "IntegerLiteralType"]
+- !private ["PSs9AnyObject", "CGRectMake"]
+- !private ["PSs9AnyObject", "PageMenuConstraint"]
+- !private ["PSs9AnyObject", "UIImageView"]
+- ["PSs9AnyObject", "calculatedPositionSourceImageView"]
+- !private ["PSs9AnyObject", "cellForItemAtIndexPath"]
+- !private ["PSs9AnyObject", "clipsToBounds"]
+- !private ["PSs9AnyObject", "collectionView"]
+- !private ["PSs9AnyObject", "contentMode"]
+- !private ["PSs9AnyObject", "convertRect"]
+- !private ["PSs9AnyObject", "frame"]
+- !private ["PSs9AnyObject", "image"]
+- !private ["PSs9AnyObject", "indexPathsForSelectedItems"]
+- !private ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "selectedIndexPath"]
+- ["PSs9AnyObject", "sourceImageView"]
+- !private ["PSs9AnyObject", "superview"]
+- !private ["PSs9AnyObject", "thumbNailImageView"]
+- ["PSs9AnyObject", "transitionDestinationImageViewFrame"]
+- !private ["PSs9AnyObject", "userInteractionEnabled"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "first"]
+- !private ["PSs23ArrayLiteralConvertible", "Generator"]
+- !private ["PSs23ArrayLiteralConvertible", "Index"]
+- !private ["PSs23ArrayLiteralConvertible", "SubSequence"]
+- !private ["PSs23ArrayLiteralConvertible", "_Element"]
+- !private ["PSs23ArrayLiteralConvertible", "first"]
+- !private ["VSs10ArraySlice", "Generator"]
+- !private ["VSs10ArraySlice", "Index"]
+- ["C6Nekobu28BaseCollectionViewController", "CGRect"]
+- !private ["C6Nekobu28BaseCollectionViewController", "CGRectMake"]
+- !private ["C6Nekobu28BaseCollectionViewController", "PageMenuConstraint"]
+- !private ["C6Nekobu28BaseCollectionViewController", "TopCollectionViewCell"]
+- ["C6Nekobu28BaseCollectionViewController", "UIImageView"]
+- ["C6Nekobu28BaseCollectionViewController", "calculatedPositionSourceImageView"]
+- !private ["C6Nekobu28BaseCollectionViewController", "collectionView"]
+- !private ["C6Nekobu28BaseCollectionViewController", "selectedIndexPath"]
+- ["C6Nekobu28BaseCollectionViewController", "sourceImageView"]
+- ["C6Nekobu28BaseCollectionViewController", "transitionDestinationImageViewFrame"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "Distance"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
+- !private ["VSC6CGRect", "origin"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["PSs11CVarArgType", "CGRectMake"]
+- !private ["PSs11CVarArgType", "Distance"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "PageMenuConstraint"]
+- !private ["PSs11CVarArgType", "UIImageView"]
+- ["PSs11CVarArgType", "calculatedPositionSourceImageView"]
+- !private ["PSs11CVarArgType", "cellForItemAtIndexPath"]
+- !private ["PSs11CVarArgType", "clipsToBounds"]
+- !private ["PSs11CVarArgType", "collectionView"]
+- !private ["PSs11CVarArgType", "contentMode"]
+- !private ["PSs11CVarArgType", "convertRect"]
+- !private ["PSs11CVarArgType", "frame"]
+- !private ["PSs11CVarArgType", "image"]
+- !private ["PSs11CVarArgType", "indexPathsForSelectedItems"]
+- !private ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "selectedIndexPath"]
+- ["PSs11CVarArgType", "sourceImageView"]
+- !private ["PSs11CVarArgType", "superview"]
+- !private ["PSs11CVarArgType", "thumbNailImageView"]
+- ["PSs11CVarArgType", "transitionDestinationImageViewFrame"]
+- !private ["PSs11CVarArgType", "userInteractionEnabled"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "_Element"]
+- !private ["PSs14CollectionType", "first"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs28CustomDebugStringConvertible", "Generator"]
+- !private ["PSs28CustomDebugStringConvertible", "Index"]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs28CustomDebugStringConvertible", "SubSequence"]
+- !private ["PSs28CustomDebugStringConvertible", "_Element"]
+- !private ["PSs28CustomDebugStringConvertible", "first"]
+- !private ["PSs23CustomStringConvertible", "CGRectMake"]
+- !private ["PSs23CustomStringConvertible", "Distance"]
+- !private ["PSs23CustomStringConvertible", "Generator"]
+- !private ["PSs23CustomStringConvertible", "Index"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "PageMenuConstraint"]
+- !private ["PSs23CustomStringConvertible", "SubSequence"]
+- !private ["PSs23CustomStringConvertible", "UIImageView"]
+- !private ["PSs23CustomStringConvertible", "_Element"]
+- ["PSs23CustomStringConvertible", "calculatedPositionSourceImageView"]
+- !private ["PSs23CustomStringConvertible", "cellForItemAtIndexPath"]
+- !private ["PSs23CustomStringConvertible", "clipsToBounds"]
+- !private ["PSs23CustomStringConvertible", "collectionView"]
+- !private ["PSs23CustomStringConvertible", "contentMode"]
+- !private ["PSs23CustomStringConvertible", "convertRect"]
+- !private ["PSs23CustomStringConvertible", "first"]
+- !private ["PSs23CustomStringConvertible", "frame"]
+- !private ["PSs23CustomStringConvertible", "image"]
+- !private ["PSs23CustomStringConvertible", "indexPathsForSelectedItems"]
+- !private ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "selectedIndexPath"]
+- ["PSs23CustomStringConvertible", "sourceImageView"]
+- !private ["PSs23CustomStringConvertible", "superview"]
+- !private ["PSs23CustomStringConvertible", "thumbNailImageView"]
+- ["PSs23CustomStringConvertible", "transitionDestinationImageViewFrame"]
+- !private ["PSs23CustomStringConvertible", "userInteractionEnabled"]
+- !private ["PSs9Equatable", "CGRectMake"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "PageMenuConstraint"]
+- !private ["PSs9Equatable", "UIImageView"]
+- ["PSs9Equatable", "calculatedPositionSourceImageView"]
+- !private ["PSs9Equatable", "cellForItemAtIndexPath"]
+- !private ["PSs9Equatable", "clipsToBounds"]
+- !private ["PSs9Equatable", "collectionView"]
+- !private ["PSs9Equatable", "contentMode"]
+- !private ["PSs9Equatable", "convertRect"]
+- !private ["PSs9Equatable", "frame"]
+- !private ["PSs9Equatable", "height"]
+- !private ["PSs9Equatable", "image"]
+- !private ["PSs9Equatable", "indexPathsForSelectedItems"]
+- !private ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "origin"]
+- !private ["PSs9Equatable", "selectedIndexPath"]
+- !private ["PSs9Equatable", "size"]
+- ["PSs9Equatable", "sourceImageView"]
+- !private ["PSs9Equatable", "superview"]
+- !private ["PSs9Equatable", "thumbNailImageView"]
+- ["PSs9Equatable", "transitionDestinationImageViewFrame"]
+- !private ["PSs9Equatable", "userInteractionEnabled"]
+- !private ["PSs9Equatable", "width"]
+- !private ["PSs9Equatable", "x"]
+- !private ["PSs9Equatable", "y"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSo21GADBannerViewDelegate", "CGRectMake"]
+- !private ["PSo21GADBannerViewDelegate", "PageMenuConstraint"]
+- !private ["PSo21GADBannerViewDelegate", "UIImageView"]
+- ["PSo21GADBannerViewDelegate", "calculatedPositionSourceImageView"]
+- !private ["PSo21GADBannerViewDelegate", "collectionView"]
+- !private ["PSo21GADBannerViewDelegate", "selectedIndexPath"]
+- ["PSo21GADBannerViewDelegate", "sourceImageView"]
+- ["PSo21GADBannerViewDelegate", "transitionDestinationImageViewFrame"]
+- !private ["PSo23GADInterstitialDelegate", "CGRectMake"]
+- !private ["PSo23GADInterstitialDelegate", "PageMenuConstraint"]
+- !private ["PSo23GADInterstitialDelegate", "UIImageView"]
+- ["PSo23GADInterstitialDelegate", "calculatedPositionSourceImageView"]
+- !private ["PSo23GADInterstitialDelegate", "collectionView"]
+- !private ["PSo23GADInterstitialDelegate", "selectedIndexPath"]
+- ["PSo23GADInterstitialDelegate", "sourceImageView"]
+- ["PSo23GADInterstitialDelegate", "transitionDestinationImageViewFrame"]
+- !private ["PSs13GeneratorType", "Element"]
+- !private ["PSs8Hashable", "CGRectMake"]
+- !private ["PSs8Hashable", "Distance"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "PageMenuConstraint"]
+- !private ["PSs8Hashable", "UIImageView"]
+- ["PSs8Hashable", "calculatedPositionSourceImageView"]
+- !private ["PSs8Hashable", "cellForItemAtIndexPath"]
+- !private ["PSs8Hashable", "clipsToBounds"]
+- !private ["PSs8Hashable", "collectionView"]
+- !private ["PSs8Hashable", "contentMode"]
+- !private ["PSs8Hashable", "convertRect"]
+- !private ["PSs8Hashable", "frame"]
+- !private ["PSs8Hashable", "image"]
+- !private ["PSs8Hashable", "indexPathsForSelectedItems"]
+- !private ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "selectedIndexPath"]
+- ["PSs8Hashable", "sourceImageView"]
+- !private ["PSs8Hashable", "superview"]
+- !private ["PSs8Hashable", "thumbNailImageView"]
+- ["PSs8Hashable", "transitionDestinationImageViewFrame"]
+- !private ["PSs8Hashable", "userInteractionEnabled"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "_Element"]
+- !private ["PSs9Indexable", "first"]
+- !private ["VSs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "Distance"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "Distance"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "Distance"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "Distance"]
+- !private ["P10SwiftyJSON17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P10RealmSwift10MinMaxType", "Distance"]
+- !private ["P10RealmSwift10MinMaxType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "Distance"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs21MutableCollectionType", "Generator"]
+- !private ["PSs21MutableCollectionType", "Index"]
+- !private ["PSs21MutableCollectionType", "SubSequence"]
+- !private ["PSs21MutableCollectionType", "_Element"]
+- !private ["PSs21MutableCollectionType", "first"]
+- !private ["PSs16MutableIndexable", "Generator"]
+- !private ["PSs16MutableIndexable", "Index"]
+- !private ["PSs16MutableIndexable", "SubSequence"]
+- !private ["PSs16MutableIndexable", "_Element"]
+- !private ["PSs16MutableIndexable", "first"]
+- !private ["PSs16MutableSliceable", "Generator"]
+- !private ["PSs16MutableSliceable", "Index"]
+- !private ["PSs16MutableSliceable", "SubSequence"]
+- !private ["PSs16MutableSliceable", "_Element"]
+- !private ["PSs16MutableSliceable", "first"]
+- !private ["PSo8NSCoding", "CGRectMake"]
+- !private ["PSo8NSCoding", "PageMenuConstraint"]
+- !private ["PSo8NSCoding", "UIImageView"]
+- ["PSo8NSCoding", "calculatedPositionSourceImageView"]
+- !private ["PSo8NSCoding", "cellForItemAtIndexPath"]
+- !private ["PSo8NSCoding", "clipsToBounds"]
+- !private ["PSo8NSCoding", "collectionView"]
+- !private ["PSo8NSCoding", "contentMode"]
+- !private ["PSo8NSCoding", "convertRect"]
+- !private ["PSo8NSCoding", "frame"]
+- !private ["PSo8NSCoding", "image"]
+- !private ["PSo8NSCoding", "indexPathsForSelectedItems"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "selectedIndexPath"]
+- ["PSo8NSCoding", "sourceImageView"]
+- !private ["PSo8NSCoding", "superview"]
+- !private ["PSo8NSCoding", "thumbNailImageView"]
+- ["PSo8NSCoding", "transitionDestinationImageViewFrame"]
+- !private ["PSo8NSCoding", "userInteractionEnabled"]
+- !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
+- !private ["PSo26NSExtensionRequestHandling", "PageMenuConstraint"]
+- !private ["PSo26NSExtensionRequestHandling", "UIImageView"]
+- ["PSo26NSExtensionRequestHandling", "calculatedPositionSourceImageView"]
+- !private ["PSo26NSExtensionRequestHandling", "collectionView"]
+- !private ["PSo26NSExtensionRequestHandling", "selectedIndexPath"]
+- ["PSo26NSExtensionRequestHandling", "sourceImageView"]
+- ["PSo26NSExtensionRequestHandling", "transitionDestinationImageViewFrame"]
+- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRectMake"]
+- !private ["CSo8NSObject", "PageMenuConstraint"]
+- !private ["CSo8NSObject", "TopCollectionViewCell"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "calculatedPositionSourceImageView"]
+- !private ["CSo8NSObject", "cellForItemAtIndexPath"]
+- !private ["CSo8NSObject", "clipsToBounds"]
+- !private ["CSo8NSObject", "collectionView"]
+- !private ["CSo8NSObject", "contentMode"]
+- !private ["CSo8NSObject", "convertRect"]
+- !private ["CSo8NSObject", "frame"]
+- !private ["CSo8NSObject", "image"]
+- !private ["CSo8NSObject", "indexPathsForSelectedItems"]
+- !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "selectedIndexPath"]
+- ["CSo8NSObject", "sourceImageView"]
+- !private ["CSo8NSObject", "superview"]
+- !private ["CSo8NSObject", "thumbNailImageView"]
+- ["CSo8NSObject", "transitionDestinationImageViewFrame"]
+- !private ["CSo8NSObject", "userInteractionEnabled"]
+- !private ["PSo16NSObjectProtocol", "CGRectMake"]
+- !private ["PSo16NSObjectProtocol", "PageMenuConstraint"]
+- !private ["PSo16NSObjectProtocol", "UIImageView"]
+- ["PSo16NSObjectProtocol", "calculatedPositionSourceImageView"]
+- !private ["PSo16NSObjectProtocol", "cellForItemAtIndexPath"]
+- !private ["PSo16NSObjectProtocol", "clipsToBounds"]
+- !private ["PSo16NSObjectProtocol", "collectionView"]
+- !private ["PSo16NSObjectProtocol", "contentMode"]
+- !private ["PSo16NSObjectProtocol", "convertRect"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- !private ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "indexPathsForSelectedItems"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "selectedIndexPath"]
+- ["PSo16NSObjectProtocol", "sourceImageView"]
+- !private ["PSo16NSObjectProtocol", "superview"]
+- !private ["PSo16NSObjectProtocol", "thumbNailImageView"]
+- ["PSo16NSObjectProtocol", "transitionDestinationImageViewFrame"]
+- !private ["PSo16NSObjectProtocol", "userInteractionEnabled"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["V6Nekobu18PageMenuConstraint", "menuHeight"]
+- ["C6Nekobu29PhotoCollectionViewController", "CGRect"]
+- !private ["C6Nekobu29PhotoCollectionViewController", "CGRectMake"]
+- !private ["C6Nekobu29PhotoCollectionViewController", "PageMenuConstraint"]
+- !private ["C6Nekobu29PhotoCollectionViewController", "TopCollectionViewCell"]
+- ["C6Nekobu29PhotoCollectionViewController", "UIImageView"]
+- ["C6Nekobu29PhotoCollectionViewController", "calculatedPositionSourceImageView"]
+- !private ["C6Nekobu29PhotoCollectionViewController", "collectionView"]
+- !private ["C6Nekobu29PhotoCollectionViewController", "selectedIndexPath"]
+- ["C6Nekobu29PhotoCollectionViewController", "sourceImageView"]
+- ["C6Nekobu29PhotoCollectionViewController", "transitionDestinationImageViewFrame"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "CGRectMake"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "PageMenuConstraint"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "UIImageView"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "calculatedPositionSourceImageView"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "collectionView"]
+- !private ["P6Nekobu25RPZoomTransitionAnimating", "selectedIndexPath"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "sourceImageView"]
+- ["P6Nekobu25RPZoomTransitionAnimating", "transitionDestinationImageViewFrame"]
+- ["P6Nekobu25RPZoomTransitionAnimating", ""]
+- !private ["PSs21RandomAccessIndexType", "Distance"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "_Element"]
+- !private ["PSs30RangeReplaceableCollectionType", "first"]
+- !private ["PSs12SequenceType", "Element"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "_Element"]
+- !private ["PSs12SequenceType", "first"]
+- !private ["PSs17SignedIntegerType", "Distance"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "Distance"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Strideable", "Distance"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- !private ["C6Nekobu21TopCollectionViewCell", "thumbNailImageView"]
+- ["C6Nekobu27TopCollectionViewController", "CGRect"]
+- !private ["C6Nekobu27TopCollectionViewController", "CGRectMake"]
+- !private ["C6Nekobu27TopCollectionViewController", "PageMenuConstraint"]
+- !private ["C6Nekobu27TopCollectionViewController", "TopCollectionViewCell"]
+- ["C6Nekobu27TopCollectionViewController", "UIImageView"]
+- ["C6Nekobu27TopCollectionViewController", "calculatedPositionSourceImageView"]
+- !private ["C6Nekobu27TopCollectionViewController", "collectionView"]
+- ["C6Nekobu27TopCollectionViewController", "deinit"]
+- !private ["C6Nekobu27TopCollectionViewController", "selectedIndexPath"]
+- ["C6Nekobu27TopCollectionViewController", "sourceImageView"]
+- ["C6Nekobu27TopCollectionViewController", "transitionDestinationImageViewFrame"]
+- !private ["PSo29UIAccessibilityIdentification", "cellForItemAtIndexPath"]
+- !private ["PSo29UIAccessibilityIdentification", "clipsToBounds"]
+- !private ["PSo29UIAccessibilityIdentification", "contentMode"]
+- !private ["PSo29UIAccessibilityIdentification", "convertRect"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo29UIAccessibilityIdentification", "image"]
+- !private ["PSo29UIAccessibilityIdentification", "indexPathsForSelectedItems"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "superview"]
+- !private ["PSo29UIAccessibilityIdentification", "thumbNailImageView"]
+- !private ["PSo29UIAccessibilityIdentification", "userInteractionEnabled"]
+- !private ["PSo12UIAppearance", "cellForItemAtIndexPath"]
+- !private ["PSo12UIAppearance", "clipsToBounds"]
+- !private ["PSo12UIAppearance", "contentMode"]
+- !private ["PSo12UIAppearance", "convertRect"]
+- !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo12UIAppearance", "image"]
+- !private ["PSo12UIAppearance", "indexPathsForSelectedItems"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "superview"]
+- !private ["PSo12UIAppearance", "thumbNailImageView"]
+- !private ["PSo12UIAppearance", "userInteractionEnabled"]
+- !private ["PSo21UIAppearanceContainer", "CGRectMake"]
+- !private ["PSo21UIAppearanceContainer", "PageMenuConstraint"]
+- !private ["PSo21UIAppearanceContainer", "UIImageView"]
+- ["PSo21UIAppearanceContainer", "calculatedPositionSourceImageView"]
+- !private ["PSo21UIAppearanceContainer", "cellForItemAtIndexPath"]
+- !private ["PSo21UIAppearanceContainer", "clipsToBounds"]
+- !private ["PSo21UIAppearanceContainer", "collectionView"]
+- !private ["PSo21UIAppearanceContainer", "contentMode"]
+- !private ["PSo21UIAppearanceContainer", "convertRect"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- !private ["PSo21UIAppearanceContainer", "image"]
+- !private ["PSo21UIAppearanceContainer", "indexPathsForSelectedItems"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "selectedIndexPath"]
+- ["PSo21UIAppearanceContainer", "sourceImageView"]
+- !private ["PSo21UIAppearanceContainer", "superview"]
+- !private ["PSo21UIAppearanceContainer", "thumbNailImageView"]
+- ["PSo21UIAppearanceContainer", "transitionDestinationImageViewFrame"]
+- !private ["PSo21UIAppearanceContainer", "userInteractionEnabled"]
+- !private ["CSo24UICollectionReusableView", "thumbNailImageView"]
+- !private ["CSo16UICollectionView", "cellForItemAtIndexPath"]
+- !private ["CSo16UICollectionView", "indexPathsForSelectedItems"]
+- !private ["CSo16UICollectionView", "superview"]
+- !private ["CSo20UICollectionViewCell", "thumbNailImageView"]
+- ["CSo26UICollectionViewController", "CGRect"]
+- !private ["CSo26UICollectionViewController", "CGRectMake"]
+- !private ["CSo26UICollectionViewController", "PageMenuConstraint"]
+- !private ["CSo26UICollectionViewController", "TopCollectionViewCell"]
+- ["CSo26UICollectionViewController", "UIImageView"]
+- ["CSo26UICollectionViewController", "calculatedPositionSourceImageView"]
+- !private ["CSo26UICollectionViewController", "collectionView"]
+- !private ["CSo26UICollectionViewController", "selectedIndexPath"]
+- ["CSo26UICollectionViewController", "sourceImageView"]
+- ["CSo26UICollectionViewController", "transitionDestinationImageViewFrame"]
+- !private ["PSo26UICollectionViewDataSource", "CGRectMake"]
+- !private ["PSo26UICollectionViewDataSource", "PageMenuConstraint"]
+- !private ["PSo26UICollectionViewDataSource", "UIImageView"]
+- ["PSo26UICollectionViewDataSource", "calculatedPositionSourceImageView"]
+- !private ["PSo26UICollectionViewDataSource", "collectionView"]
+- !private ["PSo26UICollectionViewDataSource", "selectedIndexPath"]
+- ["PSo26UICollectionViewDataSource", "sourceImageView"]
+- ["PSo26UICollectionViewDataSource", "transitionDestinationImageViewFrame"]
+- !private ["PSo24UICollectionViewDelegate", "CGRectMake"]
+- !private ["PSo24UICollectionViewDelegate", "PageMenuConstraint"]
+- !private ["PSo24UICollectionViewDelegate", "UIImageView"]
+- ["PSo24UICollectionViewDelegate", "calculatedPositionSourceImageView"]
+- !private ["PSo24UICollectionViewDelegate", "collectionView"]
+- !private ["PSo24UICollectionViewDelegate", "selectedIndexPath"]
+- ["PSo24UICollectionViewDelegate", "sourceImageView"]
+- ["PSo24UICollectionViewDelegate", "transitionDestinationImageViewFrame"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "CGRectMake"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "PageMenuConstraint"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "UIImageView"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "calculatedPositionSourceImageView"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "selectedIndexPath"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "sourceImageView"]
+- ["PSo34UICollectionViewDelegateFlowLayout", "transitionDestinationImageViewFrame"]
+- !private ["PSo18UIContentContainer", "CGRectMake"]
+- !private ["PSo18UIContentContainer", "PageMenuConstraint"]
+- !private ["PSo18UIContentContainer", "UIImageView"]
+- ["PSo18UIContentContainer", "calculatedPositionSourceImageView"]
+- !private ["PSo18UIContentContainer", "collectionView"]
+- !private ["PSo18UIContentContainer", "selectedIndexPath"]
+- ["PSo18UIContentContainer", "sourceImageView"]
+- ["PSo18UIContentContainer", "transitionDestinationImageViewFrame"]
+- !private ["PSo17UICoordinateSpace", "cellForItemAtIndexPath"]
+- !private ["PSo17UICoordinateSpace", "clipsToBounds"]
+- !private ["PSo17UICoordinateSpace", "contentMode"]
+- !private ["PSo17UICoordinateSpace", "convertRect"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo17UICoordinateSpace", "image"]
+- !private ["PSo17UICoordinateSpace", "indexPathsForSelectedItems"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "superview"]
+- !private ["PSo17UICoordinateSpace", "thumbNailImageView"]
+- !private ["PSo17UICoordinateSpace", "userInteractionEnabled"]
+- !private ["PSo13UIDynamicItem", "cellForItemAtIndexPath"]
+- !private ["PSo13UIDynamicItem", "clipsToBounds"]
+- !private ["PSo13UIDynamicItem", "contentMode"]
+- !private ["PSo13UIDynamicItem", "convertRect"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "image"]
+- !private ["PSo13UIDynamicItem", "indexPathsForSelectedItems"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "superview"]
+- !private ["PSo13UIDynamicItem", "thumbNailImageView"]
+- !private ["PSo13UIDynamicItem", "userInteractionEnabled"]
+- !private ["CSo11UIImageView", "clipsToBounds"]
+- !private ["CSo11UIImageView", "contentMode"]
+- !private ["CSo11UIImageView", "convertRect"]
+- !private ["CSo11UIImageView", "frame"]
+- !private ["CSo11UIImageView", "image"]
+- !private ["CSo11UIImageView", "init"]
+- !private ["CSo11UIImageView", "userInteractionEnabled"]
+- ["CSo11UIResponder", "CGRect"]
+- !private ["CSo11UIResponder", "CGRectMake"]
+- !private ["CSo11UIResponder", "PageMenuConstraint"]
+- !private ["CSo11UIResponder", "TopCollectionViewCell"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "calculatedPositionSourceImageView"]
+- !private ["CSo11UIResponder", "cellForItemAtIndexPath"]
+- !private ["CSo11UIResponder", "clipsToBounds"]
+- !private ["CSo11UIResponder", "collectionView"]
+- !private ["CSo11UIResponder", "contentMode"]
+- !private ["CSo11UIResponder", "convertRect"]
+- !private ["CSo11UIResponder", "frame"]
+- !private ["CSo11UIResponder", "image"]
+- !private ["CSo11UIResponder", "indexPathsForSelectedItems"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "selectedIndexPath"]
+- ["CSo11UIResponder", "sourceImageView"]
+- !private ["CSo11UIResponder", "superview"]
+- !private ["CSo11UIResponder", "thumbNailImageView"]
+- ["CSo11UIResponder", "transitionDestinationImageViewFrame"]
+- !private ["CSo11UIResponder", "userInteractionEnabled"]
+- !private ["CSo12UIScrollView", "cellForItemAtIndexPath"]
+- !private ["CSo12UIScrollView", "indexPathsForSelectedItems"]
+- !private ["CSo12UIScrollView", "superview"]
+- !private ["PSo20UIScrollViewDelegate", "CGRectMake"]
+- !private ["PSo20UIScrollViewDelegate", "PageMenuConstraint"]
+- !private ["PSo20UIScrollViewDelegate", "UIImageView"]
+- ["PSo20UIScrollViewDelegate", "calculatedPositionSourceImageView"]
+- !private ["PSo20UIScrollViewDelegate", "collectionView"]
+- !private ["PSo20UIScrollViewDelegate", "selectedIndexPath"]
+- ["PSo20UIScrollViewDelegate", "sourceImageView"]
+- ["PSo20UIScrollViewDelegate", "transitionDestinationImageViewFrame"]
+- !private ["PSo16UIStateRestoring", "CGRectMake"]
+- !private ["PSo16UIStateRestoring", "PageMenuConstraint"]
+- !private ["PSo16UIStateRestoring", "UIImageView"]
+- ["PSo16UIStateRestoring", "calculatedPositionSourceImageView"]
+- !private ["PSo16UIStateRestoring", "collectionView"]
+- !private ["PSo16UIStateRestoring", "selectedIndexPath"]
+- ["PSo16UIStateRestoring", "sourceImageView"]
+- ["PSo16UIStateRestoring", "transitionDestinationImageViewFrame"]
+- !private ["PSo18UITraitEnvironment", "CGRectMake"]
+- !private ["PSo18UITraitEnvironment", "PageMenuConstraint"]
+- !private ["PSo18UITraitEnvironment", "UIImageView"]
+- ["PSo18UITraitEnvironment", "calculatedPositionSourceImageView"]
+- !private ["PSo18UITraitEnvironment", "cellForItemAtIndexPath"]
+- !private ["PSo18UITraitEnvironment", "clipsToBounds"]
+- !private ["PSo18UITraitEnvironment", "collectionView"]
+- !private ["PSo18UITraitEnvironment", "contentMode"]
+- !private ["PSo18UITraitEnvironment", "convertRect"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- !private ["PSo18UITraitEnvironment", "image"]
+- !private ["PSo18UITraitEnvironment", "indexPathsForSelectedItems"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "selectedIndexPath"]
+- ["PSo18UITraitEnvironment", "sourceImageView"]
+- !private ["PSo18UITraitEnvironment", "superview"]
+- !private ["PSo18UITraitEnvironment", "thumbNailImageView"]
+- ["PSo18UITraitEnvironment", "transitionDestinationImageViewFrame"]
+- !private ["PSo18UITraitEnvironment", "userInteractionEnabled"]
+- !private ["CSo6UIView", "cellForItemAtIndexPath"]
+- !private ["CSo6UIView", "clipsToBounds"]
+- !private ["CSo6UIView", "contentMode"]
+- !private ["CSo6UIView", "convertRect"]
+- !private ["CSo6UIView", "frame"]
+- !private ["CSo6UIView", "image"]
+- !private ["CSo6UIView", "indexPathsForSelectedItems"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "superview"]
+- !private ["CSo6UIView", "thumbNailImageView"]
+- !private ["CSo6UIView", "userInteractionEnabled"]
+- ["CSo16UIViewController", "CGRect"]
+- !private ["CSo16UIViewController", "CGRectMake"]
+- !private ["CSo16UIViewController", "PageMenuConstraint"]
+- !private ["CSo16UIViewController", "TopCollectionViewCell"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "calculatedPositionSourceImageView"]
+- !private ["CSo16UIViewController", "collectionView"]
+- !private ["CSo16UIViewController", "selectedIndexPath"]
+- ["CSo16UIViewController", "sourceImageView"]
+- ["CSo16UIViewController", "transitionDestinationImageViewFrame"]
+- !private ["PSo37UIViewControllerTransitioningDelegate", "CGRectMake"]
+- !private ["PSo37UIViewControllerTransitioningDelegate", "PageMenuConstraint"]
+- !private ["PSo37UIViewControllerTransitioningDelegate", "UIImageView"]
+- ["PSo37UIViewControllerTransitioningDelegate", "calculatedPositionSourceImageView"]
+- !private ["PSo37UIViewControllerTransitioningDelegate", "collectionView"]
+- !private ["PSo37UIViewControllerTransitioningDelegate", "selectedIndexPath"]
+- ["PSo37UIViewControllerTransitioningDelegate", "sourceImageView"]
+- ["PSo37UIViewControllerTransitioningDelegate", "transitionDestinationImageViewFrame"]
+- !private ["PSs10_ArrayType", "Generator"]
+- !private ["PSs10_ArrayType", "Index"]
+- !private ["PSs10_ArrayType", "SubSequence"]
+- !private ["PSs10_ArrayType", "_Element"]
+- !private ["PSs10_ArrayType", "first"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs24_DestructorSafeContainer", "Generator"]
+- !private ["PSs24_DestructorSafeContainer", "Index"]
+- !private ["PSs24_DestructorSafeContainer", "SubSequence"]
+- !private ["PSs24_DestructorSafeContainer", "_Element"]
+- !private ["PSs24_DestructorSafeContainer", "first"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "Distance"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "Distance"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "Distance"]
+- !private ["PSs21_ObjectiveCBridgeable", "Generator"]
+- !private ["PSs21_ObjectiveCBridgeable", "Index"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["PSs21_ObjectiveCBridgeable", "_Element"]
+- !private ["PSs21_ObjectiveCBridgeable", "first"]
+- !private ["PSs22_RandomAccessAmbiguity", "Distance"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "Generator"]
+- !private ["PSs12_Reflectable", "Index"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "SubSequence"]
+- !private ["PSs12_Reflectable", "_Element"]
+- !private ["PSs12_Reflectable", "cellForItemAtIndexPath"]
+- !private ["PSs12_Reflectable", "clipsToBounds"]
+- !private ["PSs12_Reflectable", "contentMode"]
+- !private ["PSs12_Reflectable", "convertRect"]
+- !private ["PSs12_Reflectable", "first"]
+- !private ["PSs12_Reflectable", "frame"]
+- !private ["PSs12_Reflectable", "height"]
+- !private ["PSs12_Reflectable", "image"]
+- !private ["PSs12_Reflectable", "indexPathsForSelectedItems"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "origin"]
+- !private ["PSs12_Reflectable", "size"]
+- !private ["PSs12_Reflectable", "superview"]
+- !private ["PSs12_Reflectable", "thumbNailImageView"]
+- !private ["PSs12_Reflectable", "userInteractionEnabled"]
+- !private ["PSs12_Reflectable", "width"]
+- !private ["PSs12_Reflectable", "x"]
+- !private ["PSs12_Reflectable", "y"]
+- !private ["PSs18_SignedIntegerType", "Distance"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "Distance"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- !private "P10RealmSwift11AddableType"
+- "PSs9AnyObject"
+- !private "Sa"
+- !private "PSs23ArrayLiteralConvertible"
+- !private "VSs10ArraySlice"
+- "C6Nekobu28BaseCollectionViewController"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "PSs11CVarArgType"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- !private "PSs16ForwardIndexType"
+- "PSo21GADBannerViewDelegate"
+- "PSo23GADInterstitialDelegate"
+- !private "PSs13GeneratorType"
+- "PSs8Hashable"
+- !private "PSs9Indexable"
+- !private "VSs17IndexingGenerator"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "P10SwiftyJSON17JSONSubscriptType"
+- !private "P10RealmSwift10MinMaxType"
+- !private "PSs14MirrorPathType"
+- !private "PSs21MutableCollectionType"
+- !private "PSs16MutableIndexable"
+- !private "PSs16MutableSliceable"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "V6Nekobu18PageMenuConstraint"
+- "C6Nekobu29PhotoCollectionViewController"
+- "P6Nekobu25RPZoomTransitionAnimating"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Strideable"
+- !private "C6Nekobu21TopCollectionViewCell"
+- "C6Nekobu27TopCollectionViewController"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo24UICollectionReusableView"
+- !private "CSo16UICollectionView"
+- !private "CSo20UICollectionViewCell"
+- "CSo26UICollectionViewController"
+- "PSo26UICollectionViewDataSource"
+- "PSo24UICollectionViewDelegate"
+- "PSo34UICollectionViewDelegateFlowLayout"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "CSo11UIImageView"
+- "CSo11UIResponder"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "PSo37UIViewControllerTransitioningDelegate"
+- !private "PSs10_ArrayType"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs24_DestructorSafeContainer"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/Nekobu-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMRealmUtil.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMListBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMResults.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMRealm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMProperty.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMMigration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMCollection.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/RLMArray.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Headers/Realm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/Realm.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Products/Debug-iphoneos/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/MKAnnotationView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDImageCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/WebImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Modules/module.modulemap"
+interface-hash: "a425c1c9db01ff7d8591d8b5746f68df"

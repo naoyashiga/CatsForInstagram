@@ -1,0 +1,525 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ReviewViewController"
+provides-nominal:
+- "C6Nekobu20ReviewViewController"
+provides-member:
+- ["C6Nekobu20ReviewViewController", ""]
+provides-dynamic-lookup:
+- "cancelButton"
+- "prefersStatusBarHidden"
+- "reviewButton"
+- "cacelButtonTapped"
+- "viewDidLoad"
+- "openAppStore"
+- "reviewTextImageView"
+- "reviewButtonTapped"
+- "didReceiveMemoryWarning"
+- "transitionToReviewPage"
+depends-top-level:
+- "UIButton"
+- "UIImageView"
+- !private "AppConstraints"
+- !private "ReviewManager"
+- "ReviewViewController"
+- !private "NSURL"
+- !private "BooleanLiteralType"
+- "UIViewController"
+- !private "+"
+- !private "UIApplication"
+- "String"
+- "Bool"
+depends-member:
+- !private ["PSs9AnyObject", "AppConstraints"]
+- !private ["PSs9AnyObject", "NSURL"]
+- !private ["PSs9AnyObject", "ReviewManager"]
+- !private ["PSs9AnyObject", "UIApplication"]
+- ["PSs9AnyObject", "cacelButtonTapped"]
+- ["PSs9AnyObject", "cancelButton"]
+- ["PSs9AnyObject", "didReceiveMemoryWarning"]
+- !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
+- ["PSs9AnyObject", "init"]
+- ["PSs9AnyObject", "openAppStore"]
+- !private ["PSs9AnyObject", "openURL"]
+- ["PSs9AnyObject", "prefersStatusBarHidden"]
+- !private ["PSs9AnyObject", "presentingViewController"]
+- ["PSs9AnyObject", "reviewButton"]
+- ["PSs9AnyObject", "reviewButtonTapped"]
+- ["PSs9AnyObject", "reviewTextImageView"]
+- !private ["PSs9AnyObject", "sharedApplication"]
+- ["PSs9AnyObject", "transitionToReviewPage"]
+- !private ["PSs9AnyObject", "updateReviewStatus"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["V6Nekobu14AppConstraints", "appID"]
+- !private ["V6Nekobu14AppConstraints", "reviewURLString"]
+- !private ["C6Nekobu22BaseUserDefaultManager", "updateReviewStatus"]
+- !private ["PSs11CVarArgType", "AppConstraints"]
+- !private ["PSs11CVarArgType", "NSURL"]
+- !private ["PSs11CVarArgType", "ReviewManager"]
+- !private ["PSs11CVarArgType", "UIApplication"]
+- ["PSs11CVarArgType", "cacelButtonTapped"]
+- ["PSs11CVarArgType", "cancelButton"]
+- ["PSs11CVarArgType", "didReceiveMemoryWarning"]
+- !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
+- ["PSs11CVarArgType", "init"]
+- ["PSs11CVarArgType", "openAppStore"]
+- !private ["PSs11CVarArgType", "openURL"]
+- ["PSs11CVarArgType", "prefersStatusBarHidden"]
+- !private ["PSs11CVarArgType", "presentingViewController"]
+- ["PSs11CVarArgType", "reviewButton"]
+- ["PSs11CVarArgType", "reviewButtonTapped"]
+- ["PSs11CVarArgType", "reviewTextImageView"]
+- !private ["PSs11CVarArgType", "sharedApplication"]
+- ["PSs11CVarArgType", "transitionToReviewPage"]
+- !private ["PSs11CVarArgType", "updateReviewStatus"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["PSs23CustomStringConvertible", "AppConstraints"]
+- !private ["PSs23CustomStringConvertible", "NSURL"]
+- !private ["PSs23CustomStringConvertible", "ReviewManager"]
+- !private ["PSs23CustomStringConvertible", "UIApplication"]
+- ["PSs23CustomStringConvertible", "cacelButtonTapped"]
+- ["PSs23CustomStringConvertible", "cancelButton"]
+- ["PSs23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
+- ["PSs23CustomStringConvertible", "init"]
+- ["PSs23CustomStringConvertible", "openAppStore"]
+- !private ["PSs23CustomStringConvertible", "openURL"]
+- ["PSs23CustomStringConvertible", "prefersStatusBarHidden"]
+- !private ["PSs23CustomStringConvertible", "presentingViewController"]
+- ["PSs23CustomStringConvertible", "reviewButton"]
+- ["PSs23CustomStringConvertible", "reviewButtonTapped"]
+- ["PSs23CustomStringConvertible", "reviewTextImageView"]
+- !private ["PSs23CustomStringConvertible", "sharedApplication"]
+- ["PSs23CustomStringConvertible", "transitionToReviewPage"]
+- !private ["PSs23CustomStringConvertible", "updateReviewStatus"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "AppConstraints"]
+- !private ["PSs9Equatable", "NSURL"]
+- !private ["PSs9Equatable", "ReviewManager"]
+- !private ["PSs9Equatable", "UIApplication"]
+- ["PSs9Equatable", "cacelButtonTapped"]
+- ["PSs9Equatable", "cancelButton"]
+- ["PSs9Equatable", "didReceiveMemoryWarning"]
+- !private ["PSs9Equatable", "dismissViewControllerAnimated"]
+- ["PSs9Equatable", "init"]
+- ["PSs9Equatable", "openAppStore"]
+- !private ["PSs9Equatable", "openURL"]
+- ["PSs9Equatable", "prefersStatusBarHidden"]
+- !private ["PSs9Equatable", "presentingViewController"]
+- ["PSs9Equatable", "reviewButton"]
+- ["PSs9Equatable", "reviewButtonTapped"]
+- ["PSs9Equatable", "reviewTextImageView"]
+- !private ["PSs9Equatable", "sharedApplication"]
+- ["PSs9Equatable", "transitionToReviewPage"]
+- !private ["PSs9Equatable", "updateReviewStatus"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "AppConstraints"]
+- !private ["PSs8Hashable", "NSURL"]
+- !private ["PSs8Hashable", "ReviewManager"]
+- !private ["PSs8Hashable", "UIApplication"]
+- ["PSs8Hashable", "cacelButtonTapped"]
+- ["PSs8Hashable", "cancelButton"]
+- ["PSs8Hashable", "didReceiveMemoryWarning"]
+- !private ["PSs8Hashable", "dismissViewControllerAnimated"]
+- ["PSs8Hashable", "init"]
+- ["PSs8Hashable", "openAppStore"]
+- !private ["PSs8Hashable", "openURL"]
+- ["PSs8Hashable", "prefersStatusBarHidden"]
+- !private ["PSs8Hashable", "presentingViewController"]
+- ["PSs8Hashable", "reviewButton"]
+- ["PSs8Hashable", "reviewButtonTapped"]
+- ["PSs8Hashable", "reviewTextImageView"]
+- !private ["PSs8Hashable", "sharedApplication"]
+- ["PSs8Hashable", "transitionToReviewPage"]
+- !private ["PSs8Hashable", "updateReviewStatus"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "AppConstraints"]
+- !private ["PSo8NSCoding", "NSURL"]
+- !private ["PSo8NSCoding", "ReviewManager"]
+- !private ["PSo8NSCoding", "UIApplication"]
+- ["PSo8NSCoding", "cacelButtonTapped"]
+- ["PSo8NSCoding", "cancelButton"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "openAppStore"]
+- ["PSo8NSCoding", "prefersStatusBarHidden"]
+- !private ["PSo8NSCoding", "presentingViewController"]
+- ["PSo8NSCoding", "reviewButton"]
+- ["PSo8NSCoding", "reviewButtonTapped"]
+- ["PSo8NSCoding", "reviewTextImageView"]
+- ["PSo8NSCoding", "transitionToReviewPage"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "AppConstraints"]
+- !private ["PSo26NSExtensionRequestHandling", "NSURL"]
+- !private ["PSo26NSExtensionRequestHandling", "ReviewManager"]
+- !private ["PSo26NSExtensionRequestHandling", "UIApplication"]
+- ["PSo26NSExtensionRequestHandling", "cacelButtonTapped"]
+- ["PSo26NSExtensionRequestHandling", "cancelButton"]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "openAppStore"]
+- ["PSo26NSExtensionRequestHandling", "prefersStatusBarHidden"]
+- !private ["PSo26NSExtensionRequestHandling", "presentingViewController"]
+- ["PSo26NSExtensionRequestHandling", "reviewButton"]
+- ["PSo26NSExtensionRequestHandling", "reviewButtonTapped"]
+- ["PSo26NSExtensionRequestHandling", "reviewTextImageView"]
+- ["PSo26NSExtensionRequestHandling", "transitionToReviewPage"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "AppConstraints"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "NSURL"]
+- !private ["CSo8NSObject", "ReviewManager"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "cacelButtonTapped"]
+- ["CSo8NSObject", "cancelButton"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "openAppStore"]
+- !private ["CSo8NSObject", "openURL"]
+- ["CSo8NSObject", "prefersStatusBarHidden"]
+- !private ["CSo8NSObject", "presentingViewController"]
+- ["CSo8NSObject", "reviewButton"]
+- ["CSo8NSObject", "reviewButtonTapped"]
+- ["CSo8NSObject", "reviewTextImageView"]
+- !private ["CSo8NSObject", "sharedApplication"]
+- ["CSo8NSObject", "transitionToReviewPage"]
+- !private ["CSo8NSObject", "updateReviewStatus"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "AppConstraints"]
+- !private ["PSo16NSObjectProtocol", "NSURL"]
+- !private ["PSo16NSObjectProtocol", "ReviewManager"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- ["PSo16NSObjectProtocol", "cacelButtonTapped"]
+- ["PSo16NSObjectProtocol", "cancelButton"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "openAppStore"]
+- !private ["PSo16NSObjectProtocol", "openURL"]
+- ["PSo16NSObjectProtocol", "prefersStatusBarHidden"]
+- !private ["PSo16NSObjectProtocol", "presentingViewController"]
+- ["PSo16NSObjectProtocol", "reviewButton"]
+- ["PSo16NSObjectProtocol", "reviewButtonTapped"]
+- ["PSo16NSObjectProtocol", "reviewTextImageView"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- ["PSo16NSObjectProtocol", "transitionToReviewPage"]
+- !private ["PSo16NSObjectProtocol", "updateReviewStatus"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo5NSURL", "init"]
+- !private ["C6Nekobu13ReviewManager", "updateReviewStatus"]
+- !private ["C6Nekobu20ReviewViewController", "AppConstraints"]
+- ["C6Nekobu20ReviewViewController", "Bool"]
+- !private ["C6Nekobu20ReviewViewController", "NSURL"]
+- !private ["C6Nekobu20ReviewViewController", "ReviewManager"]
+- ["C6Nekobu20ReviewViewController", "String"]
+- !private ["C6Nekobu20ReviewViewController", "UIApplication"]
+- ["C6Nekobu20ReviewViewController", "UIButton"]
+- ["C6Nekobu20ReviewViewController", "UIImageView"]
+- ["C6Nekobu20ReviewViewController", "cacelButtonTapped"]
+- ["C6Nekobu20ReviewViewController", "cancelButton"]
+- ["C6Nekobu20ReviewViewController", "deinit"]
+- ["C6Nekobu20ReviewViewController", "didReceiveMemoryWarning"]
+- ["C6Nekobu20ReviewViewController", "init"]
+- ["C6Nekobu20ReviewViewController", "openAppStore"]
+- ["C6Nekobu20ReviewViewController", "prefersStatusBarHidden"]
+- !private ["C6Nekobu20ReviewViewController", "presentingViewController"]
+- ["C6Nekobu20ReviewViewController", "reviewButton"]
+- ["C6Nekobu20ReviewViewController", "reviewButtonTapped"]
+- ["C6Nekobu20ReviewViewController", "reviewTextImageView"]
+- ["C6Nekobu20ReviewViewController", "transitionToReviewPage"]
+- ["C6Nekobu20ReviewViewController", "viewDidLoad"]
+- !private ["PSo21UIAppearanceContainer", "AppConstraints"]
+- !private ["PSo21UIAppearanceContainer", "NSURL"]
+- !private ["PSo21UIAppearanceContainer", "ReviewManager"]
+- !private ["PSo21UIAppearanceContainer", "UIApplication"]
+- ["PSo21UIAppearanceContainer", "cacelButtonTapped"]
+- ["PSo21UIAppearanceContainer", "cancelButton"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "openAppStore"]
+- ["PSo21UIAppearanceContainer", "prefersStatusBarHidden"]
+- !private ["PSo21UIAppearanceContainer", "presentingViewController"]
+- ["PSo21UIAppearanceContainer", "reviewButton"]
+- ["PSo21UIAppearanceContainer", "reviewButtonTapped"]
+- ["PSo21UIAppearanceContainer", "reviewTextImageView"]
+- ["PSo21UIAppearanceContainer", "transitionToReviewPage"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo13UIApplication", "openURL"]
+- !private ["CSo13UIApplication", "sharedApplication"]
+- !private ["PSo18UIContentContainer", "AppConstraints"]
+- !private ["PSo18UIContentContainer", "NSURL"]
+- !private ["PSo18UIContentContainer", "ReviewManager"]
+- !private ["PSo18UIContentContainer", "UIApplication"]
+- ["PSo18UIContentContainer", "cacelButtonTapped"]
+- ["PSo18UIContentContainer", "cancelButton"]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "openAppStore"]
+- ["PSo18UIContentContainer", "prefersStatusBarHidden"]
+- !private ["PSo18UIContentContainer", "presentingViewController"]
+- ["PSo18UIContentContainer", "reviewButton"]
+- ["PSo18UIContentContainer", "reviewButtonTapped"]
+- ["PSo18UIContentContainer", "reviewTextImageView"]
+- ["PSo18UIContentContainer", "transitionToReviewPage"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["CSo11UIResponder", "AppConstraints"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "NSURL"]
+- !private ["CSo11UIResponder", "ReviewManager"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "UIApplication"]
+- ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "cacelButtonTapped"]
+- ["CSo11UIResponder", "cancelButton"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "openAppStore"]
+- !private ["CSo11UIResponder", "openURL"]
+- ["CSo11UIResponder", "prefersStatusBarHidden"]
+- !private ["CSo11UIResponder", "presentingViewController"]
+- ["CSo11UIResponder", "reviewButton"]
+- ["CSo11UIResponder", "reviewButtonTapped"]
+- ["CSo11UIResponder", "reviewTextImageView"]
+- !private ["CSo11UIResponder", "sharedApplication"]
+- ["CSo11UIResponder", "transitionToReviewPage"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "AppConstraints"]
+- !private ["PSo16UIStateRestoring", "NSURL"]
+- !private ["PSo16UIStateRestoring", "ReviewManager"]
+- !private ["PSo16UIStateRestoring", "UIApplication"]
+- ["PSo16UIStateRestoring", "cacelButtonTapped"]
+- ["PSo16UIStateRestoring", "cancelButton"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "openAppStore"]
+- ["PSo16UIStateRestoring", "prefersStatusBarHidden"]
+- !private ["PSo16UIStateRestoring", "presentingViewController"]
+- ["PSo16UIStateRestoring", "reviewButton"]
+- ["PSo16UIStateRestoring", "reviewButtonTapped"]
+- ["PSo16UIStateRestoring", "reviewTextImageView"]
+- ["PSo16UIStateRestoring", "transitionToReviewPage"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "AppConstraints"]
+- !private ["PSo18UITraitEnvironment", "NSURL"]
+- !private ["PSo18UITraitEnvironment", "ReviewManager"]
+- !private ["PSo18UITraitEnvironment", "UIApplication"]
+- ["PSo18UITraitEnvironment", "cacelButtonTapped"]
+- ["PSo18UITraitEnvironment", "cancelButton"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "openAppStore"]
+- ["PSo18UITraitEnvironment", "prefersStatusBarHidden"]
+- !private ["PSo18UITraitEnvironment", "presentingViewController"]
+- ["PSo18UITraitEnvironment", "reviewButton"]
+- ["PSo18UITraitEnvironment", "reviewButtonTapped"]
+- ["PSo18UITraitEnvironment", "reviewTextImageView"]
+- ["PSo18UITraitEnvironment", "transitionToReviewPage"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo16UIViewController", "AppConstraints"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "NSURL"]
+- !private ["CSo16UIViewController", "ReviewManager"]
+- ["CSo16UIViewController", "String"]
+- !private ["CSo16UIViewController", "UIApplication"]
+- ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UIImageView"]
+- ["CSo16UIViewController", "cacelButtonTapped"]
+- ["CSo16UIViewController", "cancelButton"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "openAppStore"]
+- ["CSo16UIViewController", "prefersStatusBarHidden"]
+- !private ["CSo16UIViewController", "presentingViewController"]
+- ["CSo16UIViewController", "reviewButton"]
+- ["CSo16UIViewController", "reviewButtonTapped"]
+- ["CSo16UIViewController", "reviewTextImageView"]
+- ["CSo16UIViewController", "transitionToReviewPage"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["P9Alamofire20URLStringConvertible", "init"]
+- !private ["PSs12_Reflectable", "init"]
+depends-nominal:
+- "PSs9AnyObject"
+- !private "V6Nekobu14AppConstraints"
+- !private "C6Nekobu22BaseUserDefaultManager"
+- "PSs11CVarArgType"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo5NSURL"
+- !private "C6Nekobu13ReviewManager"
+- "C6Nekobu20ReviewViewController"
+- "PSo21UIAppearanceContainer"
+- !private "CSo13UIApplication"
+- "PSo18UIContentContainer"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "P9Alamofire20URLStringConvertible"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/Nekobu-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealmUtil.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMListBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMResults.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMProperty.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMMigration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMCollection.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMArray.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/Realm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/MKAnnotationView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDImageCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/WebImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Modules/module.modulemap"
+interface-hash: "fad24131ddc50cfd5283d02554a319c4"

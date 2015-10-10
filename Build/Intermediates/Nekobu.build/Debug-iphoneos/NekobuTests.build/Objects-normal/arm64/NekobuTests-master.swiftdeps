@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.0 (swiftlang-700.0.59 clang-700.0.72)"
+options: "e2b5da231b127c92ce9a28c13daae685"
+build_time: [497625092, 928626000]
+inputs: 
+	"/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/NekobuTests/NekobuTests.swift": [492918339, 0]

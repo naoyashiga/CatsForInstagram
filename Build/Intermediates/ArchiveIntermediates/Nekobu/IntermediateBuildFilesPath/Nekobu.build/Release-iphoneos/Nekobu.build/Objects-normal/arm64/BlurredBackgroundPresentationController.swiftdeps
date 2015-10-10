@@ -1,0 +1,703 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BlurredBackgroundPresentationController"
+provides-nominal:
+- "C6Nekobu39BlurredBackgroundPresentationController"
+provides-member:
+- ["C6Nekobu39BlurredBackgroundPresentationController", ""]
+provides-dynamic-lookup:
+- "presentationTransitionWillBegin"
+- "dimmingView"
+- "dismissalTransitionDidEnd"
+- "containerViewWillLayoutSubviews"
+- "dimmingViewTapped"
+- "frameOfPresentedViewInContainerView"
+- "dismissalTransitionWillBegin"
+- "setupDimmingView"
+depends-top-level:
+- !private "CGFloat"
+- !private "UIColor"
+- "Bool"
+- !private "CGRectZero"
+- !private "*"
+- !private "BooleanLiteralType"
+- "BlurredBackgroundPresentationController"
+- !private "-="
+- "UITapGestureRecognizer"
+- !private "CGPointMake"
+- !private "Void"
+- "UIView"
+- !private "StringLiteralType"
+- !private "/"
+- "CGRect"
+- !private "CGSizeMake"
+- "UIViewController"
+- "UIPresentationController"
+depends-member:
+- !private ["PSs9AnyObject", "CGPointMake"]
+- !private ["PSs9AnyObject", "CGRectZero"]
+- !private ["PSs9AnyObject", "CGSizeMake"]
+- !private ["PSs9AnyObject", "UIColor"]
+- !private ["PSs9AnyObject", "UITapGestureRecognizer"]
+- !private ["PSs9AnyObject", "UIView"]
+- !private ["PSs9AnyObject", "addGestureRecognizer"]
+- !private ["PSs9AnyObject", "alpha"]
+- !private ["PSs9AnyObject", "backgroundColor"]
+- !private ["PSs9AnyObject", "blackColor"]
+- !private ["PSs9AnyObject", "borderWidth"]
+- !private ["PSs9AnyObject", "bounds"]
+- !private ["PSs9AnyObject", "containerView"]
+- ["PSs9AnyObject", "containerViewWillLayoutSubviews"]
+- ["PSs9AnyObject", "dimmingView"]
+- ["PSs9AnyObject", "dimmingViewTapped"]
+- !private ["PSs9AnyObject", "dismissViewControllerAnimated"]
+- ["PSs9AnyObject", "dismissalTransitionDidEnd"]
+- ["PSs9AnyObject", "dismissalTransitionWillBegin"]
+- !private ["PSs9AnyObject", "frame"]
+- ["PSs9AnyObject", "frameOfPresentedViewInContainerView"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "insertSubview"]
+- !private ["PSs9AnyObject", "layer"]
+- ["PSs9AnyObject", "presentationTransitionWillBegin"]
+- !private ["PSs9AnyObject", "presentedView"]
+- !private ["PSs9AnyObject", "presentedViewController"]
+- !private ["PSs9AnyObject", "presentingViewController"]
+- !private ["PSs9AnyObject", "removeFromSuperview"]
+- ["PSs9AnyObject", "setupDimmingView"]
+- !private ["PSs9AnyObject", "transitionCoordinator"]
+- ["PSs9AnyObject", ""]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "Bool"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "CGFloat"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "CGPointMake"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "CGRect"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "CGRectZero"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "CGSizeMake"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "UIColor"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "UITapGestureRecognizer"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "UIView"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "UIViewController"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "Void"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "containerView"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "containerViewWillLayoutSubviews"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "deinit"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "dimmingView"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "dimmingViewTapped"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "dismissalTransitionDidEnd"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "dismissalTransitionWillBegin"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "frameOfPresentedViewInContainerView"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "init"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "presentationTransitionWillBegin"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "presentedView"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "presentedViewController"]
+- !private ["C6Nekobu39BlurredBackgroundPresentationController", "presentingViewController"]
+- ["C6Nekobu39BlurredBackgroundPresentationController", "setupDimmingView"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSs25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs11BooleanType", "_getBuiltinLogicValue"]
+- !private ["CSo7CALayer", "borderWidth"]
+- !private ["PSo13CAMediaTiming", "borderWidth"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["VSC7CGPoint", "x"]
+- !private ["VSC7CGPoint", "y"]
+- !private ["VSC6CGRect", "origin"]
+- !private ["VSC6CGRect", "size"]
+- !private ["VSC6CGSize", "height"]
+- !private ["VSC6CGSize", "width"]
+- !private ["PSs11CVarArgType", "CGPointMake"]
+- !private ["PSs11CVarArgType", "CGRectZero"]
+- !private ["PSs11CVarArgType", "CGSizeMake"]
+- !private ["PSs11CVarArgType", "UIColor"]
+- !private ["PSs11CVarArgType", "UITapGestureRecognizer"]
+- !private ["PSs11CVarArgType", "UIView"]
+- !private ["PSs11CVarArgType", "addGestureRecognizer"]
+- !private ["PSs11CVarArgType", "alpha"]
+- !private ["PSs11CVarArgType", "backgroundColor"]
+- !private ["PSs11CVarArgType", "blackColor"]
+- !private ["PSs11CVarArgType", "borderWidth"]
+- !private ["PSs11CVarArgType", "bounds"]
+- !private ["PSs11CVarArgType", "containerView"]
+- ["PSs11CVarArgType", "containerViewWillLayoutSubviews"]
+- ["PSs11CVarArgType", "dimmingView"]
+- ["PSs11CVarArgType", "dimmingViewTapped"]
+- !private ["PSs11CVarArgType", "dismissViewControllerAnimated"]
+- ["PSs11CVarArgType", "dismissalTransitionDidEnd"]
+- ["PSs11CVarArgType", "dismissalTransitionWillBegin"]
+- !private ["PSs11CVarArgType", "frame"]
+- ["PSs11CVarArgType", "frameOfPresentedViewInContainerView"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "insertSubview"]
+- !private ["PSs11CVarArgType", "layer"]
+- ["PSs11CVarArgType", "presentationTransitionWillBegin"]
+- !private ["PSs11CVarArgType", "presentedView"]
+- !private ["PSs11CVarArgType", "presentedViewController"]
+- !private ["PSs11CVarArgType", "presentingViewController"]
+- !private ["PSs11CVarArgType", "removeFromSuperview"]
+- ["PSs11CVarArgType", "setupDimmingView"]
+- !private ["PSs11CVarArgType", "transitionCoordinator"]
+- ["PSs11CVarArgType", ""]
+- ["PSs28CustomDebugStringConvertible", "Some"]
+- !private ["PSs23CustomStringConvertible", "CGPointMake"]
+- !private ["PSs23CustomStringConvertible", "CGRectZero"]
+- !private ["PSs23CustomStringConvertible", "CGSizeMake"]
+- !private ["PSs23CustomStringConvertible", "UIColor"]
+- !private ["PSs23CustomStringConvertible", "UITapGestureRecognizer"]
+- !private ["PSs23CustomStringConvertible", "UIView"]
+- !private ["PSs23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs23CustomStringConvertible", "addGestureRecognizer"]
+- !private ["PSs23CustomStringConvertible", "alpha"]
+- !private ["PSs23CustomStringConvertible", "backgroundColor"]
+- !private ["PSs23CustomStringConvertible", "blackColor"]
+- !private ["PSs23CustomStringConvertible", "borderWidth"]
+- !private ["PSs23CustomStringConvertible", "bounds"]
+- !private ["PSs23CustomStringConvertible", "containerView"]
+- ["PSs23CustomStringConvertible", "containerViewWillLayoutSubviews"]
+- ["PSs23CustomStringConvertible", "dimmingView"]
+- ["PSs23CustomStringConvertible", "dimmingViewTapped"]
+- !private ["PSs23CustomStringConvertible", "dismissViewControllerAnimated"]
+- ["PSs23CustomStringConvertible", "dismissalTransitionDidEnd"]
+- ["PSs23CustomStringConvertible", "dismissalTransitionWillBegin"]
+- !private ["PSs23CustomStringConvertible", "frame"]
+- ["PSs23CustomStringConvertible", "frameOfPresentedViewInContainerView"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "insertSubview"]
+- !private ["PSs23CustomStringConvertible", "layer"]
+- ["PSs23CustomStringConvertible", "presentationTransitionWillBegin"]
+- !private ["PSs23CustomStringConvertible", "presentedView"]
+- !private ["PSs23CustomStringConvertible", "presentedViewController"]
+- !private ["PSs23CustomStringConvertible", "presentingViewController"]
+- !private ["PSs23CustomStringConvertible", "removeFromSuperview"]
+- ["PSs23CustomStringConvertible", "setupDimmingView"]
+- !private ["PSs23CustomStringConvertible", "transitionCoordinator"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "CGPointMake"]
+- !private ["PSs9Equatable", "CGRectZero"]
+- !private ["PSs9Equatable", "CGSizeMake"]
+- !private ["PSs9Equatable", "UIColor"]
+- !private ["PSs9Equatable", "UITapGestureRecognizer"]
+- !private ["PSs9Equatable", "UIView"]
+- !private ["PSs9Equatable", "_getBuiltinLogicValue"]
+- !private ["PSs9Equatable", "addGestureRecognizer"]
+- !private ["PSs9Equatable", "alpha"]
+- !private ["PSs9Equatable", "backgroundColor"]
+- !private ["PSs9Equatable", "blackColor"]
+- !private ["PSs9Equatable", "borderWidth"]
+- !private ["PSs9Equatable", "bounds"]
+- !private ["PSs9Equatable", "containerView"]
+- ["PSs9Equatable", "containerViewWillLayoutSubviews"]
+- ["PSs9Equatable", "dimmingView"]
+- ["PSs9Equatable", "dimmingViewTapped"]
+- !private ["PSs9Equatable", "dismissViewControllerAnimated"]
+- ["PSs9Equatable", "dismissalTransitionDidEnd"]
+- ["PSs9Equatable", "dismissalTransitionWillBegin"]
+- !private ["PSs9Equatable", "frame"]
+- ["PSs9Equatable", "frameOfPresentedViewInContainerView"]
+- !private ["PSs9Equatable", "height"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "insertSubview"]
+- !private ["PSs9Equatable", "layer"]
+- !private ["PSs9Equatable", "origin"]
+- ["PSs9Equatable", "presentationTransitionWillBegin"]
+- !private ["PSs9Equatable", "presentedView"]
+- !private ["PSs9Equatable", "presentedViewController"]
+- !private ["PSs9Equatable", "presentingViewController"]
+- !private ["PSs9Equatable", "removeFromSuperview"]
+- ["PSs9Equatable", "setupDimmingView"]
+- !private ["PSs9Equatable", "size"]
+- !private ["PSs9Equatable", "transitionCoordinator"]
+- !private ["PSs9Equatable", "width"]
+- !private ["PSs9Equatable", "x"]
+- !private ["PSs9Equatable", "y"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "CGPointMake"]
+- !private ["PSs8Hashable", "CGRectZero"]
+- !private ["PSs8Hashable", "CGSizeMake"]
+- !private ["PSs8Hashable", "UIColor"]
+- !private ["PSs8Hashable", "UITapGestureRecognizer"]
+- !private ["PSs8Hashable", "UIView"]
+- !private ["PSs8Hashable", "_getBuiltinLogicValue"]
+- !private ["PSs8Hashable", "addGestureRecognizer"]
+- !private ["PSs8Hashable", "alpha"]
+- !private ["PSs8Hashable", "backgroundColor"]
+- !private ["PSs8Hashable", "blackColor"]
+- !private ["PSs8Hashable", "borderWidth"]
+- !private ["PSs8Hashable", "bounds"]
+- !private ["PSs8Hashable", "containerView"]
+- ["PSs8Hashable", "containerViewWillLayoutSubviews"]
+- ["PSs8Hashable", "dimmingView"]
+- ["PSs8Hashable", "dimmingViewTapped"]
+- !private ["PSs8Hashable", "dismissViewControllerAnimated"]
+- ["PSs8Hashable", "dismissalTransitionDidEnd"]
+- ["PSs8Hashable", "dismissalTransitionWillBegin"]
+- !private ["PSs8Hashable", "frame"]
+- ["PSs8Hashable", "frameOfPresentedViewInContainerView"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "insertSubview"]
+- !private ["PSs8Hashable", "layer"]
+- ["PSs8Hashable", "presentationTransitionWillBegin"]
+- !private ["PSs8Hashable", "presentedView"]
+- !private ["PSs8Hashable", "presentedViewController"]
+- !private ["PSs8Hashable", "presentingViewController"]
+- !private ["PSs8Hashable", "removeFromSuperview"]
+- ["PSs8Hashable", "setupDimmingView"]
+- !private ["PSs8Hashable", "transitionCoordinator"]
+- ["PSs8Hashable", ""]
+- !private ["PSo8NSCoding", "addGestureRecognizer"]
+- !private ["PSo8NSCoding", "alpha"]
+- !private ["PSo8NSCoding", "backgroundColor"]
+- !private ["PSo8NSCoding", "blackColor"]
+- !private ["PSo8NSCoding", "borderWidth"]
+- !private ["PSo8NSCoding", "bounds"]
+- !private ["PSo8NSCoding", "dismissViewControllerAnimated"]
+- !private ["PSo8NSCoding", "frame"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "insertSubview"]
+- !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "removeFromSuperview"]
+- !private ["PSo8NSCoding", "transitionCoordinator"]
+- !private ["PSo9NSCopying", "blackColor"]
+- !private ["PSo26NSExtensionRequestHandling", "dismissViewControllerAnimated"]
+- !private ["PSo26NSExtensionRequestHandling", "transitionCoordinator"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CGFloat"]
+- !private ["CSo8NSObject", "CGPointMake"]
+- ["CSo8NSObject", "CGRect"]
+- !private ["CSo8NSObject", "CGRectZero"]
+- !private ["CSo8NSObject", "CGSizeMake"]
+- !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UITapGestureRecognizer"]
+- ["CSo8NSObject", "UIView"]
+- ["CSo8NSObject", "UIViewController"]
+- !private ["CSo8NSObject", "Void"]
+- !private ["CSo8NSObject", "addGestureRecognizer"]
+- !private ["CSo8NSObject", "alpha"]
+- !private ["CSo8NSObject", "backgroundColor"]
+- !private ["CSo8NSObject", "blackColor"]
+- !private ["CSo8NSObject", "borderWidth"]
+- !private ["CSo8NSObject", "bounds"]
+- !private ["CSo8NSObject", "containerView"]
+- ["CSo8NSObject", "containerViewWillLayoutSubviews"]
+- ["CSo8NSObject", "dimmingView"]
+- ["CSo8NSObject", "dimmingViewTapped"]
+- !private ["CSo8NSObject", "dismissViewControllerAnimated"]
+- ["CSo8NSObject", "dismissalTransitionDidEnd"]
+- ["CSo8NSObject", "dismissalTransitionWillBegin"]
+- !private ["CSo8NSObject", "frame"]
+- ["CSo8NSObject", "frameOfPresentedViewInContainerView"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "insertSubview"]
+- !private ["CSo8NSObject", "layer"]
+- ["CSo8NSObject", "presentationTransitionWillBegin"]
+- !private ["CSo8NSObject", "presentedView"]
+- !private ["CSo8NSObject", "presentedViewController"]
+- !private ["CSo8NSObject", "presentingViewController"]
+- !private ["CSo8NSObject", "removeFromSuperview"]
+- ["CSo8NSObject", "setupDimmingView"]
+- !private ["CSo8NSObject", "transitionCoordinator"]
+- !private ["PSo16NSObjectProtocol", "CGPointMake"]
+- !private ["PSo16NSObjectProtocol", "CGRectZero"]
+- !private ["PSo16NSObjectProtocol", "CGSizeMake"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UITapGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
+- !private ["PSo16NSObjectProtocol", "addGestureRecognizer"]
+- !private ["PSo16NSObjectProtocol", "alpha"]
+- !private ["PSo16NSObjectProtocol", "animateAlongsideTransition"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
+- !private ["PSo16NSObjectProtocol", "blackColor"]
+- !private ["PSo16NSObjectProtocol", "borderWidth"]
+- !private ["PSo16NSObjectProtocol", "bounds"]
+- !private ["PSo16NSObjectProtocol", "containerView"]
+- ["PSo16NSObjectProtocol", "containerViewWillLayoutSubviews"]
+- ["PSo16NSObjectProtocol", "dimmingView"]
+- ["PSo16NSObjectProtocol", "dimmingViewTapped"]
+- !private ["PSo16NSObjectProtocol", "dismissViewControllerAnimated"]
+- ["PSo16NSObjectProtocol", "dismissalTransitionDidEnd"]
+- ["PSo16NSObjectProtocol", "dismissalTransitionWillBegin"]
+- !private ["PSo16NSObjectProtocol", "frame"]
+- ["PSo16NSObjectProtocol", "frameOfPresentedViewInContainerView"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "insertSubview"]
+- !private ["PSo16NSObjectProtocol", "layer"]
+- ["PSo16NSObjectProtocol", "presentationTransitionWillBegin"]
+- !private ["PSo16NSObjectProtocol", "presentedView"]
+- !private ["PSo16NSObjectProtocol", "presentedViewController"]
+- !private ["PSo16NSObjectProtocol", "presentingViewController"]
+- !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
+- ["PSo16NSObjectProtocol", "setupDimmingView"]
+- !private ["PSo16NSObjectProtocol", "transitionCoordinator"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "blackColor"]
+- ["PSs21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["V10ObjectiveC8Selector", "deinit"]
+- !private ["VSs12StaticString", "deinit"]
+- !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo29UIAccessibilityIdentification", "alpha"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
+- !private ["PSo29UIAccessibilityIdentification", "bounds"]
+- !private ["PSo29UIAccessibilityIdentification", "frame"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "insertSubview"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
+- !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "alpha"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
+- !private ["PSo12UIAppearance", "bounds"]
+- !private ["PSo12UIAppearance", "frame"]
+- !private ["PSo12UIAppearance", "init"]
+- !private ["PSo12UIAppearance", "insertSubview"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "removeFromSuperview"]
+- !private ["PSo21UIAppearanceContainer", "CGPointMake"]
+- !private ["PSo21UIAppearanceContainer", "CGRectZero"]
+- !private ["PSo21UIAppearanceContainer", "CGSizeMake"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UITapGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "UIView"]
+- !private ["PSo21UIAppearanceContainer", "addGestureRecognizer"]
+- !private ["PSo21UIAppearanceContainer", "alpha"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- !private ["PSo21UIAppearanceContainer", "bounds"]
+- !private ["PSo21UIAppearanceContainer", "containerView"]
+- ["PSo21UIAppearanceContainer", "containerViewWillLayoutSubviews"]
+- ["PSo21UIAppearanceContainer", "dimmingView"]
+- ["PSo21UIAppearanceContainer", "dimmingViewTapped"]
+- !private ["PSo21UIAppearanceContainer", "dismissViewControllerAnimated"]
+- ["PSo21UIAppearanceContainer", "dismissalTransitionDidEnd"]
+- ["PSo21UIAppearanceContainer", "dismissalTransitionWillBegin"]
+- !private ["PSo21UIAppearanceContainer", "frame"]
+- ["PSo21UIAppearanceContainer", "frameOfPresentedViewInContainerView"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "insertSubview"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
+- ["PSo21UIAppearanceContainer", "presentationTransitionWillBegin"]
+- !private ["PSo21UIAppearanceContainer", "presentedView"]
+- !private ["PSo21UIAppearanceContainer", "presentedViewController"]
+- !private ["PSo21UIAppearanceContainer", "presentingViewController"]
+- !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
+- ["PSo21UIAppearanceContainer", "setupDimmingView"]
+- !private ["PSo21UIAppearanceContainer", "transitionCoordinator"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["CSo7UIColor", "blackColor"]
+- !private ["PSo18UIContentContainer", "CGPointMake"]
+- !private ["PSo18UIContentContainer", "CGRectZero"]
+- !private ["PSo18UIContentContainer", "CGSizeMake"]
+- !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UITapGestureRecognizer"]
+- !private ["PSo18UIContentContainer", "UIView"]
+- !private ["PSo18UIContentContainer", "containerView"]
+- ["PSo18UIContentContainer", "containerViewWillLayoutSubviews"]
+- ["PSo18UIContentContainer", "dimmingView"]
+- ["PSo18UIContentContainer", "dimmingViewTapped"]
+- !private ["PSo18UIContentContainer", "dismissViewControllerAnimated"]
+- ["PSo18UIContentContainer", "dismissalTransitionDidEnd"]
+- ["PSo18UIContentContainer", "dismissalTransitionWillBegin"]
+- ["PSo18UIContentContainer", "frameOfPresentedViewInContainerView"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "presentationTransitionWillBegin"]
+- !private ["PSo18UIContentContainer", "presentedView"]
+- !private ["PSo18UIContentContainer", "presentedViewController"]
+- !private ["PSo18UIContentContainer", "presentingViewController"]
+- ["PSo18UIContentContainer", "setupDimmingView"]
+- !private ["PSo18UIContentContainer", "transitionCoordinator"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo17UICoordinateSpace", "alpha"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
+- !private ["PSo17UICoordinateSpace", "bounds"]
+- !private ["PSo17UICoordinateSpace", "frame"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- !private ["PSo17UICoordinateSpace", "insertSubview"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
+- !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "alpha"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
+- !private ["PSo13UIDynamicItem", "bounds"]
+- !private ["PSo13UIDynamicItem", "frame"]
+- !private ["PSo13UIDynamicItem", "init"]
+- !private ["PSo13UIDynamicItem", "insertSubview"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "removeFromSuperview"]
+- !private ["CSo19UIGestureRecognizer", "init"]
+- ["CSo24UIPresentationController", "Bool"]
+- !private ["CSo24UIPresentationController", "CGFloat"]
+- !private ["CSo24UIPresentationController", "CGPointMake"]
+- ["CSo24UIPresentationController", "CGRect"]
+- !private ["CSo24UIPresentationController", "CGRectZero"]
+- !private ["CSo24UIPresentationController", "CGSizeMake"]
+- !private ["CSo24UIPresentationController", "UIColor"]
+- ["CSo24UIPresentationController", "UITapGestureRecognizer"]
+- ["CSo24UIPresentationController", "UIView"]
+- ["CSo24UIPresentationController", "UIViewController"]
+- !private ["CSo24UIPresentationController", "Void"]
+- !private ["CSo24UIPresentationController", "containerView"]
+- ["CSo24UIPresentationController", "containerViewWillLayoutSubviews"]
+- ["CSo24UIPresentationController", "dimmingView"]
+- ["CSo24UIPresentationController", "dimmingViewTapped"]
+- ["CSo24UIPresentationController", "dismissalTransitionDidEnd"]
+- ["CSo24UIPresentationController", "dismissalTransitionWillBegin"]
+- ["CSo24UIPresentationController", "frameOfPresentedViewInContainerView"]
+- ["CSo24UIPresentationController", "init"]
+- ["CSo24UIPresentationController", "presentationTransitionWillBegin"]
+- !private ["CSo24UIPresentationController", "presentedView"]
+- !private ["CSo24UIPresentationController", "presentedViewController"]
+- !private ["CSo24UIPresentationController", "presentingViewController"]
+- ["CSo24UIPresentationController", "setupDimmingView"]
+- ["CSo24UIPresentationController", ""]
+- !private ["CSo11UIResponder", "addGestureRecognizer"]
+- !private ["CSo11UIResponder", "alpha"]
+- !private ["CSo11UIResponder", "backgroundColor"]
+- !private ["CSo11UIResponder", "bounds"]
+- !private ["CSo11UIResponder", "dismissViewControllerAnimated"]
+- !private ["CSo11UIResponder", "frame"]
+- !private ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "insertSubview"]
+- !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "removeFromSuperview"]
+- !private ["CSo11UIResponder", "transitionCoordinator"]
+- !private ["PSo16UIStateRestoring", "dismissViewControllerAnimated"]
+- !private ["PSo16UIStateRestoring", "transitionCoordinator"]
+- !private ["CSo22UITapGestureRecognizer", "init"]
+- !private ["PSo18UITraitEnvironment", "CGPointMake"]
+- !private ["PSo18UITraitEnvironment", "CGRectZero"]
+- !private ["PSo18UITraitEnvironment", "CGSizeMake"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UITapGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "UIView"]
+- !private ["PSo18UITraitEnvironment", "addGestureRecognizer"]
+- !private ["PSo18UITraitEnvironment", "alpha"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- !private ["PSo18UITraitEnvironment", "bounds"]
+- !private ["PSo18UITraitEnvironment", "containerView"]
+- ["PSo18UITraitEnvironment", "containerViewWillLayoutSubviews"]
+- ["PSo18UITraitEnvironment", "dimmingView"]
+- ["PSo18UITraitEnvironment", "dimmingViewTapped"]
+- !private ["PSo18UITraitEnvironment", "dismissViewControllerAnimated"]
+- ["PSo18UITraitEnvironment", "dismissalTransitionDidEnd"]
+- ["PSo18UITraitEnvironment", "dismissalTransitionWillBegin"]
+- !private ["PSo18UITraitEnvironment", "frame"]
+- ["PSo18UITraitEnvironment", "frameOfPresentedViewInContainerView"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "insertSubview"]
+- !private ["PSo18UITraitEnvironment", "layer"]
+- ["PSo18UITraitEnvironment", "presentationTransitionWillBegin"]
+- !private ["PSo18UITraitEnvironment", "presentedView"]
+- !private ["PSo18UITraitEnvironment", "presentedViewController"]
+- !private ["PSo18UITraitEnvironment", "presentingViewController"]
+- !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
+- ["PSo18UITraitEnvironment", "setupDimmingView"]
+- !private ["PSo18UITraitEnvironment", "transitionCoordinator"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "addGestureRecognizer"]
+- !private ["CSo6UIView", "alpha"]
+- !private ["CSo6UIView", "backgroundColor"]
+- !private ["CSo6UIView", "bounds"]
+- !private ["CSo6UIView", "frame"]
+- !private ["CSo6UIView", "init"]
+- !private ["CSo6UIView", "insertSubview"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "removeFromSuperview"]
+- !private ["CSo16UIViewController", "dismissViewControllerAnimated"]
+- !private ["CSo16UIViewController", "transitionCoordinator"]
+- !private ["PSo37UIViewControllerTransitionCoordinator", "animateAlongsideTransition"]
+- !private ["PSo44UIViewControllerTransitionCoordinatorContext", "animateAlongsideTransition"]
+- !private ["PSs33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["PSs21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- ["PSs12_Reflectable", "Some"]
+- !private ["PSs12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["PSs12_Reflectable", "addGestureRecognizer"]
+- !private ["PSs12_Reflectable", "alpha"]
+- !private ["PSs12_Reflectable", "backgroundColor"]
+- !private ["PSs12_Reflectable", "bounds"]
+- !private ["PSs12_Reflectable", "frame"]
+- !private ["PSs12_Reflectable", "height"]
+- !private ["PSs12_Reflectable", "init"]
+- !private ["PSs12_Reflectable", "insertSubview"]
+- !private ["PSs12_Reflectable", "layer"]
+- !private ["PSs12_Reflectable", "origin"]
+- !private ["PSs12_Reflectable", "removeFromSuperview"]
+- !private ["PSs12_Reflectable", "size"]
+- !private ["PSs12_Reflectable", "width"]
+- !private ["PSs12_Reflectable", "x"]
+- !private ["PSs12_Reflectable", "y"]
+depends-nominal:
+- "PSs9AnyObject"
+- "C6Nekobu39BlurredBackgroundPresentationController"
+- !private "Sb"
+- !private "PSs25BooleanLiteralConvertible"
+- !private "PSs11BooleanType"
+- !private "CSo7CALayer"
+- !private "PSo13CAMediaTiming"
+- !private "V12CoreGraphics7CGFloat"
+- !private "VSC7CGPoint"
+- !private "VSC6CGRect"
+- !private "VSC6CGSize"
+- "PSs11CVarArgType"
+- "PSs28CustomDebugStringConvertible"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- "PSs21NilLiteralConvertible"
+- "Sq"
+- !private "V10ObjectiveC8Selector"
+- !private "VSs12StaticString"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- !private "CSo7UIColor"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- !private "CSo19UIGestureRecognizer"
+- "CSo24UIPresentationController"
+- !private "CSo11UIResponder"
+- !private "PSo16UIStateRestoring"
+- !private "CSo22UITapGestureRecognizer"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- !private "CSo16UIViewController"
+- !private "PSo37UIViewControllerTransitionCoordinator"
+- !private "PSo44UIViewControllerTransitionCoordinatorContext"
+- !private "PSs33_BuiltinBooleanLiteralConvertible"
+- !private "PSs21_ObjectiveCBridgeable"
+- "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Nekobu/Nekobu-Bridging-Header.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Modules/RealmSwift.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectBase_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealm_Dynamic.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMResults_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealm_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealmUtil.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMProperty_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObject_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObjectStore.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMObjectSchema_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMMigration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMListBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMRealmConfiguration_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMArray_Private.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/PrivateHeaders/RLMAccessor.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMResults.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealmConfiguration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMRealm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMConstants.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMProperty.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMPlatform.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectSchema.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObjectBase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMObject.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMMigration.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMCollection.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/RLMArray.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Headers/Realm.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/Realm.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Headers/RealmSwift-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Headers/RealmSwift-umbrella.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Build/Intermediates/ArchiveIntermediates/Nekobu/BuildProductsPath/Release-iphoneos/RealmSwift.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+WebP.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/MKAnnotationView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDImageCache.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Headers/WebImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/WebImage.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRewardBasedVideoAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdReward.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADSearchBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdNotificationSource.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMediatedNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBannerDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCustomEventBanner.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImageAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeCustomTemplateAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeContentAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAppInstallAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage+Mediation.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdImage.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAdDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADNativeAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderAdTypes.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAppEventDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSizeDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPCustomRenderedAd.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/DFPBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitialDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInterstitial.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchase.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoaderDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdLoader.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelatorAdLoaderOptions.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADCorrelator.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequestError.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADRequest.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADInAppPurchaseDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerViewDelegate.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADBannerView.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdSize.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GADAdNetworkExtras.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAdsDefines.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Headers/GoogleMobileAds.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Pods/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/Alamofire.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/SwiftyJSON.swiftmodule/arm64.swiftmodule"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Headers/SwiftyJSON.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/SwiftyJSON.framework/Modules/module.modulemap"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/UIScrollView+EmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Headers/DZNEmptyDataSet.h"
+- "/Users/naoyashiga/Desktop/code/iOS/myProduct/Nekobu/Carthage/Build/iOS/DZNEmptyDataSet.framework/Modules/module.modulemap"
+interface-hash: "5dc88c3101b9ccd899a144c17f15ab4c"
