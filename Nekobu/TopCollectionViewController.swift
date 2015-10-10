@@ -80,7 +80,6 @@ class TopCollectionViewController: PhotoCollectionViewController {
                 }
             }
             
-            
             if let nextURLString = responseJSON["pagination"]["next_url"].string {
                 self.pagenation = Pagenation(nextURLString: nextURLString)
             }
@@ -134,7 +133,6 @@ class TopCollectionViewController: PhotoCollectionViewController {
         photoDetailVC.media = media
         
         //レビュー訴求
-        
         if(ReviewManager.isReview){
             //レビューまだの人
             if(ReviewManager.counter != 0 && ReviewManager.counter % ReviewManager.Cycle.top == 0){
